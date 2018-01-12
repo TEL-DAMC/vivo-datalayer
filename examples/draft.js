@@ -1,11 +1,12 @@
+'use strict'
 window.dataLayer = window.dataLayer || []
-dataLayer.push({
+window.dataLayer.push({
   event: 'page-init',
-  'environment': { //Data regarding the overall classification of the environment
+  'environment': { // Data regarding the overall classification of the environment
     'name': 'meu-vivo-mais',
     'platform': 'app-webview'
   },
-  'page': { //Data regarding the content of the current page.
+  'page': { // Data regarding the content of the current page.
     'name': 'ProductPage - iPhone X',
     'hierarchy': 'fixa>assine>novas_cidades>teresina',
     'version': '1.2.10',
@@ -15,7 +16,7 @@ dataLayer.push({
     'area': '\'B2B\'|\'B2C\'',
     'segment': '\'eCommerce\'|\'eCare\''
   },
-  'user': { //Data coming diretly from the backend
+  'user': { // Data coming diretly from the backend
     'info': {
       'cpf': '05749961761',
       'email': 'e@ma.il',
@@ -40,7 +41,7 @@ dataLayer.push({
       'type': '\'CPF\'|\'email\'|\'phoneNumber\'|\'previousSessionCookie\''
     }
   },
-  'userInput': { //Data informed by the user during this session
+  'userInput': { // Data informed by the user during this session
     'info': {
       'cpf': '05749961761',
       'email': 'e@ma.il',
@@ -50,10 +51,10 @@ dataLayer.push({
       'state': '\'SP\'|\'RJ\'',
       'city': '\'Sao Paulo\'|\'Rio de Janeiro\'',
       'zipcode': '04110-060',
-      'availableTechnology': '\'fiber\'|\'DTH\'|\'DSL\'',
+      'availableTechnology': '\'fiber\'|\'DTH\'|\'DSL\''
     }
   },
-  'ecommerce': { //eCommerce and product data
+  'ecommerce': { // eCommerce and product data
     'impressions': [{
       'id': 'skuNumber',
       'name': 'iPhone X',
@@ -80,10 +81,10 @@ dataLayer.push({
       'transactions': [{
         'id': 'transactionId',
         'revenue': 9999.99,
-        'store': 'Loja Online', //sent as "affiliation"
+        'store': 'Loja Online', // sent as "affiliation"
         'method': '\'visa\'|\'mastercard\'|\'simulation\'',
         'invoiceType': '\'Boleto\'|\'Digital\'',
-        'invoiceDueData': 7, //Dia de vencimento da fatura no mês
+        'invoiceDueData': 7, // Dia de vencimento da fatura no mês
         'products': [{
           'id': 'skuNumber',
           'name': 'iPhone X',

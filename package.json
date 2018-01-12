@@ -1,0 +1,28 @@
+{
+  "name": "vivo-datalayer",
+  "version": "1.0.0",
+  "description": "Datalayer definitions for Vivo Telefonica Brazil",
+  "main": "index.d.ts",
+  "directories": {
+    "example": "examples"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "typedoc": "^0.9.0"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "typedoc --includeDeclarations --theme minimal --out ./dist index.d.ts",
+    "serve":"http-server ./dist"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/robertofrega/vivo-datalayer.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/robertofrega/vivo-datalayer/issues"
+  },
+  "homepage": "https://github.com/robertofrega/vivo-datalayer#readme"
+}
