@@ -12,7 +12,7 @@
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "typedoc --includeDeclarations --theme minimal --out ./dist index.d.ts",
+    "build": "typedoc --module commonjs --theme minimal --includeDeclarations --excludeExternals --out ./dist ./src",
     "serve":"http-server ./dist"
   },
   "repository": {
