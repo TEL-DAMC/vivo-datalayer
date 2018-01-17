@@ -8,7 +8,13 @@ declare interface MeuVivoEnvironmentData extends EnvironmentData {
      * A descriptive name for the environment in a dasherized form
      * e.g.: 'meu-vivo-mais'
      */
-    name: 'meu-vivo-movel-desktop' | 'meu-vivo-movel-mobile' | 'meu-vivo-fixo-desktop-vivo-1' | 'meu-vivo-fixo-desktop-vivo-2' | 'meu-vivo-fixo-mobile-vivo-1' | 'vivo-next' | 'vivo-mais'
+    name: 'meu-vivo-movel-desktop'
+        | 'meu-vivo-site-mobile'
+        | 'meu-vivo-fixo-desktop-vivo-1'
+        | 'meu-vivo-fixo-desktop-vivo-2'
+        | 'meu-vivo-fixo-app'
+        | 'meu-vivo-next'
+        | 'meu-vivo-mais'
 }
 
 declare interface MeuVivoPageData extends PageData {
