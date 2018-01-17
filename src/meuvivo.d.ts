@@ -35,13 +35,13 @@ declare interface MessageData {
     code: string
 }
 
-export declare interface dataLayer {
+export declare namespace dataLayer {
     /**
      *  Pageview Event
      *  MUST be triggered on EVERY pageload and on EVERY page change, even on single-page applications
      * @param pageInitObject IMPORTANT: The `event` key  must be set to `"page-init"`
      */
-    push(pageInitObject: {
+    function push(pageInitObject: {
         event: 'page-init'
         environment: MeuVivoEnvironmentData
         page: MeuVivoPageData
@@ -53,7 +53,7 @@ export declare interface dataLayer {
      *  MUST be triggered on EVERY step of the feature
      * @param featureStepObject IMPORTANT: The `event` key  must be set to `"feature-step"`
      */
-    push(featureStepObject: {
+    function push(featureStepObject: {
         event: 'feature-step'
         feature: FeatureData
     })
@@ -63,15 +63,16 @@ export declare interface dataLayer {
      *  MUST be triggered on EVERY interaction with the feature
      * @param featureInteractionObject IMPORTANT: The `event` key  must be set to `"feature-interaction"`
      */
-    push(featureInteractionObject: {
+    function push(featureInteractionObject: {
         event: 'feature-interaction'
         feature: FeatureData,
         interaction: FeatureInteractionData
     })
 
-    push(interfaceMessageObject: {
+    function push(interfaceMessageObject: {
         event: 'interface-message'
-        message: MessageData
+        message: MessageData,
+        element: HTMLElement
     })
 
 }
