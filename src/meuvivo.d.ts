@@ -3,7 +3,6 @@ import {PageData} from "./interfaces/PageData"
 import {UserData} from "./interfaces/UserData"
 import {FeatureData, FeatureInteractionData} from "./interfaces/FeatureData";
 
-export declare interface MeuVivoEnvironmentData extends EnvironmentData {
     name: 'meu-vivo-movel-desktop' | 'meu-vivo-movel-mobile' | 'meu-vivo-fixo-desktop-vivo-1' | 'meu-vivo-fixo-desktop-vivo-2' | 'meu-vivo-fixo-mobile-vivo-1' | 'vivo-next' | 'vivo-mais'
 }
 
