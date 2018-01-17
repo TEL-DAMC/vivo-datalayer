@@ -1,4 +1,4 @@
-export interface EnvironmentData {
+export declare interface EnvironmentData {
     /**
      * A descriptive name for the environment in a dasherized form
      * e.g.: 'meu-vivo-mais'

@@ -1,4 +1,4 @@
-export interface FeatureData {
+export declare interface FeatureData {
     /**
      * A descriptive name for the feature in a dasherized form
      * e.g.: 'segunda-via'
@@ -18,7 +18,7 @@ export interface FeatureData {
     }
 }
 
-export interface FeatureInteractionData {
+export declare interface FeatureInteractionData {
     name: string
     option: 'next' | 'back' | 'cancel' | string
 }

@@ -1,4 +1,4 @@
-export interface PageData {
+export declare interface PageData {
     /**
      * A descriptive name for the page in a dasherized form
      * e.g.: 'segunda-via-de-conta-passo-2'

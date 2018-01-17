@@ -1,6 +1,6 @@
 import {LocationData} from "./LocationData";
 
-export interface UserInputData {
+export declare interface UserInputData {
     'info'?: {
         /**
          * The user's CPF (brazilian Natural Persons Register)
