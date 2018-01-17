@@ -84,11 +84,11 @@ dataLayer.push({
       'monthsAsMember': number
     },
     login: {
-      'isLoggedIn': boolean,
+      isLoggedIn: boolean,
       /**
        * How the user loggd-in
        */
-      'type': 'cpf' | 'email' | 'msisdn' | 'cookie' | 'facebook' | 'mobile-connect'
+      type: 'cpf' | 'email' | 'msisdn' | 'cookie' | 'facebook' | 'mobile-connect'
     },
     /**
      * An array of every subscription the user has
