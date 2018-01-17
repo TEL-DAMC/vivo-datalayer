@@ -14,7 +14,7 @@ export declare interface FeatureData {
         name: string
         index: number
         type: 'initial' | 'intermediary' | 'completion'
-        success: boolean
+        success?: boolean
     }
 }
 
