@@ -20,5 +20,5 @@ export declare interface FeatureData {
 
 export declare interface FeatureInteractionData {
     name: string
-    option: 'next' | 'back' | 'cancel' | string
+    value: 'next' | 'back' | 'cancel' | string
 }
