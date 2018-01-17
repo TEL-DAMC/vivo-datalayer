@@ -256,7 +256,11 @@ dataLayer.push({
      * Warning code, if available
      */
     code: string
-  }
+  },
+  /**
+   * The element that diplays the warning, when available
+   */
+  element: HTMLElement
 })
 
 /**
@@ -276,5 +280,9 @@ dataLayer.push({
      * Warning code, if available
      */
     code: string
-  }
+  },
+  /**
+   * The element that diplays the error, when available
+   */
+  element: HTMLElement
 })
