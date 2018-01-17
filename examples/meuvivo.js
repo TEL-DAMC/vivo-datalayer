@@ -174,7 +174,8 @@ dataLayer.push({
     }
   },
   interaction: {
-    name: 'form-submission'
+    name: 'form-submission',
+    value: 'cpf' | 'email' | 'msisdn'
   }
 })
 
