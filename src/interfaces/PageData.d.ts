@@ -19,15 +19,7 @@ export declare interface PageData {
      * e.g.: 'ProductPage', 'SearchResults', 'RegistrationForm'
      */
     'template': string,
-    /**
-     * The name of the feature/journey/funnel in use
-     * e.g.: 'segunda-via-fatura', 'troca-aparelho', 'ouvidoria', 'migracao-controle-giga'
-     */
-    'journey'?: string,
-    /**
-     * The current step of the journey/funnel the user is in
-     */
-    'step'?: number,
+
     'area': 'b2b' | 'b2c' | 'institutional',
     'segment': 'ecommerce' | 'ecare' | 'brand'
 }
