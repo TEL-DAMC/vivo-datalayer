@@ -41,6 +41,41 @@ dataLayer.push({
     }
   },
   user: {
+    info: {
+      /**
+       * The user's CPF (brazilian Natural Persons Register)
+       * https://en.wikipedia.org/wiki/Cadastro_de_Pessoas_F%C3%ADsicas
+       */
+      cpf: string,
+      email: string,
+      /**
+       * The user's phone number in the MSISDN format CC + NDC + SN, where:
+       * CC = Country Code
+       * NDC = National Destination Code
+       * SN = Subscriber Number
+       *
+       * Example: '5511987654321', where '55' is Brazil's Country Code,
+       * '11' is the Destination Code for São Paulo and '987654321' is the user's Subscriber Number
+       *
+       */
+      msisdn: string
+    },
+    location: {
+      /**
+       * The official state code in uppercase.
+       *
+       * Example: 'SP', 'RJ', 'BA'
+       *
+       */
+      state: string,
+      /**
+       * The official city name without any diacritics, i.e. all special characters should be replaced by
+       * their simplified version.
+       *
+       * Example: 'Sao Paulo', 'Sao Joao da Barra', 'Vitoria da Conquista'
+       */
+      city: string
+    },
     loyalty: {
       'category': 'silver' | 'gold' | 'platinum' | 'vivo-v',
       'monthsAsMember': number
