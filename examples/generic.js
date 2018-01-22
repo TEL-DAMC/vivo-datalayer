@@ -363,9 +363,9 @@ window.dataLayer.push({
  * The ecommerce add-to-cart event MUST BE triggered every time one or more products are added to the cart at once.
  *
  */
-window.dataLayer. push( {
+window.dataLayer.push({
     event: 'ecommerce-add-to-cart',
-        ecommerce: {
+    ecommerce: {
         currencyCode: 'BRL',
         add: {
             /**
@@ -391,13 +391,14 @@ window.dataLayer. push( {
         }
     }
 })
+
 /**
  * The ecommerce remove-from-cart event MUST BE triggered every time one or more products are removed the cart at once.
  *
  */
-window.dataLayer. push({
+window.dataLayer.push({
     event: 'ecommerce-remove-from-cart',
-        ecommerce: {
+    ecommerce: {
         currencyCode: 'BRL',
         remove: {
             /**
@@ -419,6 +420,112 @@ window.dataLayer. push({
                     dimensions: object
                 },
                 quantity: number
+            }]
+        }
+    }
+})
+
+/**
+ * The ecommerce checkout step event MUST BE triggered on every checkout step.
+ *
+ */
+window.dataLayer.push({
+    event: 'ecommerce-checkout-step',
+    ecommerce: {
+        currencyCode: 'BRL',
+        checkout: {
+            sctionField: {
+                /**
+                 * The stage of the checkout process in which the user currently is
+                 */
+                step: number,
+                /**
+                 * An optional field that may be requested in the
+                 * website data collection document. It it's not there, just ignore it ;)
+                 */
+                option: string
+            },
+            /**
+             * Here the `products` key is an ARRAY of products.
+             * All keys are described on the website data collection document for each specific website
+             */
+            products: [{
+                name: string,
+                id: string,
+                /**
+                 * Product price must be in the format '00.00', always represented as a string
+                 */
+                price: string,
+                brand: string,
+                category: string,
+                variant: string,
+                custom: {
+                    metrics: object,
+                    dimensions: object
+                },
+                quantity: number
+            }]
+        }
+    }
+})
+
+/**
+ * The ecommerce purchase event MUST BE triggered upon the transaction confirmation.
+ *
+ */
+window.dataLayer.push({
+    event: 'ecommerce-purchase',
+    ecommerce: {
+        purchase: {
+            actionField: {
+                /**
+                 * Transaction ID
+                 */
+                id: string,
+                /**
+                 * Affiliated store or substore
+                 */
+                affiliation: string,
+                /**
+                 * The revenue in the '00.00' format, always as a string
+                 */
+                revenue: string,
+                /**
+                 * The tax in the '00.00' format, always as a string
+                 */
+                tax: string,
+                /**
+                 * The shipping in the '00.00' format, always as a string
+                 */
+                shipping: string,
+                /**
+                 * Optional - coupon code used on the purchase
+                 */
+                coupon: string
+            },
+            /**
+             * Here the `products` key is an ARRAY of products.
+             * All keys are described on the website data collection document for each specific website
+             */
+            products: [{
+                name: string,
+                id: string,
+                /**
+                 * Product price must be in the format '00.00', always represented as a string
+                 */
+                price: string,
+                brand: string,
+                category: string,
+                variant: string,
+                custom: {
+                    metrics: object,
+                    dimensions: object
+                },
+                quantity: number,
+                /**
+                 * Optional - coupon code used on the purchase of this specific product
+                 */
+                coupon: string
             }]
         }
     }

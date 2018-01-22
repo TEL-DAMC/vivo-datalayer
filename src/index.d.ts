@@ -6,7 +6,7 @@ import {UserInputData} from "./interfaces/UserInputData";
 import {FeatureData, FeatureInteractionData} from "./interfaces/FeatureData";
 import {Product, ProductInList, ProductToCart} from "./interfaces/EcommerceData";
 
-declare namespace dataLayer {
+export declare namespace dataLayer {
     /**
      *  Pageview Event
      *  MUST be triggered on EVERY pageload and on EVERY page change, even on single-page applications
@@ -70,7 +70,7 @@ declare namespace dataLayer {
                      */
                     list: string
                 }
-                products: [ProductInList]
+                products: ProductInList[]
             }
         }
     })
@@ -79,7 +79,7 @@ declare namespace dataLayer {
         event: 'ecommerce-product-detail',
         ecommerce: {
             detail: {
-                products: [Product]
+                products: Product[]
             }
         }
     })
@@ -89,7 +89,7 @@ declare namespace dataLayer {
         ecommerce: {
             currencyCode: 'BRL'
             add: {
-                products: [ProductToCart]
+                products: ProductToCart[]
             }
         }
     })
@@ -99,7 +99,56 @@ declare namespace dataLayer {
         ecommerce: {
             currencyCode: 'BRL'
             remove: {
-                products: [ProductToCart]
+                products: ProductToCart[]
+            }
+        }
+    })
+
+    function push(ecommerceCheckoutStep: {
+        event: 'ecommerce-checkout-step',
+        ecommerce: {
+            currencyCode: 'BRL'
+            checkout: {
+                sctionField: {
+                    step: number
+                    option?: string
+                }
+                products: ProductToCart[]
+            }
+        }
+    })
+
+    function push(ecommercePurchase: {
+        event: 'ecommerce-purchase',
+        ecommerce: {
+            purchase: {
+                actionField: {
+                    /**
+                     * Transaction ID
+                     */
+                    id: string
+                    /**
+                     * Affiliated store or substore
+                     */
+                    affiliation?: string
+                    /**
+                     * The revenue in the '00.00' format, always as a string
+                     */
+                    revenue: string
+                    /**
+                     * The tax in the '00.00' format, always as a string
+                     */
+                    tax?: string
+                    /**
+                     * The shipping in the '00.00' format, always as a string
+                     */
+                    shipping?: string
+                    /**
+                     * Optional - coupon code used on the purchase
+                     */
+                    coupon?: string
+                },
+                products: ProductToCart[]
             }
         }
     })
