@@ -211,7 +211,7 @@ window.dataLayer.push({
     event: 'feature-interaction',
     interaction: {
         name: string,
-        value: 'next' | 'back' | 'cancel' | string
+        value: string
     },
     feature: {
         /**
@@ -271,7 +271,7 @@ window.dataLayer.push({
             list: string,
             position: number,
             name: string,
-            'id': string,
+            id: string,
             /**
              * Product price must be in the format '00.00', always represented as a string
              */
@@ -310,7 +310,7 @@ window.dataLayer.push({
                 list: string,
                 position: number,
                 name: string,
-                'id': string,
+                id: string,
                 /**
                  * Product price must be in the format '00.00', always represented as a string
                  */
