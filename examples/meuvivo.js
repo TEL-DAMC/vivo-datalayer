@@ -286,3 +286,533 @@ dataLayer.push({
    */
   element: HTMLElement
 })
+
+/**
+ * FEATURE DE CONSUMO
+ */
+
+/**
+ * Extrato Screen
+ * ON: Page load
+ */
+dataLayer.push({
+  event: 'feature-step',
+  feature: {
+    name: 'statement',
+    type: 'admin',
+    step: {
+      /**
+       * The step's name in a dasherized form.
+       *
+       * Example: 'product-selection', 'address-input', etc.
+       */
+      name: 'statement-home',
+      index: 1,
+      type: 'initial'
+    }
+  }
+})
+
+
+/**
+ * Extrato Screen
+ * ON: After load Lightbox "Extrato Completo Mensal"
+ */
+dataLayer.push({
+  event: 'feature-step',
+  feature: {
+    name: 'statement',
+    type: 'admin',
+    step: {
+      /**
+       * The step's name in a dasherized form.
+       *
+       * Example: 'product-selection', 'address-input', etc.
+       */
+      name: 'select-month',
+      index: 2,
+      type: 'intermediary'
+    }
+  }
+})
+
+/**
+ * Extrato Screen
+ * ON: After user clicks 'Consultar' in lightbox
+ */
+dataLayer.push({
+  event: 'feature-interaction',
+  feature: {
+    name: 'statement',
+    type: 'admin',
+    step: {
+      name: 'select-month',
+      index: 2,
+      type: 'intermediary'
+    }
+  },
+  interaction: {
+    name: 'consult-statement',
+    value: 'complete-statement'
+  }
+})
+/**
+ * Extrato Screen
+ * ON: After load Screen "Extrato Completo Mensal"
+ */
+
+dataLayer.push({
+  event: 'feature-step',
+  feature: {
+    name: 'statement',
+    type: 'admin',
+    step: {
+      /**
+       * The step's name in a dasherized form.
+       *
+       * Example: 'product-selection', 'address-input', etc.
+       */
+      name: 'complete-statement',
+      index: 3,
+      type: 'intermediary'
+    }
+  }
+})
+
+/**
+ * Extrato Screen
+ * ON: After user clicks 'Consultar' in lightbox
+ */
+dataLayer.push({
+  event: 'feature-interaction',
+  feature: {
+    name: 'statement',
+    type: 'admin',
+    step: {
+      name: 'complete-statement',
+      index: 3,
+      type: 'intermediary'
+    }
+  },
+  interaction: {
+    name: 'statement-choose',
+    value: 'to-print'| 'salve-to-pdf' | 'send-by-email'
+  }
+})
+
+/**
+ * Extrato Screen
+ * * ON: After load lightbox to email confirmation
+ */
+
+
+dataLayer.push({
+  event: 'feature-step',
+  feature: {
+    name: 'statement',
+    type: 'admin',
+    step: {
+      /**
+       * The step's name in a dasherized form.
+       *
+       * Example: 'product-selection', 'address-input', etc.
+       */
+      name: 'email-confirmation',
+      index: 4
+      type: 'intermediary'
+    }
+  }
+})
+
+/**
+ * Extrato Screen
+ * ON: After user clicks 'Confirmar' or 'Cancelar' in lightbox to email confirmation
+ */
+dataLayer.push({
+  event: 'feature-interaction',
+  feature: {
+    name: 'statement',
+    type: 'admin',
+    step: {
+      name: 'statement',
+      index: 4,
+      type: 'intermediary'
+    }
+  },
+  interaction: {
+    name: 'email-confirmation',
+    value: 'confirm' | 'cancel'
+  }
+})
+
+/**
+ * Extrato Screen
+ * ON: After user clicks 'Confirmar' or 'Cancelar' in lightbox to email confirmation
+ */
+
+
+dataLayer.push({
+  event: 'feature-step',
+  feature: {
+    name: 'statement',
+    type: 'admin',
+    step: {
+      /**
+       * The step's name in a dasherized form.
+       *
+       * Example: 'product-selection', 'address-input', etc.
+
+       */
+      name: 'email-sending-confirmation',
+      index: 5
+      type: 'intermediary'
+    }
+  }
+})
+
+/**
+ * Extrato Screen
+ * * ON: After uploading the email sending confirmation lightbox
+ */
+dataLayer.push({
+  event: 'feature-interaction',
+  feature: {
+    name: 'statement',
+    type: 'admin',
+    step: {
+      name: 'email-sending-confirmation',
+      index: 5,
+      type: 'intermediary'
+    }
+  },
+  interaction: {
+    name: 'email-confirmation',
+    value: 'confirm' | 'cancel'
+  }
+})
+
+/**
+ * Extrato Screen
+ * ON: After user clicks 'Confirmar' or 'Cancelar' in lightbox to email confirmation
+ */
+
+
+dataLayer.push({
+  event: 'feature-step',
+  feature: {
+    name: 'statement',
+    type: 'admin',
+    step: {
+      /**
+       * The step's name in a dasherized form.
+       *
+       * Example: 'product-selection', 'address-input', etc.
+
+       */
+      name: 'email-sending-confirmation',
+      index: 5
+      type: 'intermediary'
+    }
+  }
+})
+
+/**
+ * Extrato Screen
+ * ON: Success in sending email confirmation
+ */
+dataLayer.push({
+  event: 'feature-step',
+  feature: {
+    name: 'statement',
+    type: 'admin',
+    step: {
+      name: 'email-confirmation-sendig-success',
+      index: 6,
+      type: 'completion',
+      success: true
+    }
+  }
+})
+
+/**
+ * Extrato Screen
+ * ON: Interface warning when user tries to send form incorrectly, when a field is filled incorrectly, etc.
+ */
+dataLayer.push({
+  event: 'interface-message',
+  message: {
+    type: 'warning',
+    /**
+     * Name of the warning.
+     * Please try to consider including the field that showed the error.
+     */
+    name: string,
+    /**
+     * Warning code, if available
+     */
+    code: string
+  },
+  /**
+   * The element that diplays the warning, when available
+   */
+  element: HTMLElement
+})
+
+/**
+ * Extrato Screen
+ * ON: Server errors and unavailabilities
+ */
+dataLayer.push({
+  event: 'interface-message',
+  message: {
+    type: 'error',
+    /**
+     * Name of the warning.
+     * Please try to consider including the field that showed the error.
+     */
+    name: string,
+    /**
+     * Warning code, if available
+     */
+    code: string
+  },
+  /**
+   * The element that diplays the error, when available
+   */
+  element: HTMLElement
+})
+
+
+
+
+---------------------------------------------------
+
+/**
+ * FEATURE DE CONTROLE DE CONSUMO
+ */
+
+
+/**
+ * Controle de Consumo Screen
+ * ON: Page load
+ */
+dataLayer.push({
+  event: 'feature-step',
+  feature: {
+    name: 'consumption-control',
+    type: 'admin',
+    step: {
+      /**
+       * The step's name in a dasherized form.
+       *
+       * Example: 'product-selection', 'address-input', etc.
+       */
+      name: 'consumption-control-home',
+      index: 1,
+      type: 'initial'
+    }
+  }
+})
+
+/**
+ * Controle de Consumo Screen
+ * ON: After user clicks 'Ativar'
+ */
+dataLayer.push({
+  event: 'feature-interaction',
+  feature: {
+    name: 'consumption-control',
+    type: 'admin',
+    step: {
+      name: 'consumption-control-home',
+      index: 1,
+      type: 'initial'
+    }
+  },
+  interaction: {
+    name: 'active-consumption-control',
+    value: 'to-activate'
+  }
+})
+
+
+
+/**
+ * Controle de Consumo Screen
+ * ON: Page load 
+ */
+dataLayer.push({
+  event: 'feature-step',
+  feature: {
+    name: 'consumption-control',
+    type: 'admin',
+    step: {
+      /**
+       * The step's name in a dasherized form.
+       *
+       * Example: 'product-selection', 'address-input', etc.
+       */
+      name: 'consumption-control-confirmation',
+      index: 2,
+      type: 'intermediary'
+    }
+  }
+})
+
+/**
+ * Controle de Consumo Screen
+ * ON: After user clicks 'Ativar'
+ */
+dataLayer.push({
+  event: 'feature-interaction',
+  feature: {
+    name: 'consumption-control',
+    type: 'admin',
+    step: {
+      name: 'consumption-control-confirmation',
+      index: 2,
+      type: 'intermediary'
+    }
+  },
+  interaction: {
+    name: 'consumption-control-confirmation',
+    value: 'confirm'
+  }
+})
+
+
+/**
+ * Controle de Consumo Screen
+ * ON: Success in sending email confirmation
+ */
+dataLayer.push({
+  event: 'feature-step',
+  feature: {
+    name: 'consumption-control',
+    type: 'admin',
+    step: {
+      name: 'consumption-control-confirmation-success',
+      index: 3,
+      type: 'completion',
+      success: true
+    }
+  }
+})
+
+/**
+ * Extrato Screen
+ * ON: Interface warning when user tries to send form incorrectly, when a field is filled incorrectly, etc.
+ */
+dataLayer.push({
+  event: 'interface-message',
+  message: {
+    type: 'warning',
+    /**
+     * Name of the warning.
+     * Please try to consider including the field that showed the error.
+     */
+    name: string,
+    /**
+     * Warning code, if available
+     */
+    code: string
+  },
+  /**
+   * The element that diplays the warning, when available
+   */
+  element: HTMLElement
+})
+
+/**
+ * Extrato Screen
+ * ON: Server errors and unavailabilities
+ */
+dataLayer.push({
+  event: 'interface-message',
+  message: {
+    type: 'error',
+    /**
+     * Name of the warning.
+     * Please try to consider including the field that showed the error.
+     */
+    name: string,
+    /**
+     * Warning code, if available
+     */
+    code: string
+  },
+  /**
+   * The element that diplays the error, when available
+   */
+  element: HTMLElement
+})
+
+
+/** FEATURE DE CONSUMOD DE INTERNET
+*/
+/**
+ * Consumo de Internet Screen
+ * ON: Page load
+ */
+
+dataLayer.push({
+  event: 'feature-step',
+  feature: {
+    name: 'internet-consumption',
+    type: 'admin',
+    step: {
+      /**
+       * The step's name in a dasherized form.
+       *
+       * Example: 'product-selection', 'address-input', etc.
+       */
+      name: 'internet-consumption-admin',
+      index: 1,
+      type: 'initial'
+    }
+  }
+})
+
+
+/**
+ * Consumo de Internet Screen
+ * ON: After user clicks 'Esqueci a senha', 'esqueci email' or 'cadastro'
+ */
+dataLayer.push({
+  event: 'feature-interaction',
+  feature: {
+    name: 'internet-consumption',
+    type: 'admin',
+    step: {
+      name: 'internet-consumption-admin',
+      index: 1,
+      type: 'initial'
+    }
+  },
+  interaction: {
+    name: 'buy-additional-package',
+    value: 'additional-package'
+  }
+})
+
+
+dataLayer.push({
+  event: 'feature-step',
+  feature: {
+    name: 'internet-consumption',
+    type: 'admin',
+    step: {
+      /**
+       * The step's name in a dasherized form.
+       *
+       * Example: 'product-selection', 'address-input', etc.
+       */
+      name: 'internet-consumption-admin',
+      index: 2,
+      type: 'initial'
+    }
+  }
+})
+
+
+------------------------------------------------------------
