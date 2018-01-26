@@ -288,7 +288,7 @@ dataLayer.push({
 })
 
 /**
- * FEATURE DE CONSUMO
+ * FEATURE DE EXTRATO
  */
 
 /**
@@ -306,7 +306,7 @@ dataLayer.push({
        *
        * Example: 'product-selection', 'address-input', etc.
        */
-      name: 'statement-home',
+      name: 'home',
       index: 1,
       type: 'initial'
     }
@@ -352,7 +352,7 @@ dataLayer.push({
     }
   },
   interaction: {
-    name: 'consult-statement',
+    name: 'consult',
     value: 'next' | 'back' | 'cancel' |
   }
 })
@@ -372,7 +372,7 @@ dataLayer.push({
        *
        * Example: 'product-selection', 'address-input', etc.
        */
-      name: 'complete-statement',
+      name: 'complete',
       index: 3,
       type: 'intermediary'
     }
@@ -395,7 +395,7 @@ dataLayer.push({
     }
   },
   interaction: {
-    name: 'statement-choose',
+    name: 'choose-export-action',
     value: 'to-print'| 'salve-to-pdf' | 'send-by-email'
   }
 })
@@ -417,8 +417,8 @@ dataLayer.push({
        *
        * Example: 'product-selection', 'address-input', etc.
        */
-      name: 'email-confirmation',
-      index: 4
+      name: 'send-email',
+      index: 4,
       type: 'intermediary'
     }
   }
@@ -426,7 +426,7 @@ dataLayer.push({
 
 /**
  * Extrato Screen
- * ON: After user clicks 'Confirmar' or 'Cancelar' in lightbox to email confirmation
+ * ON: After user clicks 'Cancelar' or 'Enviar' in lightbox to email confirmation
  */
 dataLayer.push({
   event: 'feature-interaction',
@@ -440,14 +440,14 @@ dataLayer.push({
     }
   },
   interaction: {
-    name: 'email-confirmation',
-    value: 'next' | 'back' | 'cancel' |
+    name: 'send-email',
+    value: 'next' |'cancel' |
   }
 })
 
 /**
  * Extrato Screen
- * ON: After user clicks 'Confirmar' or 'Cancelar' in lightbox to email confirmation
+ * ON: After user clicks 'Enviar' or 'Cancelar' in lightbox to email confirmation
  */
 
 
@@ -463,8 +463,8 @@ dataLayer.push({
        * Example: 'product-selection', 'address-input', etc.
 
        */
-      name: 'email-sending-confirmation',
-      index: 5
+      name: 'confirm-email',
+      index: 5,
       type: 'intermediary'
     }
   }
@@ -480,41 +480,17 @@ dataLayer.push({
     name: 'statement',
     type: 'consumption',
     step: {
-      name: 'email-sending-confirmation',
+      name: 'confirm-email',
       index: 5,
       type: 'intermediary'
     }
   },
   interaction: {
-    name: 'email-confirmation',
-    value: 'next' | 'back' | 'cancel' |
+    name: 'confirm-email',
+    value: 'next' | 'cancel' |
   }
 })
 
-/**
- * Extrato Screen
- * ON: After user clicks 'Confirmar' or 'Cancelar' in lightbox to email confirmation
- */
-
-
-dataLayer.push({
-  event: 'feature-step',
-  feature: {
-    name: 'statement',
-    type: 'consumption',
-    step: {
-      /**
-       * The step's name in a dasherized form.
-       *
-       * Example: 'product-selection', 'address-input', etc.
-
-       */
-      name: 'email-sending-confirmation',
-      index: 5
-      type: 'intermediary'
-    }
-  }
-})
 
 /**
  * Extrato Screen
@@ -526,7 +502,7 @@ dataLayer.push({
     name: 'statement',
     type: 'consumption',
     step: {
-      name: 'email-confirmation-sendig-success',
+      name: 'success',
       index: 6,
       type: 'completion',
       success: true
@@ -607,7 +583,7 @@ dataLayer.push({
        *
        * Example: 'product-selection', 'address-input', etc.
        */
-      name: 'consumption-control-home',
+      name: 'home',
       index: 1,
       type: 'initial'
     }
@@ -624,14 +600,14 @@ dataLayer.push({
     name: 'consumption-control-activation',
     type: 'consumption',
     step: {
-      name: 'consumption-control-home',
+      name: 'home',
       index: 1,
       type: 'initial'
     }
   },
   interaction: {
-    name: 'active-consumption-control',
-    value: 'to-activate'
+    name: 'to-active',
+    value: 'next' | 'cancel' |
   }
 })
 
@@ -653,7 +629,7 @@ dataLayer.push({
        *
        * Example: 'product-selection', 'address-input', etc.
        */
-      name: 'consumption-control-confirmation',
+      name: 'confirm',
       index: 2,
       type: 'intermediary'
     }
@@ -670,14 +646,14 @@ dataLayer.push({
     name: 'consumption-control-activation',
     type: 'consumption',
     step: {
-      name: 'consumption-control-confirmation',
+      name: 'confirm',
       index: 2,
       type: 'intermediary'
     }
   },
   interaction: {
-    name: 'consumption-control-confirmation',
-    value: 'confirm'
+    name: 'confirm',
+    value: 'next' | 'cancel'
   }
 })
 
@@ -692,7 +668,7 @@ dataLayer.push({
     name: 'consumption-control-activation',
     type: 'consumption',
     step: {
-      name: 'consumption-control-confirmation-success',
+      name: 'success',
       index: 3,
       type: 'completion',
       success: true
@@ -769,7 +745,7 @@ dataLayer.push({
        *
        * Example: 'product-selection', 'address-input', etc.
        */
-      name: 'consumption-control-home',
+      name: 'home',
       index: 1,
       type: 'initial'
     }
@@ -786,14 +762,14 @@ dataLayer.push({
     name: 'consumption-control-deactivation',
     type: 'consumption',
     step: {
-      name: 'consumption-control-home',
+      name: 'home',
       index: 1,
       type: 'initial'
     }
   },
   interaction: {
-    name: 'disable-consumption-control',
-    value: 'disable'
+    name: 'to-disable',
+    value: 'next'|'cancel'
   }
 })
 
@@ -815,7 +791,7 @@ dataLayer.push({
        *
        * Example: 'product-selection', 'address-input', etc.
        */
-      name: 'consumption-control-confirmation',
+      name: 'confirm',
       index: 2,
       type: 'intermediary'
     }
@@ -832,14 +808,14 @@ dataLayer.push({
     name: 'consumption-control-deactivation',
     type: 'consumption',
     step: {
-      name: 'consumption-control-confirmation',
+      name: 'confirm',
       index: 2,
       type: 'intermediary'
     }
   },
   interaction: {
-    name: 'consumption-control-confirmation',
-    value: 'confirm' | 'cancel'
+    name: 'confirm',
+    value: 'next' | 'cancel'
   }
 })
 
@@ -854,7 +830,7 @@ dataLayer.push({
     name: 'consumption-control-deactivation',
     type: 'consumption',
     step: {
-      name: 'consumption-control-confirmation-success',
+      name: 'success',
       index: 3,
       type: 'completion',
       success: true
@@ -930,7 +906,7 @@ dataLayer.push({
        *
        * Example: 'product-selection', 'address-input', etc.
        */
-      name: 'detailing-email-consumption-home',
+      name: 'home',
       index: 1,
       type: 'initial'
     }
@@ -948,14 +924,14 @@ dataLayer.push({
     name: 'detailing-email-consumption-activation',
     type: 'consumption',
     step: {
-      name: 'detailing-email-consumption-home',
+      name: 'home',
       index: 1,
       type: 'initial'
     }
   },
   interaction: {
-    name: 'detailing-email-consumption-confirmation',
-    value: 'confirm' | 'cancel'
+    name: 'confirm',
+    value: 'next' | 'cancel'
   }
 })
 
@@ -975,7 +951,7 @@ dataLayer.push({
        *
        * Example: 'product-selection', 'address-input', etc.
        */
-      name: 'detailing-email-consumption-select-data',
+      name: 'select-data',
       index: 2,
       type: 'intermediary'
     }
@@ -993,13 +969,13 @@ dataLayer.push({
     name: 'detailing-email-consumption-activation',
     type: 'consumption',
     step: {
-      name: 'detailing-email-consumption-home',
+      name: 'home',
       index: 2,
       type: 'intermediary'
     }
   },
   interaction: {
-    name: 'detailing-email-consumption-confirmation',
+    name: 'confirm',
     value: 'confirm' | 'cancel'
   }
 })
@@ -1014,7 +990,7 @@ dataLayer.push({
     name: 'detailing-email-consumption-activation',
     type: 'consumption',
     step: {
-      name: 'detailing-email-consumption-confirmation-success',
+      name: 'success',
       index: 3,
       type: 'completion',
       success: true
@@ -1090,7 +1066,7 @@ dataLayer.push({
        *
        * Example: 'product-selection', 'address-input', etc.
        */
-      name: 'detailing-email-consumption-home',
+      name: 'home',
       index: 1,
       type: 'initial'
     }
@@ -1100,7 +1076,7 @@ dataLayer.push({
 
 /**
  * Detalhamento de Consumo por e-mail Screen
- * ON: After user clicks 'Confirmar'
+ * ON: After user clicks 'Desativar' ou 'Alterar'
  */
 dataLayer.push({
   event: 'feature-interaction',
@@ -1108,14 +1084,14 @@ dataLayer.push({
     name: 'detailing-email-consumption-deactivation',
     type: 'consumption',
     step: {
-      name: 'detailing-email-consumption-home',
+      name: 'home',
       index: 1,
       type: 'initial'
     }
   },
   interaction: {
-    name: 'detailing-email-consumption-details',
-    value: 'deactivation'|'change'
+    name: 'options',
+    value: 'disable'|'change'
   }
 })
 
@@ -1135,7 +1111,7 @@ dataLayer.push({
        *
        * Example: 'product-selection', 'address-input', etc.
        */
-      name: 'detailing-email-consumption-select-data',
+      name: 'confirm',
       index: 2,
       type: 'intermediary'
     }
@@ -1150,17 +1126,17 @@ dataLayer.push({
 dataLayer.push({
   event: 'feature-interaction',
   feature: {
-    name: 'detailing-email-consumption-activation',
+    name: 'detailing-email-consumption-deactivation',
     type: 'consumption',
     step: {
-      name: 'detailing-email-consumption-home',
+      name: 'confirm',
       index: 2,
       type: 'intermediary'
     }
   },
   interaction: {
-    name: 'detailing-email-consumption-confirmation',
-    value: 'confirm' | 'cancel'
+    name: 'confirm',
+    value: 'next' | 'cancel'
   }
 })
 
@@ -1171,10 +1147,10 @@ dataLayer.push({
 dataLayer.push({
   event: 'feature-step',
   feature: {
-    name: 'detailing-email-consumption-activation',
+    name: 'detailing-email-consumption-deactivation',
     type: 'consumption',
     step: {
-      name: 'detailing-email-consumption-confirmation-success',
+      name: 'success',
       index: 3,
       type: 'completion',
       success: true
@@ -1231,20 +1207,17 @@ dataLayer.push({
 })
 
 
-
-
----------------------------------------------------------
-/** FEATURE DE CONSUMO DE INTERNET
+--------------------------------------------------------
+/** FEATURE DE LANÇAMENTOS FUTUROS
 */
-  /**
- * Consumo de Internet Screen
+/**
+ * Lançamentos Futuros Screen
  * ON: Page load
  */
-
 dataLayer.push({
   event: 'feature-step',
   feature: {
-    name: 'internet-consumption',
+    name: 'schedules',
     type: 'consumption',
     step: {
       /**
@@ -1252,40 +1225,43 @@ dataLayer.push({
        *
        * Example: 'product-selection', 'address-input', etc.
        */
-      name: 'internet-consumption-admin',
+      name: 'home',
       index: 1,
       type: 'initial'
     }
   }
 })
 
-
 /**
- * Consumo de Internet Screen
- * ON: After user clicks 'Esqueci a senha', 'esqueci email' or 'cadastro'
+ * Lançamentos Futuros Screen
+ * ON: After user clicks 'Consultar' in lightbox
  */
 dataLayer.push({
   event: 'feature-interaction',
   feature: {
-    name: 'internet-consumption',
+    name: 'schedules',
     type: 'consumption',
     step: {
-      name: 'internet-consumption-admin',
+      name: 'select-month',
       index: 1,
-      type: 'initial'
+      type: 'intermediary'
     }
   },
   interaction: {
-    name: 'buy-additional-package',
-    value: 'additional-package'
+    name: 'consult',
+    value: 'next' | 'back' | 'cancel' |
   }
 })
 
 
+/**
+ * Lançamentos Futuros Screen
+ * ON: Page load
+ */
 dataLayer.push({
   event: 'feature-step',
   feature: {
-    name: 'internet-consumption',
+    name: 'schedules',
     type: 'consumption',
     step: {
       /**
@@ -1293,37 +1269,481 @@ dataLayer.push({
        *
        * Example: 'product-selection', 'address-input', etc.
        */
-      name: 'internet-consumption-admin',
+      name: 'home',
       index: 2,
-      type: 'initial'
+      type: 'intermediary'
     }
   }
 })
-/** FEATURE DE CONSUMO DE INTERNET
-*/
+
+
 /**
- * Consumo de Internet Screen
- * ON: Page load
+ * Lançamentos Futuros Screen
+ * ON: After load Lightbox "Extrato Completo Mensal"
+ */
+dataLayer.push({
+  event: 'feature-step',
+  feature: {
+    name: 'schedules',
+    type: 'consumption',
+    step: {
+      /**
+       * The step's name in a dasherized form.
+       *
+       * Example: 'product-selection', 'address-input', etc.
+       */
+      name: 'select-month',
+      index: 3,
+      type: 'intermediary'
+    }
+  }
+})
+
+/**
+ * Lançamentos Futuros Screen
+ * ON: After user clicks 'Consultar' in lightbox
+ */
+dataLayer.push({
+  event: 'feature-interaction',
+  feature: {
+    name: 'schedules',
+    type: 'consumption',
+    step: {
+      name: 'select-month',
+      index: 3,
+      type: 'intermediary'
+    }
+  },
+  interaction: {
+    name: 'consult',
+    value: 'next' | 'back' | 'cancel' |
+  }
+})
+/**
+ * Lançamentos Futuros Screen
+ * ON: After load Screen "Extrato Completo Mensal"
  */
 
 dataLayer.push({
   event: 'feature-step',
   feature: {
-    name: 'internet-consumption',
-    type: 'admin',
+    name: 'schedules',
+    type: 'consumption',
     step: {
       /**
        * The step's name in a dasherized form.
        *
        * Example: 'product-selection', 'address-input', etc.
        */
-      name: 'internet-consumption-admin',
+      name: 'complete',
+      index: 4,
+      type: 'intermediary'
+    }
+  }
+})
+
+/**
+ * Lançamentos Futuros Screen
+ * ON: After user clicks 'Consultar' in lightbox
+ */
+dataLayer.push({
+  event: 'feature-interaction',
+  feature: {
+    name: 'schedules',
+    type: 'consumption',
+    step: {
+      name: 'complete-statement',
+      index: 4,
+      type: 'intermediary'
+    }
+  },
+  interaction: {
+    name: 'choose-export-action',
+    value: 'to-print'| 'salve-to-pdf' | 'send-by-email'
+  }
+})
+
+/**
+ * Lançamentos Futuros Screen
+ * * ON: After load lightbox to email confirmation
+ */
+
+
+dataLayer.push({
+  event: 'feature-step',
+  feature: {
+    name: 'schedules',
+    type: 'consumption',
+    step: {
+      /**
+       * The step's name in a dasherized form.
+       *
+       * Example: 'product-selection', 'address-input', etc.
+       */
+      name: 'send-email',
+      index: 5,
+      type: 'intermediary'
+    }
+  }
+})
+
+/**
+ * Lançamentos Futuros Screen
+ * ON: After user clicks 'Cancelar' or 'Enviar' in lightbox to email confirmation
+ */
+dataLayer.push({
+  event: 'feature-interaction',
+  feature: {
+    name: 'schedules',
+    type: 'consumption',
+    step: {
+      name: 'statement',
+      index: 5,
+      type: 'intermediary'
+    }
+  },
+  interaction: {
+    name: 'send-email',
+    value: 'next' |'cancel' |
+  }
+})
+
+/**
+ * Lançamentos Futuros Screen
+ * ON: After user clicks 'Enviar' or 'Cancelar' in lightbox to email confirmation
+ */
+
+
+dataLayer.push({
+  event: 'feature-step',
+  feature: {
+    name: 'schedules',
+    type: 'consumption',
+    step: {
+      /**
+       * The step's name in a dasherized form.
+       *
+       * Example: 'product-selection', 'address-input', etc.
+
+       */
+      name: 'confirm-email',
+      index: 6,
+      type: 'intermediary'
+    }
+  }
+})
+
+/**
+ * Lançamentos Futuros Screen
+ * * ON: After uploading the email sending confirmation lightbox
+ */
+dataLayer.push({
+  event: 'feature-interaction',
+  feature: {
+    name: 'schedules',
+    type: 'consumption',
+    step: {
+      name: 'confirm-email',
+      index: 6,
+      type: 'intermediary'
+    }
+  },
+  interaction: {
+    name: 'confirm-email',
+    value: 'next' | 'cancel' |
+  }
+})
+
+
+/**
+ * Lançamentos Futuros Screen
+ * ON: Success in sending email confirmation
+ */
+dataLayer.push({
+  event: 'feature-step',
+  feature: {
+    name: 'schedules',
+    type: 'consumption',
+    step: {
+      name: 'success',
+      index: 7,
+      type: 'completion',
+      success: true
+    }
+  }
+})
+
+/**
+ * Lançamentos Futuros Screen
+ * ON: Interface warning when user tries to send form incorrectly, when a field is filled incorrectly, etc.
+ */
+dataLayer.push({
+  event: 'interface-message',
+  message: {
+    type: 'warning',
+    /**
+     * Name of the warning.
+     * Please try to consider including the field that showed the error.
+     */
+    name: string,
+    /**
+     * Warning code, if available
+     */
+    code: string
+  },
+  /**
+   * The element that diplays the warning, when available
+   */
+  element: HTMLElement
+})
+
+/**
+ * Lançamentos Futuros Screen
+ * ON: Server errors and unavailabilities
+ */
+dataLayer.push({
+  event: 'interface-message',
+  message: {
+    type: 'error',
+    /**
+     * Name of the warning.
+     * Please try to consider including the field that showed the error.
+     */
+    name: string,
+    /**
+     * Warning code, if available
+     */
+    code: string
+  },
+  /**
+   * The element that diplays the error, when available
+   */
+  element: HTMLElement
+})
+
+------------------------------------------------------------
+/** FEATURE DE MEU CONSUMO 
+*/
+/**
+ * Meu Consumo Screen
+ * ON: Page load
+ */
+dataLayer.push({
+  event: 'feature-step',
+  feature: {
+    name: 'my-consumption',
+    type: 'my-consumption',
+    step: {
+      /**
+       * The step's name in a dasherized form.
+       *
+       * Example: 'product-selection', 'address-input', etc.
+       */
+      name: 'home',
       index: 1,
       type: 'initial'
     }
   }
 })
 
+/**
+ * Meu Consumo Screen
+ * ON: After user clicks 'Consultar' in lightbox
+ */
+dataLayer.push({
+  event: 'feature-interaction',
+  feature: {
+    name: 'my-consumption',
+    type: 'my-consumption',
+    step: {
+      name: 'select-month',
+      index: 1,
+      type: 'intermediary'
+    }
+  },
+  interaction: {
+    name: 'consult',
+    value: 'next' | 'back' | 'cancel' |
+  }
+})
 
 
-------------------------------------------------------------
+/**
+ * Meu Consumo Screen
+ * ON: Page load
+ */
+dataLayer.push({
+  event: 'feature-step',
+  feature: {
+    name: 'my-consumption',
+    type: 'my-consumption',
+    step: {
+      /**
+       * The step's name in a dasherized form.
+       *
+       * Example: 'product-selection', 'address-input', etc.
+       */
+      name: 'home',
+      index: 2,
+      type: 'intermediary'
+    }
+  }
+})
+
+
+/**
+ * Meu Consumo Screen
+ * ON: After load Lightbox "Extrato Completo Mensal"
+ */
+dataLayer.push({
+  event: 'feature-step',
+  feature: {
+    name: 'my-consumption',
+    type: 'my-consumption',
+    step: {
+      /**
+       * The step's name in a dasherized form.
+       *
+       * Example: 'product-selection', 'address-input', etc.
+       */
+      name: 'select-month',
+      index: 3,
+      type: 'intermediary'
+    }
+  }
+})
+
+/**
+ * Meu Consumo Screen
+ * ON: After user clicks 'Consultar' in lightbox
+ */
+dataLayer.push({
+  event: 'feature-interaction',
+  feature: {
+    name: 'my-consumption',
+    type: 'my-consumption',
+    step: {
+      name: 'select-month',
+      index: 3,
+      type: 'intermediary'
+    }
+  },
+  interaction: {
+    name: 'consult',
+    value: 'next' | 'back' | 'cancel' |
+  }
+})
+
+/**
+ * Meu Consumo Screen
+ * ON: After user clicks 'Enviar' or 'Cancelar' in lightbox to email confirmation
+ */
+
+
+dataLayer.push({
+  event: 'feature-step',
+  feature: {
+    name: 'my-consumption',
+    type: 'my-consumption',
+    step: {
+      /**
+       * The step's name in a dasherized form.
+       *
+       * Example: 'product-selection', 'address-input', etc.
+
+       */
+      name: 'confirm-email',
+      index: 6,
+      type: 'intermediary'
+    }
+  }
+})
+
+/**
+ * Meu Consumo Screen
+ * * ON: After uploading the email sending confirmation lightbox
+ */
+dataLayer.push({
+  event: 'feature-interaction',
+  feature: {
+    name: 'my-consumption',
+    type: 'my-consumption',
+    step: {
+      name: 'confirm-email',
+      index: 6,
+      type: 'intermediary'
+    }
+  },
+  interaction: {
+    name: 'confirm-email',
+    value: 'next' | 'cancel' |
+  }
+})
+
+
+/**
+ * Meu Consumo Screen
+ * ON: Success in sending email confirmation
+ */
+dataLayer.push({
+  event: 'feature-step',
+  feature: {
+    name: 'schedules',
+    type: 'consumption',
+    step: {
+      name: 'success',
+      index: 7,
+      type: 'completion',
+      success: true
+    }
+  }
+})
+
+/**
+ * Meu Consumo Screen
+ * ON: Interface warning when user tries to send form incorrectly, when a field is filled incorrectly, etc.
+ */
+dataLayer.push({
+  event: 'interface-message',
+  message: {
+    type: 'warning',
+    /**
+     * Name of the warning.
+     * Please try to consider including the field that showed the error.
+     */
+    name: string,
+    /**
+     * Warning code, if available
+     */
+    code: string
+  },
+  /**
+   * The element that diplays the warning, when available
+   */
+  element: HTMLElement
+})
+
+/**
+ * Meu Consumo Screen
+ * ON: Server errors and unavailabilities
+ */
+dataLayer.push({
+  event: 'interface-message',
+  message: {
+    type: 'error',
+    /**
+     * Name of the warning.
+     * Please try to consider including the field that showed the error.
+     */
+    name: string,
+    /**
+     * Warning code, if available
+     */
+    code: string
+  },
+  /**
+   * The element that diplays the error, when available
+   */
+  element: HTMLElement
+})
+
