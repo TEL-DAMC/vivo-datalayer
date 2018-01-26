@@ -2131,7 +2131,7 @@ dataLayer.push({
 dataLayer.push({
   event: 'feature-step',
   feature: {
-    name: 'automatic-debit',
+    name: 'direct-debt',
     type: 'bills',
     step: {
       /**
@@ -2154,7 +2154,7 @@ dataLayer.push({
 dataLayer.push({
   event: 'feature-interaction',
   feature: {
-    name: 'automatic-debit',
+    name: 'direct-debt',
     type: 'bills',
     step: {
       name: 'home-select-bank',
@@ -2175,7 +2175,7 @@ dataLayer.push({
 dataLayer.push({
   event: 'feature-step',
   feature: {
-    name: 'automatic-debit',
+    name: 'direct-debt',
     type: 'bills',
     step: {
       name: 'success',
@@ -2246,7 +2246,7 @@ dataLayer.push({
 dataLayer.push({
   event: 'feature-step',
   feature: {
-    name: 'automatic-debit',
+    name: 'direct-debt',
     type: 'bills',
     step: {
       /**
@@ -2269,7 +2269,7 @@ dataLayer.push({
 dataLayer.push({
   event: 'feature-interaction',
   feature: {
-    name: 'automatic-debit',
+    name: 'direct-debt',
     type: 'bills',
     step: {
       name: 'home',
@@ -2291,7 +2291,7 @@ dataLayer.push({
 dataLayer.push({
   event: 'feature-step',
   feature: {
-    name: 'automatic-debit',
+    name: 'direct-debt',
     type: 'bills',
     step: {
       /**
@@ -2314,7 +2314,7 @@ dataLayer.push({
 dataLayer.push({
   event: 'feature-interaction',
   feature: {
-    name: 'automatic-debit',
+    name: 'adress-change',
     type: 'bills',
     step: {
       name: 'to-disable',
@@ -2336,7 +2336,7 @@ dataLayer.push({
 dataLayer.push({
   event: 'feature-step',
   feature: {
-    name: 'automatic-debit',
+    name: 'direct-debt',
     type: 'bills',
     step: {
       name: 'success',
