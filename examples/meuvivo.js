@@ -607,7 +607,7 @@ dataLayer.push({
   },
   interaction: {
     name: 'to-active',
-    value: 'next' | 'cancel' |
+    value: 'next' | 'cancel'
   }
 })
 
@@ -1653,7 +1653,7 @@ dataLayer.push({
 
        */
       name: 'confirm-email',
-      index: 6,
+      index: 4,
       type: 'intermediary'
     }
   }
@@ -1670,7 +1670,7 @@ dataLayer.push({
     type: 'my-consumption',
     step: {
       name: 'confirm-email',
-      index: 6,
+      index: 4,
       type: 'intermediary'
     }
   },
@@ -1692,7 +1692,7 @@ dataLayer.push({
     type: 'consumption',
     step: {
       name: 'success',
-      index: 7,
+      index: 5,
       type: 'completion',
       success: true
     }
@@ -1746,4 +1746,1069 @@ dataLayer.push({
    */
   element: HTMLElement
 })
+---------------------------------------------------------
+---------------------------------------------------------
+---------------------------------------------------------
+
+/** FEATURE DE CONTAS - CONTA DIGITAL -JORNADA DE ATIVAÇAO
+*/
+  /**
+ * Conta Digital Screen
+ * ON: Page load
+ */
+
+dataLayer.push({
+  event: 'feature-step',
+  feature: {
+    name: 'digital-bill',
+    type: 'bills',
+    step: {
+      /**
+       * The step's name in a dasherized form.
+       *
+       * Example: 'product-selection', 'address-input', etc.
+       */
+      name: 'home',
+      index: 1,
+      type: 'initial'
+    }
+  }
+})
+
+
+/**
+ * Conta Digital Screen
+ * ON: After user clicks 'Ativar Conta Digital'
+ */
+dataLayer.push({
+  event: 'feature-interaction',
+  feature: {
+    name: 'digital-bill',
+    type: 'bills',
+    step: {
+      name: 'home',
+      index: 1,
+      type: 'initial'
+    }
+  },
+  interaction: {
+    name: 'to-active',
+    value: 'next'
+  }
+})
+
+  /**
+ * Conta Digital Screen
+ * ON: Page load in e-mail confirmation
+ */
+
+dataLayer.push({
+  event: 'feature-step',
+  feature: {
+    name: 'digital-bill',
+    type: 'bills',
+    step: {
+      /**
+       * The step's name in a dasherized form.
+       *
+       * Example: 'product-selection', 'address-input', etc.
+       */
+      name: 'confirm-email',
+      index: 2,
+      type: 'intermediary'
+    }
+  }
+})
+
+
+/**
+ * Conta Digital Screen
+ * ON: After user clicks 'Confirmar'
+ */
+dataLayer.push({
+  event: 'feature-interaction',
+  feature: {
+    name: 'digital-bill',
+    type: 'bills',
+    step: {
+      name: 'home',
+      index: 2,
+      type: 'intermediary'
+    }
+  },
+  interaction: {
+    name: 'confirm-email',
+    value: 'confirm' | 'cancel'
+  }
+})
+
+
+
+/**
+ * Conta Digital Screen
+ * ON: Success in sending email confirmation
+ */
+dataLayer.push({
+  event: 'feature-step',
+  feature: {
+    name: 'digital-bill',
+    type: 'bills',
+    step: {
+      name: 'success',
+      index: 3,
+      type: 'completion',
+      success: true
+    }
+  }
+})
+
+/**
+ * Conta Digital Screen
+ * ON: Interface warning when user tries to send form incorrectly, when a field is filled incorrectly, etc.
+ */
+dataLayer.push({
+  event: 'interface-message',
+  message: {
+    type: 'warning',
+    /**
+     * Name of the warning.
+     * Please try to consider including the field that showed the error.
+     */
+    name: string,
+    /**
+     * Warning code, if available
+     */
+    code: string
+  },
+  /**
+   * The element that diplays the warning, when available
+   */
+  element: HTMLElement
+})
+
+/**
+ * Conta Digital Screen
+ * ON: Server errors and unavailabilities
+ */
+dataLayer.push({
+  event: 'interface-message',
+  message: {
+    type: 'error',
+    /**
+     * Name of the warning.
+     * Please try to consider including the field that showed the error.
+     */
+    name: string,
+    /**
+     * Warning code, if available
+     */
+    code: string
+  },
+  /**
+   * The element that diplays the error, when available
+   */
+  element: HTMLElement
+})
+
+-------------------------------------------------------------------------------------
+
+/** FEATURE DE DETALHAMENTO DE DÉBITO AUTOMÁTICO - JORNADA DE DESATIVAÇAO
+*/
+  /**
+ * Conta Digital Screen
+ * ON: Page load
+ */
+
+dataLayer.push({
+  event: 'feature-step',
+  feature: {
+    name: 'digital-bill',
+    type: 'bills',
+    step: {
+      /**
+       * The step's name in a dasherized form.
+       *
+       * Example: 'product-selection', 'address-input', etc.
+       */
+      name: 'home',
+      index: 1,
+      type: 'initial'
+    }
+  }
+})
+
+
+/**
+ * Conta Digital Screen
+ * ON: After user clicks 'Desativar' ou 'Alterar'
+ */
+dataLayer.push({
+  event: 'feature-interaction',
+  feature: {
+    name: 'digital-bill',
+    type: 'bills',
+    step: {
+      name: 'home',
+      index: 1,
+      type: 'initial'
+    }
+  },
+  interaction: {
+    name: 'options',
+    value: 'disable'|'change'
+  }
+})
+
+  /**
+ * Conta Digital Screen
+ * ON: Page load
+ */
+
+dataLayer.push({
+  event: 'feature-step',
+  feature: {
+    name: 'digital-bill',
+    type: 'bills',
+    step: {
+      /**
+       * The step's name in a dasherized form.
+       *
+       * Example: 'product-selection', 'address-input', etc.
+       */
+      name: 'to-disable',
+      index: 2,
+      type: 'intermediary'
+    }
+  }
+})
+
+
+/**
+ * Conta Digital Screen
+ * ON: After user clicks 'Confirmar'
+ */
+dataLayer.push({
+  event: 'feature-interaction',
+  feature: {
+    name: 'digital-bill',
+    type: 'bills',
+    step: {
+      name: 'to-disable',
+      index: 2,
+      type: 'intermediary'
+    }
+  },
+  interaction: {
+    name: 'to-disable',
+    value: 'next' | 'cancel'
+  }
+})
+
+  /**
+ * Conta Digital Screen
+ * ON: Page load
+ */
+
+dataLayer.push({
+  event: 'feature-step',
+  feature: {
+    name: 'digital-bill',
+    type: 'bills',
+    step: {
+      /**
+       * The step's name in a dasherized form.
+       *
+       * Example: 'product-selection', 'address-input', etc.
+       */
+      name: 'confirm',
+      index: 3,
+      type: 'intermediary'
+    }
+  }
+})
+
+
+/**
+ * Conta Digital Screen
+ * ON: After user clicks 'Confirmar'
+ */
+dataLayer.push({
+  event: 'feature-interaction',
+  feature: {
+    name: 'digital-bill',
+    type: 'bills',
+    step: {
+      name: 'confirm',
+      index: 3,
+      type: 'intermediary'
+    }
+  },
+  interaction: {
+    name: 'confirm',
+    value: 'next' | 'cancel'
+  }
+})
+
+
+/**
+ * Conta Digital Screen
+ * ON: Success in sending email confirmation
+ */
+dataLayer.push({
+  event: 'feature-step',
+  feature: {
+    name: 'digital-bill',
+    type: 'bills',
+    step: {
+      name: 'success',
+      index: 4,
+      type: 'completion',
+      success: true
+    }
+  }
+})
+
+/**
+ * Conta Digital Screen
+ * ON: Interface warning when user tries to send form incorrectly, when a field is filled incorrectly, etc.
+ */
+dataLayer.push({
+  event: 'interface-message',
+  message: {
+    type: 'warning',
+    /**
+     * Name of the warning.
+     * Please try to consider including the field that showed the error.
+     */
+    name: string,
+    /**
+     * Warning code, if available
+     */
+    code: string
+  },
+  /**
+   * The element that diplays the warning, when available
+   */
+  element: HTMLElement
+})
+
+/**
+ * Conta Digital Screen
+ * ON: Server errors and unavailabilities
+ */
+dataLayer.push({
+  event: 'interface-message',
+  message: {
+    type: 'error',
+    /**
+     * Name of the warning.
+     * Please try to consider including the field that showed the error.
+     */
+    name: string,
+    /**
+     * Warning code, if available
+     */
+    code: string
+  },
+  /**
+   * The element that diplays the error, when available
+   */
+  element: HTMLElement
+})
+
+
+--------------------------------------------------------
+---------------------------------------------------------
+---------------------------------------------------------
+
+/** FEATURE DE CONTAS - DÉBITO AUTOMÁTICO -JORNADA DE ATIVAÇAO
+*/
+  /**
+ * Débito Automático Screen
+ * ON: Page load
+ */
+
+dataLayer.push({
+  event: 'feature-step',
+  feature: {
+    name: 'automatic-debit',
+    type: 'bills',
+    step: {
+      /**
+       * The step's name in a dasherized form.
+       *
+       * Example: 'product-selection', 'address-input', etc.
+       */
+      name: 'home-select-bank',
+      index: 1,
+      type: 'initial'
+    }
+  }
+})
+
+
+/**
+ * Débito Automático Screen
+ * ON: After user clicks 'Ativar Conta Digital'
+ */
+dataLayer.push({
+  event: 'feature-interaction',
+  feature: {
+    name: 'automatic-debit',
+    type: 'bills',
+    step: {
+      name: 'home-select-bank',
+      index: 1,
+      type: 'initial'
+    }
+  },
+  interaction: {
+    name: 'to-active',
+    value: 'next'
+  }
+})
+
+/**
+ * Débito Automático Screen
+ * ON: Success in sending email confirmation
+ */
+dataLayer.push({
+  event: 'feature-step',
+  feature: {
+    name: 'automatic-debit',
+    type: 'bills',
+    step: {
+      name: 'success',
+      index: 2,
+      type: 'completion',
+      success: true
+    }
+  }
+})
+
+/**
+ * Débito Automático Screen
+ * ON: Interface warning when user tries to send form incorrectly, when a field is filled incorrectly, etc.
+ */
+dataLayer.push({
+  event: 'interface-message',
+  message: {
+    type: 'warning',
+    /**
+     * Name of the warning.
+     * Please try to consider including the field that showed the error.
+     */
+    name: string,
+    /**
+     * Warning code, if available
+     */
+    code: string
+  },
+  /**
+   * The element that diplays the warning, when available
+   */
+  element: HTMLElement
+})
+
+/**
+ * Débito Automático Screen
+ * ON: Server errors and unavailabilities
+ */
+dataLayer.push({
+  event: 'interface-message',
+  message: {
+    type: 'error',
+    /**
+     * Name of the warning.
+     * Please try to consider including the field that showed the error.
+     */
+    name: string,
+    /**
+     * Warning code, if available
+     */
+    code: string
+  },
+  /**
+   * The element that diplays the error, when available
+   */
+  element: HTMLElement
+})
+
+-------------------------------------------------------------------------------------
+
+/** FEATURE DE DETALHAMENTO DÉBITO AUTOMÁTICO - JORNADA DE DESATIVAÇAO
+*/
+  /**
+ * Débito Automático Screen
+ * ON: Page load
+ */
+
+dataLayer.push({
+  event: 'feature-step',
+  feature: {
+    name: 'automatic-debit',
+    type: 'bills',
+    step: {
+      /**
+       * The step's name in a dasherized form.
+       *
+       * Example: 'product-selection', 'address-input', etc.
+       */
+      name: 'home',
+      index: 1,
+      type: 'initial'
+    }
+  }
+})
+
+
+/**
+ * Débito Automático Screen
+ * ON: After user clicks 'Desativar débito automático'
+ */
+dataLayer.push({
+  event: 'feature-interaction',
+  feature: {
+    name: 'automatic-debit',
+    type: 'bills',
+    step: {
+      name: 'home',
+      index: 1,
+      type: 'initial'
+    }
+  },
+  interaction: {
+    name: 'disable',
+    value: 'next'
+  }
+})
+
+  /**
+ * Débito Automático Screen
+ * ON: Load lightbox automatic debit deactivation page
+ */
+
+dataLayer.push({
+  event: 'feature-step',
+  feature: {
+    name: 'automatic-debit',
+    type: 'bills',
+    step: {
+      /**
+       * The step's name in a dasherized form.
+       *
+       * Example: 'product-selection', 'address-input', etc.
+       */
+      name: 'to-disable',
+      index: 2,
+      type: 'intermediary'
+    }
+  }
+})
+
+
+/**
+ * Débito Automático Screen
+ * ON: After user clicks 'Confirmar'
+ */
+dataLayer.push({
+  event: 'feature-interaction',
+  feature: {
+    name: 'automatic-debit',
+    type: 'bills',
+    step: {
+      name: 'to-disable',
+      index: 2,
+      type: 'intermediary'
+    }
+  },
+  interaction: {
+    name: 'to-disable',
+    value: 'next' | 'cancel'
+  }
+})
+
+
+/**
+ * Débito Automático Screen
+ * ON: Success in sending email confirmation
+ */
+dataLayer.push({
+  event: 'feature-step',
+  feature: {
+    name: 'automatic-debit',
+    type: 'bills',
+    step: {
+      name: 'success',
+      index: 4,
+      type: 'completion',
+      success: true
+    }
+  }
+})
+
+/**
+ * Débito Automático Screen
+ * ON: Interface warning when user tries to send form incorrectly, when a field is filled incorrectly, etc.
+ */
+dataLayer.push({
+  event: 'interface-message',
+  message: {
+    type: 'warning',
+    /**
+     * Name of the warning.
+     * Please try to consider including the field that showed the error.
+     */
+    name: string,
+    /**
+     * Warning code, if available
+     */
+    code: string
+  },
+  /**
+   * The element that diplays the warning, when available
+   */
+  element: HTMLElement
+})
+
+/**
+ * Débito Automático Screen
+ * ON: Server errors and unavailabilities
+ */
+dataLayer.push({
+  event: 'interface-message',
+  message: {
+    type: 'error',
+    /**
+     * Name of the warning.
+     * Please try to consider including the field that showed the error.
+     */
+    name: string,
+    /**
+     * Warning code, if available
+     */
+    code: string
+  },
+  /**
+   * The element that diplays the error, when available
+   */
+  element: HTMLElement
+})
+
+
+--------------------------------------------------------
+
+/** FEATURE DE CONTAS - SEGUNDA VIA DE CONTAS - JORNADA DE ATIVAÇAO
+*/
+  /**
+ * 2° Via de Contas Screen -  PEDIR PRA CAROL INSERIR
+ * ON: Page load
+ */
+
+dataLayer.push({
+  event: 'feature-step',
+  feature: {
+    name: 'duplicate-bill',
+    type: 'bills',
+    step: {
+      /**
+       * The step's name in a dasherized form.
+       *
+       * Example: 'product-selection', 'address-input', etc.
+       */
+      name: 'home',
+      index: 1,
+      type: 'initial'
+    }
+  }
+})
+
+
+/**
+ * 2° Via de Contas Screen
+ * ON: After user clicks 'Ativar Conta Digital'
+ */
+dataLayer.push({
+  event: 'feature-interaction',
+  feature: {
+    name: 'duplicate-bill',
+    type: 'bills',
+    step: {
+      name: 'home',
+      index: 1,
+      type: 'initial'
+    }
+  },
+  interaction: {
+    name: 'options',
+    value: 'detail-duplicate-bill'| 'paid' | 'send-by-email'
+  }
+})
+
+  /**
+ * 2° Via de Contas Screen
+ * ON: Page load detail duplicate bill
+ */
+
+dataLayer.push({
+  event: 'feature-step',
+  feature: {
+    name: 'duplicate-bill',
+    type: 'bills',
+    step: {
+      /**
+       * The step's name in a dasherized form.
+       *
+       * Example: 'product-selection', 'address-input', etc.
+       */
+      name: 'detail-duplicate-bill',
+      index: 2,
+      type: 'intermediary'
+    }
+  }
+})
+
+
+/**
+ * 2° Via de Contas Screen
+ * ON: After user clicks 'Confirmar'
+ */
+dataLayer.push({
+  event: 'feature-interaction',
+  feature: {
+    name: 'duplicate-bill',
+    type: 'bills',
+    step: {
+      name: 'detail-duplicate-bill',
+      index: 2,
+      type: 'intermediary'
+    }
+  },
+  interaction: {
+    name: 'options',
+    value: 'to-print'| 'salve-to-pdf'| 'send-by-email'
+  }
+})
+
+  /**
+ * 2° Via de Contas Screen
+ * ON: Page load detail duplicate bill
+ */
+
+dataLayer.push({
+  event: 'feature-step',
+  feature: {
+    name: 'duplicate-bill',
+    type: 'bills',
+    step: {
+      /**
+       * The step's name in a dasherized form.
+       *
+       * Example: 'product-selection', 'address-input', etc.
+       */
+      name: 'send-by-email',
+      index: 2,
+      type: 'intermediary'
+    }
+  }
+})
+
+
+/**
+ * 2° Via de Contas Screen
+ * ON: After user clicks 'Confirmar'
+ */
+dataLayer.push({
+  event: 'feature-interaction',
+  feature: {
+    name: 'duplicate-bill',
+    type: 'bills',
+    step: {
+      name: 'send-by-email',
+      index: 2,
+      type: 'intermediary'
+    }
+  },
+  interaction: {
+    name: 'send-email',
+    value: 'next'
+  }
+})
+
+
+
+
+/**
+ * 2° Via de Contas Screen
+ * ON: Success in sending email confirmation
+ */
+dataLayer.push({
+  event: 'feature-step',
+  feature: {
+    name: 'duplicate-bill',
+    type: 'bills',
+    step: {
+      name: 'success',
+      index: 3,
+      type: 'completion',
+      success: true
+    }
+  }
+})
+
+/**
+ * 2° Via de Contas Screen
+ * ON: Interface warning when user tries to send form incorrectly, when a field is filled incorrectly, etc.
+ */
+dataLayer.push({
+  event: 'interface-message',
+  message: {
+    type: 'warning',
+    /**
+     * Name of the warning.
+     * Please try to consider including the field that showed the error.
+     */
+    name: string,
+    /**
+     * Warning code, if available
+     */
+    code: string
+  },
+  /**
+   * The element that diplays the warning, when available
+   */
+  element: HTMLElement
+})
+
+/**
+ * 2° Via de Contas Screen
+ * ON: Server errors and unavailabilities
+ */
+dataLayer.push({
+  event: 'interface-message',
+  message: {
+    type: 'error',
+    /**
+     * Name of the warning.
+     * Please try to consider including the field that showed the error.
+     */
+    name: string,
+    /**
+     * Warning code, if available
+     */
+    code: string
+  },
+  /**
+   * The element that diplays the error, when available
+   */
+  element: HTMLElement
+})
+--------------------------------------------------------
+--------------------------------------------------------
+
+/** FEATURE DE CONTAS - ENDEREÇO DE ENVIO - JORNADA DE ATIVAÇAO
+*/
+  /**
+ * Endereço de Envio Screen  
+ * ON: Page load
+ */
+
+dataLayer.push({
+  event: 'feature-step',
+  feature: {
+    name: 'adress-change',
+    type: 'bills',
+    step: {
+      /**
+       * The step's name in a dasherized form.
+       *
+       * Example: 'product-selection', 'address-input', etc.
+       */
+      name: 'home',
+      index: 1,
+      type: 'initial'
+    }
+  }
+})
+
+
+/**
+ * Endereço de Envio Screen
+ * ON: After user clicks 'Atterar endereço'
+ */
+dataLayer.push({
+  event: 'feature-interaction',
+  feature: {
+    name: 'adress-change',
+    type: 'bills',
+    step: {
+      name: 'home',
+      index: 1,
+      type: 'initial'
+    }
+  },
+  interaction: {
+    name: 'change-adress',
+    value: 'next'
+  }
+})
+
+  /**
+ * Endereço de Envio Screen
+ * ON: Page load detail duplicate bill
+ */
+
+dataLayer.push({
+  event: 'feature-step',
+  feature: {
+    name: 'adress-change',
+    type: 'bills',
+    step: {
+      /**
+       * The step's name in a dasherized form.
+       *
+       * Example: 'product-selection', 'address-input', etc.
+       */
+      name: 'change-adress',
+      index: 2,
+      type: 'intermediary'
+    }
+  }
+})
+
+
+/**
+ * Endereço de Envio Screen
+ * ON: After user clicks 'Confirmar'
+ */
+dataLayer.push({
+  event: 'feature-interaction',
+  feature: {
+    name: 'duplicate-bill',
+    type: 'bills',
+    step: {
+      name: 'change-adress',
+      index: 2,
+      type: 'intermediary'
+    }
+  },
+  interaction: {
+    name: 'confirm',
+    value: 'next'
+  }
+})
+
+/**
+ * Endereço de Envio Screen
+ * ON: Page load detail duplicate bill
+ */
+
+dataLayer.push({
+  event: 'feature-step',
+  feature: {
+    name: 'adress-change',
+    type: 'bills',
+    step: {
+      /**
+       * The step's name in a dasherized form.
+       *
+       * Example: 'product-selection', 'address-input', etc.
+       */
+      name: 'confirm-adress',
+      index: 3,
+      type: 'intermediary'
+    }
+  }
+})
+
+
+/**
+ * Endereço de Envio Screen
+ * ON: After user clicks 'Confirmar'
+ */
+dataLayer.push({
+  event: 'feature-interaction',
+  feature: {
+    name: 'duplicate-bill',
+    type: 'bills',
+    step: {
+      name: 'confirm-adress',
+      index: 3,
+      type: 'intermediary'
+    }
+  },
+  interaction: {
+    name: 'confirm',
+    value: 'next'
+  }
+})
+
+
+/**
+ * Endereço de Envio Screen
+ * ON: Success in sending email confirmation
+ */
+dataLayer.push({
+  event: 'feature-step',
+  feature: {
+    name: 'adress-change',
+    type: 'bills',
+    step: {
+      name: 'success',
+      index: 3,
+      type: 'completion',
+      success: true
+    }
+  }
+})
+
+/**
+ * Endereço de Envio Screen
+ * ON: Interface warning when user tries to send form incorrectly, when a field is filled incorrectly, etc.
+ */
+dataLayer.push({
+  event: 'interface-message',
+  message: {
+    type: 'warning',
+    /**
+     * Name of the warning.
+     * Please try to consider including the field that showed the error.
+     */
+    name: string,
+    /**
+     * Warning code, if available
+     */
+    code: string
+  },
+  /**
+   * The element that diplays the warning, when available
+   */
+  element: HTMLElement
+})
+
+/**
+ * Endereço de Envio Screen
+ * ON: Server errors and unavailabilities
+ */
+dataLayer.push({
+  event: 'interface-message',
+  message: {
+    type: 'error',
+    /**
+     * Name of the warning.
+     * Please try to consider including the field that showed the error.
+     */
+    name: string,
+    /**
+     * Warning code, if available
+     */
+    code: string
+  },
+  /**
+   * The element that diplays the error, when available
+   */
+  element: HTMLElement
+})
+
+
 
