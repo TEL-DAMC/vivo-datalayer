@@ -752,18 +752,17 @@ dataLayer.push({
     }
   }
 })
-
 /**
- * Controle de Consumo Screen
- * ON: After user clicks 'Confirmar'
- */
+* Controle de Consumo Screen
+ * ON: Loading the confirmation box */
+  
 dataLayer.push({
   event: 'feature-interaction',
   feature: {
     name: 'consumption-control-activation',
     type: 'consumption',
     step: {
-      name: 'confirm',
+      name: 'home',
       index: 2,
       type: 'intermediary'
     }
@@ -773,7 +772,6 @@ dataLayer.push({
     value: 'next' | 'cancel'
   }
 })
-
 
 /**
  * Controle de Consumo Screen
@@ -1038,7 +1036,7 @@ dataLayer.push({
 
 /**
  * Detalhamento de Consumo por e-mail Screen
- * ON: After user clicks 'Confirmar'
+ * ON: After user clicks 'Confirmar' ou 'Cancelar'
  */
 dataLayer.push({
   event: 'feature-interaction',
@@ -1059,7 +1057,7 @@ dataLayer.push({
 
   /**
  * Detalhamento de Consumo por e-mail Screen
- * ON: Page load
+ * ON: Page select data load
  */
 
 dataLayer.push({
@@ -1073,7 +1071,7 @@ dataLayer.push({
        *
        * Example: 'product-selection', 'address-input', etc.
        */
-      name: 'select-data',
+      name: 'select-date',
       index: 2,
       type: 'intermediary'
     }
@@ -1362,7 +1360,7 @@ dataLayer.push({
 
 /**
  * Lançamentos Futuros Screen
- * ON: After user clicks 'Consultar' in lightbox
+ * ON: After user clicks 'Ver extrato completo' ou 'Cancelar algum sva'
  */
 dataLayer.push({
   event: 'feature-interaction',
@@ -1370,21 +1368,21 @@ dataLayer.push({
     name: 'schedules',
     type: 'consumption',
     step: {
-      name: 'select-month',
+      name: 'home',
       index: 1,
-      type: 'intermediary'
+      type: 'initial'
     }
   },
   interaction: {
-    name: 'consult',
-    value: 'next' | 'back' | 'cancel' |
+    name: 'select-option',
+    value: 'item-details' | 'cancel-sva' | 'complete-statement' |
   }
 })
 
 
 /**
  * Lançamentos Futuros Screen
- * ON: Page load
+ * ON: Load lightbox to cancel sva
  */
 dataLayer.push({
   event: 'feature-step',
@@ -1397,39 +1395,16 @@ dataLayer.push({
        *
        * Example: 'product-selection', 'address-input', etc.
        */
-      name: 'home',
+      name: 'cancel-sva',
       index: 2,
       type: 'intermediary'
     }
   }
 })
 
-
 /**
  * Lançamentos Futuros Screen
- * ON: After load Lightbox "Extrato Completo Mensal"
- */
-dataLayer.push({
-  event: 'feature-step',
-  feature: {
-    name: 'schedules',
-    type: 'consumption',
-    step: {
-      /**
-       * The step's name in a dasherized form.
-       *
-       * Example: 'product-selection', 'address-input', etc.
-       */
-      name: 'select-month',
-      index: 3,
-      type: 'intermediary'
-    }
-  }
-})
-
-/**
- * Lançamentos Futuros Screen
- * ON: After user clicks 'Consultar' in lightbox
+ * ON: After user clicks 'Confirmar' or "Cancelar" cancellation sva in lightbox
  */
 dataLayer.push({
   event: 'feature-interaction',
@@ -1437,155 +1412,21 @@ dataLayer.push({
     name: 'schedules',
     type: 'consumption',
     step: {
-      name: 'select-month',
-      index: 3,
+      name: 'cancel-sva',
+      index: 2,
       type: 'intermediary'
     }
   },
   interaction: {
-    name: 'consult',
-    value: 'next' | 'back' | 'cancel' |
-  }
-})
-/**
- * Lançamentos Futuros Screen
- * ON: After load Screen "Extrato Completo Mensal"
- */
-
-dataLayer.push({
-  event: 'feature-step',
-  feature: {
-    name: 'schedules',
-    type: 'consumption',
-    step: {
-      /**
-       * The step's name in a dasherized form.
-       *
-       * Example: 'product-selection', 'address-input', etc.
-       */
-      name: 'complete',
-      index: 4,
-      type: 'intermediary'
-    }
-  }
-})
-
-/**
- * Lançamentos Futuros Screen
- * ON: After user clicks 'Consultar' in lightbox
- */
-dataLayer.push({
-  event: 'feature-interaction',
-  feature: {
-    name: 'schedules',
-    type: 'consumption',
-    step: {
-      name: 'complete-statement',
-      index: 4,
-      type: 'intermediary'
-    }
-  },
-  interaction: {
-    name: 'choose-export-action',
-    value: 'to-print'| 'salve-to-pdf' | 'send-by-email'
-  }
-})
-
-/**
- * Lançamentos Futuros Screen
- * * ON: After load lightbox to email confirmation
- */
-
-
-dataLayer.push({
-  event: 'feature-step',
-  feature: {
-    name: 'schedules',
-    type: 'consumption',
-    step: {
-      /**
-       * The step's name in a dasherized form.
-       *
-       * Example: 'product-selection', 'address-input', etc.
-       */
-      name: 'send-email',
-      index: 5,
-      type: 'intermediary'
-    }
-  }
-})
-
-/**
- * Lançamentos Futuros Screen
- * ON: After user clicks 'Cancelar' or 'Enviar' in lightbox to email confirmation
- */
-dataLayer.push({
-  event: 'feature-interaction',
-  feature: {
-    name: 'schedules',
-    type: 'consumption',
-    step: {
-      name: 'statement',
-      index: 5,
-      type: 'intermediary'
-    }
-  },
-  interaction: {
-    name: 'send-email',
-    value: 'next' |'cancel' |
-  }
-})
-
-/**
- * Lançamentos Futuros Screen
- * ON: After user clicks 'Enviar' or 'Cancelar' in lightbox to email confirmation
- */
-
-
-dataLayer.push({
-  event: 'feature-step',
-  feature: {
-    name: 'schedules',
-    type: 'consumption',
-    step: {
-      /**
-       * The step's name in a dasherized form.
-       *
-       * Example: 'product-selection', 'address-input', etc.
-
-       */
-      name: 'confirm-email',
-      index: 6,
-      type: 'intermediary'
-    }
-  }
-})
-
-/**
- * Lançamentos Futuros Screen
- * * ON: After uploading the email sending confirmation lightbox
- */
-dataLayer.push({
-  event: 'feature-interaction',
-  feature: {
-    name: 'schedules',
-    type: 'consumption',
-    step: {
-      name: 'confirm-email',
-      index: 6,
-      type: 'intermediary'
-    }
-  },
-  interaction: {
-    name: 'confirm-email',
-    value: 'next' | 'cancel' |
+    name: 'confirm',
+    value: 'next' | 'cancel'
   }
 })
 
 
 /**
  * Lançamentos Futuros Screen
- * ON: Success in sending email confirmation
+ * ON: Success in cancellation
  */
 dataLayer.push({
   event: 'feature-step',
@@ -1594,7 +1435,7 @@ dataLayer.push({
     type: 'consumption',
     step: {
       name: 'success',
-      index: 7,
+      index: 3,
       type: 'completion',
       success: true
     }
