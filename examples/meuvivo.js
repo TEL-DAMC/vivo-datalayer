@@ -2810,5 +2810,299 @@ dataLayer.push({
   element: HTMLElement
 })
 
+--------------------------------------------------------
+---------------------------------------------------------
+---------------------------------------------------------
 
+/** FEATURE DE CONTAS - Desbloqueio de linha
+*/
+  /**
+ * Desbloqueio de linha Screen
+ * ON: Page load
+ */
+
+dataLayer.push({
+  event: 'feature-step',
+  feature: {
+    name: 'line-unlock',
+    type: 'bills',
+    step: {
+      /**
+       * The step's name in a dasherized form.
+       *
+       * Example: 'product-selection', 'address-input', etc.
+       */
+      name: 'home-select-bank',
+      index: 1,
+      type: 'initial'
+    }
+  }
+})
+
+
+/**
+ * Desbloqueio de linha Screen
+ * ON: After user clicks 'Confirmo o pagmento'
+ */
+dataLayer.push({
+  event: 'feature-interaction',
+  feature: {
+    name: 'line-unlock',
+    type: 'bills',
+    step: {
+      name: 'home',
+      index: 1,
+      type: 'initial'
+    }
+  },
+  interaction: {
+    name: 'to-active',
+    value: 'next'
+  }
+})
+
+/**
+  * Desbloqueio de linha Screen
+ * ON: Success in sending email confirmation
+ */
+dataLayer.push({
+  event: 'line-unlock',
+  feature: {
+    name: 'line-unlock',
+    type: 'bills',
+    step: {
+      name: 'success',
+      index: 2,
+      type: 'completion',
+      success: true
+    }
+  }
+})
+
+/**
+ * Desbloqueio de Linha Screen
+ * ON: Interface warning when user tries to send form incorrectly, when a field is filled incorrectly, etc.
+ */
+dataLayer.push({
+  event: 'interface-message',
+  message: {
+    type: 'warning',
+    /**
+     * Name of the warning.
+     * Please try to consider including the field that showed the error.
+     */
+    name: string,
+    /**
+     * Warning code, if available
+     */
+    code: string
+  },
+  /**
+   * The element that diplays the warning, when available
+   */
+  element: HTMLElement
+})
+
+/**
+ * Desbloqueio de Linha Screen
+ * ON: Server errors and unavailabilities
+ */
+dataLayer.push({
+  event: 'interface-message',
+  message: {
+    type: 'error',
+    /**
+     * Name of the warning.
+     * Please try to consider including the field that showed the error.
+     */
+    name: string,
+    /**
+     * Warning code, if available
+     */
+    code: string
+  },
+  /**
+   * The element that diplays the error, when available
+   */
+  element: HTMLElement
+})
+
+
+  ---------------------------------------------
+-------------------------------------------------
+  ---------------------------------------------
+
+---------------------------------------------------------
+---------------------------------------------------------
+
+/** FEATURE DE CONTAS - ENTENDA SUA CONTA
+*/
+  /**
+ * Entenda sua Conta Screen
+ * ON: Page load
+ */
+
+dataLayer.push({
+  event: 'feature-step',
+  feature: {
+    name: 'understand-your-bill',
+    type: 'bills',
+    step: {
+      /**
+       * The step's name in a dasherized form.
+       *
+       * Example: 'product-selection', 'address-input', etc.
+       */
+      name: 'home',
+      index: 1,
+      type: 'initial'
+    }
+  }
+})
+
+
+  ---------------------------------------------
+---------------------------------------------------------
+---------------------------------------------------------
+
+/** FEATURE DE CONTAS - BANCOS CONVENIADOS
+*/
+  /**
+ * Bancos Conveniados Screen
+ * ON: Page load
+ */
+
+dataLayer.push({
+  event: 'feature-step',
+  feature: {
+    name: 'affiliated-companies',
+    type: 'bills',
+    step: {
+      /**
+       * The step's name in a dasherized form.
+       *
+       * Example: 'product-selection', 'address-input', etc.
+       */
+      name: 'home',
+      index: 1,
+      type: 'initial'
+    }
+  }
+})
+----------------------------------------------------
+-----------------------------------------------------
+                     --------------
+
+/** FEATURE DE CONTAS - TERMO DE QUITAÇÃO
+*/
+  /**
+ * Termo de Quitação Screen
+ * ON: Page load
+ */
+
+dataLayer.push({
+  event: 'feature-step',
+  feature: {
+    name: 'acquittance',
+    type: 'bills',
+    step: {
+      /**
+       * The step's name in a dasherized form.
+       *
+       * Example: 'product-selection', 'address-input', etc.
+       */
+      name: 'home',
+      index: 1,
+      type: 'initial'
+    }
+  }
+})
+
+
+/**
+ * Termo de Quitação Screen
+ * ON: After user clicks 'Confirmo o pagmento'
+ */
+dataLayer.push({
+  event: 'feature-interaction',
+  feature: {
+    name: 'acquittance',
+    type: 'bills',
+    step: {
+      name: 'home',
+      index: 1,
+      type: 'initial'
+    }
+  },
+  interaction: {
+    name: 'to-active',
+    value: 'next'
+  }
+})
+
+/**
+ * Termo de Quitação Screen
+ * ON: Success in sending email confirmation
+ */
+dataLayer.push({
+  event: 'line-unlock',
+  feature: {
+    name: 'acquittance',
+    type: 'bills',
+    step: {
+      name: 'success',
+      index: 2,
+      type: 'completion',
+      success: true
+    }
+  }
+})
+
+/**
+ * Termo de Quitação Screen
+ * ON: Interface warning when user tries to send form incorrectly, when a field is filled incorrectly, etc.
+ */
+dataLayer.push({
+  event: 'interface-message',
+  message: {
+    type: 'warning',
+    /**
+     * Name of the warning.
+     * Please try to consider including the field that showed the error.
+     */
+    name: string,
+    /**
+     * Warning code, if available
+     */
+    code: string
+  },
+  /**
+   * The element that diplays the warning, when available
+   */
+  element: HTMLElement
+})
+
+/**
+ * Termo de Quitação Screen
+ * ON: Server errors and unavailabilities
+ */
+dataLayer.push({
+  event: 'interface-message',
+  message: {
+    type: 'error',
+    /**
+     * Name of the warning.
+     * Please try to consider including the field that showed the error.
+     */
+    name: string,
+    /**
+     * Warning code, if available
+     */
+    code: string
+  },
+  /**
+   * The element that diplays the error, when available
+   */
+  element: HTMLElement
+})
 
