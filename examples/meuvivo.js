@@ -493,7 +493,7 @@ dataLayer.push({
        *
        * Example: 'product-selection', 'address-input', etc.
        */
-      name: 'complete',
+      name: 'complete-statement',
       index: 3,
       type: 'intermediary'
     }
@@ -502,7 +502,7 @@ dataLayer.push({
 
 /**
  * Extrato Screen
- * ON: After user clicks 'Consultar' in lightbox
+ * ON: After user choose option - "To print", "Salve to pdf" or "Send by email"
  */
 dataLayer.push({
   event: 'feature-interaction',
@@ -555,12 +555,12 @@ dataLayer.push({
     step: {
       name: 'statement',
       index: 4,
-      type: 'intermediary'
+      type: 'send-email'
     }
   },
   interaction: {
-    name: 'send-email',
-    value: 'next' |'cancel' |
+    name: 'to-send',
+    value: 'next' |'cancel'
   }
 })
 
