@@ -1489,14 +1489,12 @@ dataLayer.push({
    */
   element: HTMLElement
 })
-/**------------------------------------------------------------
-                         -----------------
-------------------------------------------------------------
- 
 
+/**
+---------------------------------------------------------
+------Meu Consumo (Móvel - pós, controle e beatrix)---------
 ------------------------------------------------------------
-                         -----------------
-------------------------------------------------------------*/
+*/
 
 /** FEATURE DE MEU CONSUMO 
 */
@@ -2867,7 +2865,7 @@ dataLayer.push({
  * ON: Success in sending email confirmation
  */
 dataLayer.push({
-  event: 'line-unlock',
+  event: 'feature-step',
   feature: {
     name: 'line-unlock',
     type: 'bills',
@@ -3138,7 +3136,7 @@ dataLayer.push({
  * ON: Success in sending email confirmation
  */
 dataLayer.push({
-  event: 'line-unlock',
+  event: 'feature-step',
   feature: {
     name: 'acquittance',
     type: 'bills',
@@ -3203,7 +3201,7 @@ dataLayer.push({
  * ON: Success in sending email confirmation
  */
 dataLayer.push({
-  event: 'line-unlock',
+  event: 'feature-step',
   feature: {
     name: 'acquittance',
     type: 'bills',
@@ -3242,6 +3240,282 @@ dataLayer.push({
 
 /**
  * Termo de Quitação Screen
+ * ON: Server errors and unavailabilities
+ */
+dataLayer.push({
+  event: 'interface-message',
+  message: {
+    type: 'error',
+    /**
+     * Name of the warning.
+     * Please try to consider including the field that showed the error.
+     */
+    name: string,
+    /**
+     * Warning code, if available
+     */
+    code: string
+  },
+  /**
+   * The element that diplays the error, when available
+   */
+  element: HTMLElement
+})
+
+
+/**--------------------------------------------------
+-------------------EXCLUSIVO FIXA--------------------
+-----------------------------------------------------
+*/
+/** FEATURE DE CONTAS - ACORDOS
+*/
+  /**
+ * Acordos Screen
+ * ON: Page load
+ */
+
+dataLayer.push({
+  event: 'feature-step',
+  feature: {
+    name: 'agreements',
+    type: 'billS',
+    step: {
+      /**
+       * The step's name in a dasherized form.
+       *
+       * Example: 'product-selection', 'address-input', etc.
+       */
+      name: 'home',
+      index: 1,
+      type: 'initial'
+    }
+  }
+})
+
+/**
+ * Acordos Screen
+ * ON: After clicking on one of the options("Visualizar", "Imprimir", "Enviar para o e-mail")
+ */
+dataLayer.push({
+  event: 'feature-interaction',
+  feature: {
+    name: 'agreements',
+    type: 'bills',
+    step: {
+      name: 'home',
+      index: 1,
+      type: 'initial'
+    }
+  },
+  interaction: {
+    name: 'to-choose',
+    value: 'to-print'| 'to-view'|'to-send'
+  }
+})
+
+
+ /**
+ * Acordos Screen
+ * ON: Page load
+ */
+
+dataLayer.push({
+  event: 'feature-step',
+  feature: {
+    name: 'agreements',
+    type: 'bills',
+    step: {
+      /**
+       * The step's name in a dasherized form.
+       *
+       * Example: 'product-selection', 'address-input', etc.
+       */
+      name: 'send-by-email',
+      index: 2,
+      type: 'intermediary'
+    }
+  }
+})
+
+/**
+ * Acordos Screen
+ * ON: After user clicks 'Confirmo o pagmento'
+ */
+dataLayer.push({
+  event: 'feature-interaction',
+  feature: {
+    name: 'agreements',
+    type: 'bills',
+    step: {
+      name: 'home',
+      index: 2,
+      type: 'intermediary'
+    }
+  },
+  interaction: {
+    name: 'send-by-email',
+    value: 'next'
+  }
+})
+
+/**
+ * Acordos Screen
+ * ON: Success in sending email confirmation
+ */
+dataLayer.push({
+  event: 'feature-step',
+  feature: {
+    name: 'agreements',
+    type: 'bills',
+    step: {
+      name: 'success',
+      index: 3,
+      type: 'completion',
+      success: true
+    }
+  }
+})
+
+/**
+ * Acordos Screen
+ * ON: Interface warning when user tries to send form incorrectly, when a field is filled incorrectly, etc.
+ */
+dataLayer.push({
+  event: 'interface-message',
+  message: {
+    type: 'warning',
+    /**
+     * Name of the warning.
+     * Please try to consider including the field that showed the error.
+     */
+    name: string,
+    /**
+     * Warning code, if available
+     */
+    code: string
+  },
+  /**
+   * The element that diplays the warning, when available
+   */
+  element: HTMLElement
+})
+
+/**
+ * Acordos Screen
+ * ON: Server errors and unavailabilities
+ */
+dataLayer.push({
+  event: 'interface-message',
+  message: {
+    type: 'error',
+    /**
+     * Name of the warning.
+     * Please try to consider including the field that showed the error.
+     */
+    name: string,
+    /**
+     * Warning code, if available
+     */
+    code: string
+  },
+  /**
+   * The element that diplays the error, when available
+   */
+  element: HTMLElement
+})
+
+
+/** FEATURE DE CONTAS - ALTERAR VENCIMENTO
+*/
+  /**
+ * Alterar Vencimento Screen
+ * ON: Page load
+ */
+
+dataLayer.push({
+  event: 'feature-step',
+  feature: {
+    name: 'change-due',
+    type: 'billS',
+    step: {
+      /**
+       * The step's name in a dasherized form.
+       *
+       * Example: 'product-selection', 'address-input', etc.
+       */
+      name: 'home',
+      index: 1,
+      type: 'initial'
+    }
+  }
+})
+
+/**
+ * Alterar Vencimento Screen
+ * ON: After clicking on one of the options("Visualizar", "Imprimir", "Enviar para o e-mail")
+ */
+dataLayer.push({
+  event: 'feature-interaction',
+  feature: {
+    name: 'change-due',
+    type: 'bills',
+    step: {
+      name: 'home',
+      index: 1,
+      type: 'initial'
+    }
+  },
+  interaction: {
+    name: 'to-choose',
+    value: 'access-chat'| 'save-change-due'
+  }
+})
+
+
+/**
+ * Acordos Screen
+ * ON: Success in sending email confirmation
+ */
+dataLayer.push({
+  event: 'feature-step',
+  feature: {
+    name: 'change-due',
+    type: 'bills',
+    step: {
+      name: 'success',
+      index: 2,
+      type: 'completion',
+      success: true
+    }
+  }
+})
+
+/**
+ * Acordos Screen
+ * ON: Interface warning when user tries to send form incorrectly, when a field is filled incorrectly, etc.
+ */
+dataLayer.push({
+  event: 'interface-message',
+  message: {
+    type: 'warning',
+    /**
+     * Name of the warning.
+     * Please try to consider including the field that showed the error.
+     */
+    name: string,
+    /**
+     * Warning code, if available
+     */
+    code: string
+  },
+  /**
+   * The element that diplays the warning, when available
+   */
+  element: HTMLElement
+})
+
+/**
+ * Acordos Screen
  * ON: Server errors and unavailabilities
  */
 dataLayer.push({
