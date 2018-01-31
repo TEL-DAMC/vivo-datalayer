@@ -689,7 +689,7 @@ dataLayer.push({
     }
   },
   interaction: {
-    name: 'understand-your-balances',
+    name: 'export-per-month',
     value: 'next'
   }
 })
