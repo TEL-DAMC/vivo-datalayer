@@ -280,56 +280,6 @@ dataLayer.push({
    */
   element: HTMLElement
 })
-<<<<<<< HEAD
-=======
-/*
-------------------------------------------
---------------------------------------------
--------------------------------------------
-**/
-/**
- * FEATURE DE CONTAS - CONSUMO DE INTERNET - DESKTOP
- */
-
-/**
- * Consumo de Internet Screen - Desktop
- * ON: Page load
- */
-dataLayer.push({
-  event: 'feature-step',
-  feature: {
-    name: 'internet-consumption',
-    type: 'consumption',
-    step: {
-      name: 'home',
-      index: 1,
-      type: 'initial'
-    }
-  }
-})
-
-/**
- * Consumo de Internet Screen - Desktop
- * ON: After user clicks 'Contratar Pacotes' 
- */
-dataLayer.push({
-  event: 'feature-interaction',
-  feature: {
-    name: 'internet-consumption',
-    type: 'consumption',
-    step: {
-      name: 'home',
-      index: 1,
-      type: 'initial'
-    }
-  },
-  interaction: {
-    name: 'to-hire',
-    value: 'next'
-  }
-})
-
->>>>>>> dd3c887e2f5d2bb9161c849403443f4d149ad0b8
 
 /*
 ------------------------------------------------------
