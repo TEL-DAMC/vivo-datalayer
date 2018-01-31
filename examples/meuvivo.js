@@ -1305,7 +1305,7 @@ dataLayer.push({
     }
   },
   interaction: {
-    name: 'confirm',
+    name: 'confirm-activation',
     value: 'confirm' | 'cancel'
   }
 })
@@ -1320,7 +1320,7 @@ dataLayer.push({
     name: 'detailing-email-consumption-activation',
     type: 'consumption',
     step: {
-      name: 'success',
+      name: 'activation-success',
       index: 3,
       type: 'completion',
       success: true
@@ -1417,8 +1417,8 @@ dataLayer.push({
     }
   },
   interaction: {
-    name: 'options',
-    value: 'disable'|'change'
+    name: 'confirm',
+    value: 'next'
   }
 })
 
@@ -1570,7 +1570,7 @@ dataLayer.push({
   },
   interaction: {
     name: 'select-option',
-    value: 'item-details' | 'cancel-sva' | 'complete-statement'
+    value: 'item-details' | 'cancel-vsa' | 'complete-statement'
   }
 })
 
@@ -1917,7 +1917,6 @@ dataLayer.push({
     }
   }
 })
-
 
 /**
  * Conta Digital Screen
