@@ -1585,7 +1585,7 @@ dataLayer.push({
     name: 'detailing-email-consumption-deactivation',
     type: 'consumption',
     step: {
-      name: 'deactivation-success',
+      name: 'change-date-success',
       index: 2,
       type: 'completion',
       success: true
@@ -1700,7 +1700,7 @@ dataLayer.push({
     name: 'schedules',
     type: 'consumption',
     step: {
-      name: 'cancel-sva',
+      name: 'cancel-vsa',
       index: 2,
       type: 'intermediary'
     }
@@ -1717,7 +1717,7 @@ dataLayer.push({
     name: 'schedules',
     type: 'consumption',
     step: {
-      name: 'cancel-sva',
+      name: 'cancel-vsa',
       index: 2,
       type: 'intermediary'
     }
@@ -1739,7 +1739,7 @@ dataLayer.push({
     name: 'schedules',
     type: 'consumption',
     step: {
-      name: 'success',
+      name: 'cancel-vsa-success',
       index: 3,
       type: 'completion',
       success: true
