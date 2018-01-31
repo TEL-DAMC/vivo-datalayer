@@ -462,8 +462,6 @@ dataLayer.push({
 ------------------------------------------------------
 ------------------------------------------------------
 */
-
-
 /**
  * FEATURE DE CONTAS - COMPARTILHAR INTERNET - MOBILE
  */
@@ -492,7 +490,7 @@ dataLayer.push({
 
 /**
  * Compartilhar Internet Screen - Mobile
- * ON: After user clicks 'Confirmar' 
+ * ON: After user clicks 'Continuar' 
  */
 dataLayer.push({
   event: 'feature-interaction',
@@ -535,7 +533,7 @@ dataLayer.push({
 
 /**
  * Compartilhar Internet Screen - Mobile
- * ON: After user clicks 'Confirmar' 
+ * ON: After user click on any quantity
  */
 dataLayer.push({
   event: 'feature-interaction',
@@ -549,11 +547,53 @@ dataLayer.push({
     }
   },
   interaction: {
+    name: 'choose-quantity',
+    value: 'confirm'
+  }
+})
+
+/**
+ * Compartilhar Internet Screen - Mobile
+ * ON: Page load
+ */
+dataLayer.push({
+  event: 'feature-step',
+  feature: {
+    name: 'share-internet',
+    type: 'consumption',
+    step: {
+      /**
+       * The step's name in a dasherized form.
+       *
+       * Example: 'product-selection', 'address-input', etc.
+       */
+      name: 'confirms-shared-amount',
+      index: 3,
+      type: 'intermediary'
+    }
+  }
+})
+
+/**
+ * Compartilhar Internet Screen - Mobile
+ * ON: After user click on any quantity
+ */
+dataLayer.push({
+  event: 'feature-interaction',
+  feature: {
+    name: 'share-internet',
+    type: 'consumption',
+    step: {
+      name: 'confirms-shared-amount',
+      index: 3,
+      type: 'intermediary'
+    }
+  },
+  interaction: {
     name: 'confirm',
     value: 'next'
   }
 })
-
 
 
 /**
@@ -566,8 +606,7 @@ dataLayer.push({
     name: 'share-internet',
     type: 'consumption',
     step: {
-      name: 'success',
-      index: 3,
+      index: 4,
       type: 'completion',
       success: true
     }
