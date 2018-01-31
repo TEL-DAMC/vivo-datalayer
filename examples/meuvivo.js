@@ -27,7 +27,6 @@ dataLayer.push({
      * e.g.: 'ProductPage', 'SearchResults', 'RegistrationForm'
      */
     template: string,
-
     area: 'b2b' | 'b2c' | 'institutional',
     segment: 'ecommerce' | 'ecare' | 'brand',
     currentSubscription: {
@@ -122,11 +121,6 @@ dataLayer.push({
     name: 'login',
     type: 'admin',
     step: {
-      /**
-       * The step's name in a dasherized form.
-       *
-       * Example: 'product-selection', 'address-input', etc.
-       */
       name: 'main-login',
       index: 1,
       type: 'initial'
@@ -286,6 +280,8 @@ dataLayer.push({
    */
   element: HTMLElement
 })
+<<<<<<< HEAD
+=======
 /*
 ------------------------------------------
 --------------------------------------------
@@ -305,11 +301,6 @@ dataLayer.push({
     name: 'internet-consumption',
     type: 'consumption',
     step: {
-      /**
-       * The step's name in a dasherized form.
-       *
-       * Example: 'product-selection', 'address-input', etc.
-       */
       name: 'home',
       index: 1,
       type: 'initial'
@@ -338,17 +329,15 @@ dataLayer.push({
   }
 })
 
+>>>>>>> dd3c887e2f5d2bb9161c849403443f4d149ad0b8
 
 /*
 ------------------------------------------------------
 ------------------------------------------------------
 */
-
-
 /**
  * FEATURE DE CONTAS - PEDIR INTERNET - MOBILE
  */
-
 /**
  * Pedir Internet Screen - Mobile
  * ON: Page load
@@ -359,11 +348,6 @@ dataLayer.push({
     name: 'ask-internet',
     type: 'consumption',
     step: {
-      /**
-       * The step's name in a dasherized form.
-       *
-       * Example: 'product-selection', 'address-input', etc.
-       */
       name: 'home',
       index: 1,
       type: 'initial'
@@ -524,7 +508,7 @@ dataLayer.push({
        *
        * Example: 'product-selection', 'address-input', etc.
        */
-      name: 'shared-amount'|'log-view',
+      name: 'shared-amount',
       index: 2,
       type: 'intermediary'
     }
@@ -547,7 +531,7 @@ dataLayer.push({
     }
   },
   interaction: {
-    name: 'choose-quantity',
+    name: 'choose-quantity'|'others-quantities',
     value: 'confirm'
   }
 })
@@ -682,11 +666,6 @@ dataLayer.push({
     name: 'statement',
     type: 'consumption',
     step: {
-      /**
-       * The step's name in a dasherized form.
-       *
-       * Example: 'product-selection', 'address-input', etc.
-       */
       name: 'home',
       index: 1,
       type: 'initial'
@@ -725,11 +704,7 @@ dataLayer.push({
     name: 'statement',
     type: 'consumption',
     step: {
-      /**
-       * The step's name in a dasherized form.
-       *
-       * Example: 'product-selection', 'address-input', etc.
-       */
+      
       name: 'select-month',
       index: 2,
       type: 'intermediary'
@@ -754,7 +729,7 @@ dataLayer.push({
   },  
   interaction: {
     name: 'consult',
-    value: 'next' | 'cancel' |
+    value: 'next' | 'cancel'
   }
 })
 
@@ -768,11 +743,6 @@ dataLayer.push({
     name: 'statement',
     type: 'consumption',
     step: {
-      /**
-       * The step's name in a dasherized form.
-       *
-       * Example: 'product-selection', 'address-input', etc.
-       */
       name: 'complete-statement',
       index: 3,
       type: 'intermediary'
@@ -811,11 +781,6 @@ dataLayer.push({
     name: 'statement',
     type: 'consumption',
     step: {
-      /**
-       * The step's name in a dasherized form.
-       *
-       * Example: 'product-selection', 'address-input', etc.
-       */
       name: 'send-email',
       index: 4,
       type: 'intermediary'
@@ -854,12 +819,6 @@ dataLayer.push({
     name: 'statement',
     type: 'consumption',
     step: {
-      /**
-       * The step's name in a dasherized form.
-       *
-       * Example: 'product-selection', 'address-input', etc.
-
-       */
       name: 'confirm-email',
       index: 5,
       type: 'intermediary'
@@ -884,7 +843,7 @@ dataLayer.push({
   },
   interaction: {
     name: 'confirm-email',
-    value: 'next' | 'cancel' |
+    value: 'next' | 'cancel'
   }
 })
 
@@ -975,11 +934,6 @@ dataLayer.push({
     name: 'consumption-control-activation',
     type: 'consumption',
     step: {
-      /**
-       * The step's name in a dasherized form.
-       *
-       * Example: 'product-selection', 'address-input', etc.
-       */
       name: 'home',
       index: 1,
       type: 'initial'
@@ -1021,11 +975,6 @@ dataLayer.push({
     name: 'consumption-control-activation',
     type: 'consumption',
     step: {
-      /**
-       * The step's name in a dasherized form.
-       *
-       * Example: 'product-selection', 'address-input', etc.
-       */
       name: 'confirm',
       index: 2,
       type: 'intermediary'
@@ -1042,7 +991,7 @@ dataLayer.push({
     name: 'consumption-control-activation',
     type: 'consumption',
     step: {
-      name: 'home',
+      name: 'confirm',
       index: 2,
       type: 'intermediary'
     }
@@ -1137,11 +1086,6 @@ dataLayer.push({
     name: 'consumption-control-deactivation',
     type: 'consumption',
     step: {
-      /**
-       * The step's name in a dasherized form.
-       *
-       * Example: 'product-selection', 'address-input', etc.
-       */
       name: 'home',
       index: 1,
       type: 'initial'
@@ -1183,11 +1127,6 @@ dataLayer.push({
     name: 'consumption-control-deactivation',
     type: 'consumption',
     step: {
-      /**
-       * The step's name in a dasherized form.
-       *
-       * Example: 'product-selection', 'address-input', etc.
-       */
       name: 'confirm',
       index: 2,
       type: 'intermediary'
@@ -1301,11 +1240,6 @@ dataLayer.push({
     name: 'detailing-email-consumption-activation',
     type: 'consumption',
     step: {
-      /**
-       * The step's name in a dasherized form.
-       *
-       * Example: 'product-selection', 'address-input', etc.
-       */
       name: 'home',
       index: 1,
       type: 'initial'
@@ -1346,11 +1280,7 @@ dataLayer.push({
     name: 'detailing-email-consumption-activation',
     type: 'consumption',
     step: {
-      /**
-       * The step's name in a dasherized form.
-       *
-       * Example: 'product-selection', 'address-input', etc.
-       */
+      
       name: 'select-date',
       index: 2,
       type: 'intermediary'
@@ -1369,7 +1299,7 @@ dataLayer.push({
     name: 'detailing-email-consumption-activation',
     type: 'consumption',
     step: {
-      name: 'home',
+      name: 'select-date',
       index: 2,
       type: 'intermediary'
     }
@@ -1463,11 +1393,6 @@ dataLayer.push({
     name: 'detailing-email-consumption-deactivation',
     type: 'consumption',
     step: {
-      /**
-       * The step's name in a dasherized form.
-       *
-       * Example: 'product-selection', 'address-input', etc.
-       */
       name: 'home',
       index: 1,
       type: 'initial'
@@ -1508,12 +1433,7 @@ dataLayer.push({
     name: 'detailing-email-consumption-deactivation',
     type: 'consumption',
     step: {
-      /**
-       * The step's name in a dasherized form.
-       *
-       * Example: 'product-selection', 'address-input', etc.
-       */
-      name: 'confirm',
+      name: 'confirm-deactivation',
       index: 2,
       type: 'intermediary'
     }
@@ -1531,7 +1451,7 @@ dataLayer.push({
     name: 'detailing-email-consumption-deactivation',
     type: 'consumption',
     step: {
-      name: 'confirm',
+      name: 'confirm-deactivation',
       index: 2,
       type: 'intermediary'
     }
@@ -1544,7 +1464,7 @@ dataLayer.push({
 
 /**
  * Detalhamento de Consumo por e-mail Screen
- * ON: Success in sending email confirmation
+ * ON: Success in deactivating the email
  */
 dataLayer.push({
   event: 'feature-step',
@@ -1552,7 +1472,7 @@ dataLayer.push({
     name: 'detailing-email-consumption-deactivation',
     type: 'consumption',
     step: {
-      name: 'success',
+      name: 'deactivation-success',
       index: 3,
       type: 'completion',
       success: true
@@ -1626,11 +1546,6 @@ dataLayer.push({
     name: 'schedules',
     type: 'consumption',
     step: {
-      /**
-       * The step's name in a dasherized form.
-       *
-       * Example: 'product-selection', 'address-input', etc.
-       */
       name: 'home',
       index: 1,
       type: 'initial'
@@ -1655,7 +1570,7 @@ dataLayer.push({
   },
   interaction: {
     name: 'select-option',
-    value: 'item-details' | 'cancel-sva' | 'complete-statement' |
+    value: 'item-details' | 'cancel-sva' | 'complete-statement'
   }
 })
 
@@ -1670,11 +1585,6 @@ dataLayer.push({
     name: 'schedules',
     type: 'consumption',
     step: {
-      /**
-       * The step's name in a dasherized form.
-       *
-       * Example: 'product-selection', 'address-input', etc.
-       */
       name: 'cancel-sva',
       index: 2,
       type: 'intermediary'
@@ -1788,11 +1698,6 @@ dataLayer.push({
     name: 'my-consumption',
     type: 'my-consumption',
     step: {
-      /**
-       * The step's name in a dasherized form.
-       *
-       * Example: 'product-selection', 'address-input', etc.
-       */
       name: 'home',
       index: 1,
       type: 'initial'
@@ -1817,7 +1722,7 @@ dataLayer.push({
   },
   interaction: {
     name: 'consult',
-    value: 'next' | 'back' | 'cancel' |
+    value: 'next' | 'back' | 'cancel'
   }
 })
 
@@ -1832,11 +1737,6 @@ dataLayer.push({
     name: 'my-consumption',
     type: 'my-consumption',
     step: {
-      /**
-       * The step's name in a dasherized form.
-       *
-       * Example: 'product-selection', 'address-input', etc.
-       */
       name: 'home',
       index: 2,
       type: 'intermediary'
@@ -1855,11 +1755,6 @@ dataLayer.push({
     name: 'my-consumption',
     type: 'my-consumption',
     step: {
-      /**
-       * The step's name in a dasherized form.
-       *
-       * Example: 'product-selection', 'address-input', etc.
-       */
       name: 'select-month',
       index: 3,
       type: 'intermediary'
@@ -1884,7 +1779,7 @@ dataLayer.push({
   },
   interaction: {
     name: 'consult',
-    value: 'next' | 'back' | 'cancel' |
+    value: 'next' | 'back' | 'cancel'
   }
 })
 
@@ -1900,12 +1795,6 @@ dataLayer.push({
     name: 'my-consumption',
     type: 'my-consumption',
     step: {
-      /**
-       * The step's name in a dasherized form.
-       *
-       * Example: 'product-selection', 'address-input', etc.
-
-       */
       name: 'confirm-email',
       index: 4,
       type: 'intermediary'
@@ -1930,7 +1819,7 @@ dataLayer.push({
   },
   interaction: {
     name: 'confirm-email',
-    value: 'next' | 'cancel' |
+    value: 'next' | 'cancel'
   }
 })
 
@@ -2022,11 +1911,6 @@ dataLayer.push({
     name: 'digital-bill',
     type: 'bills',
     step: {
-      /**
-       * The step's name in a dasherized form.
-       *
-       * Example: 'product-selection', 'address-input', etc.
-       */
       name: 'home',
       index: 1,
       type: 'initial'
@@ -2067,11 +1951,6 @@ dataLayer.push({
     name: 'digital-bill',
     type: 'bills',
     step: {
-      /**
-       * The step's name in a dasherized form.
-       *
-       * Example: 'product-selection', 'address-input', etc.
-       */
       name: 'confirm-email',
       index: 2,
       type: 'intermediary'
@@ -2187,11 +2066,6 @@ dataLayer.push({
     name: 'digital-bill',
     type: 'bills',
     step: {
-      /**
-       * The step's name in a dasherized form.
-       *
-       * Example: 'product-selection', 'address-input', etc.
-       */
       name: 'home',
       index: 1,
       type: 'initial'
@@ -2232,11 +2106,6 @@ dataLayer.push({
     name: 'digital-bill',
     type: 'bills',
     step: {
-      /**
-       * The step's name in a dasherized form.
-       *
-       * Example: 'product-selection', 'address-input', etc.
-       */
       name: 'to-disable',
       index: 2,
       type: 'intermediary'
@@ -2277,11 +2146,6 @@ dataLayer.push({
     name: 'digital-bill',
     type: 'bills',
     step: {
-      /**
-       * The step's name in a dasherized form.
-       *
-       * Example: 'product-selection', 'address-input', etc.
-       */
       name: 'confirm',
       index: 3,
       type: 'intermediary'
@@ -2398,11 +2262,6 @@ dataLayer.push({
     name: 'direct-debt',
     type: 'bills',
     step: {
-      /**
-       * The step's name in a dasherized form.
-       *
-       * Example: 'product-selection', 'address-input', etc.
-       */
       name: 'home-select-bank',
       index: 1,
       type: 'initial'
@@ -2516,11 +2375,6 @@ dataLayer.push({
     name: 'direct-debt',
     type: 'bills',
     step: {
-      /**
-       * The step's name in a dasherized form.
-       *
-       * Example: 'product-selection', 'address-input', etc.
-       */
       name: 'home',
       index: 1,
       type: 'initial'
@@ -2561,11 +2415,6 @@ dataLayer.push({
     name: 'direct-debt',
     type: 'bills',
     step: {
-      /**
-       * The step's name in a dasherized form.
-       *
-       * Example: 'product-selection', 'address-input', etc.
-       */
       name: 'to-disable',
       index: 2,
       type: 'intermediary'
@@ -2681,11 +2530,6 @@ dataLayer.push({
     name: 'bill-duplicate',
     type: 'bills',
     step: {
-      /**
-       * The step's name in a dasherized form.
-       *
-       * Example: 'product-selection', 'address-input', etc.
-       */
       name: 'home',
       index: 1,
       type: 'initial'
@@ -2726,11 +2570,6 @@ dataLayer.push({
     name: 'bill-duplicate',
     type: 'bills',
     step: {
-      /**
-       * The step's name in a dasherized form.
-       *
-       * Example: 'product-selection', 'address-input', etc.
-       */
       name: 'detail-bill-duplicate',
       index: 2,
       type: 'intermediary'
@@ -2771,11 +2610,6 @@ dataLayer.push({
     name: 'bill-duplicate',
     type: 'bills',
     step: {
-      /**
-       * The step's name in a dasherized form.
-       *
-       * Example: 'product-selection', 'address-input', etc.
-       */
       name: 'send-by-email',
       index: 2,
       type: 'intermediary'
@@ -2894,11 +2728,6 @@ dataLayer.push({
     name: 'adress-change',
     type: 'bills',
     step: {
-      /**
-       * The step's name in a dasherized form.
-       *
-       * Example: 'product-selection', 'address-input', etc.
-       */
       name: 'home',
       index: 1,
       type: 'initial'
@@ -2939,11 +2768,6 @@ dataLayer.push({
     name: 'adress-change',
     type: 'bills',
     step: {
-      /**
-       * The step's name in a dasherized form.
-       *
-       * Example: 'product-selection', 'address-input', etc.
-       */
       name: 'change-adress',
       index: 2,
       type: 'intermediary'
@@ -2984,11 +2808,6 @@ dataLayer.push({
     name: 'adress-change',
     type: 'bills',
     step: {
-      /**
-       * The step's name in a dasherized form.
-       *
-       * Example: 'product-selection', 'address-input', etc.
-       */
       name: 'confirm-adress',
       index: 3,
       type: 'intermediary'
@@ -3106,11 +2925,6 @@ dataLayer.push({
     name: 'line-unlock',
     type: 'bills',
     step: {
-      /**
-       * The step's name in a dasherized form.
-       *
-       * Example: 'product-selection', 'address-input', etc.
-       */
       name: 'home',
       index: 1,
       type: 'initial'
@@ -3227,11 +3041,6 @@ dataLayer.push({
     name: 'understand-your-bill',
     type: 'bills',
     step: {
-      /**
-       * The step's name in a dasherized form.
-       *
-       * Example: 'product-selection', 'address-input', etc.
-       */
       name: 'home',
       index: 1,
       type: 'initial'
@@ -3258,11 +3067,6 @@ dataLayer.push({
     name: 'affiliated-companies',
     type: 'bills',
     step: {
-      /**
-       * The step's name in a dasherized form.
-       *
-       * Example: 'product-selection', 'address-input', etc.
-       */
       name: 'home',
       index: 1,
       type: 'initial'
@@ -3287,11 +3091,6 @@ dataLayer.push({
     name: 'acquittance',
     type: 'bills',
     step: {
-      /**
-       * The step's name in a dasherized form.
-       *
-       * Example: 'product-selection', 'address-input', etc.
-       */
       name: 'home',
       index: 1,
       type: 'initial'
@@ -3331,13 +3130,8 @@ dataLayer.push({
     name: 'acquittance',
     type: 'bills',
     step: {
-      /**
-       * The step's name in a dasherized form.
-       *
-       * Example: 'product-selection', 'address-input', etc.
-       */
       name: 'receive-option',
-      index:  2,
+      index: 2,
       type: 'intermediary'
     }
   }
@@ -3376,13 +3170,8 @@ dataLayer.push({
     name: 'acquittance',
     type: 'bills',
     step: {
-      /**
-       * The step's name in a dasherized form.
-       *
-       * Example: 'product-selection', 'address-input', etc.
-       */
       name: 'reference-year',
-      index:  3,
+      index: 3,
       type: 'intermediary'
     }
   }
@@ -3441,11 +3230,6 @@ dataLayer.push({
     name: 'acquittance',
     type: 'bills',
     step: {
-      /**
-       * The step's name in a dasherized form.
-       *
-       * Example: 'product-selection', 'address-input', etc.
-       */
       name: 'confirm-email',
       index:  2,
       type: 'intermediary'
@@ -3560,11 +3344,6 @@ dataLayer.push({
     name: 'agreements',
     type: 'billS',
     step: {
-      /**
-       * The step's name in a dasherized form.
-       *
-       * Example: 'product-selection', 'address-input', etc.
-       */
       name: 'home',
       index: 1,
       type: 'initial'
@@ -3605,11 +3384,6 @@ dataLayer.push({
     name: 'agreements',
     type: 'bills',
     step: {
-      /**
-       * The step's name in a dasherized form.
-       *
-       * Example: 'product-selection', 'address-input', etc.
-       */
       name: 'send-by-email',
       index: 2,
       type: 'intermediary'
@@ -3718,11 +3492,6 @@ dataLayer.push({
     name: 'change-due',
     type: 'billS',
     step: {
-      /**
-       * The step's name in a dasherized form.
-       *
-       * Example: 'product-selection', 'address-input', etc.
-       */
       name: 'home',
       index: 1,
       type: 'initial'
