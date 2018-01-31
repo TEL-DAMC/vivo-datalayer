@@ -1375,6 +1375,7 @@ dataLayer.push({
    */
   element: HTMLElement
 })
+
 /**
 -------------------------------------------------------------------------------------
 ------------------------------------------------------------
@@ -1527,6 +1528,120 @@ dataLayer.push({
    */
   element: HTMLElement
 })
+
+/**
+--------------------------------------------------------
+------------------------------------------------------------
+                         -----------------
+------------------------------------------------------------*/
+/** FEATURE DE DETALHAMENTO DE CONSUMO POR E-MAIL - JORNADA ALTERAÇÃO DATA
+*/
+  /**
+ * Detalhamento de Consumo por e-mail Screen
+ * ON: Page load
+ */
+
+dataLayer.push({
+  event: 'feature-step',
+  feature: {
+    name: 'detailing-email-consumption-change-date',
+    type: 'consumption',
+    step: {
+      name: 'home',
+      index: 1,
+      type: 'initial'
+    }
+  }
+})
+
+/**
+ * Detalhamento de Consumo por e-mail Screen
+ * ON: After user clicks 'Desativar' ou 'Alterar'
+ */
+dataLayer.push({
+  event: 'feature-interaction',
+  feature: {
+    name: 'detailing-email-consumption-change-date',
+    type: 'consumption',
+    step: {
+      name: 'home',
+      index: 1,
+      type: 'initial'
+    }
+  },
+  interaction: {
+    name: 'confirm',
+    value: 'next'
+  }
+})
+
+/**
+ * Detalhamento de Consumo por e-mail Screen
+ * ON: Success in deactivating the email
+ */
+dataLayer.push({
+  event: 'feature-step',
+  feature: {
+    name: 'detailing-email-consumption-deactivation',
+    type: 'consumption',
+    step: {
+      name: 'deactivation-success',
+      index: 2,
+      type: 'completion',
+      success: true
+    }
+  }
+})
+
+/**
+ * Detalhamento de Consumo por e-mail Screen
+ * ON: Interface warning when user tries to send form incorrectly, when a field is filled incorrectly, etc.
+ */
+dataLayer.push({
+  event: 'interface-message',
+  message: {
+    type: 'warning',
+    /**
+     * Name of the warning.
+     * Please try to consider including the field that showed the error.
+     */
+    name: string,
+    /**
+     * Warning code, if available
+     */
+    code: string
+  },
+  /**
+   * The element that diplays the warning, when available
+   */
+  element: HTMLElement
+})
+
+/**
+ * Detalhamento de Consumo por e-mail Screen
+ * ON: Server errors and unavailabilities
+ */
+dataLayer.push({
+  event: 'interface-message',
+  message: {
+    type: 'error',
+    /**
+     * Name of the warning.
+     * Please try to consider including the field that showed the error.
+     */
+    name: string,
+    /**
+     * Warning code, if available
+     */
+    code: string
+  },
+  /**
+   * The element that diplays the error, when available
+   */
+  element: HTMLElement
+})
+
+
 
 /**
 --------------------------------------------------------
