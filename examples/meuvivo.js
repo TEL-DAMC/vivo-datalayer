@@ -1012,7 +1012,7 @@ dataLayer.push({
     name: 'consumption-control-activation',
     type: 'consumption',
     step: {
-      name: 'success',
+      name: 'success-activation',
       index: 3,
       type: 'completion',
       success: true
@@ -1166,7 +1166,7 @@ dataLayer.push({
     name: 'consumption-control-deactivation',
     type: 'consumption',
     step: {
-      name: 'success',
+      name: 'success-deactivation',
       index: 3,
       type: 'completion',
       success: true
