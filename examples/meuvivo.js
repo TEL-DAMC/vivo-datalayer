@@ -286,7 +286,7 @@ dataLayer.push({
 -------------------------------------------
 **/
 /**
- * FEATURE DE CONTAS - CONSUMO DE INTERNET
+ * FEATURE DE CONTAS - CONSUMO DE INTERNET - DESKTOP
  */
 
 /**
@@ -327,17 +327,28 @@ dataLayer.push({
   }
 })
 
+
+/*
+------------------------------------------------------
+------------------------------------------------------
+*/
+
+
 /**
- * Consumo de Internet Screen - Mobile
+ * FEATURE DE CONTAS - PEDIR INTERNET - MOBILE
+ */
+
+/**
+ * Pedir Internet Screen - Mobile
  * ON: Page load
  */
 dataLayer.push({
   event: 'feature-step',
   feature: {
-    name: 'internet-consumption',
+    name: 'ask-internet',
     type: 'consumption',
     step: {
-      name: 'ask-or-share',
+      name: 'home',
       index: 1,
       type: 'initial'
     }
@@ -345,24 +356,293 @@ dataLayer.push({
 })
 
 /**
- * Consumo de Internet Screen - Mobile
- * ON: After user clicks 'Contratar Pacotes' 
+ * Pedir Internet Screen - Mobile
+ * ON: After user clicks 'Confirmar' 
  */
 dataLayer.push({
   event: 'feature-interaction',
   feature: {
-    name: 'internet-consumption',
+    name: 'ask-internet',
     type: 'consumption',
     step: {
-      name: 'ask-or-share',
+      name: 'home',
       index: 1,
       type: 'initial'
     }
   },
   interaction: {
-    name: 'to-ask'|'to-share'|'to-consult',
+    name: 'confirm',
     value: 'next'
   }
+})
+
+/**
+ * Pedir Internet Screen - Mobile
+ * ON: Success in sending email confirmation
+ */
+dataLayer.push({
+  event: 'feature-step',
+  feature: {
+    name: 'ask-internet',
+    type: 'consumption',
+    step: {
+      name: 'success',
+      index: 2,
+      type: 'completion',
+      success: true
+    }
+  }
+})
+
+/**
+ * Pedir Internet Screen - Mobile
+ * ON: Interface warning when user tries to send form incorrectly, when a field is filled incorrectly, etc.
+ */
+dataLayer.push({
+  event: 'interface-message',
+  message: {
+    type: 'warning',
+    /**
+     * Name of the warning.
+     * Please try to consider including the field that showed the error.
+     */
+    name: string,
+    /**
+     * Warning code, if available
+     */
+    code: string
+  },
+  /**
+   * The element that diplays the warning, when available
+   */
+  element: HTMLElement
+})
+
+/**
+ * Pedir Internet Screen - Mobile
+ * ON: Server errors and unavailabilities
+ */
+dataLayer.push({
+  event: 'interface-message',
+  message: {
+    type: 'error',
+    /**
+     * Name of the warning.
+     * Please try to consider including the field that showed the error.
+     */
+    name: string,
+    /**
+     * Warning code, if available
+     */
+    code: string
+  },
+  /**
+   * The element that diplays the error, when available
+   */
+  element: HTMLElement
+})
+
+/*
+------------------------------------------------------
+------------------------------------------------------
+*/
+/**
+ * FEATURE DE CONTAS - COMPARTILHAR INTERNET - MOBILE
+ */
+
+/**
+ * Compartilhar Internet Screen - Mobile
+ * ON: Page load
+ */
+dataLayer.push({
+  event: 'feature-step',
+  feature: {
+    name: 'share-internet',
+    type: 'consumption',
+    step: {
+      /**
+       * The step's name in a dasherized form.
+       *
+       * Example: 'product-selection', 'address-input', etc.
+       */
+      name: 'home',
+      index: 1,
+      type: 'initial'
+    }
+  }
+})
+
+/**
+ * Compartilhar Internet Screen - Mobile
+ * ON: After user clicks 'Continuar' 
+ */
+dataLayer.push({
+  event: 'feature-interaction',
+  feature: {
+    name: 'share-internet',
+    type: 'consumption',
+    step: {
+      name: 'home',
+      index: 1,
+      type: 'initial'
+    }
+  },
+  interaction: {
+    name: 'choose',
+    value: 'confirm-number'|'log-view'
+  }
+})
+
+/**
+ * Compartilhar Internet Screen - Mobile
+ * ON: Page load
+ */
+dataLayer.push({
+  event: 'feature-step',
+  feature: {
+    name: 'share-internet',
+    type: 'consumption',
+    step: {
+      /**
+       * The step's name in a dasherized form.
+       *
+       * Example: 'product-selection', 'address-input', etc.
+       */
+      name: 'shared-amount'|'log-view',
+      index: 2,
+      type: 'intermediary'
+    }
+  }
+})
+
+/**
+ * Compartilhar Internet Screen - Mobile
+ * ON: After user click on any quantity
+ */
+dataLayer.push({
+  event: 'feature-interaction',
+  feature: {
+    name: 'share-internet',
+    type: 'consumption',
+    step: {
+      name: 'shared-amount',
+      index: 2,
+      type: 'intermediary'
+    }
+  },
+  interaction: {
+    name: 'choose-quantity',
+    value: 'confirm'
+  }
+})
+
+/**
+ * Compartilhar Internet Screen - Mobile
+ * ON: Page load
+ */
+dataLayer.push({
+  event: 'feature-step',
+  feature: {
+    name: 'share-internet',
+    type: 'consumption',
+    step: {
+      /**
+       * The step's name in a dasherized form.
+       *
+       * Example: 'product-selection', 'address-input', etc.
+       */
+      name: 'confirms-shared-amount',
+      index: 3,
+      type: 'intermediary'
+    }
+  }
+})
+
+/**
+ * Compartilhar Internet Screen - Mobile
+ * ON: After user click on any quantity
+ */
+dataLayer.push({
+  event: 'feature-interaction',
+  feature: {
+    name: 'share-internet',
+    type: 'consumption',
+    step: {
+      name: 'confirms-shared-amount',
+      index: 3,
+      type: 'intermediary'
+    }
+  },
+  interaction: {
+    name: 'confirm',
+    value: 'next'
+  }
+})
+
+
+/**
+ * Compartilhar Internet Screen - Mobile
+ * ON: Success in sending email confirmation
+ */
+dataLayer.push({
+  event: 'feature-step',
+  feature: {
+    name: 'share-internet',
+    type: 'consumption',
+    step: {
+      index: 4,
+      type: 'completion',
+      success: true
+    }
+  }
+})
+
+/**
+ * Compartilhar Internet Screen - Mobile
+ * ON: Interface warning when user tries to send form incorrectly, when a field is filled incorrectly, etc.
+ */
+dataLayer.push({
+  event: 'interface-message',
+  message: {
+    type: 'warning',
+    /**
+     * Name of the warning.
+     * Please try to consider including the field that showed the error.
+     */
+    name: string,
+    /**
+     * Warning code, if available
+     */
+    code: string
+  },
+  /**
+   * The element that diplays the warning, when available
+   */
+  element: HTMLElement
+})
+
+/**
+ * Compartilhar Internet Screen - Mobile
+ * ON: Server errors and unavailabilities
+ */
+dataLayer.push({
+  event: 'interface-message',
+  message: {
+    type: 'error',
+    /**
+     * Name of the warning.
+     * Please try to consider including the field that showed the error.
+     */
+    name: string,
+    /**
+     * Warning code, if available
+     */
+    code: string
+  },
+  /**
+   * The element that diplays the error, when available
+   */
+  element: HTMLElement
 })
 
 
@@ -2240,14 +2520,14 @@ dataLayer.push({
 /** FEATURE DE CONTAS - SEGUNDA VIA DE CONTAS - JORNADA DE ATIVAÇAO
 */
   /**
- * 2° Via de Contas Screen -  PEDIR PRA CAROL INSERIR
+ * 2° Via de Contas Screen - 
  * ON: Page load
  */
 
 dataLayer.push({
   event: 'feature-step',
   feature: {
-    name: 'duplicate-bill',
+    name: 'bill-duplicate',
     type: 'bills',
     step: {
       name: 'home',
@@ -2265,7 +2545,7 @@ dataLayer.push({
 dataLayer.push({
   event: 'feature-interaction',
   feature: {
-    name: 'duplicate-bill',
+    name: 'bill-duplicate',
     type: 'bills',
     step: {
       name: 'home',
@@ -2275,7 +2555,7 @@ dataLayer.push({
   },
   interaction: {
     name: 'options',
-    value: 'detail-duplicate-bill'| 'paid' | 'send-by-email'
+    value: 'detail-bill-duplicate'| 'paid' | 'send-by-email'
   }
 })
 
@@ -2287,10 +2567,10 @@ dataLayer.push({
 dataLayer.push({
   event: 'feature-step',
   feature: {
-    name: 'duplicate-bill',
+    name: 'bill-duplicate',
     type: 'bills',
     step: {
-      name: 'detail-duplicate-bill',
+      name: 'detail-bill-duplicate',
       index: 2,
       type: 'intermediary'
     }
@@ -2305,10 +2585,10 @@ dataLayer.push({
 dataLayer.push({
   event: 'feature-interaction',
   feature: {
-    name: 'duplicate-bill',
+    name: 'bill-duplicate',
     type: 'bills',
     step: {
-      name: 'detail-duplicate-bill',
+      name: 'detail-bill-duplicate',
       index: 2,
       type: 'intermediary'
     }
@@ -2327,7 +2607,7 @@ dataLayer.push({
 dataLayer.push({
   event: 'feature-step',
   feature: {
-    name: 'duplicate-bill',
+    name: 'bill-duplicate',
     type: 'bills',
     step: {
       name: 'send-by-email',
@@ -2345,7 +2625,7 @@ dataLayer.push({
 dataLayer.push({
   event: 'feature-interaction',
   feature: {
-    name: 'duplicate-bill',
+    name: 'bill-duplicate',
     type: 'bills',
     step: {
       name: 'send-by-email',
@@ -2369,7 +2649,7 @@ dataLayer.push({
 dataLayer.push({
   event: 'feature-step',
   feature: {
-    name: 'duplicate-bill',
+    name: 'bill-duplicate',
     type: 'bills',
     step: {
       name: 'success',
@@ -2503,7 +2783,7 @@ dataLayer.push({
 dataLayer.push({
   event: 'feature-interaction',
   feature: {
-    name: 'duplicate-bill',
+    name: 'bill-duplicate',
     type: 'bills',
     step: {
       name: 'change-adress',
@@ -2543,7 +2823,7 @@ dataLayer.push({
 dataLayer.push({
   event: 'feature-interaction',
   feature: {
-    name: 'duplicate-bill',
+    name: 'bill-duplicate',
     type: 'bills',
     step: {
       name: 'confirm-adress',
