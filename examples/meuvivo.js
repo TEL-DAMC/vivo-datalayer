@@ -1012,7 +1012,7 @@ dataLayer.push({
     name: 'consumption-control-activation',
     type: 'consumption',
     step: {
-      name: 'success-activation',
+      name: 'activation-success',
       index: 3,
       type: 'completion',
       success: true
@@ -1166,7 +1166,7 @@ dataLayer.push({
     name: 'consumption-control-deactivation',
     type: 'consumption',
     step: {
-      name: 'success-deactivation',
+      name: 'deactivation-success',
       index: 3,
       type: 'completion',
       success: true
@@ -1404,7 +1404,7 @@ dataLayer.push({
 
 /**
  * Detalhamento de Consumo por e-mail Screen
- * ON: After user clicks 'Desativar' ou 'Alterar'
+ * ON: After user clicks 'Desativar'
  */
 dataLayer.push({
   event: 'feature-interaction',
