@@ -3671,7 +3671,7 @@ dataLayer.push({
 -----------------------------------------------------
                      --------------
 */
-/** FEATURE DE CONTAS - COMTA DETALHADA PELA INTERNET
+/** FEATURE DE CONTAS - CONTA DETALHADA PELA INTERNET
 */
   /**
  * Conta detalhada na internet Screen
@@ -3762,5 +3762,95 @@ dataLayer.push({
   element: HTMLElement
 })
 
+/** FEATURE DE CONTAS - CONTROLE DE CONTA
+*/
+  /**
+ * Controle de Conta Screen
+ * ON: Page load
+ */
+
+dataLayer.push({
+  event: 'feature-step',
+  feature: {
+    name: 'bill-control',
+    type: 'bills',
+    step: {
+      name: 'home',
+      index: 1,
+      type: 'initial'
+    }
+  }
+})
+
+/**
+ * Controle de Conta Screen
+ * ON: After user clicks "Salvar Conta" e "Conta detalhada na Internet"
+ */
+dataLayer.push({
+  event: 'feature-interaction',
+  feature: {
+    name: 'bill-control',
+    type: 'bills',
+    step: {
+      name: 'home',
+      index: 1,
+      type: 'initial'
+    }
+  },
+  interaction: {
+    name: 'options',
+    value: 'save-bill'| 'internet-bill'
+  }
+})
+
+
+  
+/**
+ * Conta detalhada por e-mail Screen
+ * ON: Interface warning when user tries to send form incorrectly, when a field is filled incorrectly, etc.
+ */
+dataLayer.push({
+  event: 'interface-message',
+  message: {
+    type: 'warning',
+    /**
+     * Name of the warning.
+     * Please try to consider including the field that showed the error.
+     */
+    name: string,
+    /**
+     * Warning code, if available
+     */
+    code: string
+  },
+  /**
+   * The element that diplays the warning, when available
+   */
+  element: HTMLElement
+})
+
+/**
+ * Conta detalhada por e-mail Screen
+ * ON: Server errors and unavailabilities
+ */
+dataLayer.push({
+  event: 'interface-message',
+  message: {
+    type: 'error',
+    /**
+     * Name of the warning.
+     * Please try to consider including the field that showed the error.
+     */
+    name: string,
+    /**
+     * Warning code, if available
+     */
+    code: string
+  },
+  /**
+   * The element that diplays the error, when available
+   */
+  element: HTMLElement
+})
 
 
