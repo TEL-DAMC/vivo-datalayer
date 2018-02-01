@@ -286,7 +286,141 @@ dataLayer.push({
 ------------------------------------------------------
 */
 /**
- * FEATURE DE CONTAS - PEDIR INTERNET - MOBILE
+ * FEATURE DE CONTAS - CONSUMO DE INTERNET - CONTRATAR PACOTES
+ */
+/**
+ * Consumo de Internet - Contratar Pacotes Screen
+ * ON: Page load
+ */
+dataLayer.push({
+  event: 'feature-step',
+  feature: {
+    name: 'packages-and-services',
+    type: 'consumption',
+    step: {
+      name: 'home',
+      index: 1,
+      type: 'initial'
+    }
+  }
+})
+
+/**
+ * Consumo de Internet - Contratar Pacotes Screen
+ * ON: After user clicks 'Contratar Pacotes' 
+ */
+dataLayer.push({
+  event: 'feature-interaction',
+  feature: {
+    name: 'packages-and-services',
+    type: 'consumption',
+    step: {
+      name: 'home',
+      index: 1,
+      type: 'initial'
+    }
+  },
+  interaction: {
+    name: 'confirm',
+    value: 'next'
+  }
+})
+
+/**
+ * Consumo de Internet - Contratar Pacotes Screen
+ * ON: Page load
+ */
+dataLayer.push({
+  event: 'feature-step',
+  feature: {
+    name: 'packages-and-services',
+    type: 'consumption',
+    step: {
+      name: 'hire-aditional-packages',
+      index: 2,
+      type: 'intermediary'
+    }
+  }
+})
+
+/**
+ * Consumo de Internet - Contratar Pacotes Screen
+ * ON: After user clicks 'Contratar Pacotes' 
+ */
+dataLayer.push({
+  event: 'feature-interaction',
+  feature: {
+    name: 'packages-and-services',
+    type: 'consumption',
+    step: {
+      name: 'hire-additional-packages',
+      index: 2,
+      type: 'intermediary'
+    }
+  },
+  interaction: {
+    name: 'confirm',
+    value: 'next'
+  }
+})
+
+/**
+ * Consumo de Internet - Contratar Pacotes Screen
+ * ON: Interface warning when user tries to send form incorrectly, when a field is filled incorrectly, etc.
+ */
+dataLayer.push({
+  event: 'interface-message',
+  message: {
+    type: 'warning',
+    /**
+     * Name of the warning.
+     * Please try to consider including the field that showed the error.
+     */
+    name: string,
+    /**
+     * Warning code, if available
+     */
+    code: string
+  },
+  /**
+   * The element that diplays the warning, when available
+   */
+  element: HTMLElement
+})
+
+/**
+ * Consumo de Internet - Contratar Pacotes Screen
+ * ON: Server errors and unavailabilities
+ */
+dataLayer.push({
+  event: 'interface-message',
+  message: {
+    type: 'error',
+    /**
+     * Name of the warning.
+     * Please try to consider including the field that showed the error.
+     */
+    name: string,
+    /**
+     * Warning code, if available
+     */
+    code: string
+  },
+  /**
+   * The element that diplays the error, when available
+   */
+  element: HTMLElement
+})
+]
+
+
+
+/*
+------------------------------------------------------
+------------------------------------------------------
+*/
+/**
+ * FEATURE DE CONTAS - CONSUMO DE INTERNET - PEDIR INTERNET - MOBILE
  */
 /**
  * Pedir Internet Screen - Mobile
@@ -397,7 +531,7 @@ dataLayer.push({
 ------------------------------------------------------
 */
 /**
- * FEATURE DE CONTAS - COMPARTILHAR INTERNET - MOBILE
+ * FEATURE DE CONTAS - CONSUMO DE INTERNET - COMPARTILHAR INTERNET - MOBILE
  */
 
 /**
@@ -1745,43 +1879,17 @@ dataLayer.push({
   element: HTMLElement
 })
 
-/**
----------------------------------------------------------
-------Meu Consumo (Móvel - pós, controle e beatrix)---------
-------------------------------------------------------------
-*/
-
-/** FEATURE DE MEU CONSUMO 
-*/
-/**
- * Meu Consumo Screen
- * ON: Page load
- */
-dataLayer.push({
-  event: 'feature-step',
-  feature: {
-    name: 'my-consumption',
-    type: 'my-consumption',
-    step: {
-      name: 'home',
-      index: 1,
-      type: 'initial'
-    }
-  }
-})
 
 
 /**
 ---------------------------------------------------------
+-------------------FEATURES DE CONTAS--------------------
 ---------------------------------------------------------
----------------------------------------------------------
-------------------------------------------------------------
-                         -----------------
-------------------------------------------------------------*/
-
-/** FEATURE DE CONTAS - CONTA DIGITAL -JORNADA DE ATIVAÇAO
 */
-  /**
+
+/** FEATURE DE CONTAS - CONTA DIGITAL -JORNADA DE ATIVAÇAO  */
+
+/**
  * Conta Digital Screen
  * ON: Page load
  */
