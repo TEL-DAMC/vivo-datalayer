@@ -411,9 +411,6 @@ dataLayer.push({
    */
   element: HTMLElement
 })
-]
-
-
 
 /*
 ------------------------------------------------------
@@ -729,6 +726,152 @@ dataLayer.push({
   element: HTMLElement
 })
 
+/**
+ * FEATURE DE CONTAS - CONSUMO DE VOZ - FIXO 1
+ */
+/**
+ * Consumo de Voz Screen
+ * ON: Page load
+ */
+dataLayer.push({
+  event: 'feature-step',
+  feature: {
+    name: 'voice-comsuption',
+    type: 'consumption',
+    step: {
+      name: 'home',
+      index: 1,
+      type: 'initial'
+    }
+  }
+})
+
+/**
+ * Consumo de Voz Screen
+ * ON: After user choose option - "To print", "Download" or "Send by email"
+ */
+dataLayer.push({
+  event: 'feature-interaction',
+  feature: {
+    name: 'voice-consumption',
+    type: 'consumption',
+    step: {
+      name: 'home',
+      index: 1,
+      type: 'initial'
+    }
+  },
+  interaction: {
+    name: 'choose-export-action',
+    value: 'to-print'| 'salve-to-pdf' | 'send-by-email'
+  }
+})
+
+/**
+ * Consumo de Voz Screen
+ * ON: After load Lightbox
+ */
+dataLayer.push({
+  event: 'feature-step',
+  feature: {
+    name: 'voice-consumption',
+    type: 'consumption',
+    step: {
+      name: 'send-by-email',
+      index: 2,
+      type: 'intermediary'
+    }
+  }
+})
+
+/**
+ * Consumo de Voz Screen
+ * ON: After user confirm sendind email
+ */
+dataLayer.push({
+  event: 'feature-interaction',
+  feature: {
+    name: 'voice-consumption',
+    type: 'consumption',
+    step: {
+      name: 'send-by-email',
+      index: 2,
+      type: 'intermediary'
+    }
+  },
+  interaction: {
+    name: 'confirm',
+    value: 'next'
+  }
+})
+
+/**
+ * Consumo de Voz Screen
+ * ON: Success in sending email confirmation
+ */
+dataLayer.push({
+  event: 'feature-step',
+  feature: {
+    name: 'voice-consumption',
+    type: 'consumption',
+    step: {
+      name: 'send-email-success',
+      index: 3,
+      type: 'completion',
+      success: true
+    }
+  }
+})
+
+/**
+ * Consumo de Voz Screen
+ * ON: Interface warning when user tries to send form incorrectly, when a field is filled incorrectly, etc.
+ */
+dataLayer.push({
+  event: 'interface-message',
+  message: {
+    type: 'warning',
+    /**
+     * Name of the warning.
+     * Please try to consider including the field that showed the error.
+     */
+    name: string,
+    /**
+     * Warning code, if available
+     */
+    code: string
+  },
+  /**
+   * The element that diplays the warning, when available
+   */
+  element: HTMLElement
+})
+
+/**
+ * Consumo de Voz Screen
+ * ON: Server errors and unavailabilities
+ */
+dataLayer.push({
+  event: 'interface-message',
+  message: {
+    type: 'error',
+    /**
+     * Name of the warning.
+     * Please try to consider including the field that showed the error.
+     */
+    name: string,
+    /**
+     * Warning code, if available
+     */
+    code: string
+  },
+  /**
+   * The element that diplays the error, when available
+   */
+  element: HTMLElement
+})
+
+
 
 
 /*
@@ -738,7 +881,7 @@ dataLayer.push({
 **/
 
 /**
- * FEATURE DE CONTAS - EXTRATO
+ * FEATURE DE CONSUMO - EXTRATO
  */
 /**
  * Extrato Screen
