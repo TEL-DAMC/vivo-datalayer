@@ -321,48 +321,11 @@ dataLayer.push({
     }
   },
   interaction: {
-    name: 'confirm',
+    name: 'to-hire',
     value: 'next'
   }
 })
 
-/**
- * Consumo de Internet - Contratar Pacotes Screen
- * ON: Page load
- */
-dataLayer.push({
-  event: 'feature-step',
-  feature: {
-    name: 'packages-and-services',
-    type: 'consumption',
-    step: {
-      name: 'hire-aditional-packages',
-      index: 2,
-      type: 'intermediary'
-    }
-  }
-})
-
-/**
- * Consumo de Internet - Contratar Pacotes Screen
- * ON: After user clicks 'Contratar Pacotes' 
- */
-dataLayer.push({
-  event: 'feature-interaction',
-  feature: {
-    name: 'packages-and-services',
-    type: 'consumption',
-    step: {
-      name: 'hire-additional-packages',
-      index: 2,
-      type: 'intermediary'
-    }
-  },
-  interaction: {
-    name: 'confirm',
-    value: 'next'
-  }
-})
 
 /**
  * Consumo de Internet - Contratar Pacotes Screen
@@ -541,11 +504,7 @@ dataLayer.push({
     name: 'share-internet',
     type: 'consumption',
     step: {
-      /**
-       * The step's name in a dasherized form.
-       *
-       * Example: 'product-selection', 'address-input', etc.
-       */
+ 
       name: 'home',
       index: 1,
       type: 'initial'
@@ -584,11 +543,6 @@ dataLayer.push({
     name: 'share-internet',
     type: 'consumption',
     step: {
-      /**
-       * The step's name in a dasherized form.
-       *
-       * Example: 'product-selection', 'address-input', etc.
-       */
       name: 'shared-amount',
       index: 2,
       type: 'intermediary'
@@ -627,11 +581,6 @@ dataLayer.push({
     name: 'share-internet',
     type: 'consumption',
     step: {
-      /**
-       * The step's name in a dasherized form.
-       *
-       * Example: 'product-selection', 'address-input', etc.
-       */
       name: 'confirms-shared-amount',
       index: 3,
       type: 'intermediary'
