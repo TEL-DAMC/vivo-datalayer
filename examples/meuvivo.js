@@ -3674,7 +3674,7 @@ dataLayer.push({
 /** FEATURE DE CONTAS - CONTA DETALHADA PELA INTERNET
 */
   /**
- * Conta detalhada na internet Screen
+ * Conta detalhada pela internet Screen
  * ON: Page load
  */
 
@@ -3692,7 +3692,7 @@ dataLayer.push({
 })
 
 /**
- * Conta detalhada na internet Screen
+ * Conta detalhada pela internet Screen
  * ON: After user clicks "Salvar Conta" e "Conta detalhada na Internet"
  */
 dataLayer.push({
@@ -3715,7 +3715,7 @@ dataLayer.push({
 
   
 /**
- * Conta detalhada por e-mail Screen
+ * Conta detalhada pela internet Screen
  * ON: Interface warning when user tries to send form incorrectly, when a field is filled incorrectly, etc.
  */
 dataLayer.push({
@@ -3739,7 +3739,7 @@ dataLayer.push({
 })
 
 /**
- * Conta detalhada por e-mail Screen
+ * Conta detalhada pela internet Screen
  * ON: Server errors and unavailabilities
  */
 dataLayer.push({
@@ -3854,3 +3854,93 @@ dataLayer.push({
 })
 
 
+/** FEATURE DE CONTAS - CONTAS CONTESTADAS
+*/
+  /**
+ * Contas Contestadas Screen
+ * ON: Page load
+ */
+
+dataLayer.push({
+  event: 'feature-step',
+  feature: {
+    name: 'replied-bills',
+    type: 'bills',
+    step: {
+      name: 'home',
+      index: 1,
+      type: 'initial'
+    }
+  }
+})
+
+/**
+ * Contas Contestadas Screen
+ * ON: After user clicks "Acessar chat
+ */
+dataLayer.push({
+  event: 'feature-interaction',
+  feature: {
+    name: 'replied-bills',
+    type: 'bills',
+    step: {
+      name: 'home',
+      index: 1,
+      type: 'initial'
+    }
+  },
+  interaction: {
+    name: 'options',
+    value: 'access chat' | 'learn-more'
+  }
+})
+
+
+  
+/**
+ * Contas Contestadas Screen
+ * ON: Interface warning when user tries to send form incorrectly, when a field is filled incorrectly, etc.
+ */
+dataLayer.push({
+  event: 'interface-message',
+  message: {
+    type: 'warning',
+    /**
+     * Name of the warning.
+     * Please try to consider including the field that showed the error.
+     */
+    name: string,
+    /**
+     * Warning code, if available
+     */
+    code: string
+  },
+  /**
+   * The element that diplays the warning, when available
+   */
+  element: HTMLElement
+})
+
+/**
+ * Contas Contestadas Screen
+ * ON: Server errors and unavailabilities
+ */
+dataLayer.push({
+  event: 'interface-message',
+  message: {
+    type: 'error',
+    /**
+     * Name of the warning.
+     * Please try to consider including the field that showed the error.
+     */
+    name: string,
+    /**
+     * Warning code, if available
+     */
+    code: string
+  },
+  /**
+   * The element that diplays the error, when available
+   */
+  element: HTMLElement
+})
