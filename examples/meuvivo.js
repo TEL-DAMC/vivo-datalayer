@@ -1989,7 +1989,7 @@ dataLayer.push({
 dataLayer.push({
   event: 'feature-step',
   feature: {
-    name: 'digital-bill',
+    name: 'digital-bill-activation',
     type: 'bills',
     step: {
       name: 'home',
@@ -2006,7 +2006,7 @@ dataLayer.push({
 dataLayer.push({
   event: 'feature-interaction',
   feature: {
-    name: 'digital-bill',
+    name: 'digital-bill-activation',
     type: 'bills',
     step: {
       name: 'home',
@@ -2028,7 +2028,7 @@ dataLayer.push({
 dataLayer.push({
   event: 'feature-step',
   feature: {
-    name: 'digital-bill',
+    name: 'digital-bill-activation',
     type: 'bills',
     step: {
       name: 'confirm-email',
@@ -2046,7 +2046,7 @@ dataLayer.push({
 dataLayer.push({
   event: 'feature-interaction',
   feature: {
-    name: 'digital-bill',
+    name: 'digital-bill-activation',
     type: 'bills',
     step: {
       name: 'confirm-email',
@@ -2061,7 +2061,6 @@ dataLayer.push({
 })
 
 
-
 /**
  * Conta Digital Screen
  * ON: Success in sending email confirmation
@@ -2069,7 +2068,7 @@ dataLayer.push({
 dataLayer.push({
   event: 'feature-step',
   feature: {
-    name: 'digital-bill',
+    name: 'digital-bill-activation',
     type: 'bills',
     step: {
       name: 'activation-success',
@@ -2127,6 +2126,159 @@ dataLayer.push({
    */
   element: HTMLElement
 })
+
+/** FEATURE DE CONTAS - CONTA DIGITAL -JORNADA DE DESATIVAÇAO  */
+
+/**
+ * Conta Digital Screen
+ * ON: Page load
+ */
+
+dataLayer.push({
+  event: 'feature-step',
+  feature: {
+    name: 'digital-bill-deactivation',
+    type: 'bills',
+    step: {
+      name: 'home',
+      index: 1,
+      type: 'initial'
+    }
+  }
+})
+
+/**
+ * Conta Digital Screen
+ * ON: After user clicks 'Desativar a Conta Digital'
+ */
+dataLayer.push({
+  event: 'feature-interaction',
+  feature: {
+    name: 'digital-bill-deactivation',
+    type: 'bills',
+    step: {
+      name: 'home',
+      index: 1,
+      type: 'initial'
+    }
+  },
+  interaction: {
+    name: 'to-disable',
+    value: 'next'
+  }
+})
+
+  /**
+ * Conta Digital Screen
+ * ON: Page load in deactivation confirmation
+ */
+
+dataLayer.push({
+  event: 'feature-step',
+  feature: {
+    name: 'digital-bill-deactivation',
+    type: 'bills',
+    step: {
+      name: 'confirm-deactivation',
+      index: 2,
+      type: 'intermediary'
+    }
+  }
+})
+
+
+/**
+ * Conta Digital Screen
+ * ON: After user clicks 'Confirmar'
+ */
+dataLayer.push({
+  event: 'feature-interaction',
+  feature: {
+    name: 'digital-bill-deactivation',
+    type: 'bills',
+    step: {
+      name: 'confirm-deactivation',
+      index: 2,
+      type: 'intermediary'
+    }
+  },
+  interaction: {
+    name: 'confirm',
+    value: 'next' | 'cancel'
+  }
+})
+
+
+/**
+ * Conta Digital Screen
+ * ON: Success in sending email confirmation
+ */
+dataLayer.push({
+  event: 'feature-step',
+  feature: {
+    name: 'digital-bill-deactivation',
+    type: 'bills',
+    step: {
+      name: 'deactivation-success',
+      index: 3,
+      type: 'completion',
+      success: true
+    }
+  }
+})
+
+/**
+ * Conta Digital Screen
+ * ON: Interface warning when user tries to send form incorrectly, when a field is filled incorrectly, etc.
+ */
+dataLayer.push({
+  event: 'interface-message',
+  message: {
+    type: 'warning',
+    /**
+     * Name of the warning.
+     * Please try to consider including the field that showed the error.
+     */
+    name: string,
+    /**
+     * Warning code, if available
+     */
+    code: string
+  },
+  /**
+   * The element that diplays the warning, when available
+   */
+  element: HTMLElement
+})
+
+/**
+ * Conta Digital Screen
+ * ON: Server errors and unavailabilities
+ */
+dataLayer.push({
+  event: 'interface-message',
+  message: {
+    type: 'error',
+    /**
+     * Name of the warning.
+     * Please try to consider including the field that showed the error.
+     */
+    name: string,
+    /**
+     * Warning code, if available
+     */
+    code: string
+  },
+  /**
+   * The element that diplays the error, when available
+   */
+  element: HTMLElement
+})
+
+
+
+
+
 /**
 -------------------------------------------------------------------------------------
 ------------------------------------------------------------
@@ -2136,14 +2288,14 @@ dataLayer.push({
 /** FEATURE DE DETALHAMENTO DE DÉBITO AUTOMÁTICO - JORNADA DE DESATIVAÇAO
 */
   /**
- * Conta Digital Screen
+ * Dèbito Automático Screen
  * ON: Page load
  */
 
 dataLayer.push({
   event: 'feature-step',
   feature: {
-    name: 'digital-bill',
+    name: 'digital-bill-activation',
     type: 'bills',
     step: {
       name: 'home',
@@ -2161,7 +2313,7 @@ dataLayer.push({
 dataLayer.push({
   event: 'feature-interaction',
   feature: {
-    name: 'digital-bill',
+    name: 'digital-bill-activation',
     type: 'bills',
     step: {
       name: 'home',
@@ -2183,7 +2335,7 @@ dataLayer.push({
 dataLayer.push({
   event: 'feature-step',
   feature: {
-    name: 'digital-bill',
+    name: 'digital-bill-activation',
     type: 'bills',
     step: {
       name: 'to-disable',
@@ -2201,7 +2353,7 @@ dataLayer.push({
 dataLayer.push({
   event: 'feature-interaction',
   feature: {
-    name: 'digital-bill',
+    name: 'digital-bill-activation',
     type: 'bills',
     step: {
       name: 'to-disable',
@@ -2223,7 +2375,7 @@ dataLayer.push({
 dataLayer.push({
   event: 'feature-step',
   feature: {
-    name: 'digital-bill',
+    name: 'digital-bill-activation',
     type: 'bills',
     step: {
       name: 'confirm',
@@ -2241,7 +2393,7 @@ dataLayer.push({
 dataLayer.push({
   event: 'feature-interaction',
   feature: {
-    name: 'digital-bill',
+    name: 'digital-bill-activation',
     type: 'bills',
     step: {
       name: 'confirm',
@@ -2263,7 +2415,7 @@ dataLayer.push({
 dataLayer.push({
   event: 'feature-step',
   feature: {
-    name: 'digital-bill',
+    name: 'digital-bill-activation',
     type: 'bills',
     step: {
       name: 'success',
