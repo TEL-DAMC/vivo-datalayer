@@ -286,7 +286,7 @@ dataLayer.push({
 ------------------------------------------------------
 */
 /**
- * FEATURE DE CONTAS - CONSUMO DE INTERNET - CONTRATAR PACOTES
+ * FEATURE DE CONSUMO - CONSUMO DE INTERNET - CONTRATAR PACOTES
  */
 /**
  * Consumo de Internet - Contratar Pacotes Screen
@@ -380,7 +380,7 @@ dataLayer.push({
 ------------------------------------------------------
 */
 /**
- * FEATURE DE CONTAS - CONSUMO DE INTERNET - PEDIR INTERNET - MOBILE
+ * FEATURE DE CONSUMO - CONSUMO DE INTERNET - PEDIR INTERNET - MOBILE
  */
 /**
  * Pedir Internet Screen - Mobile
@@ -491,7 +491,7 @@ dataLayer.push({
 ------------------------------------------------------
 */
 /**
- * FEATURE DE CONTAS - CONSUMO DE INTERNET - COMPARTILHAR INTERNET - MOBILE
+ * FEATURE DE CONSUMO - CONSUMO DE INTERNET - COMPARTILHAR INTERNET - MOBILE
  */
 
 /**
@@ -676,7 +676,7 @@ dataLayer.push({
 })
 
 /**
- * FEATURE DE CONTAS - CONSUMO DE VOZ - FIXO 1
+ * FEATURE DE CONSUMO - CONSUMO DE VOZ - FIXO 1
  */
 /**
  * Consumo de Voz Screen
@@ -1989,7 +1989,7 @@ dataLayer.push({
 dataLayer.push({
   event: 'feature-step',
   feature: {
-    name: 'digital-bill',
+    name: 'digital-bill-activation',
     type: 'bills',
     step: {
       name: 'home',
@@ -2006,7 +2006,7 @@ dataLayer.push({
 dataLayer.push({
   event: 'feature-interaction',
   feature: {
-    name: 'digital-bill',
+    name: 'digital-bill-activation',
     type: 'bills',
     step: {
       name: 'home',
@@ -2028,7 +2028,7 @@ dataLayer.push({
 dataLayer.push({
   event: 'feature-step',
   feature: {
-    name: 'digital-bill',
+    name: 'digital-bill-activation',
     type: 'bills',
     step: {
       name: 'confirm-email',
@@ -2046,20 +2046,19 @@ dataLayer.push({
 dataLayer.push({
   event: 'feature-interaction',
   feature: {
-    name: 'digital-bill',
+    name: 'digital-bill-activation',
     type: 'bills',
     step: {
-      name: 'home',
+      name: 'confirm-email',
       index: 2,
       type: 'intermediary'
     }
   },
   interaction: {
-    name: 'confirm-email',
-    value: 'confirm' | 'cancel'
+    name: 'confirm',
+    value: 'next' | 'cancel'
   }
 })
-
 
 
 /**
@@ -2069,10 +2068,10 @@ dataLayer.push({
 dataLayer.push({
   event: 'feature-step',
   feature: {
-    name: 'digital-bill',
+    name: 'digital-bill-activation',
     type: 'bills',
     step: {
-      name: 'success',
+      name: 'activation-success',
       index: 3,
       type: 'completion',
       success: true
@@ -2127,15 +2126,10 @@ dataLayer.push({
    */
   element: HTMLElement
 })
-/**
--------------------------------------------------------------------------------------
-------------------------------------------------------------
-                         -----------------
-------------------------------------------------------------*/
 
-/** FEATURE DE DETALHAMENTO DE DÉBITO AUTOMÁTICO - JORNADA DE DESATIVAÇAO
-*/
-  /**
+/** FEATURE DE CONTAS - CONTA DIGITAL -JORNADA DE DESATIVAÇAO  */
+
+/**
  * Conta Digital Screen
  * ON: Page load
  */
@@ -2143,7 +2137,7 @@ dataLayer.push({
 dataLayer.push({
   event: 'feature-step',
   feature: {
-    name: 'digital-bill',
+    name: 'digital-bill-deactivation',
     type: 'bills',
     step: {
       name: 'home',
@@ -2153,81 +2147,40 @@ dataLayer.push({
   }
 })
 
-
 /**
  * Conta Digital Screen
- * ON: After user clicks 'Desativar' ou 'Alterar'
+ * ON: After user clicks 'Desativar a Conta Digital'
  */
 dataLayer.push({
   event: 'feature-interaction',
   feature: {
-    name: 'digital-bill',
+    name: 'digital-bill-deactivation',
     type: 'bills',
     step: {
       name: 'home',
       index: 1,
       type: 'initial'
-    }
-  },
-  interaction: {
-    name: 'options',
-    value: 'disable'|'change'
-  }
-})
-
-  /**
- * Conta Digital Screen
- * ON: Page load
- */
-
-dataLayer.push({
-  event: 'feature-step',
-  feature: {
-    name: 'digital-bill',
-    type: 'bills',
-    step: {
-      name: 'to-disable',
-      index: 2,
-      type: 'intermediary'
-    }
-  }
-})
-
-
-/**
- * Conta Digital Screen
- * ON: After user clicks 'Confirmar'
- */
-dataLayer.push({
-  event: 'feature-interaction',
-  feature: {
-    name: 'digital-bill',
-    type: 'bills',
-    step: {
-      name: 'to-disable',
-      index: 2,
-      type: 'intermediary'
     }
   },
   interaction: {
     name: 'to-disable',
-    value: 'next' | 'cancel'
+    value: 'next'
   }
 })
 
   /**
  * Conta Digital Screen
- * ON: Page load
+ * ON: Page load in deactivation confirmation
  */
 
 dataLayer.push({
   event: 'feature-step',
   feature: {
-    name: 'digital-bill',
+    name: 'digital-bill-deactivation',
     type: 'bills',
     step: {
-      name: 'confirm',
-      index: 3,
+      name: 'confirm-deactivation',
+      index: 2,
       type: 'intermediary'
     }
   }
@@ -2241,11 +2194,11 @@ dataLayer.push({
 dataLayer.push({
   event: 'feature-interaction',
   feature: {
-    name: 'digital-bill',
+    name: 'digital-bill-deactivation',
     type: 'bills',
     step: {
-      name: 'confirm',
-      index: 3,
+      name: 'confirm-deactivation',
+      index: 2,
       type: 'intermediary'
     }
   },
@@ -2263,11 +2216,11 @@ dataLayer.push({
 dataLayer.push({
   event: 'feature-step',
   feature: {
-    name: 'digital-bill',
+    name: 'digital-bill-deactivation',
     type: 'bills',
     step: {
-      name: 'success',
-      index: 4,
+      name: 'deactivation-success',
+      index: 3,
       type: 'completion',
       success: true
     }
@@ -2329,21 +2282,60 @@ dataLayer.push({
 ------------------------------------------------------------
                          -----------------
 ------------------------------------------------------------*/
-/** FEATURE DE CONTAS - DÉBITO AUTOMÁTICO -JORNADA DE ATIVAÇAO
-*/
-  /**
+/** FEATURE DE CONTAS - DÉBITO AUTOMÁTICO -JORNADA DE ATIVAÇAO */
+
+ /**
  * Débito Automático Screen
  * ON: Page load
  */
-
 dataLayer.push({
   event: 'feature-step',
   feature: {
-    name: 'direct-debt',
+    name: 'direct-debt-activation',
     type: 'bills',
     step: {
-      name: 'home-select-bank',
+      name: 'home',
       index: 1,
+      type: 'initial'
+    }
+  }
+})
+
+
+/**
+ * Débito Automático Screen
+ * ON: After user clicks 'Ativar Dèbito Automático'
+ */
+dataLayer.push({
+  event: 'feature-interaction',
+  feature: {
+    name: 'direct-debt-activation',
+    type: 'bills',
+    step: {
+      name: 'home',
+      index: 1,
+      type: 'initial'
+    }
+  },
+  interaction: {
+    name: 'to-active',
+    value: 'next'
+  }
+})
+
+
+ /**
+ * Débito Automático Screen
+ * ON: Page load
+ */
+dataLayer.push({
+  event: 'feature-step',
+  feature: {
+    name: 'direct-debt-activation',
+    type: 'bills',
+    step: {
+      name: 'select-bank',
+      index: 2,
       type: 'initial'
     }
   }
@@ -2357,12 +2349,12 @@ dataLayer.push({
 dataLayer.push({
   event: 'feature-interaction',
   feature: {
-    name: 'direct-debt',
+    name: 'direct-debt-activation',
     type: 'bills',
     step: {
-      name: 'home-select-bank',
-      index: 1,
-      type: 'initial'
+      name: 'select-bank',
+      index: 2,
+      type: 'intermediary'
     }
   },
   interaction: {
@@ -2378,11 +2370,11 @@ dataLayer.push({
 dataLayer.push({
   event: 'feature-step',
   feature: {
-    name: 'direct-debt',
+    name: 'direct-debt-activation',
     type: 'bills',
     step: {
-      name: 'success',
-      index: 2,
+      name: 'activation-success',
+      index: 3,
       type: 'completion',
       success: true
     }
@@ -2452,7 +2444,7 @@ dataLayer.push({
 dataLayer.push({
   event: 'feature-step',
   feature: {
-    name: 'direct-debt',
+    name: 'direct-debt-deactivation',
     type: 'bills',
     step: {
       name: 'home',
@@ -2470,7 +2462,7 @@ dataLayer.push({
 dataLayer.push({
   event: 'feature-interaction',
   feature: {
-    name: 'direct-debt',
+    name: 'direct-debt-deactivation',
     type: 'bills',
     step: {
       name: 'home',
@@ -2479,7 +2471,7 @@ dataLayer.push({
     }
   },
   interaction: {
-    name: 'disable',
+    name: 'to-disable',
     value: 'next'
   }
 })
@@ -2492,10 +2484,10 @@ dataLayer.push({
 dataLayer.push({
   event: 'feature-step',
   feature: {
-    name: 'direct-debt',
+    name: 'direct-debt-deactivation',
     type: 'bills',
     step: {
-      name: 'to-disable',
+      name: 'confirm-deactivation',
       index: 2,
       type: 'intermediary'
     }
@@ -2510,10 +2502,10 @@ dataLayer.push({
 dataLayer.push({
   event: 'feature-interaction',
   feature: {
-    name: 'adress-change',
+    name: 'direct-debt-deactivation',
     type: 'bills',
     step: {
-      name: 'to-disable',
+      name: 'confirm-deactivation',
       index: 2,
       type: 'intermediary'
     }
@@ -2532,11 +2524,11 @@ dataLayer.push({
 dataLayer.push({
   event: 'feature-step',
   feature: {
-    name: 'direct-debt',
+    name: 'direct-debt-deactivation',
     type: 'bills',
     step: {
-      name: 'success',
-      index: 4,
+      name: 'deactivation-success',
+      index: 3,
       type: 'completion',
       success: true
     }
@@ -2805,7 +2797,7 @@ dataLayer.push({
 dataLayer.push({
   event: 'feature-step',
   feature: {
-    name: 'adress-change',
+    name: 'address-change',
     type: 'bills',
     step: {
       name: 'home',
@@ -2823,7 +2815,7 @@ dataLayer.push({
 dataLayer.push({
   event: 'feature-interaction',
   feature: {
-    name: 'adress-change',
+    name: 'address-change',
     type: 'bills',
     step: {
       name: 'home',
@@ -2832,7 +2824,7 @@ dataLayer.push({
     }
   },
   interaction: {
-    name: 'change-adress',
+    name: 'change-address',
     value: 'next'
   }
 })
@@ -2845,10 +2837,10 @@ dataLayer.push({
 dataLayer.push({
   event: 'feature-step',
   feature: {
-    name: 'adress-change',
+    name: 'address-change',
     type: 'bills',
     step: {
-      name: 'change-adress',
+      name: 'change-address',
       index: 2,
       type: 'intermediary'
     }
@@ -2866,7 +2858,7 @@ dataLayer.push({
     name: 'bill-duplicate',
     type: 'bills',
     step: {
-      name: 'change-adress',
+      name: 'change-address',
       index: 2,
       type: 'intermediary'
     }
@@ -2885,10 +2877,10 @@ dataLayer.push({
 dataLayer.push({
   event: 'feature-step',
   feature: {
-    name: 'adress-change',
+    name: 'address-change',
     type: 'bills',
     step: {
-      name: 'confirm-adress',
+      name: 'confirm-address',
       index: 3,
       type: 'intermediary'
     }
@@ -2906,7 +2898,7 @@ dataLayer.push({
     name: 'bill-duplicate',
     type: 'bills',
     step: {
-      name: 'confirm-adress',
+      name: 'confirm-address',
       index: 3,
       type: 'intermediary'
     }
@@ -2925,7 +2917,7 @@ dataLayer.push({
 dataLayer.push({
   event: 'feature-step',
   feature: {
-    name: 'adress-change',
+    name: 'address-change',
     type: 'bills',
     step: {
       name: 'success',
