@@ -3969,7 +3969,7 @@ dataLayer.push({
 
 /**
  * Pagamento fácil Screen
- * ON: After user clicks "Acessar chat
+ * ON: After user clicks "Próximo passo"
  */
 dataLayer.push({
   event: 'feature-interaction',
@@ -3998,7 +3998,7 @@ dataLayer.push({
     name: 'easy-payment',
     type: 'bills',
     step: {
-      name: 'home',
+      name: 'payment-request',
       index: 2,
       type: 'intermediary'
     }
@@ -4007,7 +4007,7 @@ dataLayer.push({
 
 /**
  * Pagamento fácil Screen
- * ON: After user clicks "Acessar chat
+ * ON: After user click on any banks
  */
 dataLayer.push({
   event: 'feature-interaction',
@@ -4015,17 +4015,55 @@ dataLayer.push({
     name: 'easy-payment',
     type: 'bills',
     step: {
-      name: 'home',
+      name: 'payment-request',
       index: 2,
       type: 'intermediary'
     }
   },
   interaction: {
-    name: 'options',
+    name: 'select-bank',
     value: 'next'
   }
 })
 
+/**
+ * Pagamento fácil Screen
+ * ON: Page load
+ */
+
+dataLayer.push({
+  event: 'feature-step',
+  feature: {
+    name: 'easy-payment',
+    type: 'bills',
+    step: {
+      name: 'payment-request',
+      index: 3,
+      type: 'intermediary'
+    }
+  }
+})
+
+/**
+ * Pagamento fácil Screen
+ * ON: After user clicks "Acessar chat"
+ */
+dataLayer.push({
+  event: 'feature-interaction',
+  feature: {
+    name: 'easy-payment',
+    type: 'bills',
+    step: {
+      name: 'payment-request',
+      index: 3,
+      type: 'intermediary'
+    }
+  },
+  interaction: {
+    name: 'select-bank',
+    value: 'next'
+  }
+})
   
 /**
  * Pagamento fácil Screen
@@ -4074,3 +4112,97 @@ dataLayer.push({
    */
   element: HTMLElement
 })
+
+/** FEATURE DE CONTAS - RESUMO DA COMPRA
+*/
+  /**
+ * Resumo da Compra Screen
+ * ON: Page load
+ */
+
+dataLayer.push({
+  event: 'feature-step',
+  feature: {
+    name: 'purchase-summary',
+    type: 'bills',
+    step: {
+      name: 'home',
+      index: 1,
+      type: 'initial'
+    }
+  }
+})
+
+/**
+ * Resumo da Compra Screen
+ * ON: After user click on any product
+  */
+dataLayer.push({
+  event: 'feature-interaction',
+  feature: {
+    name: 'purchase-summary',
+    type: 'bills',
+    step: {
+      name: 'home',
+      index: 1,
+      type: 'initial'
+    }
+  },
+  interaction: {
+    name: 'options',
+    value: 'product'
+  }
+})
+
+
+  
+/**
+ * Resumo da Compra Screen
+ * ON: Interface warning when user tries to send form incorrectly, when a field is filled incorrectly, etc.
+ */
+dataLayer.push({
+  event: 'interface-message',
+  message: {
+    type: 'warning',
+    /**
+     * Name of the warning.
+     * Please try to consider including the field that showed the error.
+     */
+    name: string,
+    /**
+     * Warning code, if available
+     */
+    code: string
+  },
+  /**
+   * The element that diplays the warning, when available
+   */
+  element: HTMLElement
+})
+
+/**
+ * Resumo da Compra Screen
+ * ON: Server errors and unavailabilities
+ */
+dataLayer.push({
+  event: 'interface-message',
+  message: {
+    type: 'error',
+    /**
+     * Name of the warning.
+     * Please try to consider including the field that showed the error.
+     */
+    name: string,
+    /**
+     * Warning code, if available
+     */
+    code: string
+  },
+  /**
+   * The element that diplays the error, when available
+   */
+  element: HTMLElement
+})
+
+
+
