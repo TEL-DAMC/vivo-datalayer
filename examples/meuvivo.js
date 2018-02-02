@@ -3891,7 +3891,7 @@ dataLayer.push({
   },
   interaction: {
     name: 'options',
-    value: 'access chat' | 'learn-more'
+    value: 'access-chat' | 'learn-more'
   }
 })
 
@@ -3923,6 +3923,136 @@ dataLayer.push({
 
 /**
  * Contas Contestadas Screen
+ * ON: Server errors and unavailabilities
+ */
+dataLayer.push({
+  event: 'interface-message',
+  message: {
+    type: 'error',
+    /**
+     * Name of the warning.
+     * Please try to consider including the field that showed the error.
+     */
+    name: string,
+    /**
+     * Warning code, if available
+     */
+    code: string
+  },
+  /**
+   * The element that diplays the error, when available
+   */
+  element: HTMLElement
+})
+
+
+
+/** FEATURE DE CONTAS - PAGAMENTO FÁCIL
+*/
+  /**
+ * Pagamento fácil Screen
+ * ON: Page load
+ */
+
+dataLayer.push({
+  event: 'feature-step',
+  feature: {
+    name: 'easy-payment',
+    type: 'bills',
+    step: {
+      name: 'home',
+      index: 1,
+      type: 'initial'
+    }
+  }
+})
+
+/**
+ * Pagamento fácil Screen
+ * ON: After user clicks "Acessar chat
+ */
+dataLayer.push({
+  event: 'feature-interaction',
+  feature: {
+    name: 'easy-payment',
+    type: 'bills',
+    step: {
+      name: 'home',
+      index: 1,
+      type: 'initial'
+    }
+  },
+  interaction: {
+    name: 'options',
+    value: 'next'
+  }
+})
+ /**
+ * Pagamento fácil Screen
+ * ON: Page load
+ */
+
+dataLayer.push({
+  event: 'feature-step',
+  feature: {
+    name: 'easy-payment',
+    type: 'bills',
+    step: {
+      name: 'home',
+      index: 2,
+      type: 'intermediary'
+    }
+  }
+})
+
+/**
+ * Pagamento fácil Screen
+ * ON: After user clicks "Acessar chat
+ */
+dataLayer.push({
+  event: 'feature-interaction',
+  feature: {
+    name: 'easy-payment',
+    type: 'bills',
+    step: {
+      name: 'home',
+      index: 2,
+      type: 'intermediary'
+    }
+  },
+  interaction: {
+    name: 'options',
+    value: 'next'
+  }
+})
+
+  
+/**
+ * Pagamento fácil Screen
+ * ON: Interface warning when user tries to send form incorrectly, when a field is filled incorrectly, etc.
+ */
+dataLayer.push({
+  event: 'interface-message',
+  message: {
+    type: 'warning',
+    /**
+     * Name of the warning.
+     * Please try to consider including the field that showed the error.
+     */
+    name: string,
+    /**
+     * Warning code, if available
+     */
+    code: string
+  },
+  /**
+   * The element that diplays the warning, when available
+   */
+  element: HTMLElement
+})
+
+/**
+ * Pagamento fácil Screen
  * ON: Server errors and unavailabilities
  */
 dataLayer.push({
