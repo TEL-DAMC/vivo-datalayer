@@ -286,7 +286,7 @@ dataLayer.push({
 ------------------------------------------------------
 */
 /**
- * FEATURE DE CONTAS - CONSUMO DE INTERNET - CONTRATAR PACOTES
+ * FEATURE DE CONSUMO - CONSUMO DE INTERNET - CONTRATAR PACOTES
  */
 /**
  * Consumo de Internet - Contratar Pacotes Screen
@@ -380,7 +380,7 @@ dataLayer.push({
 ------------------------------------------------------
 */
 /**
- * FEATURE DE CONTAS - CONSUMO DE INTERNET - PEDIR INTERNET - MOBILE
+ * FEATURE DE CONSUMO - CONSUMO DE INTERNET - PEDIR INTERNET - MOBILE
  */
 /**
  * Pedir Internet Screen - Mobile
@@ -491,7 +491,7 @@ dataLayer.push({
 ------------------------------------------------------
 */
 /**
- * FEATURE DE CONTAS - CONSUMO DE INTERNET - COMPARTILHAR INTERNET - MOBILE
+ * FEATURE DE CONSUMO - CONSUMO DE INTERNET - COMPARTILHAR INTERNET - MOBILE
  */
 
 /**
@@ -676,7 +676,7 @@ dataLayer.push({
 })
 
 /**
- * FEATURE DE CONTAS - CONSUMO DE VOZ - FIXO 1
+ * FEATURE DE CONSUMO - CONSUMO DE VOZ - FIXO 1
  */
 /**
  * Consumo de Voz Screen
@@ -2049,14 +2049,14 @@ dataLayer.push({
     name: 'digital-bill',
     type: 'bills',
     step: {
-      name: 'home',
+      name: 'confirm-email',
       index: 2,
       type: 'intermediary'
     }
   },
   interaction: {
-    name: 'confirm-email',
-    value: 'confirm' | 'cancel'
+    name: 'confirm',
+    value: 'next' | 'cancel'
   }
 })
 
@@ -2072,7 +2072,7 @@ dataLayer.push({
     name: 'digital-bill',
     type: 'bills',
     step: {
-      name: 'success',
+      name: 'activation-success',
       index: 3,
       type: 'completion',
       success: true
