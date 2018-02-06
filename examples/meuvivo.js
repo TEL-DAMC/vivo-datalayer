@@ -2589,7 +2589,7 @@ dataLayer.push({
                          -----------------
 ------------------------------------------------------------*/
 
-/** FEATURE DE CONTAS - SEGUNDA VIA DE CONTAS - JORNADA DE ATIVAÇAO
+/** FEATURE DE CONTAS - SEGUNDA VIA DE CONTAS - JORNADA DE ATIVAÇAOOOO
 */
   /**
  * 2° Via de Contas Screen - 
@@ -2810,7 +2810,7 @@ dataLayer.push({
 
 /**
  * Endereço de Envio Screen
- * ON: After user clicks 'Atterar endereço'
+ * ON: After user clicks 'Alterar endereço'
  */
 dataLayer.push({
   event: 'feature-interaction',
