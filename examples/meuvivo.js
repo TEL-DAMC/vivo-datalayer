@@ -1,3 +1,5 @@
+/* globals dataLayer string number boolean HTMLElement */
+
 /**
  * Evento de 'page-init' deve ser disparado em todas as mudanças de página.
  */
@@ -307,7 +309,7 @@ dataLayer.push({
 
 /**
  * Consumo de Internet - Contratar Pacotes Screen
- * ON: After user clicks 'Contratar Pacotes' 
+ * ON: After user clicks 'Contratar Pacotes'
  */
 dataLayer.push({
   event: 'feature-interaction',
@@ -325,7 +327,6 @@ dataLayer.push({
     value: 'next'
   }
 })
-
 
 /**
  * Consumo de Internet - Contratar Pacotes Screen
@@ -401,7 +402,7 @@ dataLayer.push({
 
 /**
  * Pedir Internet Screen - Mobile
- * ON: After user clicks 'Confirmar' 
+ * ON: After user clicks 'Confirmar'
  */
 dataLayer.push({
   event: 'feature-interaction',
@@ -504,7 +505,7 @@ dataLayer.push({
     name: 'share-internet',
     type: 'consumption',
     step: {
- 
+
       name: 'home',
       index: 1,
       type: 'initial'
@@ -514,7 +515,7 @@ dataLayer.push({
 
 /**
  * Compartilhar Internet Screen - Mobile
- * ON: After user clicks 'Continuar' 
+ * ON: After user clicks 'Continuar'
  */
 dataLayer.push({
   event: 'feature-interaction',
@@ -529,7 +530,7 @@ dataLayer.push({
   },
   interaction: {
     name: 'choose',
-    value: 'confirm-number'|'log-view'
+    value: 'confirm-number' | 'log-view'
   }
 })
 
@@ -566,7 +567,7 @@ dataLayer.push({
     }
   },
   interaction: {
-    name: 'choose-quantity'|'others-quantities',
+    name: 'choose-quantity' | 'others-quantities',
     value: 'confirm'
   }
 })
@@ -608,7 +609,6 @@ dataLayer.push({
     value: 'next'
   }
 })
-
 
 /**
  * Compartilhar Internet Screen - Mobile
@@ -712,7 +712,7 @@ dataLayer.push({
   },
   interaction: {
     name: 'choose-export-action',
-    value: 'to-print'| 'salve-to-pdf' | 'send-by-email'
+    value: 'to-print' | 'salve-to-pdf' | 'send-by-email'
   }
 })
 
@@ -820,9 +820,6 @@ dataLayer.push({
   element: HTMLElement
 })
 
-
-
-
 /*
 ------------------------------------------
 --------------------------------------------
@@ -880,7 +877,7 @@ dataLayer.push({
     name: 'statement',
     type: 'consumption',
     step: {
-      
+
       name: 'select-month',
       index: 2,
       type: 'intermediary'
@@ -902,7 +899,7 @@ dataLayer.push({
       index: 2,
       type: 'intermediary'
     }
-  },  
+  },
   interaction: {
     name: 'consult',
     value: 'next' | 'cancel'
@@ -943,7 +940,7 @@ dataLayer.push({
   },
   interaction: {
     name: 'choose-export-action',
-    value: 'to-print'| 'salve-to-pdf' | 'send-by-email'
+    value: 'to-print' | 'salve-to-pdf' | 'send-by-email'
   }
 })
 
@@ -981,7 +978,7 @@ dataLayer.push({
   },
   interaction: {
     name: 'to-send',
-    value: 'next' |'cancel'
+    value: 'next' | 'cancel'
   }
 })
 
@@ -1022,7 +1019,6 @@ dataLayer.push({
     value: 'next' | 'cancel'
   }
 })
-
 
 /**
  * Extrato Screen
@@ -1091,14 +1087,13 @@ dataLayer.push({
 })
 
 /**
----------------------------------------------------
-------------------------------------------------------------
-                         -----------------
-------------------------------------------------------------*/
+ ---------------------------------------------------
+ ------------------------------------------------------------
+ -----------------
+ ------------------------------------------------------------ */
 /**
  * FEATURE DE CONTROLE DE CONSUMO - JORNADA DE ATIVAÇÃO
  */
-
 
 /**
  * Controle de Consumo Screen
@@ -1138,8 +1133,6 @@ dataLayer.push({
   }
 })
 
-
-
 /**
  * Controle de Consumo Screen
  * ON: Loading the confirmation box
@@ -1158,9 +1151,9 @@ dataLayer.push({
   }
 })
 /**
-* Controle de Consumo Screen
+ * Controle de Consumo Screen
  * ON: Loading the confirmation box */
-  
+
 dataLayer.push({
   event: 'feature-interaction',
   feature: {
@@ -1243,14 +1236,13 @@ dataLayer.push({
    */
   element: HTMLElement
 })
-/**---------------------------------------------------------
-------------------------------------------------------------
-                         -----------------
-------------------------------------------------------------*/
+/** ---------------------------------------------------------
+ ------------------------------------------------------------
+ -----------------
+ ------------------------------------------------------------ */
 /**
  * FEATURE DE CONTROLE DE CONSUMO - JORNADA DE DESATIVAÇÃO
  */
-
 
 /**
  * Controle de Consumo Screen
@@ -1286,11 +1278,9 @@ dataLayer.push({
   },
   interaction: {
     name: 'to-disable',
-    value: 'next'|'cancel'
+    value: 'next' | 'cancel'
   }
 })
-
-
 
 /**
  * Controle de Consumo Screen
@@ -1330,7 +1320,6 @@ dataLayer.push({
     value: 'next' | 'cancel'
   }
 })
-
 
 /**
  * Controle de Consumo Screen
@@ -1399,13 +1388,13 @@ dataLayer.push({
 })
 
 /**
----------------------------------------------------------
-------------------------------------------------------------
-                         -----------------
-------------------------------------------------------------*/
+ ---------------------------------------------------------
+ ------------------------------------------------------------
+ -----------------
+ ------------------------------------------------------------ */
 /** FEATURE DE DETALHAMENTO DE CONSUMO POR E-MAIL - JORNADA DE ATIVAÇAO
-*/
-  /**
+ */
+/**
  * Detalhamento de Consumo por e-mail Screen
  * ON: Page load
  */
@@ -1422,7 +1411,6 @@ dataLayer.push({
     }
   }
 })
-
 
 /**
  * Detalhamento de Consumo por e-mail Screen
@@ -1445,7 +1433,7 @@ dataLayer.push({
   }
 })
 
-  /**
+/**
  * Detalhamento de Consumo por e-mail Screen
  * ON: Page select data load
  */
@@ -1456,14 +1444,13 @@ dataLayer.push({
     name: 'detailing-email-consumption-activation',
     type: 'consumption',
     step: {
-      
+
       name: 'select-date',
       index: 2,
       type: 'intermediary'
     }
   }
 })
-
 
 /**
  * Detalhamento de Consumo por e-mail Screen
@@ -1553,13 +1540,13 @@ dataLayer.push({
 })
 
 /**
--------------------------------------------------------------------------------------
-------------------------------------------------------------
-                         -----------------
-------------------------------------------------------------*/
+ -------------------------------------------------------------------------------------
+ ------------------------------------------------------------
+ -----------------
+ ------------------------------------------------------------ */
 /** FEATURE DE DETALHAMENTO DE CONSUMO POR E-MAIL - JORNADA DE DESATIVAÇAO
-*/
-  /**
+ */
+/**
  * Detalhamento de Consumo por e-mail Screen
  * ON: Page load
  */
@@ -1576,7 +1563,6 @@ dataLayer.push({
     }
   }
 })
-
 
 /**
  * Detalhamento de Consumo por e-mail Screen
@@ -1599,7 +1585,7 @@ dataLayer.push({
   }
 })
 
-  /**
+/**
  * Detalhamento de Consumo por e-mail Screen
  * ON: Page load
  */
@@ -1616,7 +1602,6 @@ dataLayer.push({
     }
   }
 })
-
 
 /**
  * Detalhamento de Consumo por e-mail Screen
@@ -1706,13 +1691,13 @@ dataLayer.push({
 })
 
 /**
---------------------------------------------------------
-------------------------------------------------------------
-                         -----------------
-------------------------------------------------------------*/
+ --------------------------------------------------------
+ ------------------------------------------------------------
+ -----------------
+ ------------------------------------------------------------ */
 /** FEATURE DE DETALHAMENTO DE CONSUMO POR E-MAIL - JORNADA ALTERAÇÃO DATA
-*/
-  /**
+ */
+/**
  * Detalhamento de Consumo por e-mail Screen
  * ON: Page load
  */
@@ -1817,16 +1802,14 @@ dataLayer.push({
   element: HTMLElement
 })
 
-
-
 /**
---------------------------------------------------------
-------------------------------------------------------------
-                         -----------------
-------------------------------------------------------------*/
+ --------------------------------------------------------
+ ------------------------------------------------------------
+ -----------------
+ ------------------------------------------------------------ */
 
 /** FEATURE DE LANÇAMENTOS FUTUROS
-*/
+ */
 /**
  * Lançamentos Futuros Screen
  * ON: Page load
@@ -1865,7 +1848,6 @@ dataLayer.push({
   }
 })
 
-
 /**
  * Lançamentos Futuros Screen
  * ON: Load lightbox to cancel sva
@@ -1903,7 +1885,6 @@ dataLayer.push({
     value: 'next' | 'cancel'
   }
 })
-
 
 /**
  * Lançamentos Futuros Screen
@@ -1971,13 +1952,11 @@ dataLayer.push({
   element: HTMLElement
 })
 
-
-
 /**
----------------------------------------------------------
--------------------FEATURES DE CONTAS--------------------
----------------------------------------------------------
-*/
+ ---------------------------------------------------------
+ -------------------FEATURES DE CONTAS--------------------
+ ---------------------------------------------------------
+ */
 
 /** FEATURE DE CONTAS - CONTA DIGITAL -JORNADA DE ATIVAÇAO  */
 
@@ -2020,7 +1999,7 @@ dataLayer.push({
   }
 })
 
-  /**
+/**
  * Conta Digital Screen
  * ON: Page load in e-mail confirmation
  */
@@ -2037,7 +2016,6 @@ dataLayer.push({
     }
   }
 })
-
 
 /**
  * Conta Digital Screen
@@ -2059,7 +2037,6 @@ dataLayer.push({
     value: 'next' | 'cancel'
   }
 })
-
 
 /**
  * Conta Digital Screen
@@ -2168,7 +2145,7 @@ dataLayer.push({
   }
 })
 
-  /**
+/**
  * Conta Digital Screen
  * ON: Page load in deactivation confirmation
  */
@@ -2185,7 +2162,6 @@ dataLayer.push({
     }
   }
 })
-
 
 /**
  * Conta Digital Screen
@@ -2207,7 +2183,6 @@ dataLayer.push({
     value: 'next' | 'cancel'
   }
 })
-
 
 /**
  * Conta Digital Screen
@@ -2276,15 +2251,15 @@ dataLayer.push({
 })
 
 /**
---------------------------------------------------------
----------------------------------------------------------
----------------------------------------------------------
-------------------------------------------------------------
-                         -----------------
-------------------------------------------------------------*/
+ --------------------------------------------------------
+ ---------------------------------------------------------
+ ---------------------------------------------------------
+ ------------------------------------------------------------
+ -----------------
+ ------------------------------------------------------------ */
 /** FEATURE DE CONTAS - DÉBITO AUTOMÁTICO -JORNADA DE ATIVAÇAO */
 
- /**
+/**
  * Débito Automático Screen
  * ON: Page load
  */
@@ -2300,7 +2275,6 @@ dataLayer.push({
     }
   }
 })
-
 
 /**
  * Débito Automático Screen
@@ -2323,8 +2297,7 @@ dataLayer.push({
   }
 })
 
-
- /**
+/**
  * Débito Automático Screen
  * ON: Page load
  */
@@ -2340,7 +2313,6 @@ dataLayer.push({
     }
   }
 })
-
 
 /**
  * Débito Automático Screen
@@ -2430,13 +2402,13 @@ dataLayer.push({
 })
 
 /**
--------------------------------------------------------------------------------------
-------------------------------------------------------------
-                         -----------------
-------------------------------------------------------------*/
+ -------------------------------------------------------------------------------------
+ ------------------------------------------------------------
+ -----------------
+ ------------------------------------------------------------ */
 /** FEATURE DE DETALHAMENTO DÉBITO AUTOMÁTICO - JORNADA DE DESATIVAÇAO
-*/
-  /**
+ */
+/**
  * Débito Automático Screen
  * ON: Page load
  */
@@ -2453,7 +2425,6 @@ dataLayer.push({
     }
   }
 })
-
 
 /**
  * Débito Automático Screen
@@ -2476,7 +2447,7 @@ dataLayer.push({
   }
 })
 
-  /**
+/**
  * Débito Automático Screen
  * ON: Load lightbox automatic debit deactivation page
  */
@@ -2493,7 +2464,6 @@ dataLayer.push({
     }
   }
 })
-
 
 /**
  * Débito Automático Screen
@@ -2515,7 +2485,6 @@ dataLayer.push({
     value: 'next' | 'cancel'
   }
 })
-
 
 /**
  * Débito Automático Screen
@@ -2584,15 +2553,15 @@ dataLayer.push({
 })
 
 /**
---------------------------------------------------------
-------------------------------------------------------------
-                         -----------------
-------------------------------------------------------------*/
+ --------------------------------------------------------
+ ------------------------------------------------------------
+ -----------------
+ ------------------------------------------------------------ */
 
 /** FEATURE DE CONTAS - SEGUNDA VIA DE CONTAS - JORNADA DE ATIVAÇAOOOO
-*/
-  /**
- * 2° Via de Contas Screen - 
+ */
+/**
+ * 2° Via de Contas Screen -
  * ON: Page load
  */
 
@@ -2608,7 +2577,6 @@ dataLayer.push({
     }
   }
 })
-
 
 /**
  * 2° Via de Contas Screen
@@ -2627,11 +2595,11 @@ dataLayer.push({
   },
   interaction: {
     name: 'options',
-    value: 'detail-bill-duplicate'| 'paid' | 'send-by-email'
+    value: 'detail-bill-duplicate' | 'paid' | 'send-by-email'
   }
 })
 
-  /**
+/**
  * 2° Via de Contas Screen
  * ON: Page load detail duplicate bill
  */
@@ -2648,7 +2616,6 @@ dataLayer.push({
     }
   }
 })
-
 
 /**
  * 2° Via de Contas Screen
@@ -2667,11 +2634,11 @@ dataLayer.push({
   },
   interaction: {
     name: 'options',
-    value: 'to-print'| 'salve-to-pdf'| 'send-by-email'
+    value: 'to-print' | 'salve-to-pdf' | 'send-by-email'
   }
 })
 
-  /**
+/**
  * 2° Via de Contas Screen
  * ON: Page load detail duplicate bill
  */
@@ -2688,7 +2655,6 @@ dataLayer.push({
     }
   }
 })
-
 
 /**
  * 2° Via de Contas Screen
@@ -2711,9 +2677,6 @@ dataLayer.push({
   }
 })
 
-
-
-
 /**
  * 2° Via de Contas Screen
  * ON: Success in sending email confirmation
@@ -2781,16 +2744,16 @@ dataLayer.push({
 })
 
 /**
---------------------------------------------------------
---------------------------------------------------------
-------------------------------------------------------------
-                         -----------------
-------------------------------------------------------------*/
+ --------------------------------------------------------
+ --------------------------------------------------------
+ ------------------------------------------------------------
+ -----------------
+ ------------------------------------------------------------ */
 
 /** FEATURE DE CONTAS - ENDEREÇO DE ENVIO - JORNADA DE ATIVAÇAO
-*/
-  /**
- * Endereço de Envio Screen  
+ */
+/**
+ * Endereço de Envio Screen
  * ON: Page load
  */
 
@@ -2806,7 +2769,6 @@ dataLayer.push({
     }
   }
 })
-
 
 /**
  * Endereço de Envio Screen
@@ -2829,7 +2791,7 @@ dataLayer.push({
   }
 })
 
-  /**
+/**
  * Endereço de Envio Screen
  * ON: Page load detail duplicate bill
  */
@@ -2846,7 +2808,6 @@ dataLayer.push({
     }
   }
 })
-
 
 /**
  * Endereço de Envio Screen
@@ -2887,7 +2848,6 @@ dataLayer.push({
   }
 })
 
-
 /**
  * Endereço de Envio Screen
  * ON: After user clicks 'Confirmar'
@@ -2908,7 +2868,6 @@ dataLayer.push({
     value: 'next'
   }
 })
-
 
 /**
  * Endereço de Envio Screen
@@ -2977,16 +2936,16 @@ dataLayer.push({
 })
 
 /**
---------------------------------------------------------
----------------------------------------------------------
----------------------------------------------------------
-------------------------------------------------------------
-                         -----------------
-------------------------------------------------------------*/
+ --------------------------------------------------------
+ ---------------------------------------------------------
+ ---------------------------------------------------------
+ ------------------------------------------------------------
+ -----------------
+ ------------------------------------------------------------ */
 
 /** FEATURE DE CONTAS - Desbloqueio de linha
-*/
-  /**
+ */
+/**
  * Desbloqueio de linha Screen
  * ON: Page load
  */
@@ -3003,7 +2962,6 @@ dataLayer.push({
     }
   }
 })
-
 
 /**
  * Desbloqueio de linha Screen
@@ -3027,7 +2985,7 @@ dataLayer.push({
 })
 
 /**
-  * Desbloqueio de linha Screen
+ * Desbloqueio de linha Screen
  * ON: Success in sending email confirmation
  */
 dataLayer.push({
@@ -3093,16 +3051,16 @@ dataLayer.push({
 })
 
 /**
-  ---------------------------------------------
--------------------------------------------------
-  ---------------------------------------------
+ ---------------------------------------------
+ -------------------------------------------------
+ ---------------------------------------------
 
----------------------------------------------------------
----------------------------------------------------------
-*/
+ ---------------------------------------------------------
+ ---------------------------------------------------------
+ */
 /** FEATURE DE CONTAS - ENTENDA SUA CONTA
-*/
-  /**
+ */
+/**
  * Entenda sua Conta Screen
  * ON: Page load
  */
@@ -3121,14 +3079,14 @@ dataLayer.push({
 })
 
 /**
-  ---------------------------------------------
----------------------------------------------------------
----------------------------------------------------------
-*/
+ ---------------------------------------------
+ ---------------------------------------------------------
+ ---------------------------------------------------------
+ */
 
 /** FEATURE DE CONTAS - BANCOS CONVENIADOS
-*/
-  /**
+ */
+/**
  * Bancos Conveniados Screen
  * ON: Page load
  */
@@ -3146,13 +3104,13 @@ dataLayer.push({
   }
 })
 
-/**----------------------------------------------------
------------------------------------------------------
-                     --------------
-*/
+/** ----------------------------------------------------
+ -----------------------------------------------------
+ --------------
+ */
 /** FEATURE DE CONTAS - TERMO DE QUITAÇÃO
-*/
-  /**
+ */
+/**
  * Termo de Quitação Screen
  * ON: Page load
  */
@@ -3187,11 +3145,11 @@ dataLayer.push({
   },
   interaction: {
     name: 'to-active',
-    value: 'next'| 'cancel'
+    value: 'next' | 'cancel'
   }
 })
 
-  /**
+/**
  * Termo de Quitação Screen
  * ON: Page load
  */
@@ -3208,7 +3166,6 @@ dataLayer.push({
     }
   }
 })
-
 
 /**
  * Termo de Quitação Screen
@@ -3227,11 +3184,11 @@ dataLayer.push({
   },
   interaction: {
     name: 'confirm',
-    value: 'next'| 'cancel'
+    value: 'next' | 'cancel'
   }
 })
 
-  /**
+/**
  * Termo de Quitação Screen
  * ON: Page load
  */
@@ -3248,7 +3205,6 @@ dataLayer.push({
     }
   }
 })
-
 
 /**
  * Termo de Quitação Screen
@@ -3267,10 +3223,9 @@ dataLayer.push({
   },
   interaction: {
     name: 'confirm',
-    value: 'next'| 'cancel'
+    value: 'next' | 'cancel'
   }
 })
-
 
 /**
  * Termo de Quitação Screen
@@ -3290,9 +3245,8 @@ dataLayer.push({
   }
 })
 
-
-  /**
- * Termo de Quitação Screen - E-mail options 
+/**
+ * Termo de Quitação Screen - E-mail options
  * ON: Page load
  */
 
@@ -3303,12 +3257,11 @@ dataLayer.push({
     type: 'bills',
     step: {
       name: 'confirm-email',
-      index:  2,
+      index: 2,
       type: 'intermediary'
     }
   }
 })
-
 
 /**
  * Termo de Quitação Screen
@@ -3327,10 +3280,9 @@ dataLayer.push({
   },
   interaction: {
     name: 'confirm',
-    value: 'next'| 'cancel'
+    value: 'next' | 'cancel'
   }
 })
-
 
 /**
  * Termo de Quitação Screen
@@ -3398,14 +3350,13 @@ dataLayer.push({
   element: HTMLElement
 })
 
-
-/**--------------------------------------------------
--------------------EXCLUSIVO FIXA--------------------
------------------------------------------------------
-*/
+/** --------------------------------------------------
+ -------------------EXCLUSIVO FIXA--------------------
+ -----------------------------------------------------
+ */
 /** FEATURE DE CONTAS - ACORDOS
-*/
-  /**
+ */
+/**
  * Acordos Screen
  * ON: Page load
  */
@@ -3440,12 +3391,11 @@ dataLayer.push({
   },
   interaction: {
     name: 'to-choose',
-    value: 'to-print'| 'to-view'|'to-send'
+    value: 'to-print' | 'to-view' | 'to-send'
   }
 })
 
-
- /**
+/**
  * Acordos Screen
  * ON: Page load
  */
@@ -3550,10 +3500,9 @@ dataLayer.push({
   element: HTMLElement
 })
 
-
 /** FEATURE DE CONTAS - ALTERAR VENCIMENTO
-*/
-  /**
+ */
+/**
  * Alterar Vencimento Screen
  * ON: Page load
  */
@@ -3588,10 +3537,9 @@ dataLayer.push({
   },
   interaction: {
     name: 'to-choose',
-    value: 'access-chat'| 'save-change-due'
+    value: 'access-chat' | 'save-change-due'
   }
 })
-
 
 /**
  * Acordos Screen
@@ -3659,13 +3607,13 @@ dataLayer.push({
   element: HTMLElement
 })
 
-/**----------------------------------------------------
------------------------------------------------------
-                     --------------
-*/
+/** ----------------------------------------------------
+ -----------------------------------------------------
+ --------------
+ */
 /** FEATURE DE CONTAS - CONTA DETALHADA PELA INTERNET
-*/
-  /**
+ */
+/**
  * Conta detalhada pela internet Screen
  * ON: Page load
  */
@@ -3700,12 +3648,10 @@ dataLayer.push({
   },
   interaction: {
     name: 'options',
-    value: 'save-bill'| 'internet-bill'
+    value: 'save-bill' | 'internet-bill'
   }
 })
 
-
-  
 /**
  * Conta detalhada pela internet Screen
  * ON: Interface warning when user tries to send form incorrectly, when a field is filled incorrectly, etc.
@@ -3755,8 +3701,8 @@ dataLayer.push({
 })
 
 /** FEATURE DE CONTAS - CONTROLE DE CONTA
-*/
-  /**
+ */
+/**
  * Controle de Conta Screen
  * ON: Page load
  */
@@ -3791,12 +3737,10 @@ dataLayer.push({
   },
   interaction: {
     name: 'options',
-    value: 'save-bill'| 'internet-bill'
+    value: 'save-bill' | 'internet-bill'
   }
 })
 
-
-  
 /**
  * Conta detalhada por e-mail Screen
  * ON: Interface warning when user tries to send form incorrectly, when a field is filled incorrectly, etc.
@@ -3845,10 +3789,9 @@ dataLayer.push({
   element: HTMLElement
 })
 
-
 /** FEATURE DE CONTAS - CONTAS CONTESTADAS
-*/
-  /**
+ */
+/**
  * Contas Contestadas Screen
  * ON: Page load
  */
@@ -3887,8 +3830,6 @@ dataLayer.push({
   }
 })
 
-
-  
 /**
  * Contas Contestadas Screen
  * ON: Interface warning when user tries to send form incorrectly, when a field is filled incorrectly, etc.
@@ -3937,11 +3878,9 @@ dataLayer.push({
   element: HTMLElement
 })
 
-
-
 /** FEATURE DE CONTAS - PAGAMENTO FÁCIL
-*/
-  /**
+ */
+/**
  * Pagamento fácil Screen
  * ON: Page load
  */
@@ -3979,7 +3918,7 @@ dataLayer.push({
     value: 'next'
   }
 })
- /**
+/**
  * Pagamento fácil Screen
  * ON: Page load
  */
@@ -4056,7 +3995,7 @@ dataLayer.push({
     value: 'next'
   }
 })
-  
+
 /**
  * Pagamento fácil Screen
  * ON: Interface warning when user tries to send form incorrectly, when a field is filled incorrectly, etc.
@@ -4106,8 +4045,8 @@ dataLayer.push({
 })
 
 /** FEATURE DE CONTAS - RESUMO DA COMPRA
-*/
-  /**
+ */
+/**
  * Resumo da Compra Screen
  * ON: Page load
  */
@@ -4128,7 +4067,7 @@ dataLayer.push({
 /**
  * Resumo da Compra Screen
  * ON: After user click on any product
-  */
+ */
 dataLayer.push({
   event: 'feature-interaction',
   feature: {
@@ -4146,8 +4085,6 @@ dataLayer.push({
   }
 })
 
-
-  
 /**
  * Resumo da Compra Screen
  * ON: Interface warning when user tries to send form incorrectly, when a field is filled incorrectly, etc.
@@ -4195,6 +4132,3 @@ dataLayer.push({
    */
   element: HTMLElement
 })
-
-
-
