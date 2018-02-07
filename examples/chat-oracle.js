@@ -1,4 +1,4 @@
-window.dataLayer = window.dataLayer || {}
+window.dataLayer = window.dataLayer || []
 
 /**
  * Waiting room

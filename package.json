@@ -8,7 +8,9 @@
   },
   "dependencies": {},
   "devDependencies": {
-    "typedoc": "^0.9.0"
+    "csv-parse": "^2.0.0",
+    "typedoc": "^0.9.0",
+    "yargs": "^11.0.0"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
