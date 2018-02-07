@@ -2331,7 +2331,7 @@ dataLayer.push({
     }
   },
   interaction: {
-    name: 'to-active',
+    name: 'confirm',
     value: 'next'
   }
 })
@@ -2651,7 +2651,7 @@ dataLayer.push({
     type: 'bills',
     step: {
       name: 'send-by-email',
-      index: 2,
+      index: 3,
       type: 'intermediary'
     }
   }
@@ -2668,7 +2668,7 @@ dataLayer.push({
     type: 'bills',
     step: {
       name: 'send-by-email',
-      index: 2,
+      index: 3,
       type: 'intermediary'
     }
   },
@@ -2689,7 +2689,7 @@ dataLayer.push({
     type: 'bills',
     step: {
       name: 'success',
-      index: 3,
+      index: 4,
       type: 'completion',
       success: true
     }
@@ -2787,7 +2787,7 @@ dataLayer.push({
     }
   },
   interaction: {
-    name: 'change-address',
+    name: 'search-address',
     value: 'next'
   }
 })
@@ -2803,7 +2803,7 @@ dataLayer.push({
     name: 'address-change',
     type: 'bills',
     step: {
-      name: 'change-address',
+      name: 'search-address',
       index: 2,
       type: 'intermediary'
     }
@@ -2842,7 +2842,7 @@ dataLayer.push({
     name: 'address-change',
     type: 'bills',
     step: {
-      name: 'confirm-address',
+      name:   ,
       index: 3,
       type: 'intermediary'
     }
@@ -2881,7 +2881,7 @@ dataLayer.push({
     type: 'bills',
     step: {
       name: 'success',
-      index: 3,
+      index: 4,
       type: 'completion',
       success: true
     }
@@ -3246,62 +3246,6 @@ dataLayer.push({
   }
 })
 
-/**
- * Termo de Quitação Screen - E-mail options
- * ON: Page load
- */
-
-dataLayer.push({
-  event: 'feature-step',
-  feature: {
-    name: 'acquittance',
-    type: 'bills',
-    step: {
-      name: 'confirm-email',
-      index: 2,
-      type: 'intermediary'
-    }
-  }
-})
-
-/**
- * Termo de Quitação Screen
- * ON: After user clicks 'Confirmo o pagmento'
- */
-dataLayer.push({
-  event: 'feature-interaction',
-  feature: {
-    name: 'acquittance',
-    type: 'bills',
-    step: {
-      name: 'confirm-email',
-      index: 2,
-      type: 'intermediary'
-    }
-  },
-  interaction: {
-    name: 'confirm',
-    value: 'next' | 'cancel'
-  }
-})
-
-/**
- * Termo de Quitação Screen
- * ON: Success in sending email confirmation
- */
-dataLayer.push({
-  event: 'feature-step',
-  feature: {
-    name: 'acquittance',
-    type: 'bills',
-    step: {
-      name: 'success',
-      index: 3,
-      type: 'completion',
-      success: true
-    }
-  }
-})
 
 /**
  * Termo de Quitação Screen
