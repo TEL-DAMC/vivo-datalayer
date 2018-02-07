@@ -620,6 +620,7 @@ dataLayer.push({
     name: 'share-internet',
     type: 'consumption',
     step: {
+      name: 'success'
       index: 4,
       type: 'completion',
       success: true
@@ -971,9 +972,9 @@ dataLayer.push({
     name: 'statement',
     type: 'consumption',
     step: {
-      name: 'statement',
+      name: 'send-email',
       index: 4,
-      type: 'send-email'
+      type: 'intermediary'
     }
   },
   interaction: {
@@ -2316,7 +2317,7 @@ dataLayer.push({
 
 /**
  * Débito Automático Screen
- * ON: After user clicks 'Ativar Conta Digital'
+ * ON: After user clicks 'Desativar Dédito Automático
  */
 dataLayer.push({
   event: 'feature-interaction',
@@ -2558,7 +2559,7 @@ dataLayer.push({
  -----------------
  ------------------------------------------------------------ */
 
-/** FEATURE DE CONTAS - SEGUNDA VIA DE CONTAS - JORNADA DE ATIVAÇAOOOO
+/** FEATURE DE CONTAS - 2ª via de contas - JORNADA DE ATIVAÇAOOOO
  */
 /**
  * 2° Via de Contas Screen -
