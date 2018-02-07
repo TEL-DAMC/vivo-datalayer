@@ -3368,7 +3368,7 @@ dataLayer.push({
     name: 'agreements',
     type: 'bills',
     step: {
-      name: 'home',
+      name: 'send-by-email',
       index: 2,
       type: 'intermediary'
     }
