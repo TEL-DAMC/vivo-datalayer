@@ -14,8 +14,8 @@
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "typedoc --module commonjs --theme minimal --includeDeclarations --excludeExternals --out ./dist ./src",
-    "serve": "http-server ./dist"
+    "build-docs": "typedoc --module commonjs --theme minimal --includeDeclarations --excludeExternals --out ./dist ./src",
+    "serve-docs": "http-server ./dist"
   },
   "repository": {
     "type": "git",
