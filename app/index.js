@@ -19,7 +19,7 @@ expressApp.use('/csv', function (request, response) {
   const parserConfig = {
     // columns: true,
     relax_column_count: true,
-    delimiter: ';',
+    delimiter: ',',
     auto_parse: true
   }
 
@@ -45,6 +45,14 @@ expressApp.post('/save-csv', function (request, response) {
       response.json({success: false})
     }
   })
+})
+
+expressApp.use('/generate-tags', function (request, response) {
+  const generate = require('./controllers/dl-generator').generate
+  const inputPath = path.resolve(__dirname, path.join('../csv', request.query.input))
+  const ouputPath = path.resolve(__dirname, path.join('../csv', request.query.output))
+  generate(inputPath, ouputPath)
+  response.json({done: true})
 })
 
 // noinspection MagicNumberJS

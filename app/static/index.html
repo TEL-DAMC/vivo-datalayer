@@ -10,9 +10,10 @@
 </head>
 <body>
 <button id="save">Salvar</button>
+<button id="generate-js">Gerar Tags</button>
 <div id="table-container"></div>
 <script>
-    // TODO: Incluir um campo para seleção do arquivo a abrir
+  // TODO: Incluir um campo para seleção do arquivo a abrir
   fetch('/csv?file=example.csv').then(function (response) {
     return response.json()
   }).then(function (json) {
@@ -53,6 +54,11 @@
     }).then(res => res.json())
       .catch(error => console.error('Error:', error))
       .then(response => console.log('Success:', response))
+  })
+</script>
+<script>
+  document.getElementById('generate-js').addEventListener('click', function (event) {
+    fetch('/generate-tags?input=example.csv&output=example.new.js').then()
   })
 </script>
 </body>
