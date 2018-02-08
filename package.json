@@ -20,7 +20,8 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build-docs": "typedoc --module commonjs --theme minimal --includeDeclarations --excludeExternals --out ./dist ./src",
-    "serve-docs": "http-server ./dist"
+    "serve-docs": "http-server ./dist",
+    "serve-editor": "node app"
   },
   "repository": {
     "type": "git",

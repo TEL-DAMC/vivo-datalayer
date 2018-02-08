@@ -44,7 +44,7 @@
     let sendableData = window.csvData.slice()
     sendableData.unshift(window.headers)
     // TODO: Incluir um campo para nome do arquivo
-    fetch('/save-csv?file=example.newer.csv', {
+    fetch('/save-csv?file=example.csv', {
       method: 'POST',
       body: JSON.stringify({data: sendableData}),
       headers: new Headers({
