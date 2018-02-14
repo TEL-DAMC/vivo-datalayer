@@ -2639,44 +2639,6 @@ dataLayer.push({
   }
 })
 
-/**
- * 2° Via de Contas Screen
- * ON: Page load detail duplicate bill
- */
-
-dataLayer.push({
-  event: 'feature-step',
-  feature: {
-    name: 'bill-duplicate',
-    type: 'bills',
-    step: {
-      name: 'send-by-email',
-      index: 3,
-      type: 'intermediary'
-    }
-  }
-})
-
-/**
- * 2° Via de Contas Screen
- * ON: After user clicks 'Confirmar'
- */
-dataLayer.push({
-  event: 'feature-interaction',
-  feature: {
-    name: 'bill-duplicate',
-    type: 'bills',
-    step: {
-      name: 'send-by-email',
-      index: 3,
-      type: 'intermediary'
-    }
-  },
-  interaction: {
-    name: 'send-email',
-    value: 'next'
-  }
-})
 
 /**
  * 2° Via de Contas Screen
@@ -2689,7 +2651,7 @@ dataLayer.push({
     type: 'bills',
     step: {
       name: 'success',
-      index: 4,
+      index: 3,
       type: 'completion',
       success: true
     }
