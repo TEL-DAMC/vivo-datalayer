@@ -293,9 +293,11 @@ Pacotes e Serviços,Meu Serviços - Sem Portabilidade - Fixo 2,Clique para alter
 Pacotes e Serviços,Meu Serviços - Sem Portabilidade - Fixo 2,No carregamento da página,'feature-step','my-services-'portability','pack-and-services','without-portability',2,'completion',true,-,-,-,-,-
 Pacotes e Serviços,Meu Serviços - Sem Portabilidade - Fixo 2,No momento que o sistema retornar um aviso para a não-realização da operação,'interface-message','my-services-'portability','pack-and-services',-,-,-,false,-,-,'warning','string','string'
 Pacotes e Serviços,Meu Serviços - Sem Portabilidade - Fixo 2,No momento que a operação falhar a execução,'interface-message','my-services-'portability','pack-and-services',-,-,-,false,-,-,'error','string','string'
+Saldo e Recarga,Meus saldos,Exibição da tela de inicio,'feature-step','balances','balance-and-recharge','home',1,'initial',false,-,-,-,-,-
 Saldo e Recarga,Meus saldos,Clique em ver extrato,'feature-interaction','balances','balance-and-recharge','home',1,'initial',false,'view-statement','view-statement',-,-,-
-Saldo e Recarga,Meus saldos,No carregamento da página,'feature-step','balances','balance-and-recharge','home',1,'initial',false,-,-,-,-,-
-Saldo e Recarga,Meus saldos,No momento que o sistema retornar um aviso para a não-realização da operação,'interface-message','balances','balance-and-recharge',-,-,-,false,-,-,'warning','string','string'
-Saldo e Recarga,Meus saldos,No momento que a operação falhar a execução,'interface-message','balances','balance-and-recharge',-,-,-,false,-,-,'error','string','string'
+Saldo e Recarga,Meus saldos,Exibição da tela de detalhamento do saldo,'feature-step','balances','balance-and-recharge','home',1,'completion',false,-,-,-,-,-
 Saldo e Recarga,Meus saldos,Clique para recarregar,'feature-interaction','recharge','balance-and-recharge','home',1,'initial',false,'recharge-now','recharge-now',-,-,-
-Saldo e Recarga,Recarga,No carregamento da página,'feature-step',,,,,,,,,,,
+Saldo e Recarga,Recarga,No carregamento da página,'feature-step','recharge','balance-and-recharge','home',1,'initial',false,-,-,-,-,-
+Saldo e Recarga,Recarga,Clique para escolher valor de recarga,'feature-interaction','recharge','balance-and-recharge','home',1,'initial',false,'options',[VALOR RECARGA]*,-,-,-
+Saldo e Recarga,Recarga,Clique para continuar,'feature-interaction','recharge','balance-and-recharge','home',1,'initial',false,'options','next',-,-,-
+,,,,,,,,,,,,,,
