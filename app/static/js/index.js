@@ -54,5 +54,6 @@ document.getElementById('save').addEventListener('click', function (event) {
 })
 
 document.getElementById('generate-js').addEventListener('click', function (event) {
-  window.fetch('/generate-tags?input=example.csv&output=example.new.js').then()
+  const fileName = document.getElementById('csv-name').value
+  window.fetch('/generate-tags?input=' + fileName + '&output=' + fileName.replace(/\.csv$/, '.new.js')).then()
 })
