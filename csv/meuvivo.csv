@@ -1,4 +1,5 @@
 FEATURE,MICRO-FEATURE,TRIGGER,event,feature.name,feature.type,step.name,step.index,step.type,step.success,interaction.name,interaction.value,message.type,message.name,message.code,
+,,,,,,,,,,,,,,
 Consumo,Contratar Pacotes,No carregamento da página,'feature-step','packages-and-services','comsumption','home',1,'initial',false,-,-,-,-,-
 Consumo,Contratar Pacotes,"Clique em ""Contratar pacotes""",'feature-interaction','packages-and-services','comsumption','home',1,'initial',false,'to-hire','next',-,-,-
 Consumo,Contratar Pacotes,No momento que o sistema retornar um aviso para a não-realização da operação,'interface-message','packages-and-services','comsumption',-,-,-,false,-,-,'warning','string','string'
@@ -268,14 +269,20 @@ Pacotes e Serviços,Meu Serviços - Fixo 2 - Home,No carregamento da página,'fe
 Pacotes e Serviços,Meu Serviços - Fixo 2 - Home,Clique para ver detalhes de algum serviço ou Clique em alguma opção do acesso rápido,'feature-interaction','my-services','pack-and-services','home',1,'initial',false,'options','highlight' | 'quick-access',-,-,-
 Pacotes e Serviços,Meu Serviços - Fixo 2 - Fixo,No carregamento da página,'feature-step','my-services','pack-and-services','landline',2,'intermediary',false,-,-,-,-,-
 Pacotes e Serviços,Meu Serviços - Fixo 2- Fixo,"Clique em ofertas , Clique em algum dos ""Meus serviços"", Clique em algum serviço adicional ou Clique em algum plano",'feature-interaction','my-services','pack-and-services','landline',2,'intermediary',false,'options','offers' | 'my-services' | 'additional-services' | 'new-plan',-,-,-
+Pacotes e Serviços,Meu Serviços - Fixo 2- Fixo,No momento que o sistema retornar um aviso para a não-realização da operação,'interface-message','my-services','pack-and-services',-,-,-,false,-,-,'warning','string','string'
+Pacotes e Serviços,Meu Serviços - Fixo 2- Fixo,No momento que a operação falhar a execução,'interface-message','my-services','pack-and-services',-,-,-,false,-,-,'error','string','string'
 Pacotes e Serviços,Meu Serviços - Fixo 2 - Home,No carregamento da página,'feature-step','my-services','pack-and-services','home',1,'initial',false,-,-,-,-,-
 Pacotes e Serviços,Meu Serviços - Fixo 2 - Home,Clique para ver detalhes de algum serviço ou Clique em alguma opção do acesso rápido,'feature-interaction','my-services','pack-and-services','home',1,'initial',false,'options','highlight' | 'quick-access',-,-,-
 Pacotes e Serviços,Meu Serviços - Fixo 2 - Internet,No carregamento da página,'feature-step','my-services','pack-and-services','broadband',2,'intermediary',false,-,-,-,-,-
 Pacotes e Serviços,Meu Serviços - Fixo 2 - Internet,Clique para alterar velocidade ou em pacotes recomendados,'feature-interaction','my-services','pack-and-services','broadband',2,'intermediary',false,'options','change speed' | 'recommended-packs',-,-,-
+Pacotes e Serviços,Meu Serviços - Fixo 2 - Internet,No momento que o sistema retornar um aviso para a não-realização da operação,'interface-message','my-services','pack-and-services',-,-,-,false,-,-,'warning','string','string'
+Pacotes e Serviços,Meu Serviços - Fixo 2 - Internet,No momento que a operação falhar a execução,'interface-message','my-services','pack-and-services',-,-,-,false,-,-,'error','string','string'
 Pacotes e Serviços,Meu Serviços - Fixo 2 - Home,No carregamento da página,'feature-step','my-services','pack-and-services','home',1,'initial',false,-,-,-,-,-
 Pacotes e Serviços,Meu Serviços - Fixo 2 - Home,Clique para ver detalhes de algum serviço ou Clique em alguma opção do acesso rápido,'feature-interaction','my-services','pack-and-services','home',1,'initial',false,'options','highlight' | 'quick-access',-,-,-
 Pacotes e Serviços,Meu Serviços - Fixo 2 - TV,No carregamento da página,'feature-step','my-services','pack-and-services','tv',2,'intermediary',false,-,-,-,-,-
 Pacotes e Serviços,Meu Serviços - Fixo 2 - TV,"Clique para ver canais, Alterar plano, Pacotes recomendados ou Clique em algum serviço adicional",'feature-interaction','my-services','pack-and-services','tv',2,'intermediary',false,'options','view-channels' | 'change-plan' | 'recommended-packs' | 'additional-services',-,-,-
+Pacotes e Serviços,Meu Serviços - Fixo 2 - TV,No momento que o sistema retornar um aviso para a não-realização da operação,'interface-message','my-services','pack-and-services',-,-,-,false,-,-,'warning','string','string'
+Pacotes e Serviços,Meu Serviços - Fixo 2 - TV,No momento que a operação falhar a execução,'interface-message','my-services','pack-and-services',-,-,-,false,-,-,'error','string','string'
 Pacotes e Serviços,Meu Serviços - Com Portabilidade - Fixo 2,No carregamento da página,'feature-step','my-services-'portability','pack-and-services',with-portability',1,'initial',false,-,-,-,-,-
 Pacotes e Serviços,Meu Serviços - Com Portabilidade - Fixo 2,Clique para alterar número,'feature-interaction','my-services-'portability','pack-and-services',with-portability',1,'initial',false,'change-number','change-number',-,-,-
 Pacotes e Serviços,Meu Serviços - Com Portabilidade - Fixo 2,No carregamento da página,'feature-step','my-services-'portability','pack-and-services',with-portability',2,'completion',true,-,-,-,-,-
@@ -286,12 +293,9 @@ Pacotes e Serviços,Meu Serviços - Sem Portabilidade - Fixo 2,Clique para alter
 Pacotes e Serviços,Meu Serviços - Sem Portabilidade - Fixo 2,No carregamento da página,'feature-step','my-services-'portability','pack-and-services','without-portability',2,'completion',true,-,-,-,-,-
 Pacotes e Serviços,Meu Serviços - Sem Portabilidade - Fixo 2,No momento que o sistema retornar um aviso para a não-realização da operação,'interface-message','my-services-'portability','pack-and-services',-,-,-,false,-,-,'warning','string','string'
 Pacotes e Serviços,Meu Serviços - Sem Portabilidade - Fixo 2,No momento que a operação falhar a execução,'interface-message','my-services-'portability','pack-and-services',-,-,-,false,-,-,'error','string','string'
-<<<<<<< HEAD
 Saldo e Recarga,Meus saldos,Clique em ver extrato,'feature-interaction','balances','balance-and-recharge','home',1,'initial',false,'view-statement','view-statement',-,-,-
 Saldo e Recarga,Meus saldos,No carregamento da página,'feature-step','balances','balance-and-recharge','home',1,'initial',false,-,-,-,-,-
 Saldo e Recarga,Meus saldos,No momento que o sistema retornar um aviso para a não-realização da operação,'interface-message','balances','balance-and-recharge',-,-,-,false,-,-,'warning','string','string'
 Saldo e Recarga,Meus saldos,No momento que a operação falhar a execução,'interface-message','balances','balance-and-recharge',-,-,-,false,-,-,'error','string','string'
 Saldo e Recarga,Meus saldos,Clique para recarregar,'feature-interaction','recharge','balance-and-recharge','home',1,'initial',false,'recharge-now','recharge-now',-,-,-
 Saldo e Recarga,Recarga,No carregamento da página,'feature-step',,,,,,,,,,,
-=======
->>>>>>> 7ad2b5a563fe1d93c3d763b6c50f3d79e9cb9c00
