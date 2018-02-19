@@ -46,7 +46,8 @@ function buildTag (tag) {
     return `
               /**
                * ${tag['FEATURE']}
-               * - ${tag['MICRO-FEATURE']}
+               * - ${tag['MICRO-FEATURE']} 
+               * - Momento do disparo: ${tag['TRIGGER']}
                */
               dataLayer.push({
                 event: ${parseValue(tag['event'])},
@@ -70,7 +71,8 @@ function buildTag (tag) {
     return `
               /**
                * ${tag['FEATURE']}
-               * - ${tag['MICRO-FEATURE']}
+               * - ${tag['MICRO-FEATURE']} 
+               * - Momento do disparo: ${tag['TRIGGER']}
                */
               dataLayer.push({
                 event: ${parseValue(tag['event'])},
@@ -90,7 +92,8 @@ function buildTag (tag) {
     return `
               /**
                * ${tag['FEATURE']}
-               * - ${tag['MICRO-FEATURE']}
+               * - ${tag['MICRO-FEATURE']} 
+               * - Momento do disparo: ${tag['TRIGGER']}
                */
               dataLayer.push({
                 event: 'interface-message',
