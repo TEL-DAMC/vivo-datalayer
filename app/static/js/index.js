@@ -23,6 +23,17 @@ document.getElementById('load').addEventListener('click', function (e) {
       colHeaders: window.headers,
       contextMenu: true,
 
+      columns: window.headers.map(function (columnName, columnIndex) {
+        let columnConfig = {
+          type: 'autocomplete',
+          source: json.map((tag) => tag[columnIndex]).sort().filter((item, index, self) => self.indexOf(item) === index)
+        }
+        if (columnName === 'event') {
+          columnConfig.strict = true
+        }
+        return columnConfig
+      }),
+
       allowInsertColumn: false,
       //allowRemoveColumn: false
     })
