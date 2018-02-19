@@ -7,11 +7,34 @@
     <script src="/handsontable/handsontable.full.js"></script>
     <!--suppress HtmlUnknownTarget -->
     <link rel="stylesheet" href="/handsontable/handsontable.full.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+          integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 </head>
 <body>
-<button id="save">Salvar</button>
-<button id="generate-js">Gerar Tags</button>
+<header>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-sm">
+                <div class="input-group mb-3">
+                    <input id="csv-name"
+                           type="text" class="form-control" placeholder="Nome do CSV para carregar/salvar"
+                           aria-label="Nome do CSV para carregar/salvar"
+                           aria-describedby="basic-addon2">
+                    <div class="input-group-append">
+                        <button class="btn btn-outline-secondary" type="button" id="load">Carregar</button>
+                        <button class="btn btn-outline-secondary" type="button" id="save">Salvar</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm">
+                <button class="btn btn-outline-secondary" id="generate-js">Gerar Tags</button>
+            </div>
+        </div>
+    </div>
+</header>
+
 <div id="table-container"></div>
+
 <script src="./js/index.js"></script>
 </body>
 </html>
