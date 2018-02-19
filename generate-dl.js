@@ -26,6 +26,7 @@ const parserConfig = {
   auto_parse: true
 }
 
+
 parser(csvInputFileContent, parserConfig, function cb (err, output) {
   if (err) {
     console.error(err)
@@ -49,6 +50,7 @@ function buildString (tag) {
               /**
                * ${tag['FEATURE']}
                * - ${tag['MICRO-FEATURE']}
+               * ${tag['TRIGGER']}
                */
               dataLayer.push({
                 event: ${parseValue(tag['event'])},
@@ -73,6 +75,7 @@ function buildString (tag) {
               /**
                * ${tag['FEATURE']}
                * - ${tag['MICRO-FEATURE']}
+               * ${tag['TRIGGER']}
                */
               dataLayer.push({
                 event: ${parseValue(tag['event'])},
@@ -93,6 +96,7 @@ function buildString (tag) {
               /**
                * ${tag['FEATURE']}
                * - ${tag['MICRO-FEATURE']}
+               * ${tag['TRIGGER']}
                */
               dataLayer.push({
                 event: 'interface-message',
