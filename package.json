@@ -14,6 +14,7 @@
   },
   "devDependencies": {
     "csv-parse": "^2.0.0",
+    "nodemon": "^1.15.1",
     "typedoc": "^0.9.0",
     "yargs": "^11.0.0"
   },
@@ -22,7 +23,7 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "build-docs": "typedoc --module commonjs --theme minimal --includeDeclarations --excludeExternals --out ./dist ./src",
     "serve-docs": "http-server ./dist",
-    "serve-editor": "node app"
+    "serve-editor": "nodemon app"
   },
   "repository": {
     "type": "git",
