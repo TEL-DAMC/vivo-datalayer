@@ -40,7 +40,7 @@ document.getElementById('load').addEventListener('click', function (e) {
   })
 })
 
-document.getElementById('save').addEventListener('click', function (event) {
+function save () {
   let sendableData = window.csvData.slice()
   sendableData.unshift(window.headers)
   const fileName = document.getElementById('csv-name').value
@@ -62,9 +62,25 @@ document.getElementById('save').addEventListener('click', function (event) {
       }
       console.log('Response:', response)
     })
+}
+
+document.getElementById('save').addEventListener('click', function (event) {
+  save()
 })
 
 document.getElementById('generate-js').addEventListener('click', function (event) {
   const fileName = document.getElementById('csv-name').value
   window.fetch('/generate-tags?input=' + fileName + '&output=' + fileName.replace(/\.csv$/, '.new.js')).then()
+})
+
+document.addEventListener('keydown', function (e) {
+  const KEY_CODES = {
+    Ctrl: 17,
+    s: 83
+  }
+  if (e.keyCode === KEY_CODES.Ctrl) window.isCtrlDown = true
+  if (e.keyCode === KEY_CODES.s && window.isCtrlDown === true) {
+    save()
+    e.preventDefault()
+  }
 })
