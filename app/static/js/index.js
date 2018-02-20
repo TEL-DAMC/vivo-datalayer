@@ -73,14 +73,23 @@ document.getElementById('generate-js').addEventListener('click', function (event
   window.fetch('/generate-tags?input=' + fileName + '&output=' + fileName.replace(/\.csv$/, '.new.js')).then()
 })
 
+const KEY_CODES = {
+  Ctrl: 17,
+  s: 83
+}
+
 document.addEventListener('keydown', function (e) {
-  const KEY_CODES = {
-    Ctrl: 17,
-    s: 83
-  }
   if (e.keyCode === KEY_CODES.Ctrl) window.isCtrlDown = true
   if (e.keyCode === KEY_CODES.s && window.isCtrlDown === true) {
     save()
     e.preventDefault()
   }
 })
+
+document.addEventListener('keyup', function (e) {
+  if (e.keyCode === KEY_CODES.Ctrl) window.isCtrlDown = false
+})
+
+function alert (string) {
+  $(`<div>${string}</div>`).appendTo('header').delay(2000).fadeOut()
+}
