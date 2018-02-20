@@ -347,3 +347,5 @@ Saldo e Recarga,Histórico de recarga,Exibição do lightbox de enviar por email
 Saldo e Recarga,Histórico de recarga,Clique para enviar,'feature-interaction','recharge-history','balance-and-recharge','send-by-email',2,'intermediary',false,'send-by-email','send',-,-,-,
 Saldo e Recarga,Histórico de recarga,Exibição de sucesso ao enviar por email,'feature-step','recharge-history','balance-and-recharge','send-by-email',3,'completion',true,-,-,-,-,-,
 Saldo e Recarga,Histórico de recarga,Exibição da tela de erro ao enviar por e-mail,'interface-message','recharge-history','balance-and-recharge','send-by-email',3,-,false,-,-,'error','string','string',
+Saldo e Recarga,Extrato,Clique para enviar por e-mail ou imprimir,'feature-step','statement','balance-and-recharge',-,1,'initial',false,-,-,-,-,-,
+Saldo e Recarga,Extrato,,,,,,,,,,,,,,
