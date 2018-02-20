@@ -86,7 +86,7 @@ function buildTag (tag) {
                     success: ${parseValue(tag['step.success'])}
                   }
                 }
-              })  
+              }) 
               `
   } else if (tag.event.includes('interface-message')) {
     return `
