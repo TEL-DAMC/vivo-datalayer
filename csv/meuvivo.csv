@@ -146,9 +146,9 @@ Contas,Termo de Quitacao,Clique para confirmar ou voltar,'feature-interaction','
 Contas,Termo de Quitacao,No carregamento da página,'feature-step','acquittance','bills','success',4,'completion',true,-,-,-,-,-
 Contas,Termo de Quitacao,No momento que o sistema retornar um aviso para a não-realização da operação,'interface-message','acquittance','bills',-,-,-,false,-,-,'warning','string','string'
 Contas,Termo de Quitacao,No momento que a operação falhar a execução,'interface-message','acquittance','bills',-,-,-,false,-,-,'error','string','string'
-Contas,Acordos - Fixo,No carregamento da página,'feature-step','agreements','bills','home',1,'initial',false,-,-,-,-,-
+Contas,Acordos - Fixo,No carregamento da página,'feature-step',agreements,'bills','home',1,'initial',false,-,-,-,-,-
 Contas,Acordos - Fixo,"Clique para imprimir, visualizar ou enviar acordo por email",'feature-interaction','agreements','bills','home',1,'initial',false,'to-choose','to-print' | 'to-view' | 'to-send',-,-,-
-Contas,Acordos - Fixo,No carregamento da página,'feature-step','agreements','bills',send-by-email',2,'intermediary',false,-,-,-,-,-
+Contas,Acordos - Fixo,No carregamento da página,'feature-step','agreements','bills','send-by-email',2,'intermediary',false,-,-,-,-,-
 Contas,Acordos - Fixo,Clique para enviar,'feature-interaction','agreements','bills','send-by-email',2,'intermediary',false,'send-by-email','next',-,-,-
 Contas,Acordos - Fixo,No carregamento da página,'feature-step','agreements','bills','success',3,'completion',true,-,-,-,-,-
 Contas,Acordos - Fixo,No momento que o sistema retornar um aviso para a não-realização da operação,'interface-message','agreements','bills',-,-,-,false,-,-,'warning','string','string'
@@ -184,7 +184,7 @@ Contas,Resumo da Compra - Fixo,No momento que o sistema retornar um aviso para a
 Contas,Resumo da Compra - Fixo,No momento que a operação falhar a execução,'interface-message','puchase-summary','bills',-,-,-,false,-,-,'error','string','string'
 Planos,Meu Plano - Detalhe do Plano,No carregamento da página,'feature-step','plan-detailed','plans','home',1,'initial',false,-,-,-,-,-
 Planos,Meu Plano - Detalhe do Plano,"Clique para enviar por e-mail, gerar PDF , imprimir ou trocar de plano",'feature-interaction','plan-detailed','plans','home',1,'initial',false,'contratcs' | 'binding-contract' | 'tax','to-print' | 'salve-to-pdf' | 'send-by-email' | 'change-plan' | 'internet-consumption',-,-,-
-Planos,Meu Plano - Detalhe do Plano,No carregamento da página,'feature-step','plan-detailed','plans',send-by-email',2,'intermediary',false,-,-,-,-,-
+Planos,Meu Plano - Detalhe do Plano,No carregamento da página,'feature-step','plan-detailed','plans','send-by-email',2,'intermediary',false,-,-,-,-,-
 Planos,Meu Plano - Detalhe do Plano,Clique para enviar,'feature-interaction','plan-detailed','plans','send-by-email',2,'intermediary',false,'confirm','next' | 'cancel',-,-,-
 Planos,Meu Plano - Detalhe do Plano,No carregamento da página,'feature-step','plan-detailed','plans','success',3,'completion',true,-,-,-,-,-
 Planos,Meu Plano - Detalhe do Plano,No momento que o sistema retornar um aviso para a não-realização da operação,'interface-message','plan-detailed','plans',-,-,-,false,-,-,'warning','string','string'
@@ -282,16 +282,16 @@ Pacotes e Serviços,Meu Serviços - Fixo 2 - TV,No carregamento da página,'feat
 Pacotes e Serviços,Meu Serviços - Fixo 2 - TV,"Clique para ver canais, Alterar plano, Pacotes recomendados ou Clique em algum serviço adicional",'feature-interaction','my-services','pack-and-services','tv',2,'intermediary',false,'options','view-channels' | 'change-plan' | 'recommended-packs' | 'additional-services',-,-,-
 Pacotes e Serviços,Meu Serviços - Fixo 2 - TV,No momento que o sistema retornar um aviso para a não-realização da operação,'interface-message','my-services','pack-and-services',-,-,-,false,-,-,'warning','string','string'
 Pacotes e Serviços,Meu Serviços - Fixo 2 - TV,No momento que a operação falhar a execução,'interface-message','my-services','pack-and-services',-,-,-,false,-,-,'error','string','string'
-Pacotes e Serviços,Meu Serviços - Com Portabilidade - Fixo 2,No carregamento da página,'feature-step','my-services-'portability','pack-and-services',with-portability',1,'initial',false,-,-,-,-,-
-Pacotes e Serviços,Meu Serviços - Com Portabilidade - Fixo 2,Clique para alterar número,'feature-interaction','my-services-'portability','pack-and-services',with-portability',1,'initial',false,'change-number','change-number',-,-,-
-Pacotes e Serviços,Meu Serviços - Com Portabilidade - Fixo 2,No carregamento da página,'feature-step','my-services-'portability','pack-and-services',with-portability',2,'completion',true,-,-,-,-,-
-Pacotes e Serviços,Meu Serviços - Com Portabilidade - Fixo 2,No momento que o sistema retornar um aviso para a não-realização da operação,'interface-message','my-services-'portability','pack-and-services',-,-,-,false,-,-,'warning','string','string'
-Pacotes e Serviços,Meu Serviços - Com Portabilidade - Fixo 2,No momento que a operação falhar a execução,'interface-message','my-services-'portability','pack-and-services',-,-,-,false,-,-,'error','string','string'
-Pacotes e Serviços,Meu Serviços - Sem Portabilidade - Fixo 2,No carregamento da página,'feature-step','my-services-'portability','pack-and-services','without-portability',1,'initial',false,-,-,-,-,-
-Pacotes e Serviços,Meu Serviços - Sem Portabilidade - Fixo 2,Clique para alterar número,'feature-interaction','my-services-'portability','pack-and-services','without-portability',1,'initial',false,'change-number','change-number',-,-,-
-Pacotes e Serviços,Meu Serviços - Sem Portabilidade - Fixo 2,No carregamento da página,'feature-step','my-services-'portability','pack-and-services','without-portability',2,'completion',true,-,-,-,-,-
-Pacotes e Serviços,Meu Serviços - Sem Portabilidade - Fixo 2,No momento que o sistema retornar um aviso para a não-realização da operação,'interface-message','my-services-'portability','pack-and-services',-,-,-,false,-,-,'warning','string','string'
-Pacotes e Serviços,Meu Serviços - Sem Portabilidade - Fixo 2,No momento que a operação falhar a execução,'interface-message','my-services-'portability','pack-and-services',-,-,-,false,-,-,'error','string','string'
+Pacotes e Serviços,Meu Serviços - Com Portabilidade - Fixo 2,No carregamento da página,'feature-step','my-services-portability','pack-and-services','with-portability',1,'initial',false,-,-,-,-,-
+Pacotes e Serviços,Meu Serviços - Com Portabilidade - Fixo 2,Clique para alterar número,'feature-interaction','my-services-portability','pack-and-services','with-portability',1,'initial',false,'change-number','change-number',-,-,-
+Pacotes e Serviços,Meu Serviços - Com Portabilidade - Fixo 2,No carregamento da página,'feature-step','my-services-portability','pack-and-services','with-portability',2,'completion',true,-,-,-,-,-
+Pacotes e Serviços,Meu Serviços - Com Portabilidade - Fixo 2,No momento que o sistema retornar um aviso para a não-realização da operação,'interface-message','my-services-portability','pack-and-services',-,-,-,false,-,-,'warning','string','string'
+Pacotes e Serviços,Meu Serviços - Com Portabilidade - Fixo 2,No momento que a operação falhar a execução,'interface-message','my-services-portability','pack-and-services',-,-,-,false,-,-,'error','string','string'
+Pacotes e Serviços,Meu Serviços - Sem Portabilidade - Fixo 2,No carregamento da página,'feature-step','my-services-portability','pack-and-services','without-portability',1,'initial',false,-,-,-,-,-
+Pacotes e Serviços,Meu Serviços - Sem Portabilidade - Fixo 2,Clique para alterar número,'feature-interaction','my-services-portability','pack-and-services','without-portability',1,'initial',false,'change-number','change-number',-,-,-
+Pacotes e Serviços,Meu Serviços - Sem Portabilidade - Fixo 2,No carregamento da página,'feature-step','my-services-portability','pack-and-services','without-portability',2,'completion',true,-,-,-,-,-
+Pacotes e Serviços,Meu Serviços - Sem Portabilidade - Fixo 2,No momento que o sistema retornar um aviso para a não-realização da operação,'interface-message','my-services-portability','pack-and-services',-,-,-,false,-,-,'warning','string','string'
+Pacotes e Serviços,Meu Serviços - Sem Portabilidade - Fixo 2,No momento que a operação falhar a execução,'interface-message','my-services-portability','pack-and-services',-,-,-,false,-,-,'error','string','string'
 Suporte Técnico,Solucao de Problema,Exibição da tela de início,'feature-step','technical-problem-solution','help-desk','home',1,'initial',false,-,-,-,-,-
 Suporte Técnico,Solucao de Problema,"Clque em uma das opções: ""Solucionar problema"" ou ""Consultar visita técnica""",'feature-interaction','technical-problem-solution','help-desk','home',1,'initial',false,'options','solve-problem' | 'consult-technical-visit',-,-,-
 Suporte Técnico,Solucao de Problema,Exibição da tela de início,'feature-step','technical-problem-solution','help-desk','select-service',2,'intermediary',false,-,-,-,-,-
@@ -339,17 +339,26 @@ Suporte Técnico,Avaliação de Visita Técnica,No momento que o sistema retorna
 Suporte Técnico,Avaliação de Visita Técnica,No momento que a operação falhar a execução,'interface-message','visit-evaluation','help-desk',-,-,-,false,-,-,'error','string','string',
 Saldo e Recarga,Meus saldos,Exibição da tela de inicio,'feature-step','balances','balance-and-recharge','home',1,'initial',false,-,-,-,-,-,
 Saldo e Recarga,Meus saldos,Clique em ver extrato,'feature-interaction','balances','balance-and-recharge','home',1,'initial',false,'view-statement','view-statement',-,-,-,
-Saldo e Recarga,Meus saldos,Exibição da tela de detalhamento do saldo,'feature-step','balances','balance-and-recharge','home',1,'completion',false,-,-,-,-,-,
+Saldo e Recarga,Meus saldos,Exibição da tela de detalhamento do saldo,'feature-step','balances','balance-and-recharge','home',2,'completion',false,-,-,-,-,-,
 Saldo e Recarga,Meus saldos,Clique para recarregar,'feature-interaction','recharge','balance-and-recharge','home',1,'initial',false,'recharge-now','recharge-now',-,-,-,
 Saldo e Recarga,Histórico de recarga,Exibição da tela de inicio,'feature-step','recharge-history','balance-and-recharge','home',1,'initial',false,-,-,-,-,-,
 Saldo e Recarga,Histórico de recarga,Clique para enviar por e-mail ou imprimir,'feature-interaction','recharge-history','balance-and-recharge','home',1,'initial',false,'send-by-email' | 'print','send-by-email' | 'print',-,-,-,
 Saldo e Recarga,Histórico de recarga,Exibição do lightbox de enviar por email,'feature-step','recharge-history','balance-and-recharge','send-by-email',2,'intermediary',false,'send-by-email','send-by-email',-,-,-,
 Saldo e Recarga,Histórico de recarga,Clique para enviar,'feature-interaction','recharge-history','balance-and-recharge','send-by-email',2,'intermediary',false,'send-by-email','send',-,-,-,
-Saldo e Recarga,Histórico de recarga,Exibição de sucesso ao enviar por email,'feature-step','recharge-history','balance-and-recharge','send-by-email',3,'completion',true,-,-,-,-,-,
-Saldo e Recarga,Histórico de recarga,Exibição da tela de erro ao enviar por e-mail,'interface-message','recharge-history','balance-and-recharge','send-by-email',-,-,false,-,-,'error','string','string',
+Saldo e Recarga,Histórico de recarga,Exibição de sucesso ao enviar por email,'feature-step','recharge-history','balance-and-recharge','success',3,'completion',true,-,-,-,-,-,
+Saldo e Recarga,Histórico de recarga,No momento que o sistema retornar um aviso para a não-realização da operação,'interface-message','recharge-history','balance-and-recharge',-,-,-,false,-,-,'warning','string','string',
+Saldo e Recarga,Histórico de recarga,No momento que a operação falhar a execução,'interface-message','recharge-history','balance-and-recharge',-,-,-,false,-,-,'error','string','string',
 Saldo e Recarga,Extrato,Exibição da tela de início,'feature-step','statement','balance-and-recharge','home',1,'initial',false,-,-,-,-,-,
 Saldo e Recarga,Extrato,Clique para enviar por e-mail ou imprimir,'feature-interaction','statement','balance-and-recharge','home',1,'initial',false,'send-by-email' | 'print','send-by-email' | 'print',-,-,-,
 Saldo e Recarga,Extrato,Exibição do lightbox de enviar por email,'feature-step','statement','balance-and-recharge','send-by-email',2,'intermediary',false,-,-,-,-,-,
 Saldo e Recarga,Extrato,Clique para enviar,'feature-interaction','statement','balance-and-recharge','send-by-email',2,'intermediary',false,'send-by-email' | 'print','send',-,-,-,
 Saldo e Recarga,Extrato,Exibição de sucesso ao enviar por email,'feature-step','statement','balance-and-recharge','send-by-email',3,'completion',false,-,-,-,-,-,
-Saldo e Recarga,Extrato,Exibição da tela de erro ao enviar por e-mail,'interface-message','statement','balance-and-recharge','send-by-email',-,-,false,-,-,'error','string','string',
+Saldo e Recarga,Extrato,No momento que o sistema retornar um aviso para a não-realização da operação,'interface-message','statement','balance-and-recharge',-,-,-,false,-,-,'warning','string','string',
+Saldo e Recarga,Extrato,No momento que a operação falhar a execução,'interface-message','statement','balance-and-recharge',-,-,-,false,-,-,'error','string','string',
+Saldo e Recarga,Recarregue no seu banco,Exibição da tela de início,'feature-step','recharge-at-your-bank','balance-and-recharge','home',1,'initial',false,-,-,-,-,-,
+Saldo e Recarga,Recarregue no seu banco,Clique para selecionar banco,'feature-interaction','recharge-at-your-bank','balance-and-recharge','home',1,'initial',false,'select-bank','next',-,-,-,
+Saldo e Recarga,Credito Antecipado,Exibição da tela de início,'feature-step','advance-credit','balance-and-recharge','home',1,'initial',false,-,-,-,-,-,
+Saldo e Recarga,Credito Antecipado,Clique para consultar credito,'feature-interaction','advance-credit','balance-and-recharge','home',1,'initial',false,'check-credit','next',-,-,-,
+Saldo e Recarga,Credito Antecipado,Exibição de sucesso no fluxo,'feature-step','advance-credit','balance-and-recharge','success',2,'completion',false,-,-,-,-,-,
+Saldo e Recarga,Credito Antecipado,No momento que o sistema retornar um aviso para a não-realização da operação,'interface-message','advance-credit','balance-and-recharge',-,-,-,false,-,-,'warning','string','string',
+Saldo e Recarga,Credito Antecipado,No momento que a operação falhar a execução,'interface-message','advance-credit','balance-and-recharge',-,-,-,false,-,-,'error','string','string',

@@ -1,5 +1,4 @@
 
-
               /**
                * Consumo
                * - Contratar Pacotes 
@@ -17,7 +16,7 @@
                     success: false
                   }
                 }
-              })  
+              }) 
               
 
               /**
@@ -113,7 +112,7 @@
                     success: false
                   }
                 }
-              })  
+              }) 
               
 
               /**
@@ -157,7 +156,7 @@
                     success: false
                   }
                 }
-              })  
+              }) 
               
 
               /**
@@ -201,7 +200,7 @@
                     success: false
                   }
                 }
-              })  
+              }) 
               
 
               /**
@@ -245,7 +244,7 @@
                     success: true
                   }
                 }
-              })  
+              }) 
               
 
               /**
@@ -317,7 +316,7 @@
                     success: false
                   }
                 }
-              })  
+              }) 
               
 
               /**
@@ -361,7 +360,7 @@
                     success: false
                   }
                 }
-              })  
+              }) 
               
 
               /**
@@ -405,7 +404,7 @@
                     success: true
                   }
                 }
-              })  
+              }) 
               
 
               /**
@@ -477,7 +476,7 @@
                     success: false
                   }
                 }
-              })  
+              }) 
               
 
               /**
@@ -521,7 +520,7 @@
                     success: false
                   }
                 }
-              })  
+              }) 
               
 
               /**
@@ -565,7 +564,7 @@
                     success: false
                   }
                 }
-              })  
+              }) 
               
 
               /**
@@ -609,7 +608,7 @@
                     success: false
                   }
                 }
-              })  
+              }) 
               
 
               /**
@@ -653,7 +652,7 @@
                     success: false
                   }
                 }
-              })  
+              }) 
               
 
               /**
@@ -697,7 +696,7 @@
                     success: true
                   }
                 }
-              })  
+              }) 
               
 
               /**
@@ -769,7 +768,7 @@
                     success: false
                   }
                 }
-              })  
+              }) 
               
 
               /**
@@ -813,7 +812,7 @@
                     success: false
                   }
                 }
-              })  
+              }) 
               
 
               /**
@@ -857,7 +856,7 @@
                     success: true
                   }
                 }
-              })  
+              }) 
               
 
               /**
@@ -929,7 +928,7 @@
                     success: false
                   }
                 }
-              })  
+              }) 
               
 
               /**
@@ -973,7 +972,7 @@
                     success: false
                   }
                 }
-              })  
+              }) 
               
 
               /**
@@ -1017,7 +1016,7 @@
                     success: true
                   }
                 }
-              })  
+              }) 
               
 
               /**
@@ -1089,7 +1088,7 @@
                     success: false
                   }
                 }
-              })  
+              }) 
               
 
               /**
@@ -1133,7 +1132,7 @@
                     success: false
                   }
                 }
-              })  
+              }) 
               
 
               /**
@@ -1177,7 +1176,7 @@
                     success: true
                   }
                 }
-              })  
+              }) 
               
 
               /**
@@ -1249,7 +1248,7 @@
                     success: false
                   }
                 }
-              })  
+              }) 
               
 
               /**
@@ -1293,7 +1292,7 @@
                     success: false
                   }
                 }
-              })  
+              }) 
               
 
               /**
@@ -1337,7 +1336,7 @@
                     success: true
                   }
                 }
-              })  
+              }) 
               
 
               /**
@@ -1409,7 +1408,7 @@
                     success: false
                   }
                 }
-              })  
+              }) 
               
 
               /**
@@ -1453,7 +1452,7 @@
                     success: true
                   }
                 }
-              })  
+              }) 
               
 
               /**
@@ -1525,7 +1524,7 @@
                     success: false
                   }
                 }
-              })  
+              }) 
               
 
               /**
@@ -1569,7 +1568,7 @@
                     success: false
                   }
                 }
-              })  
+              }) 
               
 
               /**
@@ -1613,7 +1612,7 @@
                     success: true
                   }
                 }
-              })  
+              }) 
               
 
               /**
@@ -1685,7 +1684,7 @@
                     success: false
                   }
                 }
-              })  
+              }) 
               
 
               /**
@@ -1729,7 +1728,7 @@
                     success: false
                   }
                 }
-              })  
+              }) 
               
 
               /**
@@ -1773,7 +1772,7 @@
                     success: false
                   }
                 }
-              })  
+              }) 
               
 
               /**
@@ -1817,7 +1816,7 @@
                     success: true
                   }
                 }
-              })  
+              }) 
               
 
               /**
@@ -1889,7 +1888,7 @@
                     success: false
                   }
                 }
-              })  
+              }) 
               
 
               /**
@@ -2009,7 +2008,7 @@
                     success: false
                   }
                 }
-              })  
+              }) 
               
 
               /**
@@ -2081,7 +2080,7 @@
                     success: false
                   }
                 }
-              })  
+              }) 
               
 
               /**
@@ -2177,7 +2176,7 @@
                     success: false
                   }
                 }
-              })  
+              }) 
               
 
               /**
@@ -2221,7 +2220,7 @@
                     success: false
                   }
                 }
-              })  
+              }) 
               
 
               /**
@@ -2265,7 +2264,7 @@
                     success: true
                   }
                 }
-              })  
+              }) 
               
 
               /**
@@ -2337,7 +2336,7 @@
                     success: false
                   }
                 }
-              })  
+              }) 
               
 
               /**
@@ -2381,7 +2380,7 @@
                     success: false
                   }
                 }
-              })  
+              }) 
               
 
               /**
@@ -2425,7 +2424,7 @@
                     success: true
                   }
                 }
-              })  
+              }) 
               
 
               /**
@@ -2497,7 +2496,7 @@
                     success: false
                   }
                 }
-              })  
+              }) 
               
 
               /**
@@ -2541,7 +2540,7 @@
                     success: false
                   }
                 }
-              })  
+              }) 
               
 
               /**
@@ -2585,7 +2584,7 @@
                     success: true
                   }
                 }
-              })  
+              }) 
               
 
               /**
@@ -2657,7 +2656,7 @@
                     success: false
                   }
                 }
-              })  
+              }) 
               
 
               /**
@@ -2701,7 +2700,7 @@
                     success: false
                   }
                 }
-              })  
+              }) 
               
 
               /**
@@ -2745,7 +2744,7 @@
                     success: true
                   }
                 }
-              })  
+              }) 
               
 
               /**
@@ -2817,7 +2816,7 @@
                     success: false
                   }
                 }
-              })  
+              }) 
               
 
               /**
@@ -2861,7 +2860,7 @@
                     success: false
                   }
                 }
-              })  
+              }) 
               
 
               /**
@@ -2905,7 +2904,7 @@
                     success: false
                   }
                 }
-              })  
+              }) 
               
 
               /**
@@ -2949,7 +2948,7 @@
                     success: true
                   }
                 }
-              })  
+              }) 
               
 
               /**
@@ -3021,7 +3020,7 @@
                     success: false
                   }
                 }
-              })  
+              }) 
               
 
               /**
@@ -3065,7 +3064,7 @@
                     success: true
                   }
                 }
-              })  
+              }) 
               
 
               /**
@@ -3137,7 +3136,7 @@
                     success: false
                   }
                 }
-              })  
+              }) 
               
 
               /**
@@ -3157,7 +3156,7 @@
                     success: false
                   }
                 }
-              })  
+              }) 
               
 
               /**
@@ -3177,7 +3176,7 @@
                     success: false
                   }
                 }
-              })  
+              }) 
               
 
               /**
@@ -3221,7 +3220,7 @@
                     success: false
                   }
                 }
-              })  
+              }) 
               
 
               /**
@@ -3265,7 +3264,7 @@
                     success: false
                   }
                 }
-              })  
+              }) 
               
 
               /**
@@ -3309,7 +3308,7 @@
                     success: true
                   }
                 }
-              })  
+              }) 
               
 
               /**
@@ -3372,7 +3371,7 @@
               dataLayer.push({
                 event: 'feature-step',
                 feature: {
-                  name: 'agreements',
+                  name: agreements,
                   type: 'bills',
                   step: {
                     name: 'home',
@@ -3381,7 +3380,7 @@
                     success: false
                   }
                 }
-              })  
+              }) 
               
 
               /**
@@ -3419,13 +3418,13 @@
                   name: 'agreements',
                   type: 'bills',
                   step: {
-                    name: send-by-email',
+                    name: 'send-by-email',
                     index: 2,
                     type: 'intermediary',
                     success: false
                   }
                 }
-              })  
+              }) 
               
 
               /**
@@ -3469,7 +3468,7 @@
                     success: true
                   }
                 }
-              })  
+              }) 
               
 
               /**
@@ -3565,7 +3564,7 @@
                     success: false
                   }
                 }
-              })  
+              }) 
               
 
               /**
@@ -3585,7 +3584,7 @@
                     success: true
                   }
                 }
-              })  
+              }) 
               
 
               /**
@@ -3657,7 +3656,7 @@
                     success: false
                   }
                 }
-              })  
+              }) 
               
 
               /**
@@ -3753,7 +3752,7 @@
                     success: false
                   }
                 }
-              })  
+              }) 
               
 
               /**
@@ -3849,7 +3848,7 @@
                     success: false
                   }
                 }
-              })  
+              }) 
               
 
               /**
@@ -3945,7 +3944,7 @@
                     success: false
                   }
                 }
-              })  
+              }) 
               
 
               /**
@@ -3989,7 +3988,7 @@
                     success: false
                   }
                 }
-              })  
+              }) 
               
 
               /**
@@ -4033,7 +4032,7 @@
                     success: false
                   }
                 }
-              })  
+              }) 
               
 
               /**
@@ -4129,7 +4128,7 @@
                     success: false
                   }
                 }
-              })  
+              }) 
               
 
               /**
@@ -4225,7 +4224,7 @@
                     success: false
                   }
                 }
-              })  
+              }) 
               
 
               /**
@@ -4263,13 +4262,13 @@
                   name: 'plan-detailed',
                   type: 'plans',
                   step: {
-                    name: send-by-email',
+                    name: 'send-by-email',
                     index: 2,
                     type: 'intermediary',
                     success: false
                   }
                 }
-              })  
+              }) 
               
 
               /**
@@ -4313,7 +4312,7 @@
                     success: true
                   }
                 }
-              })  
+              }) 
               
 
               /**
@@ -4385,7 +4384,7 @@
                     success: false
                   }
                 }
-              })  
+              }) 
               
 
               /**
@@ -4481,7 +4480,7 @@
                     success: false
                   }
                 }
-              })  
+              }) 
               
 
               /**
@@ -4525,7 +4524,7 @@
                     success: false
                   }
                 }
-              })  
+              }) 
               
 
               /**
@@ -4569,7 +4568,7 @@
                     success: true
                   }
                 }
-              })  
+              }) 
               
 
               /**
@@ -4641,7 +4640,7 @@
                     success: false
                   }
                 }
-              })  
+              }) 
               
 
               /**
@@ -4685,7 +4684,7 @@
                     success: true
                   }
                 }
-              })  
+              }) 
               
 
               /**
@@ -4757,7 +4756,7 @@
                     success: false
                   }
                 }
-              })  
+              }) 
               
 
               /**
@@ -4801,7 +4800,7 @@
                     success: false
                   }
                 }
-              })  
+              }) 
               
 
               /**
@@ -4845,7 +4844,7 @@
                     success: true
                   }
                 }
-              })  
+              }) 
               
 
               /**
@@ -4917,7 +4916,7 @@
                     success: false
                   }
                 }
-              })  
+              }) 
               
 
               /**
@@ -4961,7 +4960,7 @@
                     success: true
                   }
                 }
-              })  
+              }) 
               
 
               /**
@@ -5033,7 +5032,7 @@
                     success: false
                   }
                 }
-              })  
+              }) 
               
 
               /**
@@ -5077,7 +5076,7 @@
                     success: false
                   }
                 }
-              })  
+              }) 
               
 
               /**
@@ -5121,7 +5120,7 @@
                     success: true
                   }
                 }
-              })  
+              }) 
               
 
               /**
@@ -5193,7 +5192,7 @@
                     success: false
                   }
                 }
-              })  
+              }) 
               
 
               /**
@@ -5237,7 +5236,7 @@
                     success: false
                   }
                 }
-              })  
+              }) 
               
 
               /**
@@ -5281,7 +5280,7 @@
                     success: true
                   }
                 }
-              })  
+              }) 
               
 
               /**
@@ -5353,7 +5352,7 @@
                     success: false
                   }
                 }
-              })  
+              }) 
               
 
               /**
@@ -5397,7 +5396,7 @@
                     success: false
                   }
                 }
-              })  
+              }) 
               
 
               /**
@@ -5441,7 +5440,7 @@
                     success: true
                   }
                 }
-              })  
+              }) 
               
 
               /**
@@ -5513,7 +5512,7 @@
                     success: false
                   }
                 }
-              })  
+              }) 
               
 
               /**
@@ -5557,7 +5556,7 @@
                     success: false
                   }
                 }
-              })  
+              }) 
               
 
               /**
@@ -5601,7 +5600,7 @@
                     success: true
                   }
                 }
-              })  
+              }) 
               
 
               /**
@@ -5673,7 +5672,7 @@
                     success: false
                   }
                 }
-              })  
+              }) 
               
 
               /**
@@ -5769,7 +5768,7 @@
                     success: false
                   }
                 }
-              })  
+              }) 
               
 
               /**
@@ -5813,7 +5812,7 @@
                     success: false
                   }
                 }
-              })  
+              }) 
               
 
               /**
@@ -5857,7 +5856,7 @@
                     success: true
                   }
                 }
-              })  
+              }) 
               
 
               /**
@@ -5929,7 +5928,7 @@
                     success: false
                   }
                 }
-              })  
+              }) 
               
 
               /**
@@ -6025,7 +6024,7 @@
                     success: false
                   }
                 }
-              })  
+              }) 
               
 
               /**
@@ -6121,7 +6120,7 @@
                     success: false
                   }
                 }
-              })  
+              }) 
               
 
               /**
@@ -6165,7 +6164,7 @@
                     success: false
                   }
                 }
-              })  
+              }) 
               
 
               /**
@@ -6261,7 +6260,7 @@
                     success: false
                   }
                 }
-              })  
+              }) 
               
 
               /**
@@ -6305,7 +6304,7 @@
                     success: false
                   }
                 }
-              })  
+              }) 
               
 
               /**
@@ -6401,7 +6400,7 @@
                     success: false
                   }
                 }
-              })  
+              }) 
               
 
               /**
@@ -6445,7 +6444,7 @@
                     success: false
                   }
                 }
-              })  
+              }) 
               
 
               /**
@@ -6532,16 +6531,16 @@
               dataLayer.push({
                 event: 'feature-step',
                 feature: {
-                  name: 'my-services-'portability',
+                  name: 'my-services-portability',
                   type: 'pack-and-services',
                   step: {
-                    name: with-portability',
+                    name: 'with-portability',
                     index: 1,
                     type: 'initial',
                     success: false
                   }
                 }
-              })  
+              }) 
               
 
               /**
@@ -6552,10 +6551,10 @@
               dataLayer.push({
                 event: 'feature-interaction',
                 feature: {
-                  name: 'my-services-'portability',
+                  name: 'my-services-portability',
                   type: 'pack-and-services',
                   step: {
-                    name: with-portability',
+                    name: 'with-portability',
                     index: 1,
                     type: 'initial',
                     success: false
@@ -6576,16 +6575,16 @@
               dataLayer.push({
                 event: 'feature-step',
                 feature: {
-                  name: 'my-services-'portability',
+                  name: 'my-services-portability',
                   type: 'pack-and-services',
                   step: {
-                    name: with-portability',
+                    name: 'with-portability',
                     index: 2,
                     type: 'completion',
                     success: true
                   }
                 }
-              })  
+              }) 
               
 
               /**
@@ -6648,7 +6647,7 @@
               dataLayer.push({
                 event: 'feature-step',
                 feature: {
-                  name: 'my-services-'portability',
+                  name: 'my-services-portability',
                   type: 'pack-and-services',
                   step: {
                     name: 'without-portability',
@@ -6657,7 +6656,7 @@
                     success: false
                   }
                 }
-              })  
+              }) 
               
 
               /**
@@ -6668,7 +6667,7 @@
               dataLayer.push({
                 event: 'feature-interaction',
                 feature: {
-                  name: 'my-services-'portability',
+                  name: 'my-services-portability',
                   type: 'pack-and-services',
                   step: {
                     name: 'without-portability',
@@ -6692,7 +6691,7 @@
               dataLayer.push({
                 event: 'feature-step',
                 feature: {
-                  name: 'my-services-'portability',
+                  name: 'my-services-portability',
                   type: 'pack-and-services',
                   step: {
                     name: 'without-portability',
@@ -6701,7 +6700,7 @@
                     success: true
                   }
                 }
-              })  
+              }) 
               
 
               /**
@@ -6754,6 +6753,1046 @@
                  */
                 element: HTMLElement
               })  
+              
+
+              /**
+               * Suporte Técnico
+               * - Solucao de Problema 
+               * - Momento do disparo: Exibição da tela de início
+               */
+              dataLayer.push({
+                event: 'feature-step',
+                feature: {
+                  name: 'technical-problem-solution',
+                  type: 'help-desk',
+                  step: {
+                    name: 'home',
+                    index: 1,
+                    type: 'initial',
+                    success: false
+                  }
+                }
+              }) 
+              
+
+              /**
+               * Suporte Técnico
+               * - Solucao de Problema 
+               * - Momento do disparo: Clque em uma das opções: "Solucionar problema" ou "Consultar visita técnica"
+               */
+              dataLayer.push({
+                event: 'feature-interaction',
+                feature: {
+                  name: 'technical-problem-solution',
+                  type: 'help-desk',
+                  step: {
+                    name: 'home',
+                    index: 1,
+                    type: 'initial',
+                    success: false
+                  }
+                },
+                interaction: {
+                  name: 'options',
+                  value: 'solve-problem' | 'consult-technical-visit'
+                }
+              })
+              
+
+              /**
+               * Suporte Técnico
+               * - Solucao de Problema 
+               * - Momento do disparo: Exibição da tela de início
+               */
+              dataLayer.push({
+                event: 'feature-step',
+                feature: {
+                  name: 'technical-problem-solution',
+                  type: 'help-desk',
+                  step: {
+                    name: 'select-service',
+                    index: 2,
+                    type: 'intermediary',
+                    success: false
+                  }
+                }
+              }) 
+              
+
+              /**
+               * Suporte Técnico
+               * - Solucao de Problema 
+               * - Momento do disparo: Clique para selecionar um serviço
+               */
+              dataLayer.push({
+                event: 'feature-interaction',
+                feature: {
+                  name: 'technical-problem-solution',
+                  type: 'help-desk',
+                  step: {
+                    name: 'select-service',
+                    index: 2,
+                    type: 'intermediary',
+                    success: false
+                  }
+                },
+                interaction: {
+                  name: 'select-service',
+                  value: 'next'
+                }
+              })
+              
+
+              /**
+               * Suporte Técnico
+               * - Solucao de Problema 
+               * - Momento do disparo: No carregamento da página
+               */
+              dataLayer.push({
+                event: 'feature-step',
+                feature: {
+                  name: 'technical-problem-solution',
+                  type: 'help-desk',
+                  step: {
+                    name: 'problem-solved-success',
+                    index: 3,
+                    type: 'intermediary',
+                    success: true
+                  }
+                }
+              }) 
+              
+
+              /**
+               * Suporte Técnico
+               * - Solucao de Problema 
+               * - Momento do disparo: Clique para receber o protocolo
+               */
+              dataLayer.push({
+                event: 'feature-interaction',
+                feature: {
+                  name: 'technical-problem-solution',
+                  type: 'help-desk',
+                  step: {
+                    name: 'problem-solved-success',
+                    index: 3,
+                    type: 'intermediary',
+                    success: false
+                  }
+                },
+                interaction: {
+                  name: 'receive-protocol',
+                  value: 'next'
+                }
+              })
+              
+
+              /**
+               * Suporte Técnico
+               * - Solucao de Problema 
+               * - Momento do disparo: No carregamento da página
+               */
+              dataLayer.push({
+                event: 'feature-step',
+                feature: {
+                  name: 'technical-problem-solution',
+                  type: 'help-desk',
+                  step: {
+                    name: 'problem-solved-success',
+                    index: 4,
+                    type: 'completion',
+                    success: true
+                  }
+                }
+              }) 
+              
+
+              /**
+               * Suporte Técnico
+               * - Solucao de Problema 
+               * - Momento do disparo: No momento que o sistema retornar um aviso para a não-realização da operação
+               */
+              dataLayer.push({
+                event: 'interface-message',
+                message: {
+                  type: 'string',
+                  /**
+                   * Name of the warning.
+                   * Please try to consider including the field that showed the error.
+                   */
+                  name: string,
+                  /**
+                   * Warning code, if available
+                   */
+                  code: string
+                },
+                /**
+                 * The element that diplays the error, when available
+                 */
+                element: HTMLElement
+              })  
+              
+
+              /**
+               * Suporte Técnico
+               * - Solucao de Problema 
+               * - Momento do disparo: No momento que a operação falhar a execução
+               */
+              dataLayer.push({
+                event: 'interface-message',
+                message: {
+                  type: 'string',
+                  /**
+                   * Name of the warning.
+                   * Please try to consider including the field that showed the error.
+                   */
+                  name: string,
+                  /**
+                   * Warning code, if available
+                   */
+                  code: string
+                },
+                /**
+                 * The element that diplays the error, when available
+                 */
+                element: HTMLElement
+              })  
+              
+
+              /**
+               * Suporte Técnico
+               * - Agendar Visita Tecnica 
+               * - Momento do disparo: Exibição da tela para solicitar ajuda da equipe técnica
+               */
+              dataLayer.push({
+                event: 'feature-step',
+                feature: {
+                  name: 'technical-problem-solution',
+                  type: 'help-desk',
+                  step: {
+                    name: 'home',
+                    index: 1,
+                    type: 'initial',
+                    success: false
+                  }
+                }
+              }) 
+              
+
+              /**
+               * Suporte Técnico
+               * - Agendar Visita Tecnica 
+               * - Momento do disparo: Clique em sim ou não para agendar visita (após completar o diagnóstico e não possuir solução)
+               */
+              dataLayer.push({
+                event: 'feature-interaction',
+                feature: {
+                  name: 'technical-problem-solution',
+                  type: 'help-desk',
+                  step: {
+                    name: 'home',
+                    index: 1,
+                    type: 'initial',
+                    success: false
+                  }
+                },
+                interaction: {
+                  name: 'schedule-technical-visit',
+                  value: 'yes' | 'no'
+                }
+              })
+              
+
+              /**
+               * Suporte Técnico
+               * - Agendar Visita Tecnica 
+               * - Momento do disparo: Exibição da tela com os possíveis custos da visita tecnica 
+               */
+              dataLayer.push({
+                event: 'feature-step',
+                feature: {
+                  name: 'technical-problem-solution',
+                  type: 'help-desk',
+                  step: {
+                    name: 'possible-costs',
+                    index: 2,
+                    type: 'intermediary',
+                    success: false
+                  }
+                }
+              }) 
+              
+
+              /**
+               * Suporte Técnico
+               * - Agendar Visita Tecnica 
+               * - Momento do disparo: Clique em sim ou não para agendar visita
+               */
+              dataLayer.push({
+                event: 'feature-interaction',
+                feature: {
+                  name: 'technical-problem-solution',
+                  type: 'help-desk',
+                  step: {
+                    name: 'possible-costs',
+                    index: 2,
+                    type: 'intermediary',
+                    success: false
+                  }
+                },
+                interaction: {
+                  name: 'schedule-technical-visit',
+                  value: 'yes' | 'no'
+                }
+              })
+              
+
+              /**
+               * Suporte Técnico
+               * - Agendar Visita Tecnica 
+               * - Momento do disparo: Exibição da tela para abrir chamado
+               */
+              dataLayer.push({
+                event: 'feature-step',
+                feature: {
+                  name: 'technical-problem-solution',
+                  type: 'help-desk',
+                  step: {
+                    name: 'open-called-technician',
+                    index: 3,
+                    type: 'intermediary',
+                    success: true
+                  }
+                }
+              }) 
+              
+
+              /**
+               * Suporte Técnico
+               * - Agendar Visita Tecnica 
+               * - Momento do disparo: Clique para agendar
+               */
+              dataLayer.push({
+                event: 'feature-interaction',
+                feature: {
+                  name: 'technical-problem-solution',
+                  type: 'help-desk',
+                  step: {
+                    name: 'open-called-technician',
+                    index: 3,
+                    type: 'intermediary',
+                    success: false
+                  }
+                },
+                interaction: {
+                  name: 'schedule',
+                  value: 'next'
+                }
+              })
+              
+
+              /**
+               * Suporte Técnico
+               * - Agendar Visita Tecnica 
+               * - Momento do disparo: Exibição da tela para selecionar data e hora
+               */
+              dataLayer.push({
+                event: 'feature-step',
+                feature: {
+                  name: 'technical-problem-solution',
+                  type: 'help-desk',
+                  step: {
+                    name: 'choose-date',
+                    index: 4,
+                    type: 'intermediary',
+                    success: true
+                  }
+                }
+              }) 
+              
+
+              /**
+               * Suporte Técnico
+               * - Agendar Visita Tecnica 
+               * - Momento do disparo: Clique para marcar visita
+               */
+              dataLayer.push({
+                event: 'feature-interaction',
+                feature: {
+                  name: 'technical-problem-solution',
+                  type: 'help-desk',
+                  step: {
+                    name: 'choose-date',
+                    index: 4,
+                    type: 'intermediary',
+                    success: false
+                  }
+                },
+                interaction: {
+                  name: 'select-date',
+                  value: 'next'
+                }
+              })
+              
+
+              /**
+               * Suporte Técnico
+               * - Agendar Visita Tecnica 
+               * - Momento do disparo: Sucesso ao agendar visita
+               */
+              dataLayer.push({
+                event: 'feature-step',
+                feature: {
+                  name: 'technical-problem-solution',
+                  type: 'help-desk',
+                  step: {
+                    name: 'schedule-visit-success',
+                    index: 5,
+                    type: 'completion',
+                    success: true
+                  }
+                }
+              }) 
+              
+
+              /**
+               * Suporte Técnico
+               * - Agendar Visita Tecnica 
+               * - Momento do disparo: No momento que o sistema retornar um aviso para a não-realização da operação
+               */
+              dataLayer.push({
+                event: 'interface-message',
+                message: {
+                  type: 'string',
+                  /**
+                   * Name of the warning.
+                   * Please try to consider including the field that showed the error.
+                   */
+                  name: string,
+                  /**
+                   * Warning code, if available
+                   */
+                  code: string
+                },
+                /**
+                 * The element that diplays the error, when available
+                 */
+                element: HTMLElement
+              })  
+              
+
+              /**
+               * Suporte Técnico
+               * - Agendar Visita Tecnica 
+               * - Momento do disparo: No momento que a operação falhar a execução
+               */
+              dataLayer.push({
+                event: 'interface-message',
+                message: {
+                  type: 'string',
+                  /**
+                   * Name of the warning.
+                   * Please try to consider including the field that showed the error.
+                   */
+                  name: string,
+                  /**
+                   * Warning code, if available
+                   */
+                  code: string
+                },
+                /**
+                 * The element that diplays the error, when available
+                 */
+                element: HTMLElement
+              })  
+              
+
+              /**
+               * Suporte Técnico
+               * - Consultar Visita Tecnica - Cancelamento 
+               * - Momento do disparo: Exibição da tela de início
+               */
+              dataLayer.push({
+                event: 'feature-step',
+                feature: {
+                  name: 'check-technical-visit',
+                  type: 'help-desk',
+                  step: {
+                    name: 'home',
+                    index: 1,
+                    type: 'initial',
+                    success: false
+                  }
+                }
+              }) 
+              
+
+              /**
+               * Suporte Técnico
+               * - Consultar Visita Tecnica - Cancelamento 
+               * - Momento do disparo: Clique em alguma consulta técnica agendada
+               */
+              dataLayer.push({
+                event: 'feature-interaction',
+                feature: {
+                  name: 'check-technical-visit',
+                  type: 'help-desk',
+                  step: {
+                    name: 'home',
+                    index: 1,
+                    type: 'initial',
+                    success: false
+                  }
+                },
+                interaction: {
+                  name: 'schedule-technical-visit',
+                  value: 'next'
+                }
+              })
+              
+
+              /**
+               * Suporte Técnico
+               * - Consultar Visita Tecnica - Cancelamento 
+               * - Momento do disparo: Exibição do detalhamento da visita
+               */
+              dataLayer.push({
+                event: 'feature-step',
+                feature: {
+                  name: 'check-technical-visit',
+                  type: 'help-desk',
+                  step: {
+                    name: 'detailed-technical-visit',
+                    index: 2,
+                    type: 'intermediary',
+                    success: false
+                  }
+                }
+              }) 
+              
+
+              /**
+               * Suporte Técnico
+               * - Consultar Visita Tecnica - Cancelamento 
+               * - Momento do disparo: Clique para cancelar ou reagendar visita
+               */
+              dataLayer.push({
+                event: 'feature-interaction',
+                feature: {
+                  name: 'check-technical-visit',
+                  type: 'help-desk',
+                  step: {
+                    name: 'detailed-technical-visit',
+                    index: 2,
+                    type: 'intermediary',
+                    success: false
+                  }
+                },
+                interaction: {
+                  name: 'schedule-technical-visit',
+                  value: 'cancel-visit' | 'reschedule'
+                }
+              })
+              
+
+              /**
+               * Suporte Técnico
+               * - Consultar Visita Tecnica - Cancelamento 
+               * - Momento do disparo: Exibição da tela de motivo
+               */
+              dataLayer.push({
+                event: 'feature-step',
+                feature: {
+                  name: 'check-technical-visit',
+                  type: 'help-desk',
+                  step: {
+                    name: 'reason-for-cancellation',
+                    index: 3,
+                    type: 'intermediary',
+                    success: false
+                  }
+                }
+              }) 
+              
+
+              /**
+               * Suporte Técnico
+               * - Consultar Visita Tecnica - Cancelamento 
+               * - Momento do disparo: Clique para continuar
+               */
+              dataLayer.push({
+                event: 'feature-interaction',
+                feature: {
+                  name: 'check-technical-visit',
+                  type: 'help-desk',
+                  step: {
+                    name: 'reason-for-cancellation',
+                    index: 3,
+                    type: 'intermediary',
+                    success: false
+                  }
+                },
+                interaction: {
+                  name: 'continue',
+                  value: 'next'
+                }
+              })
+              
+
+              /**
+               * Suporte Técnico
+               * - Consultar Visita Tecnica - Cancelamento 
+               * - Momento do disparo: Exibição da tela para confirmar cancelamento
+               */
+              dataLayer.push({
+                event: 'feature-step',
+                feature: {
+                  name: 'check-technical-visit',
+                  type: 'help-desk',
+                  step: {
+                    name: 'confirm-cancellation',
+                    index: 4,
+                    type: 'intermediary',
+                    success: true
+                  }
+                }
+              }) 
+              
+
+              /**
+               * Suporte Técnico
+               * - Consultar Visita Tecnica - Cancelamento 
+               * - Momento do disparo: Clique para confirmar cancelamento
+               */
+              dataLayer.push({
+                event: 'feature-interaction',
+                feature: {
+                  name: 'check-technical-visit',
+                  type: 'help-desk',
+                  step: {
+                    name: 'confirm-cancellation',
+                    index: 4,
+                    type: 'intermediary',
+                    success: false
+                  }
+                },
+                interaction: {
+                  name: 'confirm',
+                  value: 'next'
+                }
+              })
+              
+
+              /**
+               * Suporte Técnico
+               * - Consultar Visita Tecnica - Cancelamento 
+               * - Momento do disparo: Exibição de sucesso no fluxo cancelamento de visita técnica
+               */
+              dataLayer.push({
+                event: 'feature-step',
+                feature: {
+                  name: 'check-technical-visit',
+                  type: 'help-desk',
+                  step: {
+                    name: 'cancellation-success',
+                    index: 5,
+                    type: 'completion',
+                    success: true
+                  }
+                }
+              }) 
+              
+
+              /**
+               * Suporte Técnico
+               * - Consultar Visita Tecnica - Cancelamento 
+               * - Momento do disparo: No momento que o sistema retornar um aviso para a não-realização da operação
+               */
+              dataLayer.push({
+                event: 'interface-message',
+                message: {
+                  type: 'string',
+                  /**
+                   * Name of the warning.
+                   * Please try to consider including the field that showed the error.
+                   */
+                  name: string,
+                  /**
+                   * Warning code, if available
+                   */
+                  code: string
+                },
+                /**
+                 * The element that diplays the error, when available
+                 */
+                element: HTMLElement
+              })  
+              
+
+              /**
+               * Suporte Técnico
+               * - Consultar Visita Tecnica - Cancelamento 
+               * - Momento do disparo: No momento que a operação falhar a execução
+               */
+              dataLayer.push({
+                event: 'interface-message',
+                message: {
+                  type: 'string',
+                  /**
+                   * Name of the warning.
+                   * Please try to consider including the field that showed the error.
+                   */
+                  name: string,
+                  /**
+                   * Warning code, if available
+                   */
+                  code: string
+                },
+                /**
+                 * The element that diplays the error, when available
+                 */
+                element: HTMLElement
+              })  
+              
+
+              /**
+               * Suporte Técnico
+               * - Consultar Visita Tecnica - Reagendamento 
+               * - Momento do disparo: Exibição da tela para selecionar data e hora
+               */
+              dataLayer.push({
+                event: 'feature-step',
+                feature: {
+                  name: 'reschedule-technical-visit',
+                  type: 'help-desk',
+                  step: {
+                    name: 'home',
+                    index: 1,
+                    type: 'initial',
+                    success: false
+                  }
+                }
+              }) 
+              
+
+              /**
+               * Suporte Técnico
+               * - Consultar Visita Tecnica - Reagendamento 
+               * - Momento do disparo: Clique para marcar visita
+               */
+              dataLayer.push({
+                event: 'feature-interaction',
+                feature: {
+                  name: 'reschedule-technical-visit',
+                  type: 'help-desk',
+                  step: {
+                    name: 'home',
+                    index: 1,
+                    type: 'initial',
+                    success: false
+                  }
+                },
+                interaction: {
+                  name: 'select-date',
+                  value: 'next'
+                }
+              })
+              
+
+              /**
+               * Suporte Técnico
+               * - Consultar Visita Tecnica - Reagendamento 
+               * - Momento do disparo: Exibição da tela para confirmar reagendamento
+               */
+              dataLayer.push({
+                event: 'feature-step',
+                feature: {
+                  name: 'reschedule-technical-visit',
+                  type: 'help-desk',
+                  step: {
+                    name: 'confirm-rescheduling',
+                    index: 2,
+                    type: 'intermediary',
+                    success: false
+                  }
+                }
+              }) 
+              
+
+              /**
+               * Suporte Técnico
+               * - Consultar Visita Tecnica - Reagendamento 
+               * - Momento do disparo: Clique para confirmar reagendamento
+               */
+              dataLayer.push({
+                event: 'feature-interaction',
+                feature: {
+                  name: 'reschedule-technical-visit',
+                  type: 'help-desk',
+                  step: {
+                    name: 'confirm-rescheduling',
+                    index: 2,
+                    type: 'intermediary',
+                    success: false
+                  }
+                },
+                interaction: {
+                  name: 'confirm',
+                  value: 'yes' | 'no'
+                }
+              })
+              
+
+              /**
+               * Suporte Técnico
+               * - Consultar Visita Tecnica - Reagendamento 
+               * - Momento do disparo: Exibição de sucesso no fluxo de reagendamento de visita técnica
+               */
+              dataLayer.push({
+                event: 'feature-step',
+                feature: {
+                  name: 'reschedule-technical-visit',
+                  type: 'help-desk',
+                  step: {
+                    name: 'rescheduling-success',
+                    index: 3,
+                    type: 'completion',
+                    success: true
+                  }
+                }
+              }) 
+              
+
+              /**
+               * Suporte Técnico
+               * - Consultar Visita Tecnica - Reagendamento 
+               * - Momento do disparo: No momento que o sistema retornar um aviso para a não-realização da operação
+               */
+              dataLayer.push({
+                event: 'interface-message',
+                message: {
+                  type: 'string',
+                  /**
+                   * Name of the warning.
+                   * Please try to consider including the field that showed the error.
+                   */
+                  name: string,
+                  /**
+                   * Warning code, if available
+                   */
+                  code: string
+                },
+                /**
+                 * The element that diplays the error, when available
+                 */
+                element: HTMLElement
+              })  
+              
+
+              /**
+               * Suporte Técnico
+               * - Consultar Visita Tecnica - Reagendamento 
+               * - Momento do disparo: No momento que a operação falhar a execução
+               */
+              dataLayer.push({
+                event: 'interface-message',
+                message: {
+                  type: 'string',
+                  /**
+                   * Name of the warning.
+                   * Please try to consider including the field that showed the error.
+                   */
+                  name: string,
+                  /**
+                   * Warning code, if available
+                   */
+                  code: string
+                },
+                /**
+                 * The element that diplays the error, when available
+                 */
+                element: HTMLElement
+              })  
+              
+
+              /**
+               * Suporte Técnico
+               * - Avaliação de Visita Técnica 
+               * - Momento do disparo: Exibição da tela de início
+               */
+              dataLayer.push({
+                event: 'feature-step',
+                feature: {
+                  name: 'visit-evaluation',
+                  type: 'help-desk',
+                  step: {
+                    name: 'home',
+                    index: 1,
+                    type: 'initial',
+                    success: false
+                  }
+                }
+              }) 
+              
+
+              /**
+               * Suporte Técnico
+               * - Avaliação de Visita Técnica 
+               * - Momento do disparo: Clique em alguma das visitas técnicas
+               */
+              dataLayer.push({
+                event: 'feature-interaction',
+                feature: {
+                  name: 'visit-evaluation',
+                  type: 'help-desk',
+                  step: {
+                    name: 'home',
+                    index: 1,
+                    type: 'initial',
+                    success: false
+                  }
+                },
+                interaction: {
+                  name: 'select-technician-visit',
+                  value: 'next'
+                }
+              })
+              
+
+              /**
+               * Suporte Técnico
+               * - Avaliação de Visita Técnica 
+               * - Momento do disparo: Exibição do detalhamento da visita
+               */
+              dataLayer.push({
+                event: 'feature-step',
+                feature: {
+                  name: 'visit-evaluation',
+                  type: 'help-desk',
+                  step: {
+                    name: 'detailed-technical-visit',
+                    index: 2,
+                    type: 'intermediary',
+                    success: false
+                  }
+                }
+              }) 
+              
+
+              /**
+               * Suporte Técnico
+               * - Avaliação de Visita Técnica 
+               * - Momento do disparo: Clique para enviar
+               */
+              dataLayer.push({
+                event: 'feature-interaction',
+                feature: {
+                  name: 'visit-evaluation',
+                  type: 'help-desk',
+                  step: {
+                    name: 'detailed-technical-visit',
+                    index: 2,
+                    type: 'intermediary',
+                    success: false
+                  }
+                },
+                interaction: {
+                  name: 'submit-review',
+                  value: 'next'
+                }
+              })
+              
+
+              /**
+               * Suporte Técnico
+               * - Avaliação de Visita Técnica 
+               * - Momento do disparo: Sucesso ao avaliar visita técnica
+               */
+              dataLayer.push({
+                event: 'feature-step',
+                feature: {
+                  name: 'visit-evaluation',
+                  type: 'help-desk',
+                  step: {
+                    name: 'evaluation-success',
+                    index: 3,
+                    type: 'completion',
+                    success: true
+                  }
+                }
+              }) 
+              
+
+              /**
+               * Suporte Técnico
+               * - Avaliação de Visita Técnica 
+               * - Momento do disparo: No momento que o sistema retornar um aviso para a não-realização da operação
+               */
+              dataLayer.push({
+                event: 'interface-message',
+                message: {
+                  type: 'string',
+                  /**
+                   * Name of the warning.
+                   * Please try to consider including the field that showed the error.
+                   */
+                  name: string,
+                  /**
+                   * Warning code, if available
+                   */
+                  code: string
+                },
+                /**
+                 * The element that diplays the error, when available
+                 */
+                element: HTMLElement
+              })  
+              
+
+              /**
+               * Suporte Técnico
+               * - Avaliação de Visita Técnica 
+               * - Momento do disparo: No momento que a operação falhar a execução
+               */
+              dataLayer.push({
+                event: 'interface-message',
+                message: {
+                  type: 'string',
+                  /**
+                   * Name of the warning.
+                   * Please try to consider including the field that showed the error.
+                   */
+                  name: string,
+                  /**
+                   * Warning code, if available
+                   */
+                  code: string
+                },
+                /**
+                 * The element that diplays the error, when available
+                 */
+                element: HTMLElement
+              })  
+              
+
+              /**
+               * Saldo e Recarga
+               * - Meus saldos 
+               * - Momento do disparo: Exibição da tela de inicio
+               */
+              dataLayer.push({
+                event: 'feature-step',
+                feature: {
+                  name: 'balances',
+                  type: 'balance-and-recharge',
+                  step: {
+                    name: 'home',
+                    index: 1,
+                    type: 'initial',
+                    success: false
+                  }
+                }
+              }) 
               
 
               /**
@@ -6783,7 +7822,7 @@
               /**
                * Saldo e Recarga
                * - Meus saldos 
-               * - Momento do disparo: No carregamento da página
+               * - Momento do disparo: Exibição da tela de detalhamento do saldo
                */
               dataLayer.push({
                 event: 'feature-step',
@@ -6793,63 +7832,11 @@
                   step: {
                     name: 'home',
                     index: 1,
-                    type: 'initial',
+                    type: 'completion',
                     success: false
                   }
                 }
-              })  
-              
-
-              /**
-               * Saldo e Recarga
-               * - Meus saldos 
-               * - Momento do disparo: No momento que o sistema retornar um aviso para a não-realização da operação
-               */
-              dataLayer.push({
-                event: 'interface-message',
-                message: {
-                  type: 'string',
-                  /**
-                   * Name of the warning.
-                   * Please try to consider including the field that showed the error.
-                   */
-                  name: string,
-                  /**
-                   * Warning code, if available
-                   */
-                  code: string
-                },
-                /**
-                 * The element that diplays the error, when available
-                 */
-                element: HTMLElement
-              })  
-              
-
-              /**
-               * Saldo e Recarga
-               * - Meus saldos 
-               * - Momento do disparo: No momento que a operação falhar a execução
-               */
-              dataLayer.push({
-                event: 'interface-message',
-                message: {
-                  type: 'string',
-                  /**
-                   * Name of the warning.
-                   * Please try to consider including the field that showed the error.
-                   */
-                  name: string,
-                  /**
-                   * Warning code, if available
-                   */
-                  code: string
-                },
-                /**
-                 * The element that diplays the error, when available
-                 */
-                element: HTMLElement
-              })  
+              }) 
               
 
               /**
@@ -6878,20 +7865,268 @@
 
               /**
                * Saldo e Recarga
-               * - Recarga 
-               * - Momento do disparo: No carregamento da página
+               * - Histórico de recarga 
+               * - Momento do disparo: Exibição da tela de inicio
                */
               dataLayer.push({
                 event: 'feature-step',
                 feature: {
-                  name: ,
-                  type: ,
+                  name: 'recharge-history',
+                  type: 'balance-and-recharge',
                   step: {
-                    name: ,
-                    index: ,
-                    type: ,
-                    success: 
+                    name: 'home',
+                    index: 1,
+                    type: 'initial',
+                    success: false
                   }
                 }
+              }) 
+              
+
+              /**
+               * Saldo e Recarga
+               * - Histórico de recarga 
+               * - Momento do disparo: Clique para enviar por e-mail ou imprimir
+               */
+              dataLayer.push({
+                event: 'feature-interaction',
+                feature: {
+                  name: 'recharge-history',
+                  type: 'balance-and-recharge',
+                  step: {
+                    name: 'home',
+                    index: 1,
+                    type: 'initial',
+                    success: false
+                  }
+                },
+                interaction: {
+                  name: 'send-by-email' | 'print',
+                  value: 'send-by-email' | 'print'
+                }
+              })
+              
+
+              /**
+               * Saldo e Recarga
+               * - Histórico de recarga 
+               * - Momento do disparo: Exibição do lightbox de enviar por email
+               */
+              dataLayer.push({
+                event: 'feature-step',
+                feature: {
+                  name: 'recharge-history',
+                  type: 'balance-and-recharge',
+                  step: {
+                    name: 'send-by-email',
+                    index: 2,
+                    type: 'intermediary',
+                    success: false
+                  }
+                }
+              }) 
+              
+
+              /**
+               * Saldo e Recarga
+               * - Histórico de recarga 
+               * - Momento do disparo: Clique para enviar
+               */
+              dataLayer.push({
+                event: 'feature-interaction',
+                feature: {
+                  name: 'recharge-history',
+                  type: 'balance-and-recharge',
+                  step: {
+                    name: 'send-by-email',
+                    index: 2,
+                    type: 'intermediary',
+                    success: false
+                  }
+                },
+                interaction: {
+                  name: 'send-by-email',
+                  value: 'send'
+                }
+              })
+              
+
+              /**
+               * Saldo e Recarga
+               * - Histórico de recarga 
+               * - Momento do disparo: Exibição de sucesso ao enviar por email
+               */
+              dataLayer.push({
+                event: 'feature-step',
+                feature: {
+                  name: 'recharge-history',
+                  type: 'balance-and-recharge',
+                  step: {
+                    name: 'send-by-email',
+                    index: 3,
+                    type: 'completion',
+                    success: true
+                  }
+                }
+              }) 
+              
+
+              /**
+               * Saldo e Recarga
+               * - Histórico de recarga 
+               * - Momento do disparo: Exibição da tela de erro ao enviar por e-mail
+               */
+              dataLayer.push({
+                event: 'interface-message',
+                message: {
+                  type: 'string',
+                  /**
+                   * Name of the warning.
+                   * Please try to consider including the field that showed the error.
+                   */
+                  name: string,
+                  /**
+                   * Warning code, if available
+                   */
+                  code: string
+                },
+                /**
+                 * The element that diplays the error, when available
+                 */
+                element: HTMLElement
+              })  
+              
+
+              /**
+               * Saldo e Recarga
+               * - Extrato 
+               * - Momento do disparo: Exibição da tela de início
+               */
+              dataLayer.push({
+                event: 'feature-step',
+                feature: {
+                  name: 'statement',
+                  type: 'balance-and-recharge',
+                  step: {
+                    name: 'home',
+                    index: 1,
+                    type: 'initial',
+                    success: false
+                  }
+                }
+              }) 
+              
+
+              /**
+               * Saldo e Recarga
+               * - Extrato 
+               * - Momento do disparo: Clique para enviar por e-mail ou imprimir
+               */
+              dataLayer.push({
+                event: 'feature-interaction',
+                feature: {
+                  name: 'statement',
+                  type: 'balance-and-recharge',
+                  step: {
+                    name: 'home',
+                    index: 1,
+                    type: 'initial',
+                    success: false
+                  }
+                },
+                interaction: {
+                  name: 'send-by-email' | 'print',
+                  value: 'send-by-email' | 'print'
+                }
+              })
+              
+
+              /**
+               * Saldo e Recarga
+               * - Extrato 
+               * - Momento do disparo: Exibição do lightbox de enviar por email
+               */
+              dataLayer.push({
+                event: 'feature-step',
+                feature: {
+                  name: 'statement',
+                  type: 'balance-and-recharge',
+                  step: {
+                    name: 'send-by-email',
+                    index: 2,
+                    type: 'intermediary',
+                    success: false
+                  }
+                }
+              }) 
+              
+
+              /**
+               * Saldo e Recarga
+               * - Extrato 
+               * - Momento do disparo: Clique para enviar
+               */
+              dataLayer.push({
+                event: 'feature-interaction',
+                feature: {
+                  name: 'statement',
+                  type: 'balance-and-recharge',
+                  step: {
+                    name: 'send-by-email',
+                    index: 2,
+                    type: 'intermediary',
+                    success: false
+                  }
+                },
+                interaction: {
+                  name: 'send-by-email' | 'print',
+                  value: 'send'
+                }
+              })
+              
+
+              /**
+               * Saldo e Recarga
+               * - Extrato 
+               * - Momento do disparo: Exibição de sucesso ao enviar por email
+               */
+              dataLayer.push({
+                event: 'feature-step',
+                feature: {
+                  name: 'statement',
+                  type: 'balance-and-recharge',
+                  step: {
+                    name: 'send-by-email',
+                    index: 3,
+                    type: 'completion',
+                    success: false
+                  }
+                }
+              }) 
+              
+
+              /**
+               * Saldo e Recarga
+               * - Extrato 
+               * - Momento do disparo: Exibição da tela de erro ao enviar por e-mail
+               */
+              dataLayer.push({
+                event: 'interface-message',
+                message: {
+                  type: 'string',
+                  /**
+                   * Name of the warning.
+                   * Please try to consider including the field that showed the error.
+                   */
+                  name: string,
+                  /**
+                   * Warning code, if available
+                   */
+                  code: string
+                },
+                /**
+                 * The element that diplays the error, when available
+                 */
+                element: HTMLElement
               })  
               
