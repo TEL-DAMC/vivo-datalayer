@@ -23,7 +23,7 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "build-docs": "typedoc --module commonjs --theme minimal --includeDeclarations --excludeExternals --out ./dist ./src",
     "serve-docs": "http-server ./dist",
-    "serve-editor": "nodemon app"
+    "serve-editor": "nodemon app --ignore csv"
   },
   "repository": {
     "type": "git",
