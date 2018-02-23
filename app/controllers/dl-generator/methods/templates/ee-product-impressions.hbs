@@ -1,0 +1,36 @@
+/**
+* {{{tag 'FEATURE'}}}
+* - {{{tag 'MICRO-FEATURE'}}}
+* - Momento do disparo: {{{tag 'TRIGGER'}}}
+*
+* The ecommerce impressions event MUST BE triggered every time a page is
+* loaded with product cards and everytime product cards are dinamically added to the page
+*
+*/
+window.dataLayer.push({
+    event: 'ecommerce-impressions',
+    ecommerce: {
+        currencyCode: 'BRL',
+        /**
+        * The `impressions` key is an ARRAY of products.
+        * All keys are described on the website data collection document for each specific website
+        */
+        impressions: [{
+            list: string,
+            position: number,
+            name: string,
+            id: string,
+            /**
+            * Product price must be in the format '00.00', always represented as a string
+            */
+            price: string,
+            brand: string,
+            category: string,
+            variant: string,
+            custom: {
+                metrics: {{obj-from-string metrics 'number'}},
+                dimensions: {{obj-from-string dimensions 'string'}}
+            }
+        }]
+    }
+})

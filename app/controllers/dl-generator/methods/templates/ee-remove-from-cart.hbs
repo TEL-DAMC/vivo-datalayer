@@ -1,0 +1,37 @@
+/**
+* {{{tag 'FEATURE'}}}
+* - {{{tag 'MICRO-FEATURE'}}}
+* - Momento do disparo: {{{tag 'TRIGGER'}}}
+*
+* The ecommerce remove-from-cart event MUST BE triggered every
+* time one or more products are removed the cart at once.
+*
+*/
+window.dataLayer.push({
+    event: 'ecommerce-add-to-cart',
+    ecommerce: {
+        currencyCode: 'BRL',
+        remove: {
+            /**
+            * Here the `products` key is an ARRAY of products.
+            * All keys are described on the website data collection document for each specific website
+            */
+            products: [{
+                name: string,
+                id: string,
+                /**
+                * Product price must be in the format '00.00', always represented as a string
+                */
+                price: string,
+                brand: string,
+                category: string,
+                variant: string,
+                custom: {
+                    metrics: {{obj-from-string metrics 'number'}},
+                    dimensions: {{obj-from-string dimensions 'string'}}
+                },
+                quantity: number
+            }]
+        }
+    }
+})

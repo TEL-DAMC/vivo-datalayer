@@ -1,0 +1,47 @@
+/**
+* {{{tag 'FEATURE'}}}
+* - {{{tag 'MICRO-FEATURE'}}}
+* - Momento do disparo: {{{tag 'TRIGGER'}}}
+*
+* The ecommerce checkout step event MUST BE triggered on every checkout step.
+*
+*/
+window.dataLayer.push({
+    event: 'ecommerce-checkout-step',
+    ecommerce: {
+        currencyCode: 'BRL',
+        checkout: {
+            actionField: {
+                /**
+                * The stage of the checkout process in which the user currently is
+                */
+                step: number,
+                /**
+                * An optional field that may be requested in the
+                * website data collection document. It it's not there, just ignore it ;)
+                */
+                option: string
+            },
+            /**
+            * Here the `products` key is an ARRAY of products.
+            * All keys are described on the website data collection document for each specific website
+            */
+            products: [{
+                name: string,
+                id: string,
+                /**
+                * Product price must be in the format '00.00', always represented as a string
+                */
+                price: string,
+                brand: string,
+                category: string,
+                variant: string,
+                custom: {
+                    metrics: {{obj-from-string metrics 'number'}},
+                    dimensions: {{obj-from-string dimensions 'string'}}
+                },
+                quantity: number
+            }]
+        }
+    }
+})

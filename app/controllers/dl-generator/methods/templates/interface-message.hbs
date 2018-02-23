@@ -1,0 +1,24 @@
+/**
+* {{{tag 'FEATURE'}}}
+* - {{{tag 'MICRO-FEATURE'}}}
+* - Momento do disparo: {{{tag 'TRIGGER'}}}
+*/
+dataLayer.push({
+    event: 'interface-message',
+    message: {
+        type: {{{tag 'message.name'}}},
+        /**
+        * Name of the warning.
+        * Please try to consider including the field that showed the error.
+        */
+        name: string,
+        /**
+        * Warning code, if available
+        */
+        code: string
+    },
+    /**
+    * The element that diplays the error, when available
+    */
+    element: HTMLElement
+})  

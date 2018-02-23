@@ -10,7 +10,8 @@
     "body-parser": "^1.18.2",
     "csv-stringify": "^2.0.2",
     "express": "^4.16.2",
-    "handsontable": "^0.35.1"
+    "handsontable": "^0.35.1",
+    "handlebars": "latest"
   },
   "devDependencies": {
     "csv-parse": "^2.0.0",
