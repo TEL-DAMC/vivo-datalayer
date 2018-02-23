@@ -434,7 +434,7 @@ window.dataLayer.push({
     ecommerce: {
         currencyCode: 'BRL',
         checkout: {
-            sctionField: {
+            actionField: {
                 /**
                  * The stage of the checkout process in which the user currently is
                  */
