@@ -35,7 +35,9 @@ document.getElementById('load').addEventListener('click', function (e) {
       }),
 
       allowInsertColumn: false,
-      //allowRemoveColumn: false
+      allowRemoveColumn: false,
+      manualColumnResize: true,
+      rowHeaders: true
     })
   })
 })
