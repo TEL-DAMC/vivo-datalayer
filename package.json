@@ -16,6 +16,7 @@
   "devDependencies": {
     "csv-parse": "^2.0.0",
     "nodemon": "^1.15.1",
+    "standard": "^11.0.0",
     "typedoc": "^0.9.0",
     "yargs": "^11.0.0"
   },
