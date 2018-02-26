@@ -60,7 +60,7 @@ function save () {
     .then(response => {
       /** @namespace response.success */
       if (response.success === true) {
-        window.alert('Arquivo salvo com sucesso: ' + fileName)
+        window.alerter('Arquivo salvo com sucesso: ' + fileName)
       }
       console.log('Response:', response)
     })
@@ -92,6 +92,13 @@ document.addEventListener('keyup', function (e) {
   if (e.keyCode === KEY_CODES.Ctrl) window.isCtrlDown = false
 })
 
-function alert (string) {
+function alerter (string) {
   $(`<div>${string}</div>`).appendTo('header').delay(2000).fadeOut()
 }
+
+(function remind () {
+  setTimeout(function () {
+    window.alert('Lembrete: salve seu trabalho e faça um commit descrevendo o progresso ;)')
+    remind()
+  }, 15 * 1000 * 60)
+})()
