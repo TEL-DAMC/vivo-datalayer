@@ -12,7 +12,8 @@ exports.generate = function (inputPath, outputPath) {
     if (err) {
       console.error(err)
     } else {
-      fs.writeFileSync(outputPath, jsContent)
+      const standard = require('standard')
+      fs.writeFileSync(outputPath, standard.lintTextSync(jsContent, ({fix: true})).results[0].output)
     }
   })
 }
