@@ -12,6 +12,7 @@ Atendimento,Atendimento via E-mail,No momento que a operação falhar a execuç�
 Atendimento,Atendimento via Chat,Exibição da tela de inicio,'feature-step','chat-service','service','home',1,'initial',false,-,-,-,-,-,
 Atendimento,Atendimento via Chat,Clique para pesquisar,'feature-interaction','chat-service','service','home',1,'initial',false,'search','[searched-word]',-,-,-,
 Atendimento,Atendimento via Chat,Exibição da resposta da Vivi,'feature-step','chat-service','service','[title-of-the-answer]',2,'intermediary',false,-,-,-,-,-,
+Atendimento,Atendimento via Chat,Clique para expandir resposta da Vivi,'feature-interaction','chat-service','service','[title-of-the-answer]',2,'intermediary',false,'expand-answer' | 'advance','next',-,-,-,
 Atendimento,Atendimento via Chat,Clique em um link da resposta da Vivi,'feature-interaction','chat-service','service','[click-text]',3,'completion',true,'open-answer','[click-url]',-,-,-,
 Atendimento,Ouvidoria Chat,Exibição da tela de inicio,'feature-step','ombudsman-chat','service','home',1,'initial',false,-,-,-,-,-,
 Atendimento,Ouvidoria Chat,Clique para pesquisar,'feature-interaction','ombudsman-chat','service','home',1,'initial',false,'search','[searched-word]',-,-,-,

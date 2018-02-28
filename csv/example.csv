@@ -9,7 +9,6 @@ Consumo,Compartilhar Internet,No carregamento da página,'feature-step','share-i
 Consumo,Compartilhar Internet,Clique em alguma opção de quantidade de MB,'feature-interaction','share-internet','comsumption','shared-amount',2,'intermediary',false,'choose-quantity' | 'others-quantities','confirm',-,-,-
 Consumo,Compartilhar Internet,No carregamento da página,'feature-step','share-internet','comsumption','confirms-shared-amount',3,'intermediary',false,-,-,-,-,-
 Consumo,Compartilhar Internet,Clique em sim ou não,'feature-interaction','share-internet','comsumption','confirms-shared-amount',3,'intermediary',false,'confirm','next',-,-,-
-Consumo,Compartilhar Internet,No carregamento da página,'feature-step','share-internet','comsumption','success',4,'completion',true,-,-,-,-,-
 Consumo,Compartilhar Internet,No momento que o sistema retornar um aviso para a não-realização da operação,'interface-message','share-internet','comsumption',-,-,-,false,-,-,'warning','string','string'
 Consumo,Compartilhar Internet,No momento que a operação falhar a execução,'interface-message','share-internet','comsumption',-,-,-,false,-,-,'error','string','string'
 Consumo,Consumo de Voz,No carregamento da página,'feature-step','voice-consumption','comsumption','home',1,'initial',false,-,-,-,-,-

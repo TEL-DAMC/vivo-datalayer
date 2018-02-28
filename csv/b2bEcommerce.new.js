@@ -1,4 +1,3 @@
-/**
 * C2C
 * - -
 * - Momento do disparo: Exibição do modal de 0800
