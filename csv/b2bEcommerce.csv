@@ -1,0 +1,36 @@
+FEATURE,MICRO-FEATURE,TRIGGER,event,feature.name,feature.type,step.name,step.index,step.type,step.success,interaction.name,interaction.value,message.type,message.name,message.code,
+"Soluciona TI
+Internet Banda Larga
+Internet Fibra Empresas
+Planos de Celular
+Cloud Server
+Telefone Fixa",C2C,"(Desktop) Quando o modal de 0800 for exibido
+(Mobile) Quando o usuário tocar no botão de C2C",'feature-interaction','c2c','internet-e-tv' | 'movel' | 'cloud' | 'telefonia-fixa','home',1,'initial',true,posicaoDoBotao,nomeDoBotao,-,-,-,-
+"Soluciona TI
+Internet Banda Larga
+Internet Fibra Empresas
+Planos de Celular
+Cloud Server
+Telefone Fixa",C2RC,Exibição do modal de sucesso de C2RC,'feature-step','c2rc','internet-e-tv' | 'movel' | 'cloud' | 'telefonia-fixa','home',1,'initial',true,-,-,-,-,-,-
+"Soluciona TI
+Internet Banda Larga
+Internet Fibra Empresas
+Telefone Fixa",Chat - Oracle,Abertura dos chats da Oracle,'feature-step','chat','internet-e-tv' | 'telefonia-fixa',,,,,,,,,,
+Checkout Success,Wooza - Iframe,Exibição da tela de sucesso do checkout de Wooza,'feature-step','checkout','checkout','success',4,'completion',true,-,-,-,-,-,-
+,,,,,,,,,,,,,,,
+Internet Fixa,C2RC,"Ao clicar em a vivo liga para você, verificar a disponibilidade dos produtos e serviços e receber a tela de sucesso",'feature-interaction','fixa','c2rc','completion',1,'initial',true,posicaoDoBotao,nomeDoBotao,-,-,-,-
+Internet Fixa,C2C,"Na exibição do iframe de 0800 | Quando for mobile, na exibição da opção para ligar para o número",,,,,,,,,,,,,
+Internet Fixa,,,,,,,,,,,,,,,
+Internet Fixa,Monte seu combo,Clique,'feature-interaction','fluxo-contratacao','internet-fixa','conclusao-do-pedido',1,'initial',false,posicaoDoBotao,nomeDoBotao,-,-,-,-
+Internet Fixa,Checkout - Conclusão de Cadastro,Exibição,'feature-step','fluxo-cadastro','internet-fixa','conclusao-do-pedido',2,'intermediary',false,-,-,-,-,-,-
+Internet Fixa,Sucesso,Exibição de sucesso,'feature-step','fluxo-checkout','internet-fixa','conclusao-do-pedido',3,'completion',true,-,-,-,-,-,-
+,,Erro,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,
+Internet Fixa,,,,,,,,,,,,,,,
+Internet Fixa,,,,,,,,,,,,,,,
+Internet Fixa,,,,,,,,,,,,,,,
+Internet Fixa,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,
+Móvel,C2RC,,,,,,,,,,,,,,
+Cloud,C2RC,,,,,,,,,,,,,,
+Soluções digitais,C2RC,,,,,,,,,,,,,,
