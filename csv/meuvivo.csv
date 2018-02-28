@@ -1,5 +1,5 @@
 FEATURE,MICRO-FEATURE,TRIGGER,event,feature.name,feature.type,step.name,step.index,step.type,step.success,interaction.name,interaction.value,message.type,message.name,message.code,
-Consumo,Contratar Pacotes,No carregamento da página,'feature-step','packages-and-services','comsumption','home',1,'initial',false,-,-,-,-,-
+Consumo,Contratar Pacotes,No carregamento da página,'feature-step','packages-and-services','comsumption','home',1,'initial',false,-,-,-,-,-,
 Consumo,Contratar Pacotes,"Clique em ""Contratar pacotes""",'feature-interaction','packages-and-services','comsumption','home',1,'initial',false,'to-hire','next',-,-,-
 Consumo,Contratar Pacotes,No momento que o sistema retornar um aviso para a não-realização da operação,'interface-message','packages-and-services','comsumption',-,-,-,false,-,-,'warning','string','string'
 Consumo,Contratar Pacotes,No momento que a operação falhar a execução,'interface-message','packages-and-services','comsumption',-,-,-,false,-,-,'error','string','string'
