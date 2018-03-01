@@ -1,35 +1,55 @@
 FEATURE,MICRO-FEATURE,TRIGGER,event,feature.name,feature.type,step.name,step.index,step.type,step.success,interaction.name,interaction.value,message.type,message.name,message.code,
-"Soluciona TI
+"PROMO
+Soluciona TI
 Internet Banda Larga
 Internet Fibra Empresas
 Planos de Celular
 Cloud Server
-Telefone Fixa",C2C,"(Desktop) Quando o modal de 0800 for exibido
-(Mobile) Quando o usuário tocar no botão de C2C",'feature-interaction','c2c','internet-e-tv' | 'movel' | 'cloud' | 'telefonia-fixa','home',1,'initial',true,posicaoDoBotao,nomeDoBotao,-,-,-,-
-"Soluciona TI
+Telefone Fixa
+
+ASSINE
+Home
+Móvel
+Vóz Fixa
+Internet e TV
+Combos
+Cloud
+Soluções Digitais",C2C,"(Desktop) Quando o modal de 0800 for exibido
+(Mobile) Quando o usuário tocar no botão de C2C",'feature-interaction','c2c','internet-e-tv' | 'movel' | 'cloud' | 'telefonia-fixa','abertura-modal',-,'initial',true,posicaoDoBotao,nomeDoBotao,-,-,-,
+"PROMO
+Soluciona TI
 Internet Banda Larga
 Internet Fibra Empresas
 Planos de Celular
 Cloud Server
-"Soluciona TI
+Telefone Fixa",C2RC,Quando o modal de sucesso de C2RC é exibido,'feature-step','c2rc','internet-e-tv' | 'movel' | 'cloud' | 'telefonia-fixa','abertura-modal',-,'initial',true,posicaoDoBotao,-,-,-,-,
+"PROMO
+Soluciona TI
 Internet Banda Larga
 Internet Fibra Empresas
-Telefone Fixa",Chat - Oracle,Abertura dos chats da Oracle,'feature-step','chat','internet-e-tv' | 'telefonia-fixa',,,,,,,,,,
-Checkout Success,Wooza - Iframe,Exibição da tela de sucesso do checkout de Wooza,'feature-step','checkout','checkout','success',4,'completion',true,-,-,-,-,-,-
-,,,,,,,,,,,,,,,
-Internet Fixa,C2RC,"Ao clicar em a vivo liga para você, verificar a disponibilidade dos produtos e serviços e receber a tela de sucesso",'feature-interaction','fixa','c2rc','completion',1,'initial',true,posicaoDoBotao,nomeDoBotao,-,-,-,-
-Internet Fixa,C2C,"Na exibição do iframe de 0800 | Quando for mobile, na exibição da opção para ligar para o número",,,,,,,,,,,,,
-Internet Fixa,,,,,,,,,,,,,,,
-Internet Fixa,Monte seu combo,Clique,'feature-interaction','fluxo-contratacao','internet-fixa','conclusao-do-pedido',1,'initial',false,posicaoDoBotao,nomeDoBotao,-,-,-,-
-Internet Fixa,Checkout - Conclusão de Cadastro,Exibição,'feature-step','fluxo-cadastro','internet-fixa','conclusao-do-pedido',2,'intermediary',false,-,-,-,-,-,-
-Internet Fixa,Sucesso,Exibição de sucesso,'feature-step','fluxo-checkout','internet-fixa','conclusao-do-pedido',3,'completion',true,-,-,-,-,-,-
-,,Erro,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,
-Internet Fixa,,,,,,,,,,,,,,,
-Internet Fixa,,,,,,,,,,,,,,,
-Internet Fixa,,,,,,,,,,,,,,,
-Internet Fixa,,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,
-Móvel,C2RC,,,,,,,,,,,,,,
-Cloud,C2RC,,,,,,,,,,,,,,
-Soluções digitais,C2RC,,,,,,,,,,,,,,
+Telefone Fixa",Chat - Oracle,Quando o chat da Oracle abrir,'feature-step','chat','internet-e-tv' | 'telefonia-fixa','abertura-chat',-,'initial',true,posicaoDoBotao,-,-,-,-,
+"PROMO
+Soluciona TI
+Internet Banda Larga
+Internet Fibra Empresas
+Telefone Fixa",Chat - Wooza,Quando o chat da Wooza abrir,'feature-step','chat','movel' | 'cloud','abertura-chat',-,'initial',true,posicaoDoBotao,-,-,-,-,
+"ASSINE
+Home
+Móvel
+Vóz Fixa
+Internet e TV
+Combos
+Cloud
+Soluções Digitais",Chat - Triagem,"Quando o usuário clica em uma das três opções do ""O que você deseja"", depois de clicar em alguma opção de chat",'feature-interaction','chat','movel' | 'telefonia-fixa' | 'internet-e-tv' | 'combos' | 'cloud' | 'solucoes-digitais' | 'rede-de-dados','chat-modal:o-que-voce-deseja',-,'initial',true,posicaoDoBotao,'planos-de-internet-telefonia-fixa-e-tv' | 'telefonia-movel' | 'sou-cliente-vivo-e-tenho-duvidas' | 'telefonia-movel' | 'internet-fixa',-,-,-,
+Promo - Móvel,Checkout - Wooza,Quando a tela de sucesso do checkout de Wooza for exibida,'feature-step','fluxo-contratacao','movel','confirmacao-do-pedido',-,'completion',true,posicaoDoBotao,-,-,-,-,
+Assine - Cloud Server,Checkout - Wooza,Quando a tela de sucesso do checkout de Wooza for exibida,'feature-step','fluxo-cadastro','cloud-server','cadastro-finalizado',-,'completion',true,posicaoDoBotao,-,-,-,-,
+"Assine
+Cloud Data Center
+Cloud Backup",Checkout - Wooza,Quando a tela de sucesso do checkout de Wooza for exibida,'feature-step','fluxo-cadastro','cloud-data-center' | 'cloud-backup','cadastro-finalizado',-,'completion',true,posicaoDoBotao,-,-,-,-,
+"PROMO
+Fixo
+Internet
+Combo",Checkout - Vivo - Promo,Quando a tela de sucesso do checkout da Vivo for exibida,'feature-step','fluxo-contratacao','fixo' | 'internet-e-tv' | 'combo','conclusao-do-pedido',-,'completion',true,posicaoDoBotao,-,-,-,-,
+Assine - Soluções Digitais,Checkout - Vivo - Assine,Quando a tela de sucesso do checkout da Vivo for exibida,'feature-step','fluxo-contratacao','solucoes-digitais','conclusao-do-pedido',-,'completion',true,posicaoDoBotao,-,-,-,-,
+Assine - Open Cloud,Checkout - Wooza,Quando a tela de sucesso do checkout de Wooza for exibida,'feature-step','fluxo-cadastro','open-cloud','cadastro-finalizado',-,'completion',true,posicaoDoBotao,-,-,-,-,
+Todo Promo e Assine,CTAs,"Quando o usuário clicar no botão ""Clique aqui e compre agora"" / ""Assine Já"" / ""Monte seu Combo"" /  ""Consultar""",'feature-interaction','fluxo-checkout',categoriaDeProduto,'intencao-contratar',-,'initial',true,posicaoDoBotao,nomeDoBotao,-,-,-,
