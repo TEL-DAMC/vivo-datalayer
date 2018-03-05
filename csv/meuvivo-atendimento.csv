@@ -1,4 +1,4 @@
-FEATURE,MICRO-FEATURE,TRIGGER,event,feature.name,feature.type,step.name,step.index,step.type,step.success,interaction.name,interaction.value,message.type,message.name,message.code,
+FEATURE,MICRO-FEATURE,TRIGGER,event,feature.name,feature.type,step.name,step.index,step.type,step.success,interaction.name,interaction.value,message.type,message.name,message.code
 Atendimento,Atendimento via E-mail,Exibição da tela de inicio,'feature-step','email-service','service','home',1,'initial',false,-,-,-,-,-,
 Atendimento,Atendimento via E-mail,Clique para pesquisar,'feature-interaction','email-service','service','home',1,'initial',false,'search','[searched-word]',-,-,-,
 Atendimento,Atendimento via E-mail,Exibição da resposta da Vivi,'feature-step','email-service','service','[title-of-the-answer]',2,'intermediary',false,-,-,-,-,-,
@@ -121,6 +121,3 @@ Atendimento,Devolver Equipamento,Exibição passo 2 - Endereço da Coleta,'featu
 Atendimento,Devolver Equipamento,Clique no botão enviar no step de endereço de coleta.,'feature-interaction','return-equipment','service','adress',2,'intermediary',false,'confirm','next',-,-,-,
 Atendimento,Devolver Equipamento,Sucesso no envio da solicitação.,'feature-step','return-equipment','service','form-submitted-success',3,'completion',true,-,-,-,-,-,
 Atendimento,Pergunte À Vivi,Exibição do Chat da Vivi,'feature-step','ask-vivi','service','home',1,'initial',false,-,-,-,-,-,
-,,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,
