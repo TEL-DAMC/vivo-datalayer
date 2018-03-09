@@ -1,0 +1,25 @@
+{
+  "exportFormatVersion": 2,
+  "exportTime": "2018-03-05 18:11:12",
+  "containerVersion": {
+    "path": "accounts/160874599/containers/8436084/versions/2",
+    "accountId": "160874599",
+    "containerId": "8436084",
+    "containerVersionId": "2",
+    "name": "até a tag 14",
+    "container": {
+      "path": "accounts/160874599/containers/8436084",
+      "accountId": "160874599",
+      "containerId": "8436084",
+      "name": "Template -- Web -- Landing Pages",
+      "publicId": "GTM-WKKFDZH",
+      "usageContext": [
+        "WEB"
+      ],
+      "fingerprint": "1520273420782",
+      "tagManagerUrl": "https://tagmanager.google.com/#/container/accounts/160874599/containers/8436084/workspaces?apiLink=container"
+    },
+    "fingerprint": "1520273464500",
+    "tagManagerUrl": "https://tagmanager.google.com/#/versions/accounts/160874599/containers/8436084/versions/2?apiLink=version"
+  }
+}

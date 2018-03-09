@@ -1,0 +1,11 @@
+D -- EV -- 015 -- Chat -- Quando o uuário inicia um chat	leads-diretos:chat	1:iniciou-chat
+D -- EV -- 016 -- Chat -- Quando o chat é finalizado com uma contratação	leads-diretos:chat	2:sucesso-solicitacao	[produto solicitado]
+D -- EV -- 017 -- Chat -- Quando o chat é finalizado SEM uma contratação	leads-diretos:chat	2:finalizacao-sem-solicitacao
+D -- EV -- 018 -- Revelar o número -- Quando o usuário clica para revelar o número de telefone	leads-indiretos:show-phone	1:exibiu-telefone	[telefone exibido]
+D -- EV -- 019 -- Click to Call -- Quando o usuário clica para ligar para o call center	leads-indiretos:c2c	1:c2c	[telefone chamado]
+D -- EV -- 020 -- Conteúdo em Vídeo -- Quando o vídeo inicia	content:video	video-play	[nome do video]
+D -- EV -- 021 -- Conteúdo em Vídeo -- Quando o usuário vê um vídeo até 50	content:video	video-50	[nome do video]
+D -- EV -- 022 -- Conteúdo em Vídeo -- Quando o usuário vê um vídeo até 95	content:video	video-95	[nome do video]
+D -- EV -- 023 -- Conteúdo em abas -- Quando a página exibe uma aba da conteúdo	content:tabs	exibiu-conteudo	[nome do conteudo]	TRUE
+D -- EV -- 024 -- FAQ -- Quando a página exibe um item do FAQ	content:faq	exibiu-item	[nome do item do faq]	TRUE
+D -- EV -- 025 -- Conteúdo em Scroll -- Quando a página exibe uma seção de conteúdo após menu ou scroll	content:secao	exibiu-secao	[nome da seção]	TRUE

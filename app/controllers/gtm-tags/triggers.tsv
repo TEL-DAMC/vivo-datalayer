@@ -1,0 +1,11 @@
+D -- EV -- 015 -- Chat -- Quando o uuário inicia um chat	feature-step	chat
+D -- EV -- 016 -- Chat -- Quando o chat é finalizado com uma contratação	feature-step	chat
+D -- EV -- 017 -- Chat -- Quando o chat é finalizado SEM uma contratação	feature-step	chat
+D -- EV -- 018 -- Revelar o número -- Quando o usuário clica para revelar o número de telefone	feature-interaction	reveal-phone-number
+D -- EV -- 019 -- Click to Call -- Quando o usuário clica para ligar para o call center	feature-interaction	c2c
+D -- EV -- 020 -- Conteúdo em Vídeo -- Quando o vídeo inicia	feature-step	video-view
+D -- EV -- 021 -- Conteúdo em Vídeo -- Quando o usuário vê um vídeo até 50	feature-step	video-view
+D -- EV -- 022 -- Conteúdo em Vídeo -- Quando o usuário vê um vídeo até 95	feature-step	video-view
+D -- EV -- 023 -- Conteúdo em abas -- Quando a página exibe uma aba da conteúdo	feature-step	tab-view
+D -- EV -- 024 -- FAQ -- Quando a página exibe um item do FAQ	feature-step	faq-view
+D -- EV -- 025 -- Conteúdo em Scroll -- Quando a página exibe uma seção de conteúdo após menu ou scroll	feature-step	scroll-content-view

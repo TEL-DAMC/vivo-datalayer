@@ -1,0 +1,478 @@
+{
+  "exportFormatVersion": 2,
+  "exportTime": "2018-03-05 18:11:12",
+  "containerVersion": {
+    "path": "accounts/160874599/containers/8436084/versions/2",
+    "accountId": "160874599",
+    "containerId": "8436084",
+    "containerVersionId": "2",
+    "name": "até a tag 14",
+    "container": {
+      "path": "accounts/160874599/containers/8436084",
+      "accountId": "160874599",
+      "containerId": "8436084",
+      "name": "Template -- Web -- Landing Pages",
+      "publicId": "GTM-WKKFDZH",
+      "usageContext": [
+        "WEB"
+      ],
+      "fingerprint": "1520273420782",
+      "tagManagerUrl": "https://tagmanager.google.com/#/container/accounts/160874599/containers/8436084/workspaces?apiLink=container"
+    },
+    "fingerprint": "1520273464500",
+    "tagManagerUrl": "https://tagmanager.google.com/#/versions/accounts/160874599/containers/8436084/versions/2?apiLink=version",
+    "trigger": [
+      {
+        "accountId": "160874599",
+        "containerId": "8436084",
+        "name": "D -- EV -- 015 -- Chat -- Quando o uuário inicia um chat",
+        "triggerId": "9145",
+        "type": "CUSTOM_EVENT",
+        "customEventFilter": [
+          {
+            "type": "EQUALS",
+            "parameter": [
+              {
+                "type": "TEMPLATE",
+                "key": "arg0",
+                "value": "{{_event}}"
+              },
+              {
+                "type": "TEMPLATE",
+                "key": "arg1",
+                "value": "feature-step"
+              }
+            ]
+          }
+        ],
+        "filter": [
+          {
+            "type": "EQUALS",
+            "parameter": [
+              {
+                "type": "TEMPLATE",
+                "key": "arg0",
+                "value": "{{DL.feature.name}}"
+              },
+              {
+                "type": "TEMPLATE",
+                "key": "arg1",
+                "value": "chat\r"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "accountId": "160874599",
+        "containerId": "8436084",
+        "name": "D -- EV -- 016 -- Chat -- Quando o chat é finalizado com uma contratação",
+        "triggerId": "5862",
+        "type": "CUSTOM_EVENT",
+        "customEventFilter": [
+          {
+            "type": "EQUALS",
+            "parameter": [
+              {
+                "type": "TEMPLATE",
+                "key": "arg0",
+                "value": "{{_event}}"
+              },
+              {
+                "type": "TEMPLATE",
+                "key": "arg1",
+                "value": "feature-step"
+              }
+            ]
+          }
+        ],
+        "filter": [
+          {
+            "type": "EQUALS",
+            "parameter": [
+              {
+                "type": "TEMPLATE",
+                "key": "arg0",
+                "value": "{{DL.feature.name}}"
+              },
+              {
+                "type": "TEMPLATE",
+                "key": "arg1",
+                "value": "chat\r"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "accountId": "160874599",
+        "containerId": "8436084",
+        "name": "D -- EV -- 017 -- Chat -- Quando o chat é finalizado SEM uma contratação",
+        "triggerId": "4344",
+        "type": "CUSTOM_EVENT",
+        "customEventFilter": [
+          {
+            "type": "EQUALS",
+            "parameter": [
+              {
+                "type": "TEMPLATE",
+                "key": "arg0",
+                "value": "{{_event}}"
+              },
+              {
+                "type": "TEMPLATE",
+                "key": "arg1",
+                "value": "feature-step"
+              }
+            ]
+          }
+        ],
+        "filter": [
+          {
+            "type": "EQUALS",
+            "parameter": [
+              {
+                "type": "TEMPLATE",
+                "key": "arg0",
+                "value": "{{DL.feature.name}}"
+              },
+              {
+                "type": "TEMPLATE",
+                "key": "arg1",
+                "value": "chat\r"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "accountId": "160874599",
+        "containerId": "8436084",
+        "name": "D -- EV -- 018 -- Revelar o número -- Quando o usuário clica para revelar o número de telefone",
+        "triggerId": "9419",
+        "type": "CUSTOM_EVENT",
+        "customEventFilter": [
+          {
+            "type": "EQUALS",
+            "parameter": [
+              {
+                "type": "TEMPLATE",
+                "key": "arg0",
+                "value": "{{_event}}"
+              },
+              {
+                "type": "TEMPLATE",
+                "key": "arg1",
+                "value": "feature-interaction"
+              }
+            ]
+          }
+        ],
+        "filter": [
+          {
+            "type": "EQUALS",
+            "parameter": [
+              {
+                "type": "TEMPLATE",
+                "key": "arg0",
+                "value": "{{DL.feature.name}}"
+              },
+              {
+                "type": "TEMPLATE",
+                "key": "arg1",
+                "value": "reveal-phone-number\r"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "accountId": "160874599",
+        "containerId": "8436084",
+        "name": "D -- EV -- 019 -- Click to Call -- Quando o usuário clica para ligar para o call center",
+        "triggerId": "3387",
+        "type": "CUSTOM_EVENT",
+        "customEventFilter": [
+          {
+            "type": "EQUALS",
+            "parameter": [
+              {
+                "type": "TEMPLATE",
+                "key": "arg0",
+                "value": "{{_event}}"
+              },
+              {
+                "type": "TEMPLATE",
+                "key": "arg1",
+                "value": "feature-interaction"
+              }
+            ]
+          }
+        ],
+        "filter": [
+          {
+            "type": "EQUALS",
+            "parameter": [
+              {
+                "type": "TEMPLATE",
+                "key": "arg0",
+                "value": "{{DL.feature.name}}"
+              },
+              {
+                "type": "TEMPLATE",
+                "key": "arg1",
+                "value": "c2c\r"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "accountId": "160874599",
+        "containerId": "8436084",
+        "name": "D -- EV -- 020 -- Conteúdo em Vídeo -- Quando o vídeo inicia",
+        "triggerId": "4345",
+        "type": "CUSTOM_EVENT",
+        "customEventFilter": [
+          {
+            "type": "EQUALS",
+            "parameter": [
+              {
+                "type": "TEMPLATE",
+                "key": "arg0",
+                "value": "{{_event}}"
+              },
+              {
+                "type": "TEMPLATE",
+                "key": "arg1",
+                "value": "feature-step"
+              }
+            ]
+          }
+        ],
+        "filter": [
+          {
+            "type": "EQUALS",
+            "parameter": [
+              {
+                "type": "TEMPLATE",
+                "key": "arg0",
+                "value": "{{DL.feature.name}}"
+              },
+              {
+                "type": "TEMPLATE",
+                "key": "arg1",
+                "value": "video-view\r"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "accountId": "160874599",
+        "containerId": "8436084",
+        "name": "D -- EV -- 021 -- Conteúdo em Vídeo -- Quando o usuário vê um vídeo até 50",
+        "triggerId": "7084",
+        "type": "CUSTOM_EVENT",
+        "customEventFilter": [
+          {
+            "type": "EQUALS",
+            "parameter": [
+              {
+                "type": "TEMPLATE",
+                "key": "arg0",
+                "value": "{{_event}}"
+              },
+              {
+                "type": "TEMPLATE",
+                "key": "arg1",
+                "value": "feature-step"
+              }
+            ]
+          }
+        ],
+        "filter": [
+          {
+            "type": "EQUALS",
+            "parameter": [
+              {
+                "type": "TEMPLATE",
+                "key": "arg0",
+                "value": "{{DL.feature.name}}"
+              },
+              {
+                "type": "TEMPLATE",
+                "key": "arg1",
+                "value": "video-view\r"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "accountId": "160874599",
+        "containerId": "8436084",
+        "name": "D -- EV -- 022 -- Conteúdo em Vídeo -- Quando o usuário vê um vídeo até 95",
+        "triggerId": "9645",
+        "type": "CUSTOM_EVENT",
+        "customEventFilter": [
+          {
+            "type": "EQUALS",
+            "parameter": [
+              {
+                "type": "TEMPLATE",
+                "key": "arg0",
+                "value": "{{_event}}"
+              },
+              {
+                "type": "TEMPLATE",
+                "key": "arg1",
+                "value": "feature-step"
+              }
+            ]
+          }
+        ],
+        "filter": [
+          {
+            "type": "EQUALS",
+            "parameter": [
+              {
+                "type": "TEMPLATE",
+                "key": "arg0",
+                "value": "{{DL.feature.name}}"
+              },
+              {
+                "type": "TEMPLATE",
+                "key": "arg1",
+                "value": "video-view\r"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "accountId": "160874599",
+        "containerId": "8436084",
+        "name": "D -- EV -- 023 -- Conteúdo em abas -- Quando a página exibe uma aba da conteúdo",
+        "triggerId": "4036",
+        "type": "CUSTOM_EVENT",
+        "customEventFilter": [
+          {
+            "type": "EQUALS",
+            "parameter": [
+              {
+                "type": "TEMPLATE",
+                "key": "arg0",
+                "value": "{{_event}}"
+              },
+              {
+                "type": "TEMPLATE",
+                "key": "arg1",
+                "value": "feature-step"
+              }
+            ]
+          }
+        ],
+        "filter": [
+          {
+            "type": "EQUALS",
+            "parameter": [
+              {
+                "type": "TEMPLATE",
+                "key": "arg0",
+                "value": "{{DL.feature.name}}"
+              },
+              {
+                "type": "TEMPLATE",
+                "key": "arg1",
+                "value": "tab-view\r"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "accountId": "160874599",
+        "containerId": "8436084",
+        "name": "D -- EV -- 024 -- FAQ -- Quando a página exibe um item do FAQ",
+        "triggerId": "227",
+        "type": "CUSTOM_EVENT",
+        "customEventFilter": [
+          {
+            "type": "EQUALS",
+            "parameter": [
+              {
+                "type": "TEMPLATE",
+                "key": "arg0",
+                "value": "{{_event}}"
+              },
+              {
+                "type": "TEMPLATE",
+                "key": "arg1",
+                "value": "feature-step"
+              }
+            ]
+          }
+        ],
+        "filter": [
+          {
+            "type": "EQUALS",
+            "parameter": [
+              {
+                "type": "TEMPLATE",
+                "key": "arg0",
+                "value": "{{DL.feature.name}}"
+              },
+              {
+                "type": "TEMPLATE",
+                "key": "arg1",
+                "value": "faq-view\r"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "accountId": "160874599",
+        "containerId": "8436084",
+        "name": "D -- EV -- 025 -- Conteúdo em Scroll -- Quando a página exibe uma seção de conteúdo após menu ou scroll",
+        "triggerId": "9031",
+        "type": "CUSTOM_EVENT",
+        "customEventFilter": [
+          {
+            "type": "EQUALS",
+            "parameter": [
+              {
+                "type": "TEMPLATE",
+                "key": "arg0",
+                "value": "{{_event}}"
+              },
+              {
+                "type": "TEMPLATE",
+                "key": "arg1",
+                "value": "feature-step"
+              }
+            ]
+          }
+        ],
+        "filter": [
+          {
+            "type": "EQUALS",
+            "parameter": [
+              {
+                "type": "TEMPLATE",
+                "key": "arg0",
+                "value": "{{DL.feature.name}}"
+              },
+              {
+                "type": "TEMPLATE",
+                "key": "arg1",
+                "value": "scroll-content-view"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}

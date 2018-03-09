@@ -1,0 +1,2518 @@
+{
+    "exportFormatVersion": 2,
+    "exportTime": "2018-03-05 18:33:22",
+    "containerVersion": {
+        "path": "accounts/160874599/containers/8436084/versions/2",
+        "accountId": "160874599",
+        "containerId": "8436084",
+        "containerVersionId": "2",
+        "name": "até a tag 14",
+        "container": {
+            "path": "accounts/160874599/containers/8436084",
+            "accountId": "160874599",
+            "containerId": "8436084",
+            "name": "Template -- Web -- Landing Pages",
+            "publicId": "GTM-WKKFDZH",
+            "usageContext": [
+                "WEB"
+            ],
+            "fingerprint": "1520273420782",
+            "tagManagerUrl": "https://tagmanager.google.com/#/container/accounts/160874599/containers/8436084/workspaces?apiLink=container"
+        },
+        "tag": [
+            {
+                "accountId": "160874599",
+                "containerId": "8436084",
+                "tagId": "3",
+                "name": "D -- EV -- 001 -- Bussola -- Quando a bússola é exibida",
+                "type": "ua",
+                "parameter": [
+                    {
+                        "type": "BOOLEAN",
+                        "key": "nonInteraction",
+                        "value": "true"
+                    },
+                    {
+                        "type": "BOOLEAN",
+                        "key": "overrideGaSettings",
+                        "value": "false"
+                    },
+                    {
+                        "type": "TEMPLATE",
+                        "key": "eventCategory",
+                        "value": "regionalizacao"
+                    },
+                    {
+                        "type": "TEMPLATE",
+                        "key": "trackType",
+                        "value": "TRACK_EVENT"
+                    },
+                    {
+                        "type": "TEMPLATE",
+                        "key": "gaSettings",
+                        "value": "{{Google Analytics Settings}}"
+                    },
+                    {
+                        "type": "TEMPLATE",
+                        "key": "eventAction",
+                        "value": "1:exibiu-bussola"
+                    }
+                ],
+                "fingerprint": "1520258290259",
+                "firingTriggerId": [
+                    "8"
+                ],
+                "tagFiringOption": "ONCE_PER_EVENT"
+            },
+            {
+                "accountId": "160874599",
+                "containerId": "8436084",
+                "tagId": "4",
+                "name": "D -- EV -- 002 -- Bussola -- Quando o usuário seleciona a regionalização",
+                "type": "ua",
+                "parameter": [
+                    {
+                        "type": "BOOLEAN",
+                        "key": "nonInteraction",
+                        "value": "false"
+                    },
+                    {
+                        "type": "BOOLEAN",
+                        "key": "overrideGaSettings",
+                        "value": "false"
+                    },
+                    {
+                        "type": "TEMPLATE",
+                        "key": "eventCategory",
+                        "value": "regionalizacao"
+                    },
+                    {
+                        "type": "TEMPLATE",
+                        "key": "trackType",
+                        "value": "TRACK_EVENT"
+                    },
+                    {
+                        "type": "TEMPLATE",
+                        "key": "gaSettings",
+                        "value": "{{Google Analytics Settings}}"
+                    },
+                    {
+                        "type": "TEMPLATE",
+                        "key": "eventAction",
+                        "value": "2:selecionou-regional"
+                    },
+                    {
+                        "type": "TEMPLATE",
+                        "key": "eventLabel",
+                        "value": "{{DL.userInput.location.state}}:{{DL.userInput.location.city}}"
+                    }
+                ],
+                "fingerprint": "1520258667998",
+                "firingTriggerId": [
+                    "9"
+                ],
+                "tagFiringOption": "ONCE_PER_EVENT"
+            },
+            {
+                "accountId": "160874599",
+                "containerId": "8436084",
+                "tagId": "5",
+                "name": "D -- EV -- 003 -- Bussola -- Quando a página é regionalizada com sucesso",
+                "type": "ua",
+                "parameter": [
+                    {
+                        "type": "BOOLEAN",
+                        "key": "nonInteraction",
+                        "value": "true"
+                    },
+                    {
+                        "type": "BOOLEAN",
+                        "key": "overrideGaSettings",
+                        "value": "false"
+                    },
+                    {
+                        "type": "TEMPLATE",
+                        "key": "eventCategory",
+                        "value": "regionalizacao"
+                    },
+                    {
+                        "type": "TEMPLATE",
+                        "key": "trackType",
+                        "value": "TRACK_EVENT"
+                    },
+                    {
+                        "type": "TEMPLATE",
+                        "key": "gaSettings",
+                        "value": "{{Google Analytics Settings}}"
+                    },
+                    {
+                        "type": "TEMPLATE",
+                        "key": "eventAction",
+                        "value": "3:regionalizou-sucesso"
+                    },
+                    {
+                        "type": "TEMPLATE",
+                        "key": "eventLabel",
+                        "value": "{{DL.userInput.location.state}}:{{DL.userInput.location.city}}"
+                    }
+                ],
+                "fingerprint": "1520268165337",
+                "firingTriggerId": [
+                    "10"
+                ],
+                "tagFiringOption": "ONCE_PER_EVENT"
+            },
+            {
+                "accountId": "160874599",
+                "containerId": "8436084",
+                "tagId": "6",
+                "name": "D -- EV -- 004 -- Bussola -- Quando é exibida uma mensagem de erro ou aviso",
+                "type": "ua",
+                "parameter": [
+                    {
+                        "type": "BOOLEAN",
+                        "key": "nonInteraction",
+                        "value": "true"
+                    },
+                    {
+                        "type": "BOOLEAN",
+                        "key": "overrideGaSettings",
+                        "value": "false"
+                    },
+                    {
+                        "type": "TEMPLATE",
+                        "key": "eventCategory",
+                        "value": "regionalizacao"
+                    },
+                    {
+                        "type": "TEMPLATE",
+                        "key": "trackType",
+                        "value": "TRACK_EVENT"
+                    },
+                    {
+                        "type": "TEMPLATE",
+                        "key": "gaSettings",
+                        "value": "{{Google Analytics Settings}}"
+                    },
+                    {
+                        "type": "TEMPLATE",
+                        "key": "eventAction",
+                        "value": "I:aviso"
+                    },
+                    {
+                        "type": "TEMPLATE",
+                        "key": "eventLabel",
+                        "value": "{{DL.message.type}}:{{DL.message.code}}:{{DL.message.name}}"
+                    }
+                ],
+                "fingerprint": "1520268647252",
+                "firingTriggerId": [
+                    "11"
+                ],
+                "tagFiringOption": "ONCE_PER_EVENT"
+            },
+            {
+                "accountId": "160874599",
+                "containerId": "8436084",
+                "tagId": "7",
+                "name": "D -- EV -- 005 -- CTA Principal hero -- Quando o usuário clica em um CTA no Hero Banner",
+                "type": "ua",
+                "parameter": [
+                    {
+                        "type": "BOOLEAN",
+                        "key": "nonInteraction",
+                        "value": "false"
+                    },
+                    {
+                        "type": "BOOLEAN",
+                        "key": "overrideGaSettings",
+                        "value": "false"
+                    },
+                    {
+                        "type": "TEMPLATE",
+                        "key": "eventCategory",
+                        "value": "ctas"
+                    },
+                    {
+                        "type": "TEMPLATE",
+                        "key": "trackType",
+                        "value": "TRACK_EVENT"
+                    },
+                    {
+                        "type": "TEMPLATE",
+                        "key": "gaSettings",
+                        "value": "{{Google Analytics Settings}}"
+                    },
+                    {
+                        "type": "TEMPLATE",
+                        "key": "eventAction",
+                        "value": "cta-hero"
+                    },
+                    {
+                        "type": "TEMPLATE",
+                        "key": "eventLabel",
+                        "value": "{{DL.interaction.value}}"
+                    }
+                ],
+                "fingerprint": "1520268886990",
+                "firingTriggerId": [
+                    "12"
+                ],
+                "tagFiringOption": "ONCE_PER_EVENT"
+            },
+            {
+                "accountId": "160874599",
+                "containerId": "8436084",
+                "tagId": "8",
+                "name": "D -- EV -- 006 -- CTA Card Produto -- Quando o usuário clica no CTA de um card de produto",
+                "type": "ua",
+                "parameter": [
+                    {
+                        "type": "BOOLEAN",
+                        "key": "nonInteraction",
+                        "value": "false"
+                    },
+                    {
+                        "type": "BOOLEAN",
+                        "key": "overrideGaSettings",
+                        "value": "false"
+                    },
+                    {
+                        "type": "TEMPLATE",
+                        "key": "eventCategory",
+                        "value": "ctas"
+                    },
+                    {
+                        "type": "TEMPLATE",
+                        "key": "trackType",
+                        "value": "TRACK_EVENT"
+                    },
+                    {
+                        "type": "TEMPLATE",
+                        "key": "gaSettings",
+                        "value": "{{Google Analytics Settings}}"
+                    },
+                    {
+                        "type": "TEMPLATE",
+                        "key": "eventAction",
+                        "value": "cta-card-produto"
+                    },
+                    {
+                        "type": "TEMPLATE",
+                        "key": "eventLabel",
+                        "value": "{{DL.interaction.value}}"
+                    }
+                ],
+                "fingerprint": "1520269171820",
+                "firingTriggerId": [
+                    "13"
+                ],
+                "tagFiringOption": "ONCE_PER_EVENT"
+            },
+            {
+                "accountId": "160874599",
+                "containerId": "8436084",
+                "tagId": "9",
+                "name": "D -- EV -- 007 -- CTA Sticky Lateral -- Quando o usuário clica no CTA de um elemento fixo na lateral da página",
+                "type": "ua",
+                "parameter": [
+                    {
+                        "type": "BOOLEAN",
+                        "key": "nonInteraction",
+                        "value": "false"
+                    },
+                    {
+                        "type": "BOOLEAN",
+                        "key": "overrideGaSettings",
+                        "value": "false"
+                    },
+                    {
+                        "type": "TEMPLATE",
+                        "key": "eventCategory",
+                        "value": "ctas"
+                    },
+                    {
+                        "type": "TEMPLATE",
+                        "key": "trackType",
+                        "value": "TRACK_EVENT"
+                    },
+                    {
+                        "type": "TEMPLATE",
+                        "key": "gaSettings",
+                        "value": "{{Google Analytics Settings}}"
+                    },
+                    {
+                        "type": "TEMPLATE",
+                        "key": "eventAction",
+                        "value": "cta-lateral"
+                    },
+                    {
+                        "type": "TEMPLATE",
+                        "key": "eventLabel",
+                        "value": "{{DL.interaction.value}}"
+                    }
+                ],
+                "fingerprint": "1520269232227",
+                "firingTriggerId": [
+                    "14"
+                ],
+                "tagFiringOption": "ONCE_PER_EVENT"
+            },
+            {
+                "accountId": "160874599",
+                "containerId": "8436084",
+                "tagId": "10",
+                "name": "D -- EV -- 008 -- CTA Barra Horizontal -- Quando o usuário clica no CTA de uma barra horizontal",
+                "type": "ua",
+                "parameter": [
+                    {
+                        "type": "BOOLEAN",
+                        "key": "nonInteraction",
+                        "value": "false"
+                    },
+                    {
+                        "type": "BOOLEAN",
+                        "key": "overrideGaSettings",
+                        "value": "false"
+                    },
+                    {
+                        "type": "TEMPLATE",
+                        "key": "eventCategory",
+                        "value": "ctas"
+                    },
+                    {
+                        "type": "TEMPLATE",
+                        "key": "trackType",
+                        "value": "TRACK_EVENT"
+                    },
+                    {
+                        "type": "TEMPLATE",
+                        "key": "gaSettings",
+                        "value": "{{Google Analytics Settings}}"
+                    },
+                    {
+                        "type": "TEMPLATE",
+                        "key": "eventAction",
+                        "value": "cta-barra-horizontal"
+                    },
+                    {
+                        "type": "TEMPLATE",
+                        "key": "eventLabel",
+                        "value": "{{DL.interaction.value}}"
+                    }
+                ],
+                "fingerprint": "1520269280040",
+                "firingTriggerId": [
+                    "15"
+                ],
+                "tagFiringOption": "ONCE_PER_EVENT"
+            },
+            {
+                "accountId": "160874599",
+                "containerId": "8436084",
+                "tagId": "11",
+                "name": "D -- EV -- 009 -- CTA Secundário -- Quando o usuário clica em um CTA secundário",
+                "type": "ua",
+                "parameter": [
+                    {
+                        "type": "BOOLEAN",
+                        "key": "nonInteraction",
+                        "value": "false"
+                    },
+                    {
+                        "type": "BOOLEAN",
+                        "key": "overrideGaSettings",
+                        "value": "false"
+                    },
+                    {
+                        "type": "TEMPLATE",
+                        "key": "eventCategory",
+                        "value": "ctas"
+                    },
+                    {
+                        "type": "TEMPLATE",
+                        "key": "trackType",
+                        "value": "TRACK_EVENT"
+                    },
+                    {
+                        "type": "TEMPLATE",
+                        "key": "gaSettings",
+                        "value": "{{Google Analytics Settings}}"
+                    },
+                    {
+                        "type": "TEMPLATE",
+                        "key": "eventAction",
+                        "value": "cta-secundario"
+                    },
+                    {
+                        "type": "TEMPLATE",
+                        "key": "eventLabel",
+                        "value": "{{DL.interaction.value}}"
+                    }
+                ],
+                "fingerprint": "1520269314737",
+                "firingTriggerId": [
+                    "16"
+                ],
+                "tagFiringOption": "ONCE_PER_EVENT"
+            },
+            {
+                "accountId": "160874599",
+                "containerId": "8436084",
+                "tagId": "12",
+                "name": "D -- EV -- 010 -- Consulta de disponibilidade -- Quando a página exibe um modal de consulta de cobertura",
+                "type": "ua",
+                "parameter": [
+                    {
+                        "type": "BOOLEAN",
+                        "key": "nonInteraction",
+                        "value": "true"
+                    },
+                    {
+                        "type": "BOOLEAN",
+                        "key": "overrideGaSettings",
+                        "value": "false"
+                    },
+                    {
+                        "type": "TEMPLATE",
+                        "key": "eventCategory",
+                        "value": "leads-diretos:consulta-cobertura"
+                    },
+                    {
+                        "type": "TEMPLATE",
+                        "key": "trackType",
+                        "value": "TRACK_EVENT"
+                    },
+                    {
+                        "type": "TEMPLATE",
+                        "key": "gaSettings",
+                        "value": "{{Google Analytics Settings}}"
+                    },
+                    {
+                        "type": "TEMPLATE",
+                        "key": "eventAction",
+                        "value": "1:exibiu-consulta"
+                    },
+                    {
+                        "type": "TEMPLATE",
+                        "key": "eventLabel",
+                        "value": "{{DL.placement.type}}:{{DL.placement.name}}"
+                    }
+                ],
+                "fingerprint": "1520272717244",
+                "firingTriggerId": [
+                    "17"
+                ],
+                "tagFiringOption": "ONCE_PER_EVENT"
+            },
+            {
+                "accountId": "160874599",
+                "containerId": "8436084",
+                "tagId": "13",
+                "name": "D -- EV -- 011 -- Consulta de disponibilidade -- Quando o usuário tenta enviar o formulário",
+                "type": "ua",
+                "parameter": [
+                    {
+                        "type": "BOOLEAN",
+                        "key": "nonInteraction",
+                        "value": "false"
+                    },
+                    {
+                        "type": "BOOLEAN",
+                        "key": "overrideGaSettings",
+                        "value": "false"
+                    },
+                    {
+                        "type": "TEMPLATE",
+                        "key": "eventCategory",
+                        "value": "leads-diretos:consulta-cobertura"
+                    },
+                    {
+                        "type": "TEMPLATE",
+                        "key": "trackType",
+                        "value": "TRACK_EVENT"
+                    },
+                    {
+                        "type": "TEMPLATE",
+                        "key": "gaSettings",
+                        "value": "{{Google Analytics Settings}}"
+                    },
+                    {
+                        "type": "TEMPLATE",
+                        "key": "eventAction",
+                        "value": "2:enviou-consulta:{{DL.interaction.value}}"
+                    },
+                    {
+                        "type": "TEMPLATE",
+                        "key": "eventLabel",
+                        "value": "{{DL.placement.type}}:{{DL.placement.name}}"
+                    }
+                ],
+                "fingerprint": "1520273158315",
+                "firingTriggerId": [
+                    "18"
+                ],
+                "tagFiringOption": "ONCE_PER_EVENT"
+            },
+            {
+                "accountId": "160874599",
+                "containerId": "8436084",
+                "tagId": "14",
+                "name": "D -- EV -- 012 -- Consulta de disponibilidade -- Quando houver o retorno com sucesso",
+                "type": "ua",
+                "parameter": [
+                    {
+                        "type": "BOOLEAN",
+                        "key": "nonInteraction",
+                        "value": "true"
+                    },
+                    {
+                        "type": "BOOLEAN",
+                        "key": "overrideGaSettings",
+                        "value": "false"
+                    },
+                    {
+                        "type": "TEMPLATE",
+                        "key": "eventCategory",
+                        "value": "leads-diretos:consulta-cobertura"
+                    },
+                    {
+                        "type": "TEMPLATE",
+                        "key": "trackType",
+                        "value": "TRACK_EVENT"
+                    },
+                    {
+                        "type": "TEMPLATE",
+                        "key": "gaSettings",
+                        "value": "{{Google Analytics Settings}}"
+                    },
+                    {
+                        "type": "TEMPLATE",
+                        "key": "eventAction",
+                        "value": "3:sucesso-consulta"
+                    },
+                    {
+                        "type": "TEMPLATE",
+                        "key": "eventLabel",
+                        "value": "{{DL.placement.type}}:{{DL.placement.name}}"
+                    }
+                ],
+                "fingerprint": "1520273124209",
+                "firingTriggerId": [
+                    "19"
+                ],
+                "tagFiringOption": "ONCE_PER_EVENT"
+            },
+            {
+                "accountId": "160874599",
+                "containerId": "8436084",
+                "tagId": "15",
+                "name": "D -- EV -- 013 -- Consulta de disponibilidade -- Quando houver o retorno com indisponibilidade",
+                "type": "ua",
+                "parameter": [
+                    {
+                        "type": "BOOLEAN",
+                        "key": "nonInteraction",
+                        "value": "true"
+                    },
+                    {
+                        "type": "BOOLEAN",
+                        "key": "overrideGaSettings",
+                        "value": "false"
+                    },
+                    {
+                        "type": "TEMPLATE",
+                        "key": "eventCategory",
+                        "value": "leads-diretos:consulta-cobertura"
+                    },
+                    {
+                        "type": "TEMPLATE",
+                        "key": "trackType",
+                        "value": "TRACK_EVENT"
+                    },
+                    {
+                        "type": "TEMPLATE",
+                        "key": "gaSettings",
+                        "value": "{{Google Analytics Settings}}"
+                    },
+                    {
+                        "type": "TEMPLATE",
+                        "key": "eventAction",
+                        "value": "3:indisponibilidade-consulta"
+                    },
+                    {
+                        "type": "TEMPLATE",
+                        "key": "eventLabel",
+                        "value": "{{DL.placement.type}}:{{DL.placement.name}}"
+                    }
+                ],
+                "fingerprint": "1520273256180",
+                "firingTriggerId": [
+                    "20"
+                ],
+                "tagFiringOption": "ONCE_PER_EVENT"
+            },
+            {
+                "accountId": "160874599",
+                "containerId": "8436084",
+                "tagId": "16",
+                "name": "D -- EV -- 014 -- Consulta de disponibilidade -- Quando a página exibir algum erro ou aviso",
+                "type": "ua",
+                "parameter": [
+                    {
+                        "type": "BOOLEAN",
+                        "key": "nonInteraction",
+                        "value": "true"
+                    },
+                    {
+                        "type": "BOOLEAN",
+                        "key": "overrideGaSettings",
+                        "value": "false"
+                    },
+                    {
+                        "type": "TEMPLATE",
+                        "key": "eventCategory",
+                        "value": "leads-diretos:consulta-cobertura"
+                    },
+                    {
+                        "type": "TEMPLATE",
+                        "key": "trackType",
+                        "value": "TRACK_EVENT"
+                    },
+                    {
+                        "type": "TEMPLATE",
+                        "key": "gaSettings",
+                        "value": "{{Google Analytics Settings}}"
+                    },
+                    {
+                        "type": "TEMPLATE",
+                        "key": "eventAction",
+                        "value": "I:aviso"
+                    },
+                    {
+                        "type": "TEMPLATE",
+                        "key": "eventLabel",
+                        "value": "{{DL.message.type}}:{{DL.message.code}}:{{DL.message.name}}"
+                    }
+                ],
+                "fingerprint": "1520273420782",
+                "firingTriggerId": [
+                    "11"
+                ],
+                "tagFiringOption": "ONCE_PER_EVENT"
+            },
+            {
+                "accountId": "160874599",
+                "containerId": "8436084",
+                "tagId": "1",
+                "name": "D -- PV -- 001 -- All Pages",
+                "type": "ua",
+                "parameter": [
+                    {
+                        "type": "BOOLEAN",
+                        "key": "overrideGaSettings",
+                        "value": "false"
+                    },
+                    {
+                        "type": "TEMPLATE",
+                        "key": "trackType",
+                        "value": "TRACK_PAGEVIEW"
+                    },
+                    {
+                        "type": "TEMPLATE",
+                        "key": "gaSettings",
+                        "value": "{{Google Analytics Settings}}"
+                    }
+                ],
+                "fingerprint": "1520256966879",
+                "firingTriggerId": [
+                    "2147479553"
+                ],
+                "setupTag": [
+                    {
+                        "tagName": "ST -- PV -- 001 -- All Pages -- Hash Library"
+                    }
+                ],
+                "tagFiringOption": "ONCE_PER_EVENT"
+            },
+            {
+                "accountId": "160874599",
+                "containerId": "8436084",
+                "tagId": "2",
+                "name": "ST -- PV -- 001 -- All Pages -- Hash Library",
+                "type": "html",
+                "parameter": [
+                    {
+                        "type": "TEMPLATE",
+                        "key": "html",
+                        "value": "<script>!function(t){function r(n){if(e[n])return e[n].exports;var i=e[n]={i:n,l:!1,exports:{}};return t[n].call(i.exports,i,i.exports,r),i.l=!0,i.exports}var e={};r.m=t,r.c=e,r.d=function(t,e,n){r.o(t,e)||Object.defineProperty(t,e,{configurable:!1,enumerable:!0,get:n})},r.n=function(t){var e=t&&t.__esModule?function(){return t.default}:function(){return t};return r.d(e,\"a\",e),e},r.o=function(t,r){return Object.prototype.hasOwnProperty.call(t,r)},r.p=\"\",r(r.s=5)}([function(t,r,e){function n(t,r){for(var e in t)r[e]=t[e]}function i(t,r,e){return u(t,r,e)}var o=e(8),u=o.Buffer;u.from&&u.alloc&&u.allocUnsafe&&u.allocUnsafeSlow?t.exports=o:(n(o,r),r.Buffer=i),n(u,i),i.from=function(t,r,e){if(\"number\"==typeof t)throw new TypeError(\"Argument must not be a number\");return u(t,r,e)},i.alloc=function(t,r,e){if(\"number\"!=typeof t)throw new TypeError(\"Argument must be a number\");var n=u(t);return void 0!==r?\"string\"==typeof e?n.fill(r,e):n.fill(r):n.fill(0),n},i.allocUnsafe=function(t){if(\"number\"!=typeof t)throw new TypeError(\"Argument must be a number\");return u(t)},i.allocUnsafeSlow=function(t){if(\"number\"!=typeof t)throw new TypeError(\"Argument must be a number\");return o.SlowBuffer(t)}},function(t,r){\"function\"==typeof Object.create?t.exports=function(t,r){t.super_=r,t.prototype=Object.create(r.prototype,{constructor:{value:t,enumerable:!1,writable:!0,configurable:!0}})}:t.exports=function(t,r){t.super_=r;var e=function(){};e.prototype=r.prototype,t.prototype=new e,t.prototype.constructor=t}},function(t,r,e){function n(t,r){this._block=i.alloc(t),this._finalSize=r,this._blockSize=t,this._len=0}var i=e(0).Buffer;n.prototype.update=function(t,r){\"string\"==typeof t&&(r=r||\"utf8\",t=i.from(t,r));for(var e=this._block,n=this._blockSize,o=t.length,u=this._len,f=0;f<o;){for(var s=u%n,h=Math.min(o-f,n-s),a=0;a<h;a++)e[s+a]=t[f+a];u+=h,f+=h,u%n==0&&this._update(e)}return this._len+=o,this},n.prototype.digest=function(t){var r=this._len%this._blockSize;this._block[r]=128,this._block.fill(0,r+1),r>=this._finalSize&&(this._update(this._block),this._block.fill(0));var e=8*this._len;if(e<=4294967295)this._block.writeUInt32BE(e,this._blockSize-4);else{var n=4294967295&e,i=(e-n)/4294967296;this._block.writeUInt32BE(i,this._blockSize-8),this._block.writeUInt32BE(n,this._blockSize-4)}this._update(this._block);var o=this._hash();return t?o.toString(t):o},n.prototype._update=function(){throw new Error(\"_update must be implemented by subclass\")},t.exports=n},function(t,r,e){function n(){this.init(),this._w=g,c.call(this,64,56)}function i(t,r,e){return e^t&(r^e)}function o(t,r,e){return t&r|e&(t|r)}function u(t){return(t>>>2|t<<30)^(t>>>13|t<<19)^(t>>>22|t<<10)}function f(t){return(t>>>6|t<<26)^(t>>>11|t<<21)^(t>>>25|t<<7)}function s(t){return(t>>>7|t<<25)^(t>>>18|t<<14)^t>>>3}function h(t){return(t>>>17|t<<15)^(t>>>19|t<<13)^t>>>10}var a=e(1),c=e(2),l=e(0).Buffer,p=[1116352408,1899447441,3049323471,3921009573,961987163,1508970993,2453635748,2870763221,3624381080,310598401,607225278,1426881987,1925078388,2162078206,2614888103,3248222580,3835390401,4022224774,264347078,604807628,770255983,1249150122,1555081692,1996064986,2554220882,2821834349,2952996808,3210313671,3336571891,3584528711,113926993,338241895,666307205,773529912,1294757372,1396182291,1695183700,1986661051,2177026350,2456956037,2730485921,2820302411,3259730800,3345764771,3516065817,3600352804,4094571909,275423344,430227734,506948616,659060556,883997877,958139571,1322822218,1537002063,1747873779,1955562222,2024104815,2227730452,2361852424,2428436474,2756734187,3204031479,3329325298],g=new Array(64);a(n,c),n.prototype.init=function(){return this._a=1779033703,this._b=3144134277,this._c=1013904242,this._d=2773480762,this._e=1359893119,this._f=2600822924,this._g=528734635,this._h=1541459225,this},n.prototype._update=function(t){for(var r=this._w,e=0|this._a,n=0|this._b,a=0|this._c,c=0|this._d,l=0|this._e,g=0|this._f,y=0|this._g,w=0|this._h,_=0;_<16;++_)r[_]=t.readInt32BE(4*_);for(;_<64;++_)r[_]=h(r[_-2])+r[_-7]+s(r[_-15])+r[_-16]|0;for(var d=0;d<64;++d){var v=w+f(l)+i(l,g,y)+p[d]+r[d]|0,b=u(e)+o(e,n,a)|0;w=y,y=g,g=l,l=c+v|0,c=a,a=n,n=e,e=v+b|0}this._a=e+this._a|0,this._b=n+this._b|0,this._c=a+this._c|0,this._d=c+this._d|0,this._e=l+this._e|0,this._f=g+this._f|0,this._g=y+this._g|0,this._h=w+this._h|0},n.prototype._hash=function(){var t=l.allocUnsafe(32);return t.writeInt32BE(this._a,0),t.writeInt32BE(this._b,4),t.writeInt32BE(this._c,8),t.writeInt32BE(this._d,12),t.writeInt32BE(this._e,16),t.writeInt32BE(this._f,20),t.writeInt32BE(this._g,24),t.writeInt32BE(this._h,28),t},t.exports=n},,function(t,r,e){window.DAMC_LIB=window.DAMC_LIB||{},window.DAMC_LIB.hash=function(t){return e(3)().update(t+\",s)S.X-p;SdwsA2&lR.dIy|SCg}bZ1{&7y^%kpk2u9V+{mEO%n3HccBYJIKhFujb\").digest(\"hex\")}},,,function(t,r,e){\"use strict\";(function(t){function n(){return o.TYPED_ARRAY_SUPPORT?2147483647:1073741823}function i(t,r){if(n()<r)throw new RangeError(\"Invalid typed array length\");return o.TYPED_ARRAY_SUPPORT?(t=new Uint8Array(r),t.__proto__=o.prototype):(null===t&&(t=new o(r)),t.length=r),t}function o(t,r,e){if(!(o.TYPED_ARRAY_SUPPORT||this instanceof o))return new o(t,r,e);if(\"number\"==typeof t){if(\"string\"==typeof r)throw new Error(\"If encoding is specified then the first argument must be a string\");return h(this,t)}return u(this,t,r,e)}function u(t,r,e,n){if(\"number\"==typeof r)throw new TypeError('\"value\" argument must not be a number');return\"undefined\"!=typeof ArrayBuffer&&r instanceof ArrayBuffer?l(t,r,e,n):\"string\"==typeof r?a(t,r,e):p(t,r)}function f(t){if(\"number\"!=typeof t)throw new TypeError('\"size\" argument must be a number');if(t<0)throw new RangeError('\"size\" argument must not be negative')}function s(t,r,e,n){return f(r),r<=0?i(t,r):void 0!==e?\"string\"==typeof n?i(t,r).fill(e,n):i(t,r).fill(e):i(t,r)}function h(t,r){if(f(r),t=i(t,r<0?0:0|g(r)),!o.TYPED_ARRAY_SUPPORT)for(var e=0;e<r;++e)t[e]=0;return t}function a(t,r,e){if(\"string\"==typeof e&&\"\"!==e||(e=\"utf8\"),!o.isEncoding(e))throw new TypeError('\"encoding\" must be a valid string encoding');var n=0|w(r,e);t=i(t,n);var u=t.write(r,e);return u!==n&&(t=t.slice(0,u)),t}function c(t,r){var e=r.length<0?0:0|g(r.length);t=i(t,e);for(var n=0;n<e;n+=1)t[n]=255&r[n];return t}function l(t,r,e,n){if(r.byteLength,e<0||r.byteLength<e)throw new RangeError(\"'offset' is out of bounds\");if(r.byteLength<e+(n||0))throw new RangeError(\"'length' is out of bounds\");return r=void 0===e&&void 0===n?new Uint8Array(r):void 0===n?new Uint8Array(r,e):new Uint8Array(r,e,n),o.TYPED_ARRAY_SUPPORT?(t=r,t.__proto__=o.prototype):t=c(t,r),t}function p(t,r){if(o.isBuffer(r)){var e=0|g(r.length);return t=i(t,e),0===t.length?t:(r.copy(t,0,0,e),t)}if(r){if(\"undefined\"!=typeof ArrayBuffer&&r.buffer instanceof ArrayBuffer||\"length\"in r)return\"number\"!=typeof r.length||K(r.length)?i(t,0):c(t,r);if(\"Buffer\"===r.type&&W(r.data))return c(t,r.data)}throw new TypeError(\"First argument must be a string, Buffer, ArrayBuffer, Array, or array-like object.\")}function g(t){if(t>=n())throw new RangeError(\"Attempt to allocate Buffer larger than maximum size: 0x\"+n().toString(16)+\" bytes\");return 0|t}function y(t){return+t!=t&&(t=0),o.alloc(+t)}function w(t,r){if(o.isBuffer(t))return t.length;if(\"undefined\"!=typeof ArrayBuffer&&\"function\"==typeof ArrayBuffer.isView&&(ArrayBuffer.isView(t)||t instanceof ArrayBuffer))return t.byteLength;\"string\"!=typeof t&&(t=\"\"+t);var e=t.length;if(0===e)return 0;for(var n=!1;;)switch(r){case\"ascii\":case\"latin1\":case\"binary\":return e;case\"utf8\":case\"utf-8\":case void 0:return X(t).length;case\"ucs2\":case\"ucs-2\":case\"utf16le\":case\"utf-16le\":return 2*e;case\"hex\":return e>>>1;case\"base64\":return q(t).length;default:if(n)return X(t).length;r=(\"\"+r).toLowerCase(),n=!0}}function _(t,r,e){var n=!1;if((void 0===r||r<0)&&(r=0),r>this.length)return\"\";if((void 0===e||e>this.length)&&(e=this.length),e<=0)return\"\";if(e>>>=0,r>>>=0,e<=r)return\"\";for(t||(t=\"utf8\");;)switch(t){case\"hex\":return C(this,r,e);case\"utf8\":case\"utf-8\":return S(this,r,e);case\"ascii\":return I(this,r,e);case\"latin1\":case\"binary\":return Y(this,r,e);case\"base64\":return T(this,r,e);case\"ucs2\":case\"ucs-2\":case\"utf16le\":case\"utf-16le\":return O(this,r,e);default:if(n)throw new TypeError(\"Unknown encoding: \"+t);t=(t+\"\").toLowerCase(),n=!0}}function d(t,r,e){var n=t[r];t[r]=t[e],t[e]=n}function v(t,r,e,n,i){if(0===t.length)return-1;if(\"string\"==typeof e?(n=e,e=0):e>2147483647?e=2147483647:e<-2147483648&&(e=-2147483648),e=+e,isNaN(e)&&(e=i?0:t.length-1),e<0&&(e=t.length+e),e>=t.length){if(i)return-1;e=t.length-1}else if(e<0){if(!i)return-1;e=0}if(\"string\"==typeof r&&(r=o.from(r,n)),o.isBuffer(r))return 0===r.length?-1:b(t,r,e,n,i);if(\"number\"==typeof r)return r&=255,o.TYPED_ARRAY_SUPPORT&&\"function\"==typeof Uint8Array.prototype.indexOf?i?Uint8Array.prototype.indexOf.call(t,r,e):Uint8Array.prototype.lastIndexOf.call(t,r,e):b(t,[r],e,n,i);throw new TypeError(\"val must be string, number or Buffer\")}function b(t,r,e,n,i){function o(t,r){return 1===u?t[r]:t.readUInt16BE(r*u)}var u=1,f=t.length,s=r.length;if(void 0!==n&&(\"ucs2\"===(n=String(n).toLowerCase())||\"ucs-2\"===n||\"utf16le\"===n||\"utf-16le\"===n)){if(t.length<2||r.length<2)return-1;u=2,f/=2,s/=2,e/=2}var h;if(i){var a=-1;for(h=e;h<f;h++)if(o(t,h)===o(r,-1===a?0:h-a)){if(-1===a&&(a=h),h-a+1===s)return a*u}else-1!==a&&(h-=h-a),a=-1}else for(e+s>f&&(e=f-s),h=e;h>=0;h--){for(var c=!0,l=0;l<s;l++)if(o(t,h+l)!==o(r,l)){c=!1;break}if(c)return h}return-1}function E(t,r,e,n){e=Number(e)||0;var i=t.length-e;n?(n=Number(n))>i&&(n=i):n=i;var o=r.length;if(o%2!=0)throw new TypeError(\"Invalid hex string\");n>o/2&&(n=o/2);for(var u=0;u<n;++u){var f=parseInt(r.substr(2*u,2),16);if(isNaN(f))return u;t[e+u]=f}return u}function A(t,r,e,n){return H(X(r,t.length-e),t,e,n)}function m(t,r,e,n){return H(J(r),t,e,n)}function R(t,r,e,n){return m(t,r,e,n)}function B(t,r,e,n){return H(q(r),t,e,n)}function P(t,r,e,n){return H(Z(r,t.length-e),t,e,n)}function T(t,r,e){return 0===r&&e===t.length?G.fromByteArray(t):G.fromByteArray(t.slice(r,e))}function S(t,r,e){e=Math.min(t.length,e);for(var n=[],i=r;i<e;){var o=t[i],u=null,f=o>239?4:o>223?3:o>191?2:1;if(i+f<=e){var s,h,a,c;switch(f){case 1:o<128&&(u=o);break;case 2:s=t[i+1],128==(192&s)&&(c=(31&o)<<6|63&s)>127&&(u=c);break;case 3:s=t[i+1],h=t[i+2],128==(192&s)&&128==(192&h)&&(c=(15&o)<<12|(63&s)<<6|63&h)>2047&&(c<55296||c>57343)&&(u=c);break;case 4:s=t[i+1],h=t[i+2],a=t[i+3],128==(192&s)&&128==(192&h)&&128==(192&a)&&(c=(15&o)<<18|(63&s)<<12|(63&h)<<6|63&a)>65535&&c<1114112&&(u=c)}}null===u?(u=65533,f=1):u>65535&&(u-=65536,n.push(u>>>10&1023|55296),u=56320|1023&u),n.push(u),i+=f}return U(n)}function U(t){var r=t.length;if(r<=$)return String.fromCharCode.apply(String,t);for(var e=\"\",n=0;n<r;)e+=String.fromCharCode.apply(String,t.slice(n,n+=$));return e}function I(t,r,e){var n=\"\";e=Math.min(t.length,e);for(var i=r;i<e;++i)n+=String.fromCharCode(127&t[i]);return n}function Y(t,r,e){var n=\"\";e=Math.min(t.length,e);for(var i=r;i<e;++i)n+=String.fromCharCode(t[i]);return n}function C(t,r,e){var n=t.length;(!r||r<0)&&(r=0),(!e||e<0||e>n)&&(e=n);for(var i=\"\",o=r;o<e;++o)i+=V(t[o]);return i}function O(t,r,e){for(var n=t.slice(r,e),i=\"\",o=0;o<n.length;o+=2)i+=String.fromCharCode(n[o]+256*n[o+1]);return i}function M(t,r,e){if(t%1!=0||t<0)throw new RangeError(\"offset is not uint\");if(t+r>e)throw new RangeError(\"Trying to access beyond buffer length\")}function L(t,r,e,n,i,u){if(!o.isBuffer(t))throw new TypeError('\"buffer\" argument must be a Buffer instance');if(r>i||r<u)throw new RangeError('\"value\" argument is out of bounds');if(e+n>t.length)throw new RangeError(\"Index out of range\")}function k(t,r,e,n){r<0&&(r=65535+r+1);for(var i=0,o=Math.min(t.length-e,2);i<o;++i)t[e+i]=(r&255<<8*(n?i:1-i))>>>8*(n?i:1-i)}function x(t,r,e,n){r<0&&(r=4294967295+r+1);for(var i=0,o=Math.min(t.length-e,4);i<o;++i)t[e+i]=r>>>8*(n?i:3-i)&255}function D(t,r,e,n,i,o){if(e+n>t.length)throw new RangeError(\"Index out of range\");if(e<0)throw new RangeError(\"Index out of range\")}function z(t,r,e,n,i){return i||D(t,r,e,4,3.4028234663852886e38,-3.4028234663852886e38),Q.write(t,r,e,n,23,4),e+4}function N(t,r,e,n,i){return i||D(t,r,e,8,1.7976931348623157e308,-1.7976931348623157e308),Q.write(t,r,e,n,52,8),e+8}function j(t){if(t=F(t).replace(tt,\"\"),t.length<2)return\"\";for(;t.length%4!=0;)t+=\"=\";return t}function F(t){return t.trim?t.trim():t.replace(/^\\s+|\\s+$/g,\"\")}function V(t){return t<16?\"0\"+t.toString(16):t.toString(16)}function X(t,r){r=r||1/0;for(var e,n=t.length,i=null,o=[],u=0;u<n;++u){if((e=t.charCodeAt(u))>55295&&e<57344){if(!i){if(e>56319){(r-=3)>-1&&o.push(239,191,189);continue}if(u+1===n){(r-=3)>-1&&o.push(239,191,189);continue}i=e;continue}if(e<56320){(r-=3)>-1&&o.push(239,191,189),i=e;continue}e=65536+(i-55296<<10|e-56320)}else i&&(r-=3)>-1&&o.push(239,191,189);if(i=null,e<128){if((r-=1)<0)break;o.push(e)}else if(e<2048){if((r-=2)<0)break;o.push(e>>6|192,63&e|128)}else if(e<65536){if((r-=3)<0)break;o.push(e>>12|224,e>>6&63|128,63&e|128)}else{if(!(e<1114112))throw new Error(\"Invalid code point\");if((r-=4)<0)break;o.push(e>>18|240,e>>12&63|128,e>>6&63|128,63&e|128)}}return o}function J(t){for(var r=[],e=0;e<t.length;++e)r.push(255&t.charCodeAt(e));return r}function Z(t,r){for(var e,n,i,o=[],u=0;u<t.length&&!((r-=2)<0);++u)e=t.charCodeAt(u),n=e>>8,i=e%256,o.push(i),o.push(n);return o}function q(t){return G.toByteArray(j(t))}function H(t,r,e,n){for(var i=0;i<n&&!(i+e>=r.length||i>=t.length);++i)r[i+e]=t[i];return i}function K(t){return t!==t}/*!\n * The buffer module from node.js, for the browser.\n *\n * @author   Feross Aboukhadijeh <feross@feross.org> <http://feross.org>\n * @license  MIT\n */\nvar G=e(10),Q=e(11),W=e(12);r.Buffer=o,r.SlowBuffer=y,r.INSPECT_MAX_BYTES=50,o.TYPED_ARRAY_SUPPORT=void 0!==t.TYPED_ARRAY_SUPPORT?t.TYPED_ARRAY_SUPPORT:function(){try{var t=new Uint8Array(1);return t.__proto__={__proto__:Uint8Array.prototype,foo:function(){return 42}},42===t.foo()&&\"function\"==typeof t.subarray&&0===t.subarray(1,1).byteLength}catch(t){return!1}}(),r.kMaxLength=n(),o.poolSize=8192,o._augment=function(t){return t.__proto__=o.prototype,t},o.from=function(t,r,e){return u(null,t,r,e)},o.TYPED_ARRAY_SUPPORT&&(o.prototype.__proto__=Uint8Array.prototype,o.__proto__=Uint8Array,\"undefined\"!=typeof Symbol&&Symbol.species&&o[Symbol.species]===o&&Object.defineProperty(o,Symbol.species,{value:null,configurable:!0})),o.alloc=function(t,r,e){return s(null,t,r,e)},o.allocUnsafe=function(t){return h(null,t)},o.allocUnsafeSlow=function(t){return h(null,t)},o.isBuffer=function(t){return!(null==t||!t._isBuffer)},o.compare=function(t,r){if(!o.isBuffer(t)||!o.isBuffer(r))throw new TypeError(\"Arguments must be Buffers\");if(t===r)return 0;for(var e=t.length,n=r.length,i=0,u=Math.min(e,n);i<u;++i)if(t[i]!==r[i]){e=t[i],n=r[i];break}return e<n?-1:n<e?1:0},o.isEncoding=function(t){switch(String(t).toLowerCase()){case\"hex\":case\"utf8\":case\"utf-8\":case\"ascii\":case\"latin1\":case\"binary\":case\"base64\":case\"ucs2\":case\"ucs-2\":case\"utf16le\":case\"utf-16le\":return!0;default:return!1}},o.concat=function(t,r){if(!W(t))throw new TypeError('\"list\" argument must be an Array of Buffers');if(0===t.length)return o.alloc(0);var e;if(void 0===r)for(r=0,e=0;e<t.length;++e)r+=t[e].length;var n=o.allocUnsafe(r),i=0;for(e=0;e<t.length;++e){var u=t[e];if(!o.isBuffer(u))throw new TypeError('\"list\" argument must be an Array of Buffers');u.copy(n,i),i+=u.length}return n},o.byteLength=w,o.prototype._isBuffer=!0,o.prototype.swap16=function(){var t=this.length;if(t%2!=0)throw new RangeError(\"Buffer size must be a multiple of 16-bits\");for(var r=0;r<t;r+=2)d(this,r,r+1);return this},o.prototype.swap32=function(){var t=this.length;if(t%4!=0)throw new RangeError(\"Buffer size must be a multiple of 32-bits\");for(var r=0;r<t;r+=4)d(this,r,r+3),d(this,r+1,r+2);return this},o.prototype.swap64=function(){var t=this.length;if(t%8!=0)throw new RangeError(\"Buffer size must be a multiple of 64-bits\");for(var r=0;r<t;r+=8)d(this,r,r+7),d(this,r+1,r+6),d(this,r+2,r+5),d(this,r+3,r+4);return this},o.prototype.toString=function(){var t=0|this.length;return 0===t?\"\":0===arguments.length?S(this,0,t):_.apply(this,arguments)},o.prototype.equals=function(t){if(!o.isBuffer(t))throw new TypeError(\"Argument must be a Buffer\");return this===t||0===o.compare(this,t)},o.prototype.inspect=function(){var t=\"\",e=r.INSPECT_MAX_BYTES;return this.length>0&&(t=this.toString(\"hex\",0,e).match(/.{2}/g).join(\" \"),this.length>e&&(t+=\" ... \")),\"<Buffer \"+t+\">\"},o.prototype.compare=function(t,r,e,n,i){if(!o.isBuffer(t))throw new TypeError(\"Argument must be a Buffer\");if(void 0===r&&(r=0),void 0===e&&(e=t?t.length:0),void 0===n&&(n=0),void 0===i&&(i=this.length),r<0||e>t.length||n<0||i>this.length)throw new RangeError(\"out of range index\");if(n>=i&&r>=e)return 0;if(n>=i)return-1;if(r>=e)return 1;if(r>>>=0,e>>>=0,n>>>=0,i>>>=0,this===t)return 0;for(var u=i-n,f=e-r,s=Math.min(u,f),h=this.slice(n,i),a=t.slice(r,e),c=0;c<s;++c)if(h[c]!==a[c]){u=h[c],f=a[c];break}return u<f?-1:f<u?1:0},o.prototype.includes=function(t,r,e){return-1!==this.indexOf(t,r,e)},o.prototype.indexOf=function(t,r,e){return v(this,t,r,e,!0)},o.prototype.lastIndexOf=function(t,r,e){return v(this,t,r,e,!1)},o.prototype.write=function(t,r,e,n){if(void 0===r)n=\"utf8\",e=this.length,r=0;else if(void 0===e&&\"string\"==typeof r)n=r,e=this.length,r=0;else{if(!isFinite(r))throw new Error(\"Buffer.write(string, encoding, offset[, length]) is no longer supported\");r|=0,isFinite(e)?(e|=0,void 0===n&&(n=\"utf8\")):(n=e,e=void 0)}var i=this.length-r;if((void 0===e||e>i)&&(e=i),t.length>0&&(e<0||r<0)||r>this.length)throw new RangeError(\"Attempt to write outside buffer bounds\");n||(n=\"utf8\");for(var o=!1;;)switch(n){case\"hex\":return E(this,t,r,e);case\"utf8\":case\"utf-8\":return A(this,t,r,e);case\"ascii\":return m(this,t,r,e);case\"latin1\":case\"binary\":return R(this,t,r,e);case\"base64\":return B(this,t,r,e);case\"ucs2\":case\"ucs-2\":case\"utf16le\":case\"utf-16le\":return P(this,t,r,e);default:if(o)throw new TypeError(\"Unknown encoding: \"+n);n=(\"\"+n).toLowerCase(),o=!0}},o.prototype.toJSON=function(){return{type:\"Buffer\",data:Array.prototype.slice.call(this._arr||this,0)}};var $=4096;o.prototype.slice=function(t,r){var e=this.length;t=~~t,r=void 0===r?e:~~r,t<0?(t+=e)<0&&(t=0):t>e&&(t=e),r<0?(r+=e)<0&&(r=0):r>e&&(r=e),r<t&&(r=t);var n;if(o.TYPED_ARRAY_SUPPORT)n=this.subarray(t,r),n.__proto__=o.prototype;else{var i=r-t;n=new o(i,void 0);for(var u=0;u<i;++u)n[u]=this[u+t]}return n},o.prototype.readUIntLE=function(t,r,e){t|=0,r|=0,e||M(t,r,this.length);for(var n=this[t],i=1,o=0;++o<r&&(i*=256);)n+=this[t+o]*i;return n},o.prototype.readUIntBE=function(t,r,e){t|=0,r|=0,e||M(t,r,this.length);for(var n=this[t+--r],i=1;r>0&&(i*=256);)n+=this[t+--r]*i;return n},o.prototype.readUInt8=function(t,r){return r||M(t,1,this.length),this[t]},o.prototype.readUInt16LE=function(t,r){return r||M(t,2,this.length),this[t]|this[t+1]<<8},o.prototype.readUInt16BE=function(t,r){return r||M(t,2,this.length),this[t]<<8|this[t+1]},o.prototype.readUInt32LE=function(t,r){return r||M(t,4,this.length),(this[t]|this[t+1]<<8|this[t+2]<<16)+16777216*this[t+3]},o.prototype.readUInt32BE=function(t,r){return r||M(t,4,this.length),16777216*this[t]+(this[t+1]<<16|this[t+2]<<8|this[t+3])},o.prototype.readIntLE=function(t,r,e){t|=0,r|=0,e||M(t,r,this.length);for(var n=this[t],i=1,o=0;++o<r&&(i*=256);)n+=this[t+o]*i;return i*=128,n>=i&&(n-=Math.pow(2,8*r)),n},o.prototype.readIntBE=function(t,r,e){t|=0,r|=0,e||M(t,r,this.length);for(var n=r,i=1,o=this[t+--n];n>0&&(i*=256);)o+=this[t+--n]*i;return i*=128,o>=i&&(o-=Math.pow(2,8*r)),o},o.prototype.readInt8=function(t,r){return r||M(t,1,this.length),128&this[t]?-1*(255-this[t]+1):this[t]},o.prototype.readInt16LE=function(t,r){r||M(t,2,this.length);var e=this[t]|this[t+1]<<8;return 32768&e?4294901760|e:e},o.prototype.readInt16BE=function(t,r){r||M(t,2,this.length);var e=this[t+1]|this[t]<<8;return 32768&e?4294901760|e:e},o.prototype.readInt32LE=function(t,r){return r||M(t,4,this.length),this[t]|this[t+1]<<8|this[t+2]<<16|this[t+3]<<24},o.prototype.readInt32BE=function(t,r){return r||M(t,4,this.length),this[t]<<24|this[t+1]<<16|this[t+2]<<8|this[t+3]},o.prototype.readFloatLE=function(t,r){return r||M(t,4,this.length),Q.read(this,t,!0,23,4)},o.prototype.readFloatBE=function(t,r){return r||M(t,4,this.length),Q.read(this,t,!1,23,4)},o.prototype.readDoubleLE=function(t,r){return r||M(t,8,this.length),Q.read(this,t,!0,52,8)},o.prototype.readDoubleBE=function(t,r){return r||M(t,8,this.length),Q.read(this,t,!1,52,8)},o.prototype.writeUIntLE=function(t,r,e,n){if(t=+t,r|=0,e|=0,!n){L(this,t,r,e,Math.pow(2,8*e)-1,0)}var i=1,o=0;for(this[r]=255&t;++o<e&&(i*=256);)this[r+o]=t/i&255;return r+e},o.prototype.writeUIntBE=function(t,r,e,n){if(t=+t,r|=0,e|=0,!n){L(this,t,r,e,Math.pow(2,8*e)-1,0)}var i=e-1,o=1;for(this[r+i]=255&t;--i>=0&&(o*=256);)this[r+i]=t/o&255;return r+e},o.prototype.writeUInt8=function(t,r,e){return t=+t,r|=0,e||L(this,t,r,1,255,0),o.TYPED_ARRAY_SUPPORT||(t=Math.floor(t)),this[r]=255&t,r+1},o.prototype.writeUInt16LE=function(t,r,e){return t=+t,r|=0,e||L(this,t,r,2,65535,0),o.TYPED_ARRAY_SUPPORT?(this[r]=255&t,this[r+1]=t>>>8):k(this,t,r,!0),r+2},o.prototype.writeUInt16BE=function(t,r,e){return t=+t,r|=0,e||L(this,t,r,2,65535,0),o.TYPED_ARRAY_SUPPORT?(this[r]=t>>>8,this[r+1]=255&t):k(this,t,r,!1),r+2},o.prototype.writeUInt32LE=function(t,r,e){return t=+t,r|=0,e||L(this,t,r,4,4294967295,0),o.TYPED_ARRAY_SUPPORT?(this[r+3]=t>>>24,this[r+2]=t>>>16,this[r+1]=t>>>8,this[r]=255&t):x(this,t,r,!0),r+4},o.prototype.writeUInt32BE=function(t,r,e){return t=+t,r|=0,e||L(this,t,r,4,4294967295,0),o.TYPED_ARRAY_SUPPORT?(this[r]=t>>>24,this[r+1]=t>>>16,this[r+2]=t>>>8,this[r+3]=255&t):x(this,t,r,!1),r+4},o.prototype.writeIntLE=function(t,r,e,n){if(t=+t,r|=0,!n){var i=Math.pow(2,8*e-1);L(this,t,r,e,i-1,-i)}var o=0,u=1,f=0;for(this[r]=255&t;++o<e&&(u*=256);)t<0&&0===f&&0!==this[r+o-1]&&(f=1),this[r+o]=(t/u>>0)-f&255;return r+e},o.prototype.writeIntBE=function(t,r,e,n){if(t=+t,r|=0,!n){var i=Math.pow(2,8*e-1);L(this,t,r,e,i-1,-i)}var o=e-1,u=1,f=0;for(this[r+o]=255&t;--o>=0&&(u*=256);)t<0&&0===f&&0!==this[r+o+1]&&(f=1),this[r+o]=(t/u>>0)-f&255;return r+e},o.prototype.writeInt8=function(t,r,e){return t=+t,r|=0,e||L(this,t,r,1,127,-128),o.TYPED_ARRAY_SUPPORT||(t=Math.floor(t)),t<0&&(t=255+t+1),this[r]=255&t,r+1},o.prototype.writeInt16LE=function(t,r,e){return t=+t,r|=0,e||L(this,t,r,2,32767,-32768),o.TYPED_ARRAY_SUPPORT?(this[r]=255&t,this[r+1]=t>>>8):k(this,t,r,!0),r+2},o.prototype.writeInt16BE=function(t,r,e){return t=+t,r|=0,e||L(this,t,r,2,32767,-32768),o.TYPED_ARRAY_SUPPORT?(this[r]=t>>>8,this[r+1]=255&t):k(this,t,r,!1),r+2},o.prototype.writeInt32LE=function(t,r,e){return t=+t,r|=0,e||L(this,t,r,4,2147483647,-2147483648),o.TYPED_ARRAY_SUPPORT?(this[r]=255&t,this[r+1]=t>>>8,this[r+2]=t>>>16,this[r+3]=t>>>24):x(this,t,r,!0),r+4},o.prototype.writeInt32BE=function(t,r,e){return t=+t,r|=0,e||L(this,t,r,4,2147483647,-2147483648),t<0&&(t=4294967295+t+1),o.TYPED_ARRAY_SUPPORT?(this[r]=t>>>24,this[r+1]=t>>>16,this[r+2]=t>>>8,this[r+3]=255&t):x(this,t,r,!1),r+4},o.prototype.writeFloatLE=function(t,r,e){return z(this,t,r,!0,e)},o.prototype.writeFloatBE=function(t,r,e){return z(this,t,r,!1,e)},o.prototype.writeDoubleLE=function(t,r,e){return N(this,t,r,!0,e)},o.prototype.writeDoubleBE=function(t,r,e){return N(this,t,r,!1,e)},o.prototype.copy=function(t,r,e,n){if(e||(e=0),n||0===n||(n=this.length),r>=t.length&&(r=t.length),r||(r=0),n>0&&n<e&&(n=e),n===e)return 0;if(0===t.length||0===this.length)return 0;if(r<0)throw new RangeError(\"targetStart out of bounds\");if(e<0||e>=this.length)throw new RangeError(\"sourceStart out of bounds\");if(n<0)throw new RangeError(\"sourceEnd out of bounds\");n>this.length&&(n=this.length),t.length-r<n-e&&(n=t.length-r+e);var i,u=n-e;if(this===t&&e<r&&r<n)for(i=u-1;i>=0;--i)t[i+r]=this[i+e];else if(u<1e3||!o.TYPED_ARRAY_SUPPORT)for(i=0;i<u;++i)t[i+r]=this[i+e];else Uint8Array.prototype.set.call(t,this.subarray(e,e+u),r);return u},o.prototype.fill=function(t,r,e,n){if(\"string\"==typeof t){if(\"string\"==typeof r?(n=r,r=0,e=this.length):\"string\"==typeof e&&(n=e,e=this.length),1===t.length){var i=t.charCodeAt(0);i<256&&(t=i)}if(void 0!==n&&\"string\"!=typeof n)throw new TypeError(\"encoding must be a string\");if(\"string\"==typeof n&&!o.isEncoding(n))throw new TypeError(\"Unknown encoding: \"+n)}else\"number\"==typeof t&&(t&=255);if(r<0||this.length<r||this.length<e)throw new RangeError(\"Out of range index\");if(e<=r)return this;r>>>=0,e=void 0===e?this.length:e>>>0,t||(t=0);var u;if(\"number\"==typeof t)for(u=r;u<e;++u)this[u]=t;else{var f=o.isBuffer(t)?t:X(new o(t,n).toString()),s=f.length;for(u=0;u<e-r;++u)this[u+r]=f[u%s]}return this};var tt=/[^+\\/0-9A-Za-z-_]/g}).call(r,e(9))},function(t,r){var e;e=function(){return this}();try{e=e||Function(\"return this\")()||(0,eval)(\"this\")}catch(t){\"object\"==typeof window&&(e=window)}t.exports=e},function(t,r,e){\"use strict\";function n(t){var r=t.length;if(r%4>0)throw new Error(\"Invalid string. Length must be a multiple of 4\");return\"=\"===t[r-2]?2:\"=\"===t[r-1]?1:0}function i(t){return 3*t.length/4-n(t)}function o(t){var r,e,i,o,u,f=t.length;o=n(t),u=new c(3*f/4-o),e=o>0?f-4:f;var s=0;for(r=0;r<e;r+=4)i=a[t.charCodeAt(r)]<<18|a[t.charCodeAt(r+1)]<<12|a[t.charCodeAt(r+2)]<<6|a[t.charCodeAt(r+3)],u[s++]=i>>16&255,u[s++]=i>>8&255,u[s++]=255&i;return 2===o?(i=a[t.charCodeAt(r)]<<2|a[t.charCodeAt(r+1)]>>4,u[s++]=255&i):1===o&&(i=a[t.charCodeAt(r)]<<10|a[t.charCodeAt(r+1)]<<4|a[t.charCodeAt(r+2)]>>2,u[s++]=i>>8&255,u[s++]=255&i),u}function u(t){return h[t>>18&63]+h[t>>12&63]+h[t>>6&63]+h[63&t]}function f(t,r,e){for(var n,i=[],o=r;o<e;o+=3)n=(t[o]<<16)+(t[o+1]<<8)+t[o+2],i.push(u(n));return i.join(\"\")}function s(t){for(var r,e=t.length,n=e%3,i=\"\",o=[],u=0,s=e-n;u<s;u+=16383)o.push(f(t,u,u+16383>s?s:u+16383));return 1===n?(r=t[e-1],i+=h[r>>2],i+=h[r<<4&63],i+=\"==\"):2===n&&(r=(t[e-2]<<8)+t[e-1],i+=h[r>>10],i+=h[r>>4&63],i+=h[r<<2&63],i+=\"=\"),o.push(i),o.join(\"\")}r.byteLength=i,r.toByteArray=o,r.fromByteArray=s;for(var h=[],a=[],c=\"undefined\"!=typeof Uint8Array?Uint8Array:Array,l=\"ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789+/\",p=0,g=l.length;p<g;++p)h[p]=l[p],a[l.charCodeAt(p)]=p;a[\"-\".charCodeAt(0)]=62,a[\"_\".charCodeAt(0)]=63},function(t,r){r.read=function(t,r,e,n,i){var o,u,f=8*i-n-1,s=(1<<f)-1,h=s>>1,a=-7,c=e?i-1:0,l=e?-1:1,p=t[r+c];for(c+=l,o=p&(1<<-a)-1,p>>=-a,a+=f;a>0;o=256*o+t[r+c],c+=l,a-=8);for(u=o&(1<<-a)-1,o>>=-a,a+=n;a>0;u=256*u+t[r+c],c+=l,a-=8);if(0===o)o=1-h;else{if(o===s)return u?NaN:1/0*(p?-1:1);u+=Math.pow(2,n),o-=h}return(p?-1:1)*u*Math.pow(2,o-n)},r.write=function(t,r,e,n,i,o){var u,f,s,h=8*o-i-1,a=(1<<h)-1,c=a>>1,l=23===i?Math.pow(2,-24)-Math.pow(2,-77):0,p=n?0:o-1,g=n?1:-1,y=r<0||0===r&&1/r<0?1:0;for(r=Math.abs(r),isNaN(r)||r===1/0?(f=isNaN(r)?1:0,u=a):(u=Math.floor(Math.log(r)/Math.LN2),r*(s=Math.pow(2,-u))<1&&(u--,s*=2),r+=u+c>=1?l/s:l*Math.pow(2,1-c),r*s>=2&&(u++,s/=2),u+c>=a?(f=0,u=a):u+c>=1?(f=(r*s-1)*Math.pow(2,i),u+=c):(f=r*Math.pow(2,c-1)*Math.pow(2,i),u=0));i>=8;t[e+p]=255&f,p+=g,f/=256,i-=8);for(u=u<<i|f,h+=i;h>0;t[e+p]=255&u,p+=g,u/=256,h-=8);t[e+p-g]|=128*y}},function(t,r){var e={}.toString;t.exports=Array.isArray||function(t){return\"[object Array]\"==e.call(t)}}]);</script>"
+                    },
+                    {
+                        "type": "BOOLEAN",
+                        "key": "supportDocumentWrite",
+                        "value": "false"
+                    }
+                ],
+                "fingerprint": "1520257167067",
+                "tagFiringOption": "ONCE_PER_EVENT"
+            }
+        ],
+        "trigger": [
+            {
+                "accountId": "160874599",
+                "containerId": "8436084",
+                "triggerId": "8",
+                "name": "D -- EV -- 001 -- Bussola -- Quando a bússola é exibida",
+                "type": "CUSTOM_EVENT",
+                "customEventFilter": [
+                    {
+                        "type": "EQUALS",
+                        "parameter": [
+                            {
+                                "type": "TEMPLATE",
+                                "key": "arg0",
+                                "value": "{{_event}}"
+                            },
+                            {
+                                "type": "TEMPLATE",
+                                "key": "arg1",
+                                "value": "feature-step"
+                            }
+                        ]
+                    }
+                ],
+                "filter": [
+                    {
+                        "type": "EQUALS",
+                        "parameter": [
+                            {
+                                "type": "TEMPLATE",
+                                "key": "arg0",
+                                "value": "{{DL.feature.name}}"
+                            },
+                            {
+                                "type": "TEMPLATE",
+                                "key": "arg1",
+                                "value": "bussola"
+                            }
+                        ]
+                    },
+                    {
+                        "type": "EQUALS",
+                        "parameter": [
+                            {
+                                "type": "TEMPLATE",
+                                "key": "arg0",
+                                "value": "{{DL.step.name}}"
+                            },
+                            {
+                                "type": "TEMPLATE",
+                                "key": "arg1",
+                                "value": "choose-your-city"
+                            }
+                        ]
+                    }
+                ],
+                "fingerprint": "1520258256960"
+            },
+            {
+                "accountId": "160874599",
+                "containerId": "8436084",
+                "triggerId": "9",
+                "name": "D -- EV -- 002 -- Bussola -- Quando o usuário seleciona a regionalização",
+                "type": "CUSTOM_EVENT",
+                "customEventFilter": [
+                    {
+                        "type": "EQUALS",
+                        "parameter": [
+                            {
+                                "type": "TEMPLATE",
+                                "key": "arg0",
+                                "value": "{{_event}}"
+                            },
+                            {
+                                "type": "TEMPLATE",
+                                "key": "arg1",
+                                "value": "feature-interaction"
+                            }
+                        ]
+                    }
+                ],
+                "filter": [
+                    {
+                        "type": "EQUALS",
+                        "parameter": [
+                            {
+                                "type": "TEMPLATE",
+                                "key": "arg0",
+                                "value": "{{DL.feature.name}}"
+                            },
+                            {
+                                "type": "TEMPLATE",
+                                "key": "arg1",
+                                "value": "bussola"
+                            }
+                        ]
+                    },
+                    {
+                        "type": "EQUALS",
+                        "parameter": [
+                            {
+                                "type": "TEMPLATE",
+                                "key": "arg0",
+                                "value": "{{DL.step.name}}"
+                            },
+                            {
+                                "type": "TEMPLATE",
+                                "key": "arg1",
+                                "value": "choose-your-city"
+                            }
+                        ]
+                    },
+                    {
+                        "type": "EQUALS",
+                        "parameter": [
+                            {
+                                "type": "TEMPLATE",
+                                "key": "arg0",
+                                "value": "{{DL.interaction.name}}"
+                            },
+                            {
+                                "type": "TEMPLATE",
+                                "key": "arg1",
+                                "value": "choose-your-city"
+                            }
+                        ]
+                    }
+                ],
+                "fingerprint": "1520258647540"
+            },
+            {
+                "accountId": "160874599",
+                "containerId": "8436084",
+                "triggerId": "10",
+                "name": "D -- EV -- 003 -- Bussola -- Quando a página é regionalizada com sucesso",
+                "type": "CUSTOM_EVENT",
+                "customEventFilter": [
+                    {
+                        "type": "EQUALS",
+                        "parameter": [
+                            {
+                                "type": "TEMPLATE",
+                                "key": "arg0",
+                                "value": "{{_event}}"
+                            },
+                            {
+                                "type": "TEMPLATE",
+                                "key": "arg1",
+                                "value": "feature-step"
+                            }
+                        ]
+                    }
+                ],
+                "filter": [
+                    {
+                        "type": "EQUALS",
+                        "parameter": [
+                            {
+                                "type": "TEMPLATE",
+                                "key": "arg0",
+                                "value": "{{DL.feature.name}}"
+                            },
+                            {
+                                "type": "TEMPLATE",
+                                "key": "arg1",
+                                "value": "bussola"
+                            }
+                        ]
+                    },
+                    {
+                        "type": "EQUALS",
+                        "parameter": [
+                            {
+                                "type": "TEMPLATE",
+                                "key": "arg0",
+                                "value": "{{DL.step.name}}"
+                            },
+                            {
+                                "type": "TEMPLATE",
+                                "key": "arg1",
+                                "value": "city-chosen-successfully"
+                            }
+                        ]
+                    }
+                ],
+                "fingerprint": "1520268154602"
+            },
+            {
+                "accountId": "160874599",
+                "containerId": "8436084",
+                "triggerId": "12",
+                "name": "D -- EV -- 005 -- CTA Principal hero -- Quando o usuário clica em um CTA no Hero Banner",
+                "type": "CUSTOM_EVENT",
+                "customEventFilter": [
+                    {
+                        "type": "EQUALS",
+                        "parameter": [
+                            {
+                                "type": "TEMPLATE",
+                                "key": "arg0",
+                                "value": "{{_event}}"
+                            },
+                            {
+                                "type": "TEMPLATE",
+                                "key": "arg1",
+                                "value": "feature-interaction"
+                            }
+                        ]
+                    }
+                ],
+                "filter": [
+                    {
+                        "type": "EQUALS",
+                        "parameter": [
+                            {
+                                "type": "TEMPLATE",
+                                "key": "arg0",
+                                "value": "{{DL.feature.name}}"
+                            },
+                            {
+                                "type": "TEMPLATE",
+                                "key": "arg1",
+                                "value": "main-cta"
+                            }
+                        ]
+                    },
+                    {
+                        "type": "EQUALS",
+                        "parameter": [
+                            {
+                                "type": "TEMPLATE",
+                                "key": "arg0",
+                                "value": "{{DL.step.name}}"
+                            },
+                            {
+                                "type": "TEMPLATE",
+                                "key": "arg1",
+                                "value": "hero-cta"
+                            }
+                        ]
+                    },
+                    {
+                        "type": "EQUALS",
+                        "parameter": [
+                            {
+                                "type": "TEMPLATE",
+                                "key": "arg0",
+                                "value": "{{DL.interaction.name}}"
+                            },
+                            {
+                                "type": "TEMPLATE",
+                                "key": "arg1",
+                                "value": "hero-cta"
+                            }
+                        ]
+                    }
+                ],
+                "fingerprint": "1520268863780"
+            },
+            {
+                "accountId": "160874599",
+                "containerId": "8436084",
+                "triggerId": "13",
+                "name": "D -- EV -- 006 -- CTA Card Produto -- Quando o usuário clica no CTA de um card de produto",
+                "type": "CUSTOM_EVENT",
+                "customEventFilter": [
+                    {
+                        "type": "EQUALS",
+                        "parameter": [
+                            {
+                                "type": "TEMPLATE",
+                                "key": "arg0",
+                                "value": "{{_event}}"
+                            },
+                            {
+                                "type": "TEMPLATE",
+                                "key": "arg1",
+                                "value": "feature-interaction"
+                            }
+                        ]
+                    }
+                ],
+                "filter": [
+                    {
+                        "type": "EQUALS",
+                        "parameter": [
+                            {
+                                "type": "TEMPLATE",
+                                "key": "arg0",
+                                "value": "{{DL.feature.name}}"
+                            },
+                            {
+                                "type": "TEMPLATE",
+                                "key": "arg1",
+                                "value": "product-card-cta"
+                            }
+                        ]
+                    },
+                    {
+                        "type": "EQUALS",
+                        "parameter": [
+                            {
+                                "type": "TEMPLATE",
+                                "key": "arg0",
+                                "value": "{{DL.step.name}}"
+                            },
+                            {
+                                "type": "TEMPLATE",
+                                "key": "arg1",
+                                "value": "product-card-cta"
+                            }
+                        ]
+                    },
+                    {
+                        "type": "EQUALS",
+                        "parameter": [
+                            {
+                                "type": "TEMPLATE",
+                                "key": "arg0",
+                                "value": "{{DL.interaction.name}}"
+                            },
+                            {
+                                "type": "TEMPLATE",
+                                "key": "arg1",
+                                "value": "product-card-cta"
+                            }
+                        ]
+                    }
+                ],
+                "fingerprint": "1520269055552"
+            },
+            {
+                "accountId": "160874599",
+                "containerId": "8436084",
+                "triggerId": "14",
+                "name": "D -- EV -- 007 -- CTA Sticky Lateral -- Quando o usuário clica no CTA de um elemento fixo na lateral da página",
+                "type": "CUSTOM_EVENT",
+                "customEventFilter": [
+                    {
+                        "type": "EQUALS",
+                        "parameter": [
+                            {
+                                "type": "TEMPLATE",
+                                "key": "arg0",
+                                "value": "{{_event}}"
+                            },
+                            {
+                                "type": "TEMPLATE",
+                                "key": "arg1",
+                                "value": "feature-interaction"
+                            }
+                        ]
+                    }
+                ],
+                "filter": [
+                    {
+                        "type": "EQUALS",
+                        "parameter": [
+                            {
+                                "type": "TEMPLATE",
+                                "key": "arg0",
+                                "value": "{{DL.feature.name}}"
+                            },
+                            {
+                                "type": "TEMPLATE",
+                                "key": "arg1",
+                                "value": "lateral-sticky-cta"
+                            }
+                        ]
+                    },
+                    {
+                        "type": "EQUALS",
+                        "parameter": [
+                            {
+                                "type": "TEMPLATE",
+                                "key": "arg0",
+                                "value": "{{DL.step.name}}"
+                            },
+                            {
+                                "type": "TEMPLATE",
+                                "key": "arg1",
+                                "value": "lateral-sticky-cta"
+                            }
+                        ]
+                    },
+                    {
+                        "type": "EQUALS",
+                        "parameter": [
+                            {
+                                "type": "TEMPLATE",
+                                "key": "arg0",
+                                "value": "{{DL.interaction.name}}"
+                            },
+                            {
+                                "type": "TEMPLATE",
+                                "key": "arg1",
+                                "value": "lateral-sticky-cta"
+                            }
+                        ]
+                    }
+                ],
+                "fingerprint": "1520269089617"
+            },
+            {
+                "accountId": "160874599",
+                "containerId": "8436084",
+                "triggerId": "15",
+                "name": "D -- EV -- 008 -- CTA Barra Horizontal -- Quando o usuário clica no CTA de uma barra horizontal",
+                "type": "CUSTOM_EVENT",
+                "customEventFilter": [
+                    {
+                        "type": "EQUALS",
+                        "parameter": [
+                            {
+                                "type": "TEMPLATE",
+                                "key": "arg0",
+                                "value": "{{_event}}"
+                            },
+                            {
+                                "type": "TEMPLATE",
+                                "key": "arg1",
+                                "value": "feature-interaction"
+                            }
+                        ]
+                    }
+                ],
+                "filter": [
+                    {
+                        "type": "EQUALS",
+                        "parameter": [
+                            {
+                                "type": "TEMPLATE",
+                                "key": "arg0",
+                                "value": "{{DL.feature.name}}"
+                            },
+                            {
+                                "type": "TEMPLATE",
+                                "key": "arg1",
+                                "value": "horizontal-bar-cta"
+                            }
+                        ]
+                    },
+                    {
+                        "type": "EQUALS",
+                        "parameter": [
+                            {
+                                "type": "TEMPLATE",
+                                "key": "arg0",
+                                "value": "{{DL.step.name}}"
+                            },
+                            {
+                                "type": "TEMPLATE",
+                                "key": "arg1",
+                                "value": "horizontal-bar-cta"
+                            }
+                        ]
+                    },
+                    {
+                        "type": "EQUALS",
+                        "parameter": [
+                            {
+                                "type": "TEMPLATE",
+                                "key": "arg0",
+                                "value": "{{DL.interaction.name}}"
+                            },
+                            {
+                                "type": "TEMPLATE",
+                                "key": "arg1",
+                                "value": "horizontal-bar-cta"
+                            }
+                        ]
+                    }
+                ],
+                "fingerprint": "1520269125211"
+            },
+            {
+                "accountId": "160874599",
+                "containerId": "8436084",
+                "triggerId": "16",
+                "name": "D -- EV -- 009 -- CTA Secundário -- Quando o usuário clica em um CTA secundário",
+                "type": "CUSTOM_EVENT",
+                "customEventFilter": [
+                    {
+                        "type": "EQUALS",
+                        "parameter": [
+                            {
+                                "type": "TEMPLATE",
+                                "key": "arg0",
+                                "value": "{{_event}}"
+                            },
+                            {
+                                "type": "TEMPLATE",
+                                "key": "arg1",
+                                "value": "feature-interaction"
+                            }
+                        ]
+                    }
+                ],
+                "filter": [
+                    {
+                        "type": "EQUALS",
+                        "parameter": [
+                            {
+                                "type": "TEMPLATE",
+                                "key": "arg0",
+                                "value": "{{DL.feature.name}}"
+                            },
+                            {
+                                "type": "TEMPLATE",
+                                "key": "arg1",
+                                "value": "secondary-cta"
+                            }
+                        ]
+                    },
+                    {
+                        "type": "EQUALS",
+                        "parameter": [
+                            {
+                                "type": "TEMPLATE",
+                                "key": "arg0",
+                                "value": "{{DL.step.name}}"
+                            },
+                            {
+                                "type": "TEMPLATE",
+                                "key": "arg1",
+                                "value": "secondary-cta"
+                            }
+                        ]
+                    },
+                    {
+                        "type": "EQUALS",
+                        "parameter": [
+                            {
+                                "type": "TEMPLATE",
+                                "key": "arg0",
+                                "value": "{{DL.interaction.name}}"
+                            },
+                            {
+                                "type": "TEMPLATE",
+                                "key": "arg1",
+                                "value": "secondary-cta"
+                            }
+                        ]
+                    }
+                ],
+                "fingerprint": "1520269163934"
+            },
+            {
+                "accountId": "160874599",
+                "containerId": "8436084",
+                "triggerId": "17",
+                "name": "D -- EV -- 010 -- Consulta de disponibilidade -- Quando a página exibe um modal de consulta de cobertura",
+                "type": "CUSTOM_EVENT",
+                "customEventFilter": [
+                    {
+                        "type": "EQUALS",
+                        "parameter": [
+                            {
+                                "type": "TEMPLATE",
+                                "key": "arg0",
+                                "value": "{{_event}}"
+                            },
+                            {
+                                "type": "TEMPLATE",
+                                "key": "arg1",
+                                "value": "feature-step"
+                            }
+                        ]
+                    }
+                ],
+                "filter": [
+                    {
+                        "type": "EQUALS",
+                        "parameter": [
+                            {
+                                "type": "TEMPLATE",
+                                "key": "arg0",
+                                "value": "{{DL.feature.name}}"
+                            },
+                            {
+                                "type": "TEMPLATE",
+                                "key": "arg1",
+                                "value": "availability-check"
+                            }
+                        ]
+                    },
+                    {
+                        "type": "EQUALS",
+                        "parameter": [
+                            {
+                                "type": "TEMPLATE",
+                                "key": "arg0",
+                                "value": "{{DL.step.name}}"
+                            },
+                            {
+                                "type": "TEMPLATE",
+                                "key": "arg1",
+                                "value": "user-info-input"
+                            }
+                        ]
+                    }
+                ],
+                "fingerprint": "1520270031995"
+            },
+            {
+                "accountId": "160874599",
+                "containerId": "8436084",
+                "triggerId": "18",
+                "name": "D -- EV -- 011 -- Consulta de disponibilidade -- Quando o usuário tenta enviar o formulário",
+                "type": "CUSTOM_EVENT",
+                "customEventFilter": [
+                    {
+                        "type": "EQUALS",
+                        "parameter": [
+                            {
+                                "type": "TEMPLATE",
+                                "key": "arg0",
+                                "value": "{{_event}}"
+                            },
+                            {
+                                "type": "TEMPLATE",
+                                "key": "arg1",
+                                "value": "feature-interaction"
+                            }
+                        ]
+                    }
+                ],
+                "filter": [
+                    {
+                        "type": "EQUALS",
+                        "parameter": [
+                            {
+                                "type": "TEMPLATE",
+                                "key": "arg0",
+                                "value": "{{DL.feature.name}}"
+                            },
+                            {
+                                "type": "TEMPLATE",
+                                "key": "arg1",
+                                "value": "availability-check"
+                            }
+                        ]
+                    },
+                    {
+                        "type": "EQUALS",
+                        "parameter": [
+                            {
+                                "type": "TEMPLATE",
+                                "key": "arg0",
+                                "value": "{{DL.step.name}}"
+                            },
+                            {
+                                "type": "TEMPLATE",
+                                "key": "arg1",
+                                "value": "user-info-input"
+                            }
+                        ]
+                    },
+                    {
+                        "type": "EQUALS",
+                        "parameter": [
+                            {
+                                "type": "TEMPLATE",
+                                "key": "arg0",
+                                "value": "{{DL.interaction.name}}"
+                            },
+                            {
+                                "type": "TEMPLATE",
+                                "key": "arg1",
+                                "value": "form-send"
+                            }
+                        ]
+                    }
+                ],
+                "fingerprint": "1520272653025"
+            },
+            {
+                "accountId": "160874599",
+                "containerId": "8436084",
+                "triggerId": "19",
+                "name": "D -- EV -- 012 -- Consulta de disponibilidade -- Quando houver o retorno com sucesso",
+                "type": "CUSTOM_EVENT",
+                "customEventFilter": [
+                    {
+                        "type": "EQUALS",
+                        "parameter": [
+                            {
+                                "type": "TEMPLATE",
+                                "key": "arg0",
+                                "value": "{{_event}}"
+                            },
+                            {
+                                "type": "TEMPLATE",
+                                "key": "arg1",
+                                "value": "feature-step"
+                            }
+                        ]
+                    }
+                ],
+                "filter": [
+                    {
+                        "type": "EQUALS",
+                        "parameter": [
+                            {
+                                "type": "TEMPLATE",
+                                "key": "arg0",
+                                "value": "{{DL.feature.name}}"
+                            },
+                            {
+                                "type": "TEMPLATE",
+                                "key": "arg1",
+                                "value": "availability-check"
+                            }
+                        ]
+                    },
+                    {
+                        "type": "EQUALS",
+                        "parameter": [
+                            {
+                                "type": "TEMPLATE",
+                                "key": "arg0",
+                                "value": "{{DL.step.name}}"
+                            },
+                            {
+                                "type": "TEMPLATE",
+                                "key": "arg1",
+                                "value": "availability-result-success"
+                            }
+                        ]
+                    }
+                ],
+                "fingerprint": "1520273103053"
+            },
+            {
+                "accountId": "160874599",
+                "containerId": "8436084",
+                "triggerId": "20",
+                "name": "D -- EV -- 013 -- Consulta de disponibilidade -- Quando houver o retorno com indisponibilidade",
+                "type": "CUSTOM_EVENT",
+                "customEventFilter": [
+                    {
+                        "type": "EQUALS",
+                        "parameter": [
+                            {
+                                "type": "TEMPLATE",
+                                "key": "arg0",
+                                "value": "{{_event}}"
+                            },
+                            {
+                                "type": "TEMPLATE",
+                                "key": "arg1",
+                                "value": "feature-step"
+                            }
+                        ]
+                    }
+                ],
+                "filter": [
+                    {
+                        "type": "EQUALS",
+                        "parameter": [
+                            {
+                                "type": "TEMPLATE",
+                                "key": "arg0",
+                                "value": "{{DL.feature.name}}"
+                            },
+                            {
+                                "type": "TEMPLATE",
+                                "key": "arg1",
+                                "value": "availability-check"
+                            }
+                        ]
+                    },
+                    {
+                        "type": "EQUALS",
+                        "parameter": [
+                            {
+                                "type": "TEMPLATE",
+                                "key": "arg0",
+                                "value": "{{DL.step.name}}"
+                            },
+                            {
+                                "type": "TEMPLATE",
+                                "key": "arg1",
+                                "value": "availability-result-unavailable"
+                            }
+                        ]
+                    }
+                ],
+                "fingerprint": "1520273241311"
+            },
+            {
+                "accountId": "160874599",
+                "containerId": "8436084",
+                "triggerId": "11",
+                "name": "D -- EV -- 014 -- Consulta de disponibilidade -- Quando a página exibir algum erro ou aviso",
+                "type": "CUSTOM_EVENT",
+                "customEventFilter": [
+                    {
+                        "type": "EQUALS",
+                        "parameter": [
+                            {
+                                "type": "TEMPLATE",
+                                "key": "arg0",
+                                "value": "{{_event}}"
+                            },
+                            {
+                                "type": "TEMPLATE",
+                                "key": "arg1",
+                                "value": "interface-message"
+                            }
+                        ]
+                    }
+                ],
+                "filter": [
+                    {
+                        "type": "EQUALS",
+                        "parameter": [
+                            {
+                                "type": "TEMPLATE",
+                                "key": "arg0",
+                                "value": "{{DL.feature.name}}"
+                            },
+                            {
+                                "type": "TEMPLATE",
+                                "key": "arg1",
+                                "value": "availability-check"
+                            }
+                        ]
+                    }
+                ],
+                "fingerprint": "1520273345107"
+            },
+            {
+                "accountId": "160874599",
+                "containerId": "8436084",
+                "triggerId": "5",
+                "name": "D001 - Pageview",
+                "type": "CUSTOM_EVENT",
+                "customEventFilter": [
+                    {
+                        "type": "EQUALS",
+                        "parameter": [
+                            {
+                                "type": "TEMPLATE",
+                                "key": "arg0",
+                                "value": "{{_event}}"
+                            },
+                            {
+                                "type": "TEMPLATE",
+                                "key": "arg1",
+                                "value": "page-init"
+                            }
+                        ]
+                    }
+                ],
+                "fingerprint": "1518712532793"
+            }
+        ],
+        "variable": [
+            {
+                "accountId": "160874599",
+                "containerId": "8436084",
+                "variableId": "3",
+                "name": "CD1--Hit--GTMContainerID--Version",
+                "type": "c",
+                "parameter": [
+                    {
+                        "type": "TEMPLATE",
+                        "key": "value",
+                        "value": "1"
+                    }
+                ],
+                "fingerprint": "1520021370928"
+            },
+            {
+                "accountId": "160874599",
+                "containerId": "8436084",
+                "variableId": "10",
+                "name": "CD10--Session--City",
+                "type": "c",
+                "parameter": [
+                    {
+                        "type": "TEMPLATE",
+                        "key": "value",
+                        "value": "10"
+                    }
+                ],
+                "fingerprint": "1520028151413"
+            },
+            {
+                "accountId": "160874599",
+                "containerId": "8436084",
+                "variableId": "12",
+                "name": "CD11--Session--DDD",
+                "type": "c",
+                "parameter": [
+                    {
+                        "type": "TEMPLATE",
+                        "key": "value",
+                        "value": "11"
+                    }
+                ],
+                "fingerprint": "1520028272983"
+            },
+            {
+                "accountId": "160874599",
+                "containerId": "8436084",
+                "variableId": "16",
+                "name": "CD12--Session--MSISDN",
+                "type": "c",
+                "parameter": [
+                    {
+                        "type": "TEMPLATE",
+                        "key": "value",
+                        "value": "12"
+                    }
+                ],
+                "fingerprint": "1520029226659"
+            },
+            {
+                "accountId": "160874599",
+                "containerId": "8436084",
+                "variableId": "18",
+                "name": "CD13--Session--Email",
+                "type": "c",
+                "parameter": [
+                    {
+                        "type": "TEMPLATE",
+                        "key": "value",
+                        "value": "13"
+                    }
+                ],
+                "fingerprint": "1520029339251"
+            },
+            {
+                "accountId": "160874599",
+                "containerId": "8436084",
+                "variableId": "4",
+                "name": "CD2--Hit--Environment",
+                "type": "c",
+                "parameter": [
+                    {
+                        "type": "TEMPLATE",
+                        "key": "value",
+                        "value": "2"
+                    }
+                ],
+                "fingerprint": "1520021408236"
+            },
+            {
+                "accountId": "160874599",
+                "containerId": "8436084",
+                "variableId": "6",
+                "name": "CD8--Session--IDOrigemVivo",
+                "type": "c",
+                "parameter": [
+                    {
+                        "type": "TEMPLATE",
+                        "key": "value",
+                        "value": "8"
+                    }
+                ],
+                "fingerprint": "1520022565011"
+            },
+            {
+                "accountId": "160874599",
+                "containerId": "8436084",
+                "variableId": "8",
+                "name": "CD9--Session--UF",
+                "type": "c",
+                "parameter": [
+                    {
+                        "type": "TEMPLATE",
+                        "key": "value",
+                        "value": "9"
+                    }
+                ],
+                "fingerprint": "1520022655489"
+            },
+            {
+                "accountId": "160874599",
+                "containerId": "8436084",
+                "variableId": "5",
+                "name": "DL.environment.name",
+                "type": "v",
+                "parameter": [
+                    {
+                        "type": "INTEGER",
+                        "key": "dataLayerVersion",
+                        "value": "2"
+                    },
+                    {
+                        "type": "BOOLEAN",
+                        "key": "setDefaultValue",
+                        "value": "false"
+                    },
+                    {
+                        "type": "TEMPLATE",
+                        "key": "name",
+                        "value": "environment.name"
+                    }
+                ],
+                "fingerprint": "1520021498680"
+            },
+            {
+                "accountId": "160874599",
+                "containerId": "8436084",
+                "variableId": "20",
+                "name": "DL.feature.name",
+                "type": "v",
+                "parameter": [
+                    {
+                        "type": "INTEGER",
+                        "key": "dataLayerVersion",
+                        "value": "2"
+                    },
+                    {
+                        "type": "BOOLEAN",
+                        "key": "setDefaultValue",
+                        "value": "false"
+                    },
+                    {
+                        "type": "TEMPLATE",
+                        "key": "name",
+                        "value": "feature.name"
+                    }
+                ],
+                "fingerprint": "1520258182738"
+            },
+            {
+                "accountId": "160874599",
+                "containerId": "8436084",
+                "variableId": "22",
+                "name": "DL.interaction.name",
+                "type": "v",
+                "parameter": [
+                    {
+                        "type": "INTEGER",
+                        "key": "dataLayerVersion",
+                        "value": "2"
+                    },
+                    {
+                        "type": "BOOLEAN",
+                        "key": "setDefaultValue",
+                        "value": "false"
+                    },
+                    {
+                        "type": "TEMPLATE",
+                        "key": "name",
+                        "value": "interaction.name"
+                    }
+                ],
+                "fingerprint": "1520258547706"
+            },
+            {
+                "accountId": "160874599",
+                "containerId": "8436084",
+                "variableId": "26",
+                "name": "DL.interaction.value",
+                "type": "v",
+                "parameter": [
+                    {
+                        "type": "INTEGER",
+                        "key": "dataLayerVersion",
+                        "value": "2"
+                    },
+                    {
+                        "type": "BOOLEAN",
+                        "key": "setDefaultValue",
+                        "value": "false"
+                    },
+                    {
+                        "type": "TEMPLATE",
+                        "key": "name",
+                        "value": "interaction.value"
+                    }
+                ],
+                "fingerprint": "1520268759328"
+            },
+            {
+                "accountId": "160874599",
+                "containerId": "8436084",
+                "variableId": "24",
+                "name": "DL.message.code",
+                "type": "v",
+                "parameter": [
+                    {
+                        "type": "INTEGER",
+                        "key": "dataLayerVersion",
+                        "value": "2"
+                    },
+                    {
+                        "type": "BOOLEAN",
+                        "key": "setDefaultValue",
+                        "value": "true"
+                    },
+                    {
+                        "type": "TEMPLATE",
+                        "key": "defaultValue",
+                        "value": "NO-CODE"
+                    },
+                    {
+                        "type": "TEMPLATE",
+                        "key": "name",
+                        "value": "message.code"
+                    }
+                ],
+                "fingerprint": "1520268351427"
+            },
+            {
+                "accountId": "160874599",
+                "containerId": "8436084",
+                "variableId": "25",
+                "name": "DL.message.name",
+                "type": "v",
+                "parameter": [
+                    {
+                        "type": "INTEGER",
+                        "key": "dataLayerVersion",
+                        "value": "2"
+                    },
+                    {
+                        "type": "BOOLEAN",
+                        "key": "setDefaultValue",
+                        "value": "true"
+                    },
+                    {
+                        "type": "TEMPLATE",
+                        "key": "defaultValue",
+                        "value": "NO-NAME"
+                    },
+                    {
+                        "type": "TEMPLATE",
+                        "key": "name",
+                        "value": "message.name"
+                    }
+                ],
+                "fingerprint": "1520268401578"
+            },
+            {
+                "accountId": "160874599",
+                "containerId": "8436084",
+                "variableId": "23",
+                "name": "DL.message.type",
+                "type": "v",
+                "parameter": [
+                    {
+                        "type": "INTEGER",
+                        "key": "dataLayerVersion",
+                        "value": "2"
+                    },
+                    {
+                        "type": "BOOLEAN",
+                        "key": "setDefaultValue",
+                        "value": "false"
+                    },
+                    {
+                        "type": "TEMPLATE",
+                        "key": "name",
+                        "value": "message.type"
+                    }
+                ],
+                "fingerprint": "1520268301543"
+            },
+            {
+                "accountId": "160874599",
+                "containerId": "8436084",
+                "variableId": "28",
+                "name": "DL.placement.name",
+                "type": "v",
+                "parameter": [
+                    {
+                        "type": "INTEGER",
+                        "key": "dataLayerVersion",
+                        "value": "2"
+                    },
+                    {
+                        "type": "BOOLEAN",
+                        "key": "setDefaultValue",
+                        "value": "false"
+                    },
+                    {
+                        "type": "TEMPLATE",
+                        "key": "name",
+                        "value": "placement.name"
+                    }
+                ],
+                "fingerprint": "1520269845905"
+            },
+            {
+                "accountId": "160874599",
+                "containerId": "8436084",
+                "variableId": "27",
+                "name": "DL.placement.type",
+                "type": "v",
+                "parameter": [
+                    {
+                        "type": "INTEGER",
+                        "key": "dataLayerVersion",
+                        "value": "2"
+                    },
+                    {
+                        "type": "BOOLEAN",
+                        "key": "setDefaultValue",
+                        "value": "false"
+                    },
+                    {
+                        "type": "TEMPLATE",
+                        "key": "name",
+                        "value": "placement.type"
+                    }
+                ],
+                "fingerprint": "1520269815915"
+            },
+            {
+                "accountId": "160874599",
+                "containerId": "8436084",
+                "variableId": "21",
+                "name": "DL.step.name",
+                "type": "v",
+                "parameter": [
+                    {
+                        "type": "INTEGER",
+                        "key": "dataLayerVersion",
+                        "value": "2"
+                    },
+                    {
+                        "type": "BOOLEAN",
+                        "key": "setDefaultValue",
+                        "value": "false"
+                    },
+                    {
+                        "type": "TEMPLATE",
+                        "key": "name",
+                        "value": "step.name"
+                    }
+                ],
+                "fingerprint": "1520258237764"
+            },
+            {
+                "accountId": "160874599",
+                "containerId": "8436084",
+                "variableId": "15",
+                "name": "DL.userInput.info.email",
+                "type": "v",
+                "parameter": [
+                    {
+                        "type": "INTEGER",
+                        "key": "dataLayerVersion",
+                        "value": "2"
+                    },
+                    {
+                        "type": "BOOLEAN",
+                        "key": "setDefaultValue",
+                        "value": "false"
+                    },
+                    {
+                        "type": "TEMPLATE",
+                        "key": "name",
+                        "value": "userInput.info.email"
+                    }
+                ],
+                "fingerprint": "1520029168091"
+            },
+            {
+                "accountId": "160874599",
+                "containerId": "8436084",
+                "variableId": "14",
+                "name": "DL.userInput.info.msisdn",
+                "type": "v",
+                "parameter": [
+                    {
+                        "type": "INTEGER",
+                        "key": "dataLayerVersion",
+                        "value": "2"
+                    },
+                    {
+                        "type": "BOOLEAN",
+                        "key": "setDefaultValue",
+                        "value": "false"
+                    },
+                    {
+                        "type": "TEMPLATE",
+                        "key": "name",
+                        "value": "userInput.info.msisdn"
+                    }
+                ],
+                "fingerprint": "1520029150320"
+            },
+            {
+                "accountId": "160874599",
+                "containerId": "8436084",
+                "variableId": "11",
+                "name": "DL.userInput.location.city",
+                "type": "v",
+                "parameter": [
+                    {
+                        "type": "INTEGER",
+                        "key": "dataLayerVersion",
+                        "value": "2"
+                    },
+                    {
+                        "type": "BOOLEAN",
+                        "key": "setDefaultValue",
+                        "value": "false"
+                    },
+                    {
+                        "type": "TEMPLATE",
+                        "key": "name",
+                        "value": "userInput.location.city"
+                    }
+                ],
+                "fingerprint": "1520028329573"
+            },
+            {
+                "accountId": "160874599",
+                "containerId": "8436084",
+                "variableId": "13",
+                "name": "DL.userInput.location.ddd",
+                "type": "v",
+                "parameter": [
+                    {
+                        "type": "INTEGER",
+                        "key": "dataLayerVersion",
+                        "value": "2"
+                    },
+                    {
+                        "type": "BOOLEAN",
+                        "key": "setDefaultValue",
+                        "value": "false"
+                    },
+                    {
+                        "type": "TEMPLATE",
+                        "key": "name",
+                        "value": "userInput.location.ddd"
+                    }
+                ],
+                "fingerprint": "1520028311844"
+            },
+            {
+                "accountId": "160874599",
+                "containerId": "8436084",
+                "variableId": "9",
+                "name": "DL.userInput.location.state",
+                "type": "v",
+                "parameter": [
+                    {
+                        "type": "INTEGER",
+                        "key": "dataLayerVersion",
+                        "value": "2"
+                    },
+                    {
+                        "type": "BOOLEAN",
+                        "key": "setDefaultValue",
+                        "value": "false"
+                    },
+                    {
+                        "type": "TEMPLATE",
+                        "key": "name",
+                        "value": "userInput.location.state"
+                    }
+                ],
+                "fingerprint": "1520023488026"
+            },
+            {
+                "accountId": "160874599",
+                "containerId": "8436084",
+                "variableId": "2",
+                "name": "Google Analytics Settings",
+                "type": "gas",
+                "parameter": [
+                    {
+                        "type": "TEMPLATE",
+                        "key": "cookieDomain",
+                        "value": "auto"
+                    },
+                    {
+                        "type": "BOOLEAN",
+                        "key": "doubleClick",
+                        "value": "true"
+                    },
+                    {
+                        "type": "BOOLEAN",
+                        "key": "setTrackerName",
+                        "value": "false"
+                    },
+                    {
+                        "type": "BOOLEAN",
+                        "key": "useDebugVersion",
+                        "value": "false"
+                    },
+                    {
+                        "type": "LIST",
+                        "key": "fieldsToSet",
+                        "list": [
+                            {
+                                "type": "MAP",
+                                "map": [
+                                    {
+                                        "type": "TEMPLATE",
+                                        "key": "fieldName",
+                                        "value": "allowLinker"
+                                    },
+                                    {
+                                        "type": "TEMPLATE",
+                                        "key": "value",
+                                        "value": "true"
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "type": "BOOLEAN",
+                        "key": "useHashAutoLink",
+                        "value": "false"
+                    },
+                    {
+                        "type": "BOOLEAN",
+                        "key": "decorateFormsAutoLink",
+                        "value": "false"
+                    },
+                    {
+                        "type": "BOOLEAN",
+                        "key": "enableLinkId",
+                        "value": "false"
+                    },
+                    {
+                        "type": "LIST",
+                        "key": "dimension",
+                        "list": [
+                            {
+                                "type": "MAP",
+                                "map": [
+                                    {
+                                        "type": "TEMPLATE",
+                                        "key": "index",
+                                        "value": "{{CD1--Hit--GTMContainerID--Version}}"
+                                    },
+                                    {
+                                        "type": "TEMPLATE",
+                                        "key": "dimension",
+                                        "value": "{{Container ID}}:{{Container Version}}"
+                                    }
+                                ]
+                            },
+                            {
+                                "type": "MAP",
+                                "map": [
+                                    {
+                                        "type": "TEMPLATE",
+                                        "key": "index",
+                                        "value": "{{CD2--Hit--Environment}}"
+                                    },
+                                    {
+                                        "type": "TEMPLATE",
+                                        "key": "dimension",
+                                        "value": "{{DL.environment.name}}"
+                                    }
+                                ]
+                            },
+                            {
+                                "type": "MAP",
+                                "map": [
+                                    {
+                                        "type": "TEMPLATE",
+                                        "key": "index",
+                                        "value": "{{CD8--Session--IDOrigemVivo}}"
+                                    },
+                                    {
+                                        "type": "TEMPLATE",
+                                        "key": "dimension",
+                                        "value": "{{URL-PARAM--id-origem-vivo}}"
+                                    }
+                                ]
+                            },
+                            {
+                                "type": "MAP",
+                                "map": [
+                                    {
+                                        "type": "TEMPLATE",
+                                        "key": "index",
+                                        "value": "{{CD9--Session--UF}}"
+                                    },
+                                    {
+                                        "type": "TEMPLATE",
+                                        "key": "dimension",
+                                        "value": "{{DL.userInput.location.state}}"
+                                    }
+                                ]
+                            },
+                            {
+                                "type": "MAP",
+                                "map": [
+                                    {
+                                        "type": "TEMPLATE",
+                                        "key": "index",
+                                        "value": "{{CD10--Session--City}}"
+                                    },
+                                    {
+                                        "type": "TEMPLATE",
+                                        "key": "dimension",
+                                        "value": "{{DL.userInput.location.city}}"
+                                    }
+                                ]
+                            },
+                            {
+                                "type": "MAP",
+                                "map": [
+                                    {
+                                        "type": "TEMPLATE",
+                                        "key": "index",
+                                        "value": "{{CD11--Session--DDD}}"
+                                    },
+                                    {
+                                        "type": "TEMPLATE",
+                                        "key": "dimension",
+                                        "value": "{{DL.userInput.location.ddd}}"
+                                    }
+                                ]
+                            },
+                            {
+                                "type": "MAP",
+                                "map": [
+                                    {
+                                        "type": "TEMPLATE",
+                                        "key": "index",
+                                        "value": "{{CD12--Session--MSISDN}}"
+                                    },
+                                    {
+                                        "type": "TEMPLATE",
+                                        "key": "dimension",
+                                        "value": "{{Hash -- MSISDN}}"
+                                    }
+                                ]
+                            },
+                            {
+                                "type": "MAP",
+                                "map": [
+                                    {
+                                        "type": "TEMPLATE",
+                                        "key": "index",
+                                        "value": "{{CD13--Session--Email}}"
+                                    },
+                                    {
+                                        "type": "TEMPLATE",
+                                        "key": "dimension",
+                                        "value": "{{Hash -- email}}"
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "type": "BOOLEAN",
+                        "key": "enableEcommerce",
+                        "value": "false"
+                    },
+                    {
+                        "type": "TEMPLATE",
+                        "key": "trackingId",
+                        "value": "{{Tracking Id}}"
+                    }
+                ],
+                "fingerprint": "1520029440799"
+            },
+            {
+                "accountId": "160874599",
+                "containerId": "8436084",
+                "variableId": "17",
+                "name": "Hash -- MSISDN",
+                "type": "jsm",
+                "parameter": [
+                    {
+                        "type": "TEMPLATE",
+                        "key": "javascript",
+                        "value": "function(){\n  return DAMC_LIB.hash({{DL.userInput.info.msisdn}})\n}"
+                    }
+                ],
+                "fingerprint": "1520029310818"
+            },
+            {
+                "accountId": "160874599",
+                "containerId": "8436084",
+                "variableId": "19",
+                "name": "Hash -- email",
+                "type": "jsm",
+                "parameter": [
+                    {
+                        "type": "TEMPLATE",
+                        "key": "javascript",
+                        "value": "function(){\n  return DAMC_LIB.hash({{DL.userInput.info.email}})\n}"
+                    }
+                ],
+                "fingerprint": "1520029394883"
+            },
+            {
+                "accountId": "160874599",
+                "containerId": "8436084",
+                "variableId": "1",
+                "name": "Tracking Id",
+                "type": "c",
+                "parameter": [
+                    {
+                        "type": "TEMPLATE",
+                        "key": "value",
+                        "value": "xxx"
+                    }
+                ],
+                "fingerprint": "1518712322920"
+            },
+            {
+                "accountId": "160874599",
+                "containerId": "8436084",
+                "variableId": "7",
+                "name": "URL-PARAM--id-origem-vivo",
+                "type": "jsm",
+                "parameter": [
+                    {
+                        "type": "TEMPLATE",
+                        "key": "javascript",
+                        "value": "function(){\n  if (document.location.search.indexOf('id-origem-vivo') >= 0){\n     return document.location.search\n               .split('&')\n               .map(function(a){return a.split('=').map(function(b){return b.replace('?','')})})\n               .filter(function(a){return a[0]==='id-origem-vivo'})[0][1]\n  }\n}"
+                    }
+                ],
+                "fingerprint": "1520022612214"
+            }
+        ],
+        "builtInVariable": [
+            {
+                "accountId": "160874599",
+                "containerId": "8436084",
+                "type": "PAGE_URL",
+                "name": "Page URL"
+            },
+            {
+                "accountId": "160874599",
+                "containerId": "8436084",
+                "type": "PAGE_HOSTNAME",
+                "name": "Page Hostname"
+            },
+            {
+                "accountId": "160874599",
+                "containerId": "8436084",
+                "type": "PAGE_PATH",
+                "name": "Page Path"
+            },
+            {
+                "accountId": "160874599",
+                "containerId": "8436084",
+                "type": "REFERRER",
+                "name": "Referrer"
+            },
+            {
+                "accountId": "160874599",
+                "containerId": "8436084",
+                "type": "EVENT",
+                "name": "Event"
+            },
+            {
+                "accountId": "160874599",
+                "containerId": "8436084",
+                "type": "CLICK_ELEMENT",
+                "name": "Click Element"
+            },
+            {
+                "accountId": "160874599",
+                "containerId": "8436084",
+                "type": "CLICK_CLASSES",
+                "name": "Click Classes"
+            },
+            {
+                "accountId": "160874599",
+                "containerId": "8436084",
+                "type": "CLICK_ID",
+                "name": "Click ID"
+            },
+            {
+                "accountId": "160874599",
+                "containerId": "8436084",
+                "type": "CLICK_URL",
+                "name": "Click URL"
+            },
+            {
+                "accountId": "160874599",
+                "containerId": "8436084",
+                "type": "CLICK_TEXT",
+                "name": "Click Text"
+            },
+            {
+                "accountId": "160874599",
+                "containerId": "8436084",
+                "type": "FORM_ELEMENT",
+                "name": "Form Element"
+            },
+            {
+                "accountId": "160874599",
+                "containerId": "8436084",
+                "type": "FORM_CLASSES",
+                "name": "Form Classes"
+            },
+            {
+                "accountId": "160874599",
+                "containerId": "8436084",
+                "type": "FORM_ID",
+                "name": "Form ID"
+            },
+            {
+                "accountId": "160874599",
+                "containerId": "8436084",
+                "type": "FORM_URL",
+                "name": "Form URL"
+            },
+            {
+                "accountId": "160874599",
+                "containerId": "8436084",
+                "type": "NEW_HISTORY_FRAGMENT",
+                "name": "New History Fragment"
+            },
+            {
+                "accountId": "160874599",
+                "containerId": "8436084",
+                "type": "CONTAINER_VERSION",
+                "name": "Container Version"
+            },
+            {
+                "accountId": "160874599",
+                "containerId": "8436084",
+                "type": "CONTAINER_ID",
+                "name": "Container ID"
+            },
+            {
+                "accountId": "160874599",
+                "containerId": "8436084",
+                "type": "SCROLL_DEPTH_THRESHOLD",
+                "name": "Scroll Depth Threshold"
+            },
+            {
+                "accountId": "160874599",
+                "containerId": "8436084",
+                "type": "SCROLL_DEPTH_UNITS",
+                "name": "Scroll Depth Units"
+            },
+            {
+                "accountId": "160874599",
+                "containerId": "8436084",
+                "type": "ELEMENT_VISIBILITY_RATIO",
+                "name": "Percent Visible"
+            },
+            {
+                "accountId": "160874599",
+                "containerId": "8436084",
+                "type": "ELEMENT_VISIBILITY_TIME",
+                "name": "On-Screen Duration"
+            }
+        ],
+        "fingerprint": "1520273464500",
+        "tagManagerUrl": "https://tagmanager.google.com/#/versions/accounts/160874599/containers/8436084/versions/2?apiLink=version"
+    }
+}
