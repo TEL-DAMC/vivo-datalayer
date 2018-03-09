@@ -36,9 +36,9 @@ window.dataLayer.push({
    */
   userInput: {
     location: {
-      city: string,
-      state: string,
-      ddd: string
+      city: string, // ex.: 'sao-paulo', 'teresina'
+      state: string, // ex.: 'AC', 'RS'
+      ddd: string // ex.: '85', '47'
     }
   }
 })
@@ -82,6 +82,13 @@ dataLayer.push({
   interaction: {
     name: 'choose-your-city',
     value: regionalName
+  },
+  userInput: {
+    location: {
+      city: string, // ex.: 'sao-paulo', 'teresina'
+      state: string, // ex.: 'AC', 'RS'
+      ddd: string // ex.: '85', '47'
+    }
   }
 })
 
@@ -104,9 +111,9 @@ dataLayer.push({
   },
   userInput: {
     location: {
-      city: string,
-      state: string,
-      ddd: string
+      city: string, // ex.: 'sao-paulo', 'teresina'
+      state: string, // ex.: 'AC', 'RS'
+      ddd: string // ex.: '85', '47'
     }
   }
 })
@@ -118,6 +125,10 @@ dataLayer.push({
  */
 dataLayer.push({
   event: 'interface-message',
+  feature: {
+    name: 'bussola',
+    type: 'regionalization',
+  },
   message: {
     type: string,
     /**
@@ -155,7 +166,7 @@ dataLayer.push({
   },
   interaction: {
     name: 'hero-cta',
-    value: ctaPlacement + ':' + ctaName
+    value: ctaPlacement + ':' + ctaAction + ':' + ctaName
   }
 })
 
@@ -178,7 +189,7 @@ dataLayer.push({
   },
   interaction: {
     name: 'product-card-cta',
-    value: ctaPlacement + ':' + ctaName
+    value: ctaPlacement + ':' + ctaAction ':' +ctaName
   }
 })
 
@@ -201,7 +212,7 @@ dataLayer.push({
   },
   interaction: {
     name: 'lateral-sticky-cta',
-    value: ctaPlacement + ':' + ctaName
+    value: ctaPlacement + ':' + ctaAction ':' +ctaName
   }
 })
 
@@ -224,7 +235,7 @@ dataLayer.push({
   },
   interaction: {
     name: 'horizontal-bar-cta',
-    value: ctaPlacement + ':' + ctaName
+    value: ctaPlacement + ':' + ctaAction ':' +ctaName
   }
 })
 
@@ -247,14 +258,14 @@ dataLayer.push({
   },
   interaction: {
     name: 'secondary-cta',
-    value: ctaPlacement + ':' + ctaName
+    value: ctaPlacement + ':' + ctaAction ':' +ctaName
   }
 })
 
 /**
  * Leads diretos
  * - Consulta de disponibilidade Modal, barra ou box
- * - Momento do disparo: Quando a página exibe um modal de consulta de cobertura (visibilidade = mais de 50% do elemento visível na página)
+ * - Momento do disparo: Quando a página exibe um formulário de consulta de cobertura (visibilidade = mais de 50% do elemento visível na página)
  */
 dataLayer.push({
   event: 'feature-step',
@@ -266,6 +277,10 @@ dataLayer.push({
       index: 1,
       type: 'initial',
       success: false
+    },
+    placement: {
+      name: string,
+      type: string
     }
   }
 })
@@ -285,11 +300,26 @@ dataLayer.push({
       index: 1,
       type: 'initial',
       success: false
+    },
+    placement: {
+      name: string,
+      type: string
     }
   },
   interaction: {
     name: 'form-send',
     value: 'ok' | 'error'
+  },
+  userInput: {
+    location: {
+      city: string, // ex.: 'sao-paulo', 'teresina'
+      state: string, // ex.: 'AC', 'RS'
+      ddd: string // ex.: '85', '47'
+    },
+    info: {
+      email: string, // ex.: 'person@domain.com'
+      msisdn: string // ex.: '5511987654321' (user's phone number)
+    }
   }
 })
 
@@ -304,10 +334,25 @@ dataLayer.push({
     name: 'availability-check',
     type: 'lead',
     step: {
-      name: 'availability-result-success' | 'availability-result-unavailable',
+      name: 'availability-result' + '-' + availabilityResult + ':' + availabilityType,
       index: 2,
       type: 'completion',
       success: true
+    },
+    placement: {
+      name: string,
+      type: string
+    },
+    userInput: {
+      location: {
+        city: string, // ex.: 'sao-paulo', 'teresina'
+        state: string, // ex.: 'AC', 'RS'
+        ddd: string // ex.: '85', '47'
+      },
+      info: {
+        email: string, // ex.: 'person@domain.com'
+        msisdn: string // ex.: '5511987654321' (user's phone number)
+      }
     }
   }
 })
@@ -319,6 +364,14 @@ dataLayer.push({
  */
 dataLayer.push({
   event: 'interface-message',
+  feature: {
+    name: 'availability-check',
+    type: 'lead',
+    placement: {
+      name: string,
+      type: string
+    }
+  },
   message: {
     type: string,
     /**
@@ -336,6 +389,7 @@ dataLayer.push({
    */
   element: HTMLElement
 })
+
 /**
  * Leads diretos
  * - Chat
@@ -507,7 +561,7 @@ dataLayer.push({
     name: 'tab-view',
     type: 'content',
     step: {
-      name: nomeDaSecao + ':' + nomeDaAbaAtual,
+      name: nomeDaSecao + ':' + nomeDaAba,
       index: 1,
       type: 'completion',
       success: true
@@ -552,4 +606,3 @@ dataLayer.push({
     }
   }
 })
-
